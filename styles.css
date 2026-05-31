@@ -194,6 +194,8 @@ h3 { font-size: 1.15rem; }
   gap: 5px;
   font-size: 0.82rem;
   color: var(--ink-soft);
+  flex: 1 1 200px;
+  min-width: 0;
 }
 .filters input,
 .filters select {
@@ -204,9 +206,13 @@ h3 { font-size: 1.15rem; }
   border-radius: 9px;
   background: var(--surface-2);
   color: var(--ink);
-  min-width: 170px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
-.search-input { min-width: 220px; }
+/* keep long composer names from forcing the control wider than its column */
+.filters select { text-overflow: ellipsis; }
 .result-count {
   margin: 0 0 4px auto;
   font-size: 0.85rem;
@@ -282,6 +288,7 @@ h3 { font-size: 1.15rem; }
 .popup-item:hover { border-color: var(--accent-soft); background: var(--surface); }
 .popup-item-title { font-size: 0.9rem; font-weight: 700; }
 .popup-item-sub { font-size: 0.78rem; color: var(--ink-soft); }
+.popup-item-venue { font-size: 0.76rem; color: var(--accent); margin-top: 1px; }
 
 /* Make Leaflet popups follow the dark/light theme */
 .leaflet-popup-content-wrapper,
@@ -416,6 +423,24 @@ h3 { font-size: 1.15rem; }
   font-size: 0.92rem;
 }
 
+.detail-place {
+  display: flex;
+  gap: 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent-soft);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 0 0 16px;
+  font-size: 0.88rem;
+}
+.detail-place-pin { line-height: 1.4; }
+.detail-place-text { display: flex; flex-direction: column; gap: 2px; }
+.detail-place-text strong { color: var(--ink); }
+#detail-place-address { color: var(--ink-soft); }
+#detail-place-note { color: var(--ink-soft); margin-top: 2px; }
+#detail-place-source { font-size: 0.82rem; margin-top: 4px; align-self: flex-start; }
+
 .detail-lead {
   font-size: 1.06rem;
   color: var(--ink);
@@ -477,6 +502,9 @@ footer p { margin: 4px 0; }
   .explore-section, .detail-section, .sources-section, .collections-section { padding: 18px; }
   .result-count { margin: 6px 0 0; }
   .detail-grid { grid-template-columns: 1fr; gap: 14px; }
+  /* stack filters one per row so long composer names never overflow */
+  .filters { flex-direction: column; gap: 12px; }
+  .filters label { flex: 1 1 auto; width: 100%; }
 }
 
 /* Leaflet tooltips pick up the page font */

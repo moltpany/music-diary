@@ -42,8 +42,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1838,
       "city": "Leipzig",
       "country": "Germany",
-      "lat": 51.3397,
-      "lng": 12.3731,
+      "lat": 51.3389,
+      "lng": 12.3899,
       "mood": "初恋 · 温柔",
       "collections": [
         "love",
@@ -72,6 +72,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Schumann Träumerei (Kinderszenen Op. 15 No. 7)",
         "query": "Schumann Traumerei Kinderszenen Op 15 No 7"
+      },
+      "place": {
+        "name": "Schumann-Haus（舒曼故居）",
+        "address": "Inselstraße 18, Leipzig",
+        "certainty": "中",
+        "note": "舒曼与克拉拉 1840–1844 年的婚后住所，今为舒曼故居博物馆。《童年情景》1838 年作于莱比锡时期，此处作为舒曼的莱比锡纪念地标，非确切创作房间。",
+        "source": {
+          "label": "Schumann-Haus Leipzig",
+          "url": "https://www.schumannhaus.de/en/"
+        }
       }
     },
     {
@@ -82,8 +92,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1905,
       "city": "Paris",
       "country": "France",
-      "lat": 48.8566,
-      "lng": 2.3522,
+      "lat": 48.8718,
+      "lng": 2.338,
       "mood": "初恋 · 朦胧",
       "collections": [
         "love",
@@ -113,6 +123,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Debussy Clair de Lune (Suite bergamasque)",
         "query": "Debussy Clair de Lune Suite bergamasque"
+      },
+      "place": {
+        "name": "Opéra-Comique（Salle Favart）所在的巴黎二区",
+        "address": "Place Boieldieu, 75002 Paris",
+        "certainty": "中",
+        "note": "德彪西长期在巴黎生活与创作，《贝加马斯克组曲》1905 年于巴黎出版。此处取巴黎市中心一处确切地标作为城市级定位，非确切创作地点。",
+        "source": {
+          "label": "Opéra-Comique（Salle Favart）",
+          "url": "https://www.opera-comique.com/en/salle-favart"
+        }
       }
     },
     {
@@ -123,8 +143,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1810,
       "city": "Vienna",
       "country": "Austria",
-      "lat": 48.2082,
-      "lng": 16.3738,
+      "lat": 48.2128,
+      "lng": 16.3636,
       "mood": "心动",
       "collections": [
         "love",
@@ -153,6 +173,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Beethoven Für Elise, WoO 59",
         "query": "Beethoven Fur Elise WoO 59"
+      },
+      "place": {
+        "name": "Pasqualatihaus（贝多芬故居）",
+        "address": "Mölker Bastei 8, 1010 Wien",
+        "certainty": "中",
+        "note": "贝多芬在维也纳多次居住于此的一处，今为贝多芬纪念馆。《致爱丽丝》1810 年前后作于维也纳时期，此处作为其维也纳纪念地标，非确切创作房间。",
+        "source": {
+          "label": "Pasqualati House (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Pasqualati_House"
+        }
       }
     },
     {
@@ -163,8 +193,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1828,
       "city": "Vienna",
       "country": "Austria",
-      "lat": 48.2082,
-      "lng": 16.3738,
+      "lat": 48.1939,
+      "lng": 16.3553,
       "mood": "初恋 · 小夜曲",
       "collections": [
         "love",
@@ -198,6 +228,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Schubert Ständchen (Schwanengesang D. 957 No. 4)",
         "query": "Schubert Standchen Schwanengesang D 957"
+      },
+      "place": {
+        "name": "Schubert Sterbewohnung（舒伯特辞世居所）",
+        "address": "Kettenbrückengasse 6, 1040 Wien",
+        "certainty": "中",
+        "note": "舒伯特 1828 年在其兄费迪南德位于此处的寓所辞世，《天鹅之歌》正作于这最后数月。今为维也纳博物馆下属的舒伯特纪念馆。",
+        "source": {
+          "label": "Wien Museum：Schubert Sterbewohnung",
+          "url": "https://www.wienmuseum.at/schubert_sterbewohnung"
+        }
       }
     },
     {
@@ -237,6 +277,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Elgar Salut d'Amour, Op. 12",
         "query": "Elgar Salut d Amour Op 12"
+      },
+      "place": {
+        "name": "伦敦（埃尔加当时居所所在城市）",
+        "address": "London",
+        "certainty": "低",
+        "note": "埃尔加 1888 年订婚前后此曲于伦敦由 Schott 出版；其确切住所多有迁移，此处仅作城市级定位。",
+        "source": {
+          "label": "The Elgar Society：Salut d'Amour",
+          "url": "https://www.elgar.org/3salut.htm"
+        }
       }
     },
     {
@@ -247,8 +297,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1859,
       "city": "Munich",
       "country": "Germany",
-      "lat": 48.1351,
-      "lng": 11.582,
+      "lat": 48.1396,
+      "lng": 11.5794,
       "mood": "激情 · 狂喜",
       "collections": [
         "love",
@@ -282,6 +332,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Wagner Tristan und Isolde Prelude and Liebestod",
         "query": "Wagner Tristan und Isolde Prelude and Liebestod"
+      },
+      "place": {
+        "name": "Nationaltheater München（巴伐利亚国家歌剧院）",
+        "address": "Max-Joseph-Platz, München",
+        "certainty": "高",
+        "note": "《特里斯坦与伊索尔德》1865 年 6 月 10 日在此首演，汉斯·冯·彪罗指挥。",
+        "source": {
+          "label": "National Theatre, Munich (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/National_Theatre_(Munich)"
+        }
       }
     },
     {
@@ -292,8 +352,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1850,
       "city": "Weimar",
       "country": "Germany",
-      "lat": 50.9795,
-      "lng": 11.3235,
+      "lat": 50.9744,
+      "lng": 11.33,
       "mood": "激情 · 倾诉",
       "collections": [
         "love",
@@ -328,6 +388,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Liszt Liebestraum No. 3 in A-flat major",
         "query": "Liszt Liebestraum No 3"
+      },
+      "place": {
+        "name": "Liszt-Haus Weimar（李斯特故居）",
+        "address": "Marienstraße 17, Weimar",
+        "certainty": "中",
+        "note": "李斯特任职魏玛宫廷期间的住所，今为李斯特纪念馆。《爱之梦》1850 年出版于其魏玛丰产期，此处作为其魏玛纪念地标。",
+        "source": {
+          "label": "Liszt-Haus Weimar",
+          "url": "https://www.klassik-stiftung.de/en/liszt-house/"
+        }
       }
     },
     {
@@ -338,8 +408,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1869,
       "city": "Moscow",
       "country": "Russia",
-      "lat": 55.7558,
-      "lng": 37.6173,
+      "lat": 55.7595,
+      "lng": 37.6066,
       "mood": "激情 · 冲突",
       "collections": [
         "love"
@@ -367,6 +437,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Tchaikovsky Romeo and Juliet Fantasy Overture",
         "query": "Tchaikovsky Romeo and Juliet Fantasy Overture"
+      },
+      "place": {
+        "name": "Moscow Conservatory（莫斯科音乐学院）一带",
+        "address": "Bolshaya Nikitskaya 13, Moscow",
+        "certainty": "中",
+        "note": "《罗密欧与朱丽叶》1869 年作于莫斯科，1870 年在莫斯科首演；柴可夫斯基当时任教于莫斯科音乐学院，此处作为其莫斯科关联地标。",
+        "source": {
+          "label": "Moscow Conservatory (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Moscow_Conservatory"
+        }
       }
     },
     {
@@ -377,8 +457,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1901,
       "city": "Moscow",
       "country": "Russia",
-      "lat": 55.7558,
-      "lng": 37.6173,
+      "lat": 55.7595,
+      "lng": 37.6066,
       "mood": "激情 · 深情",
       "collections": [
         "love",
@@ -412,6 +492,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Rachmaninoff Piano Concerto No. 2, Adagio sostenuto",
         "query": "Rachmaninoff Piano Concerto No 2 second movement Adagio"
+      },
+      "place": {
+        "name": "Moscow Conservatory（莫斯科音乐学院）大厅一带",
+        "address": "Bolshaya Nikitskaya 13, Moscow",
+        "certainty": "中",
+        "note": "第二钢琴协奏曲 1901 年在莫斯科由作曲家本人独奏首演；此处取莫斯科音乐学院作为其莫斯科关联地标，非确切首演大厅。",
+        "source": {
+          "label": "Moscow Conservatory (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Moscow_Conservatory"
+        }
       }
     },
     {
@@ -422,8 +512,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1875,
       "city": "Paris",
       "country": "France",
-      "lat": 48.8566,
-      "lng": 2.3522,
+      "lat": 48.8709,
+      "lng": 2.3378,
       "mood": "激情 · 野性",
       "collections": [
         "love",
@@ -452,6 +542,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Bizet Carmen Habanera (L'amour est un oiseau rebelle)",
         "query": "Bizet Carmen Habanera L amour est un oiseau rebelle"
+      },
+      "place": {
+        "name": "Opéra-Comique（Salle Favart）",
+        "address": "Place Boieldieu, 75002 Paris",
+        "certainty": "高",
+        "note": "《卡门》1875 年 3 月 3 日在此首演，登场咏叹调「哈巴涅拉」由 Galli-Marié 首唱。",
+        "source": {
+          "label": "Opéra-Comique（Salle Favart）",
+          "url": "https://www.opera-comique.com/en/salle-favart"
+        }
       }
     },
     {
@@ -462,8 +562,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1902,
       "city": "Vienna",
       "country": "Austria",
-      "lat": 48.2082,
-      "lng": 16.3738,
+      "lat": 48.2026,
+      "lng": 16.3686,
       "mood": "思念 · 告别",
       "collections": [
         "love",
@@ -493,6 +593,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Mahler Symphony No. 5 Adagietto",
         "query": "Mahler Symphony No 5 Adagietto"
+      },
+      "place": {
+        "name": "维也纳（马勒任职宫廷歌剧院、与阿尔玛相识之城）",
+        "address": "Wien",
+        "certainty": "低",
+        "note": "第五交响曲 1901–1902 年主要作于迈尔尼希夏季作曲小屋；马勒同期在维也纳任职并与阿尔玛相识订婚，此处取维也纳作为情感关联的城市级定位。",
+        "source": {
+          "label": "Mahler Foundation：Symphony No. 5, Adagietto",
+          "url": "https://mahlerfoundation.org/mahler/compositions/symphony-no-5/symphony-no-5-movement-4-adagietto-sehr-langsam/"
+        }
       }
     },
     {
@@ -503,8 +613,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1892,
       "city": "Bad Ischl",
       "country": "Austria",
-      "lat": 47.7117,
-      "lng": 13.6233,
+      "lat": 47.7124,
+      "lng": 13.6217,
       "mood": "慰藉 · 摇篮曲",
       "collections": [
         "night",
@@ -534,6 +644,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Brahms Intermezzo Op. 117 No. 1",
         "query": "Brahms Intermezzo Op 117 No 1"
+      },
+      "place": {
+        "name": "Bad Ischl（勃拉姆斯避暑创作地）",
+        "address": "Bad Ischl, Oberösterreich",
+        "certainty": "中",
+        "note": "勃拉姆斯 1889–1896 年多个夏天在巴德伊舍避暑创作，《三首间奏曲》op. 117 即 1892 年夏作于此。坐标取该镇中心地标。",
+        "source": {
+          "label": "Bad Ischl (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Bad_Ischl"
+        }
       }
     },
     {
@@ -544,8 +664,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1904,
       "city": "Milan",
       "country": "Italy",
-      "lat": 45.4642,
-      "lng": 9.19,
+      "lat": 45.4676,
+      "lng": 9.1894,
       "mood": "思念 · 等待",
       "collections": [
         "love",
@@ -575,6 +695,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Puccini Un bel dì vedremo (Madama Butterfly)",
         "query": "Puccini Un bel di vedremo Madama Butterfly"
+      },
+      "place": {
+        "name": "Teatro alla Scala（米兰斯卡拉歌剧院）",
+        "address": "Via Filodrammatici 2, Milano",
+        "certainty": "高",
+        "note": "《蝴蝶夫人》1904 年 2 月 17 日在此首演。",
+        "source": {
+          "label": "La Scala (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/La_Scala"
+        }
       }
     },
     {
@@ -585,8 +715,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1886,
       "city": "Paris",
       "country": "France",
-      "lat": 48.8566,
-      "lng": 2.3522,
+      "lat": 48.8709,
+      "lng": 2.3378,
       "mood": "思念 · 消逝",
       "collections": [
         "love",
@@ -616,6 +746,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Saint-Saëns Le Cygne (The Swan)",
         "query": "Saint-Saens Le Cygne The Swan"
+      },
+      "place": {
+        "name": "巴黎（圣-桑长居与首演之城）",
+        "address": "Paris",
+        "certainty": "中",
+        "note": "《天鹅》1886 年作，同年于巴黎私人音乐会首演，1887 年出版。此处取巴黎市中心地标作为城市级定位。",
+        "source": {
+          "label": "Palazzetto Bru Zane：Le Cygne",
+          "url": "https://www.bruzanemediabase.com/en/exploration/works/carnaval-animaux-cygne-camille-saint-saens"
+        }
       }
     },
     {
@@ -626,8 +766,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1786,
       "city": "Vienna",
       "country": "Austria",
-      "lat": 48.2082,
-      "lng": 16.3738,
+      "lat": 48.2076,
+      "lng": 16.3666,
       "mood": "歌剧 · 困惑",
       "collections": [
         "love",
@@ -656,6 +796,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Mozart Voi che sapete (Le nozze di Figaro)",
         "query": "Mozart Voi che sapete Le nozze di Figaro"
+      },
+      "place": {
+        "name": "Altes Burgtheater am Michaelerplatz（旧城堡剧院旧址）",
+        "address": "Michaelerplatz, 1010 Wien",
+        "certainty": "高",
+        "note": "《费加罗的婚礼》1786 年 5 月 1 日在米夏埃尔广场的旧城堡剧院首演（该剧院 1888 年拆除，原址在米夏埃尔广场）。",
+        "source": {
+          "label": "Burgtheater (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Burgtheater"
+        }
       }
     },
     {
@@ -666,8 +816,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1853,
       "city": "Venice",
       "country": "Italy",
-      "lat": 45.4408,
-      "lng": 12.3155,
+      "lat": 45.4337,
+      "lng": 12.3339,
       "mood": "歌剧 · 及时行乐",
       "collections": [
         "love",
@@ -696,6 +846,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Verdi Libiamo ne' lieti calici (La traviata)",
         "query": "Verdi Libiamo ne lieti calici La traviata Brindisi"
+      },
+      "place": {
+        "name": "Teatro La Fenice（威尼斯凤凰歌剧院）",
+        "address": "Campo San Fantin, Venezia",
+        "certainty": "高",
+        "note": "《茶花女》1853 年 3 月 6 日在此首演。",
+        "source": {
+          "label": "Teatro La Fenice：La traviata",
+          "url": "https://www.teatrolafenice.it/en/event/giuseppe-verdi-la-traviata/"
+        }
       }
     },
     {
@@ -706,8 +866,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1900,
       "city": "Rome",
       "country": "Italy",
-      "lat": 41.9028,
-      "lng": 12.4964,
+      "lat": 41.9008,
+      "lng": 12.4956,
       "mood": "歌剧 · 诀别",
       "collections": [
         "love",
@@ -737,6 +897,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Puccini E lucevan le stelle (Tosca)",
         "query": "Puccini E lucevan le stelle Tosca"
+      },
+      "place": {
+        "name": "Teatro Costanzi（今罗马歌剧院）",
+        "address": "Piazza Beniamino Gigli, Roma",
+        "certainty": "高",
+        "note": "《托斯卡》1900 年 1 月 14 日在科斯坦齐剧院首演。",
+        "source": {
+          "label": "Teatro dell'Opera di Roma (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Teatro_dell'Opera_di_Roma"
+        }
       }
     },
     {
@@ -747,8 +917,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1911,
       "city": "Dresden",
       "country": "Germany",
-      "lat": 51.0504,
-      "lng": 13.7373,
+      "lat": 51.0541,
+      "lng": 13.735,
       "mood": "歌剧 · 惆怅",
       "collections": [
         "love",
@@ -782,6 +952,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Richard Strauss Der Rosenkavalier Suite",
         "query": "Richard Strauss Der Rosenkavalier Suite waltz"
+      },
+      "place": {
+        "name": "Semperoper（德累斯顿森帕歌剧院）",
+        "address": "Theaterplatz 2, Dresden",
+        "certainty": "高",
+        "note": "《玫瑰骑士》1911 年 1 月 26 日在德累斯顿宫廷歌剧院（今森帕歌剧院）首演。",
+        "source": {
+          "label": "Semperoper (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Semperoper"
+        }
       }
     },
     {
@@ -792,8 +972,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1832,
       "city": "Paris",
       "country": "France",
-      "lat": 48.8566,
-      "lng": 2.3522,
+      "lat": 48.8782,
+      "lng": 2.3387,
       "mood": "夜 · 温柔",
       "collections": [
         "night",
@@ -822,6 +1002,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Chopin Nocturne in E-flat major, Op. 9 No. 2",
         "query": "Chopin Nocturne Op 9 No 2 E flat major"
+      },
+      "place": {
+        "name": "Square d'Orléans（肖邦巴黎住所）",
+        "address": "80 rue Taitbout, 75009 Paris",
+        "certainty": "中",
+        "note": "肖邦 1842–1848 年居于 Square d'Orléans 9 号；Op. 9 夜曲 1832 年作于其初到巴黎时期，此处作为其巴黎纪念地标。",
+        "source": {
+          "label": "Square d'Orléans (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Square_d'Orl%C3%A9ans"
+        }
       }
     },
     {
@@ -832,8 +1022,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1832,
       "city": "Paris",
       "country": "France",
-      "lat": 48.8566,
-      "lng": 2.3522,
+      "lat": 48.8782,
+      "lng": 2.3387,
       "mood": "离别 · 怀旧",
       "collections": [
         "love",
@@ -863,6 +1053,16 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "Chopin Étude Op. 10 No. 3 (Tristesse)",
         "query": "Chopin Etude Op 10 No 3 Tristesse"
+      },
+      "place": {
+        "name": "Square d'Orléans（肖邦巴黎住所）",
+        "address": "80 rue Taitbout, 75009 Paris",
+        "certainty": "中",
+        "note": "Op. 10 练习曲 1832 年作、1833 年出版，正值肖邦初到巴黎；此处取其后来的 Square d'Orléans 住所作为巴黎纪念地标。",
+        "source": {
+          "label": "Square d'Orléans (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Square_d'Orl%C3%A9ans"
+        }
       }
     }
   ]

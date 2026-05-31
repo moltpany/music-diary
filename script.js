@@ -144,10 +144,12 @@
       '<strong class="popup-city">' + escapeHtml(group.city) + "</strong>" +
       '<span class="popup-meta">' + group.entries.length + " 首作品</span>";
     var items = group.entries.map(function (entry) {
+      var venue = entry.place && entry.place.name ? entry.place.name : "";
       return (
         '<button type="button" class="popup-item" data-id="' + escapeHtml(entry.id) + '">' +
           '<span class="popup-item-title">' + escapeHtml(entry.title) + "</span>" +
           '<span class="popup-item-sub">' + escapeHtml(entry.composer + " · " + entry.year) + "</span>" +
+          (venue ? '<span class="popup-item-venue">📍 ' + escapeHtml(venue) + "</span>" : "") +
         "</button>"
       );
     }).join("");
@@ -321,6 +323,25 @@
       collContainer.hidden = false;
     } else {
       collContainer.hidden = true;
+    }
+
+    var placeBox = $("detail-place");
+    if (entry.place && entry.place.name) {
+      var p = entry.place;
+      setText("detail-place-name", p.name + (p.certainty ? "（地点确定度：" + p.certainty + "）" : ""));
+      setText("detail-place-address", p.address || "");
+      setText("detail-place-note", p.note || "");
+      var ps = $("detail-place-source");
+      if (p.source && p.source.url) {
+        ps.href = p.source.url;
+        ps.textContent = "地点来源：" + (p.source.label || "查看") + " ↗";
+        ps.hidden = false;
+      } else {
+        ps.hidden = true;
+      }
+      placeBox.hidden = false;
+    } else {
+      placeBox.hidden = true;
     }
 
     var links = buildListeningLinks(entry.listening);
