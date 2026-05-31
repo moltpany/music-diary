@@ -8,14 +8,20 @@
 
 Music Diary 把不同作曲家、不同时代的古典音乐作品，按**情感维度**和**诞生地点**整理在一起。古典音乐里的「爱情」很少是直白的甜言蜜语，更多是克制的悸动、炽热的渴望、忧伤的思念，乃至近乎宗教般的狂喜。
 
-这本日记提供两种浏览方式，共享同一份带来源的数据：
+这本日记按**歌单（collections）**整理作品，「爱情」只是其中一个歌单。两种浏览方式共享同一份带来源的数据：
 
-- **地图视图**：用 Leaflet + OpenStreetMap，把每首作品放回它的诞生地或首演地。
-- **主题视图**：不依赖地图，按四个情感维度分组浏览——
-  - 初恋的悸动与朦胧
-  - 炽热的渴望与激情
-  - 忧伤的离别与思念
-  - 歌剧舞台上的爱情宣言
+- **地图**：用 Leaflet + OpenStreetMap，把每首作品放回它的诞生地或首演地；点击图标会弹出作品，并可通过「查看作品详情」按钮跳转到详情（参考 Mozart Journey）。
+- **歌单与收藏**：每个歌单列出它收录的作品，每一首都可点击跳转到详情。一首作品可以同时属于多个歌单。
+
+当前歌单：
+
+- `love` 爱情 —— 古典音乐中的爱情（内部仍保留初恋 / 激情 / 思念 / 歌剧四种情感色彩）
+- `night` 深夜与月光
+- `piano` 钢琴独语
+- `stage` 歌剧舞台
+- `farewell` 思念与告别
+
+歌单模型与「一首作品可属多个歌单」的做法参考自 [Mozart Journey](https://moltpany.github.io/mozart-journey/) 的 collections。
 
 ## 与 Mozart Journey 的关系
 
@@ -55,6 +61,7 @@ python -m http.server 8000
 - 不编造日期、地点、首演背景或作品含义。
 - 对不确定的史实采用保守措辞。
 - 每一条作品都带一份 `source.label` + `source.url` + `source.summary`。
+- 来源优先采用**音乐家官方门户与研究机构**（Beethoven-Haus、Schumann-Portal、肖邦国家研究所 NIFC、Brahms-Portal、Mahler Foundation、Palazzetto Bru Zane、普契尼研究中心、莫扎特基金会柯歇尔目录等）；少数尚无官方逐曲页面者退用权威乐谱档案 IMSLP，并在 `content-audit.md` 标注。
 
 详见：
 

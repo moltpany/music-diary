@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Music Diary · 古典音乐中的爱情</title>
-    <meta name="description" content="一本以爱情为线索的古典音乐日记：地图视图按地点浏览，主题视图按情感维度浏览，每条都带可信来源。Boya 维护。">
+    <title>Music Diary · 古典音乐日记</title>
+    <meta name="description" content="一本古典音乐日记：多个歌单（爱情、深夜与月光、钢琴独语、歌剧舞台、思念与告别），地图视图可弹出作品详情，歌单里每首可点击跳转，每条都带官方门户来源。Boya 维护。">
     <script>
       // Pre-init theme before render to avoid a flash of the wrong theme/label
       (function () {
@@ -33,6 +33,7 @@
         <a href="#top" class="brand">Music Diary</a>
         <div class="nav-links">
           <a href="#explore">浏览</a>
+          <a href="#collections">歌单</a>
           <a href="#detail">作品详情</a>
           <a href="#sources">来源</a>
           <a class="cross-link" href="https://moltpany.github.io/mozart-journey/">Mozart Journey ↗</a>
@@ -51,9 +52,9 @@
         })();
       </script>
       <div class="hero-content" id="top">
-        <p class="eyebrow">古典音乐中的爱情 · 由 Boya 维护</p>
+        <p class="eyebrow">古典音乐日记 · 由 Boya 维护</p>
         <h1>Music Diary</h1>
-        <p class="hero-copy">古典音乐里的「爱情」很少是直白的甜言蜜语，更多是克制的悸动、炽热的渴望、忧伤的思念，乃至近乎宗教般的狂喜。这本日记把不同作曲家、不同时代的作品按情感维度与诞生地点整理在一起——同一份带来源的数据，可以按<strong>地图</strong>看，也可以按<strong>主题</strong>看。</p>
+        <p class="hero-copy">一本按<strong>歌单</strong>整理的古典音乐日记。「爱情」只是其中一个歌单，另有「深夜与月光」「钢琴独语」「歌剧舞台」「思念与告别」。在<strong>地图</strong>上点开图标，可以弹出作品并跳到详情；在<strong>歌单</strong>里，每一首也都能点击跳转。每条都带音乐家官方门户的来源。</p>
         <p class="hero-sub">姊妹作品：<a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> —— 专注莫扎特一个人的足迹地图。</p>
       </div>
     </header>
@@ -62,49 +63,37 @@
       <section class="explore-section" id="explore" aria-labelledby="explore-title">
         <div class="explore-head">
           <div>
-            <p class="section-kicker">浏览方式</p>
-            <h2 id="explore-title">按地图，或按情感主题</h2>
+            <p class="section-kicker">地图</p>
+            <h2 id="explore-title">在地图上点开作品</h2>
           </div>
-          <div class="view-switch" role="tablist" aria-label="切换浏览视图">
-            <button id="view-map" class="view-btn" role="tab" type="button" aria-selected="true">地图视图</button>
-            <button id="view-theme" class="view-btn" role="tab" type="button" aria-selected="false">主题视图</button>
-          </div>
+          <p id="result-count" class="result-count" aria-live="polite"></p>
         </div>
 
         <form class="filters" aria-label="作品筛选">
           <label>
             搜索
-            <input id="search-filter" class="search-input" type="search" placeholder="肖邦 / 月光 / Vienna / 歌剧">
+            <input id="search-filter" class="search-input" type="search" placeholder="肖邦 / 夜曲 / Vienna / 歌剧">
           </label>
           <label>
-            主题
-            <select id="theme-filter"></select>
+            歌单
+            <select id="collection-filter"></select>
           </label>
           <label>
             作曲家
             <select id="composer-filter"></select>
           </label>
-          <p id="result-count" class="result-count" aria-live="polite"></p>
         </form>
 
-        <!-- MAP VIEW -->
-        <div id="map-view" class="view-panel">
-          <div id="map" role="application" aria-label="爱情主题作品诞生地点互动地图"></div>
-          <p id="map-warning" class="map-warning" hidden>地图底图需要联网加载；可以切换到「主题视图」继续阅读。</p>
-        </div>
-
-        <!-- THEME VIEW -->
-        <div id="theme-view" class="view-panel" hidden>
-          <div id="theme-groups" class="theme-groups"></div>
-        </div>
+        <div id="map" role="application" aria-label="作品诞生地点互动地图；点击图标可弹出作品并查看详情"></div>
+        <p id="map-warning" class="map-warning" hidden>地图底图需要联网加载；下方「歌单与收藏」仍可正常浏览与跳转。</p>
       </section>
 
       <section class="detail-section" id="detail" aria-live="polite">
         <div class="detail-main">
           <p class="section-kicker">作品详情</p>
           <h2 id="detail-title">选择一首作品</h2>
-          <p id="detail-meta" class="detail-meta">点击地图点位，或主题视图里的卡片，这里会显示作品背景与来源。</p>
-          <div id="detail-themes" class="detail-themes" hidden></div>
+          <p id="detail-meta" class="detail-meta">点击地图图标弹出的「查看作品详情」按钮，或歌单里的任意一首，这里会显示作品背景与官方来源。</p>
+          <div id="detail-collections" class="detail-collections" hidden></div>
           <div id="detail-listening" class="detail-listening" hidden>
             <strong id="detail-listening-target" class="listening-target"></strong>
             <div id="detail-listening-links"></div>
@@ -120,10 +109,20 @@
         </div>
       </section>
 
+      <section class="collections-section" id="collections" aria-labelledby="collections-title">
+        <div class="section-heading">
+          <p class="section-kicker">歌单与收藏</p>
+          <h2 id="collections-title">把作品按收藏整理</h2>
+        </div>
+        <p class="collections-intro">爱情只是其中一个歌单。一首作品可以同时属于多个歌单（例如《天鹅》既在「爱情」也在「深夜与月光」「思念与告别」）。点击任意一首即可跳到作品详情。</p>
+        <nav id="collection-section-nav" class="collection-nav" aria-label="歌单快速导航"></nav>
+        <div id="collection-section-list" class="collection-list"></div>
+      </section>
+
       <section class="sources-section" id="sources" aria-labelledby="sources-title">
         <p class="section-kicker">资料说明</p>
-        <h2 id="sources-title">每一条都带来源</h2>
-        <p>本作品的立场与 Mozart Journey 一致：不编造日期、地点或创作背景；对不确定的史实采用保守措辞。每首作品都保存一份 <code>source.label</code> + <code>source.url</code>，数据维护在 <code>data/music-diary.json</code>。第一版的来源以权威音乐百科与门户为起点，后续由 Boya 持续升级为作曲家官方门户。</p>
+        <h2 id="sources-title">每一条都带官方门户来源</h2>
+        <p>本作品的立场与 Mozart Journey 一致：不编造日期、地点或创作背景；对不确定的史实采用保守措辞。来源优先采用<strong>音乐家官方门户与研究机构</strong>（如波恩贝多芬故居、Schumann-Portal、肖邦国家研究所 NIFC、Brahms-Portal、Mahler Foundation、Palazzetto Bru Zane、普契尼研究中心、莫扎特基金会柯歇尔目录等）；少数尚无官方逐曲页面的作品，使用权威乐谱档案 IMSLP，并在 <code>content-audit.md</code> 中标注。数据维护在 <code>data/music-diary.json</code>。</p>
         <div id="source-list" class="source-list"></div>
       </section>
     </main>
