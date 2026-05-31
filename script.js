@@ -376,8 +376,10 @@
 
     var stillVisible = state.filtered.some(function (e) { return e.id === state.selectedId; });
     if (!stillVisible) {
-      state.selectedId = null;
-      renderDetail(null);
+      var fallback = state.filtered[0] || null;
+      state.selectedId = fallback ? fallback.id : null;
+      renderDetail(fallback);
+      highlightSelected();
     }
   }
 
