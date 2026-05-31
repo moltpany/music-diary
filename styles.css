@@ -371,6 +371,30 @@ h3 { font-size: 1.15rem; }
   font-size: 0.92rem;
 }
 
+.detail-lead {
+  font-size: 1.06rem;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin: 8px 0 18px;
+}
+.detail-grid article h3 { margin: 0 0 6px; }
+.detail-grid article p { margin: 0; }
+
+.detail-sources {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  margin-bottom: 16px;
+}
+.detail-sources h4 { margin: 0 0 10px; font-size: 0.95rem; }
+.detail-source-item { margin-bottom: 12px; }
+.detail-source-item a { font-size: 0.9rem; }
+.detail-source-item p { margin: 3px 0 0; font-size: 0.85rem; color: var(--ink-soft); }
+
 /* ---- Sources ----------------------------------------------------------- */
 .sources-section {
   background: var(--surface);
@@ -386,10 +410,11 @@ h3 { font-size: 1.15rem; }
   border-radius: 11px;
   padding: 15px 16px;
 }
-.source-row h3 { margin: 0 0 6px; font-size: 1rem; }
+.source-row h3 { margin: 0 0 8px; font-size: 1rem; }
 .source-composer { color: var(--accent); font-weight: 400; font-size: 0.85rem; }
-.source-row p { margin: 0 0 8px; font-size: 0.9rem; color: var(--ink-soft); }
-.source-row a { font-size: 0.88rem; }
+.source-item { margin-bottom: 10px; }
+.source-item a { font-size: 0.88rem; }
+.source-item p { margin: 3px 0 0; font-size: 0.85rem; color: var(--ink-soft); }
 
 /* ---- Footer ------------------------------------------------------------ */
 footer {
@@ -404,8 +429,9 @@ footer p { margin: 4px 0; }
 /* ---- Responsive -------------------------------------------------------- */
 @media (max-width: 640px) {
   #map { height: 380px; }
-  .explore-section, .detail-section, .sources-section { padding: 18px; }
+  .explore-section, .detail-section, .sources-section, .collections-section { padding: 18px; }
   .result-count { margin: 6px 0 0; }
+  .detail-grid { grid-template-columns: 1fr; gap: 14px; }
 }
 
 /* Leaflet tooltips pick up the page font */

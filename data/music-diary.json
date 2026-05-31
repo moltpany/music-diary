@@ -2,7 +2,7 @@
   "meta": {
     "title": "Music Diary",
     "subtitle": "古典音乐日记",
-    "description": "一本古典音乐日记，按歌单与诞生地点整理作品。「爱情」是其中一个歌单，另有「深夜与月光」「钢琴独语」「歌剧舞台」「思念与告别」等。地图视图按地点浏览并可弹出作品详情，歌单视图按收藏浏览且每首可点击跳转，两者共享同一份带来源的数据。",
+    "description": "一本古典音乐日记，按歌单与诞生地点整理作品。「爱情」是其中一个歌单，另有「深夜与月光」「钢琴独语」「歌剧舞台」「思念与告别」等。地图视图按地点浏览并可弹出作品详情，歌单视图按收藏浏览且每首可点击跳转，两者共享同一份带来源的数据。每首作品有创作背景与作品含义两段介绍，并附官方门户来源。",
     "curatedBy": "Boya",
     "updated": "2026-05-31"
   },
@@ -46,11 +46,25 @@
       "lng": 12.3731,
       "mood": "初恋 · 温柔",
       "collections": ["love", "piano"],
-      "blurb": "《童年情景》第七首。舒曼在 1838 年春天写下这套作品，正值他与未来妻子克拉拉·维克因其父亲反对而被迫分离的时期。它不是热烈的表白，而是成年人回忆童年时那种纯净到近乎忧伤的温柔。",
+      "blurb": "《童年情景》第七首，成年人回忆童年时那种纯净到近乎忧伤的温柔。",
+      "background": "1838 年 2–3 月，舒曼一口气写了约 30 首钢琴小品，从中选出 13 首编成《童年情景》op. 15，次年由 Breitkopf & Härtel 在莱比锡出版。这正是他与未来妻子克拉拉·维克因其父反对而被迫分离、苦苦争取婚姻的时期；他在 1838 年 3 月 19 日写给克拉拉的信里提到这些「小巧古怪的小东西」。第七首《梦幻曲》(Träumerei，意为「梦想/出神」) 是其中最著名的一首。",
+      "meaning": "舒曼特别说明，这不是写给孩子弹、也不是写给孩子听的音乐，而是成年人回望童年时的情感投影。《梦幻曲》用一个不断上行、又一次次温柔回落的乐句，把「怀念」写成了可以反复聆听的形状——它不是热烈的告白，而是一种克制、纯净到近乎忧伤的温柔，也因此成了整部浪漫主义钢琴文献里最被偏爱的片段之一。",
+      "sources": [
+        {
+          "label": "Schumann-Portal：Kinderszenen op. 15",
+          "url": "https://www.schumann-portal.de/3213.html",
+          "summary": "罗伯特与克拉拉·舒曼协会的官方 Schumann-Portal 记载：《童年情景》op. 15 约作于 1838 年 2–3 月，从约 30 首小品中选出，1839 年由 Breitkopf & Härtel 在莱比锡出版；第七首 Träumerei 为其中最著名者。"
+        },
+        {
+          "label": "Wikipedia：Kinderszenen",
+          "url": "https://en.wikipedia.org/wiki/Kinderszenen",
+          "summary": "补充：舒曼在与克拉拉被迫分离的困难时期写作此套作品，并称其为追忆成年人眼中的童年；Träumerei 意为「梦想」。"
+        }
+      ],
       "source": {
         "label": "Schumann-Portal：Kinderszenen op. 15",
         "url": "https://www.schumann-portal.de/3213.html",
-        "summary": "罗伯特与克拉拉·舒曼协会的官方 Schumann-Portal 记载：《童年情景》op. 15 约作于 1838 年 2–3 月，舒曼从约 30 首小品中选出收入，1839 年由 Breitkopf & Härtel 在莱比锡出版；第七首 Träumerei 为其中最著名者。"
+        "summary": "罗伯特与克拉拉·舒曼协会的官方 Schumann-Portal 记载：《童年情景》op. 15 约作于 1838 年 2–3 月，从约 30 首小品中选出，1839 年由 Breitkopf & Härtel 在莱比锡出版；第七首 Träumerei 为其中最著名者。"
       },
       "listening": { "target": "Schumann Träumerei (Kinderszenen Op. 15 No. 7)", "query": "Schumann Traumerei Kinderszenen Op 15 No 7" }
     },
@@ -66,7 +80,21 @@
       "lng": 2.3522,
       "mood": "初恋 · 朦胧",
       "collections": ["love", "night", "piano"],
-      "blurb": "《贝加马斯克组曲》第三首。德彪西约 1890 年开始构思，1905 年出版前大幅修订。标题取自魏尔伦的诗《月光》。音符像月光洒在湖面上，暧昧、朦胧、不敢触碰。",
+      "blurb": "暧昧、朦胧、不敢触碰，音符像月光洒在湖面上。",
+      "background": "《贝加马斯克组曲》是德彪西第一部重要的钢琴作品，约 1890 年（他二十八岁左右）开始构思，却直到 1905 年出版前才大幅修订定稿。第三乐章《月光》最初题为《感伤的散步》(Promenade sentimentale)，后改用现名；标题与整部组曲的灵感都来自魏尔伦的诗——「月光」一词与「假面与贝加摩舞」都出自他的诗句。",
+      "meaning": "德彪西不写明确的旋律线，而是用流动的和声与踏板的余响，让声音像月光一样在湖面上散开。它把「爱情」写成了一种不敢触碰的氛围：暧昧、朦胧、含而不露。正是这种印象派式的、近乎触觉的温柔，使《月光》成为德彪西最著名的作品，也是整个古典音乐中辨识度最高的片段之一。",
+      "sources": [
+        {
+          "label": "Palazzetto Bru Zane Mediabase：Suite bergamasque – Clair de lune",
+          "url": "https://www.bruzanemediabase.com/en/exploration/works/suite-bergamasque-clair-lune-claude-debussy",
+          "summary": "法国浪漫音乐中心 Palazzetto Bru Zane 的资料库记载：《贝加马斯克组曲》约 1890 年创作、1905 年出版；第三乐章《月光》得名自魏尔伦的诗，是德彪西最著名的钢琴作品之一。"
+        },
+        {
+          "label": "Wikipedia：Suite bergamasque",
+          "url": "https://en.wikipedia.org/wiki/Suite_bergamasque",
+          "summary": "补充：《月光》原题《感伤的散步》，1905 年出版前经大幅修订；标题取自魏尔伦同名诗。"
+        }
+      ],
       "source": {
         "label": "Palazzetto Bru Zane Mediabase：Suite bergamasque – Clair de lune",
         "url": "https://www.bruzanemediabase.com/en/exploration/works/suite-bergamasque-clair-lune-claude-debussy",
@@ -86,11 +114,25 @@
       "lng": 16.3738,
       "mood": "心动",
       "collections": ["love", "piano"],
-      "blurb": "草稿手稿题记标为 1810 年，生前未出版，去世约 40 年后才被发现。「爱丽丝」究竟是谁至今没有定论。它未必真是情书，但两百年来已成为西方音乐中最经典的「心动瞬间」符号。",
+      "blurb": "两百年来最经典的「心动瞬间」符号，但「爱丽丝」究竟是谁仍无定论。",
+      "background": "这首 A 小调钢琴小品的草稿题记标为 1810 年。贝多芬生前没有发表它，直到去世约四十年后，学者 Ludwig Nohl 才声称见到原谱并于 1867 年出版，「Für Elise（致爱丽丝）」之名即来自他——而原始手稿此后下落不明，标题无法核实。波恩贝多芬故居（Beethoven-Haus）的波德默收藏至今藏有该曲的一份草稿手稿。",
+      "meaning": "「爱丽丝」到底是谁，学界众说纷纭（特蕾莎·马尔法蒂、伊丽莎白·勒克尔等都被提名过），至今没有定论。这份「不确定」反而成了它的一部分魅力：它未必真是一封情书，却用最简单的回旋曲式，把怦然心动的那一刻凝固成人人能哼出的旋律——两百年来，它几乎成了西方音乐里「心动」本身的代名词。",
+      "sources": [
+        {
+          "label": "Beethoven-Haus Bonn：Bagatelle a-Moll WoO 59",
+          "url": "https://www.beethoven.de/de/work/view/5327609864912896/Bagatelle+f%C3%BCr+Klavier+(a-Moll)+WoO+59",
+          "summary": "波恩贝多芬故居（Beethoven-Haus Bonn）官方作品库收录 A 小调钢琴小品 WoO 59；其波德默收藏藏有该曲草稿手稿。标题「Für Elise」源自 Ludwig Nohl，原谱已佚。"
+        },
+        {
+          "label": "Wikipedia：Für Elise",
+          "url": "https://en.wikipedia.org/wiki/F%C3%BCr_Elise",
+          "summary": "补充：手稿题记日期为 1810 年；生前未出版，约 40 年后由 Nohl 发现并于 1867 年出版；「爱丽丝」身份不明，曾被推测为特蕾莎·马尔法蒂等。"
+        }
+      ],
       "source": {
         "label": "Beethoven-Haus Bonn：Bagatelle a-Moll WoO 59",
         "url": "https://www.beethoven.de/de/work/view/5327609864912896/Bagatelle+f%C3%BCr+Klavier+(a-Moll)+WoO+59",
-        "summary": "波恩贝多芬故居（Beethoven-Haus Bonn）官方作品库收录 A 小调钢琴小品 WoO 59；其波德默收藏（Bodmer-Sammlung）藏有该曲草稿手稿。标题「Für Elise」源自 Ludwig Nohl，原谱已佚，无法核实。"
+        "summary": "波恩贝多芬故居（Beethoven-Haus Bonn）官方作品库收录 A 小调钢琴小品 WoO 59；其波德默收藏藏有该曲草稿手稿。标题「Für Elise」源自 Ludwig Nohl，原谱已佚。"
       },
       "listening": { "target": "Beethoven Für Elise, WoO 59", "query": "Beethoven Fur Elise WoO 59" }
     },
@@ -106,7 +148,21 @@
       "lng": 16.3738,
       "mood": "初恋 · 小夜曲",
       "collections": ["love", "night"],
-      "blurb": "选自舒伯特生命最后一年（1828）写下、去世后才结集出版的《天鹅之歌》，歌词取自雷尔斯塔布的诗：恋人在月光花园里恳求爱人前来。钢琴伴奏的流动感像是深夜按捺不住的脚步声。",
+      "blurb": "深夜花园里，恋人按捺不住的脚步声。",
+      "background": "1828 年，舒伯特在生命的最后几个月里写下一批歌曲；他去世后，出版商哈斯林格把它们结集为《天鹅之歌》(Schwanengesang, D. 957)，1829 年于维也纳出版。全集共 14 首，前 7 首用雷尔斯塔布的诗、6 首用海涅的诗。第四首《小夜曲》取自雷尔斯塔布，是其中最著名的一首。",
+      "meaning": "歌词是一位恋人在月夜花园里的低声恳求：「我的歌声穿过夜色轻轻哀求……来到我身边吧。」钢琴伴奏模仿拨弦小夜曲，音型轻轻晃动，像是深夜里按捺不住、又不敢惊动对方的脚步声。它把初恋的渴望写得既炽热又克制，成为艺术歌曲中「小夜曲」体裁的典范。",
+      "sources": [
+        {
+          "label": "IMSLP：Schwanengesang, D. 957 (Schubert)",
+          "url": "https://imslp.org/wiki/Schwanengesang,_D.957_(Schubert,_Franz)",
+          "summary": "IMSLP 收录《天鹅之歌》(D. 957) 的原始版本与乐谱信息：14 首歌曲均作于 1828 年，1829 年由 Tobias Haslinger 在维也纳出版；第四首《小夜曲》取自雷尔斯塔布的诗。"
+        },
+        {
+          "label": "Wikipedia：Schwanengesang",
+          "url": "https://en.wikipedia.org/wiki/Schwanengesang",
+          "summary": "补充：《天鹅之歌》为舒伯特去世后结集出版的歌曲集，前七首用雷尔斯塔布诗、六首用海涅诗；《小夜曲》描写恋人在月夜花园中的恳求。"
+        }
+      ],
       "source": {
         "label": "IMSLP：Schwanengesang, D. 957 (Schubert)",
         "url": "https://imslp.org/wiki/Schwanengesang,_D.957_(Schubert,_Franz)",
@@ -126,11 +182,25 @@
       "lng": -0.1278,
       "mood": "甜蜜 · 表白",
       "collections": ["love"],
-      "blurb": "埃尔加 1888 年写成，当时正与卡罗琳·爱丽丝·罗伯茨热恋；因她精通德语，他最初取名「Liebesgruss（爱的问候）」。同年回到伦敦后，他把这首曲子作为订婚礼物献给她。英式绅士的优雅表白，甜蜜但不腻。",
+      "blurb": "献给未婚妻的订婚礼物，英式绅士的优雅表白。",
+      "background": "1888 年，埃尔加正与卡罗琳·爱丽丝·罗伯茨热恋。他写下这首小品作为订婚礼物，因爱丽丝精通德语而取名「Liebesgruss（爱的问候）」，并题献「à Carice」——Carice 是 Caroline Alice 两个名字的合写，后来也成了他们女儿的名字。出版商 Schott 把标题改成法文「Salut d'Amour」，因为法文名更利于在欧洲销售。",
+      "meaning": "这是一首典型的沙龙小品：旋律温柔、优雅、亲切，把爱意写成一句得体而真挚的「问候」。它没有戏剧性的起伏，却凭借那份英式绅士的含蓄甜美，成为埃尔加流传最广、被改编最多的作品之一——一份用音乐写成的求婚信物。",
+      "sources": [
+        {
+          "label": "The Elgar Society：Salut d'Amour / Mot d'Amour",
+          "url": "https://www.elgar.org/3salut.htm",
+          "summary": "埃尔加协会（The Elgar Society）官网记载：埃尔加 1888 年创作此曲作为订婚礼物献给卡罗琳·爱丽丝·罗伯茨，原名 Liebesgruss，题献「à Carice」；后改法文名以利销售。"
+        },
+        {
+          "label": "Wikipedia：Salut d'Amour",
+          "url": "https://en.wikipedia.org/wiki/Salut_d'Amour",
+          "summary": "补充：埃尔加 1888 年 7 月完成此曲，9 月回伦敦后作为订婚礼物相赠；最初为小提琴与钢琴而作，是其最著名作品之一。"
+        }
+      ],
       "source": {
         "label": "The Elgar Society：Salut d'Amour / Mot d'Amour",
         "url": "https://www.elgar.org/3salut.htm",
-        "summary": "埃尔加协会（The Elgar Society）官网记载：埃尔加 1888 年夏创作此曲，原名 Liebesgruss，献给未婚妻卡罗琳·爱丽丝·罗伯茨，题献「à Carice」；后改法文名以利在欧洲销售。"
+        "summary": "埃尔加协会（The Elgar Society）官网记载：埃尔加 1888 年创作此曲作为订婚礼物献给卡罗琳·爱丽丝·罗伯茨，原名 Liebesgruss，题献「à Carice」；后改法文名以利销售。"
       },
       "listening": { "target": "Elgar Salut d'Amour, Op. 12", "query": "Elgar Salut d Amour Op 12" }
     },
@@ -146,11 +216,25 @@
       "lng": 11.5820,
       "mood": "激情 · 狂喜",
       "collections": ["love", "stage"],
-      "blurb": "全剧作于 1857–1859 年，1865 年在慕尼黑首演。这被视为古典音乐史上最极端的爱情描写之一：不伦之爱的渴望被升华为近乎宗教的狂喜，开篇的「特里斯坦和弦」更直接改变了西方和声语言。",
+      "blurb": "不伦之爱被升华为近乎宗教的狂喜，「特里斯坦和弦」改变了西方和声。",
+      "background": "瓦格纳于 1857–1859 年创作歌剧《特里斯坦与伊索尔德》，1860 年由 Breitkopf & Härtel 首版，1865 年 6 月 10 日在慕尼黑首演（汉斯·冯·彪罗指挥）。创作期间，瓦格纳本人正深陷与玛蒂尔德·韦森东克的恋情，这段无法实现的爱情被普遍认为投射进了全剧。音乐会上常把开场的「前奏曲」与女主角在终幕的咏叹「爱之死」(Liebestod) 连成一体演出。",
+      "meaning": "这被视为古典音乐史上最极端的爱情描写：渴望被推到极致，肉身之爱被升华为近乎宗教的、唯有在死亡中才能圆满的合一。开篇那个悬而不决、迟迟不肯解决的「特里斯坦和弦」，把「欲望」直接写进了和声本身，模糊了调性的边界——它被公认为直接改变了西方和声语言、并预示了二十世纪音乐的转折点。",
+      "sources": [
+        {
+          "label": "IMSLP：Tristan und Isolde, WWV 90 (Wagner)",
+          "url": "https://imslp.org/wiki/Tristan_und_Isolde,_WWV_90_(Wagner,_Richard)",
+          "summary": "IMSLP 收录《特里斯坦与伊索尔德》(WWV 90) 的乐谱与版本信息：作于 1857–1859 年，1860 年首版，1865 年 6 月 10 日在慕尼黑首演（汉斯·冯·彪罗指挥）。"
+        },
+        {
+          "label": "Wikipedia：Tristan und Isolde",
+          "url": "https://en.wikipedia.org/wiki/Tristan_und_Isolde",
+          "summary": "补充：「前奏曲与爱之死」是序曲与终幕咏叹的音乐会版本；开篇的「特里斯坦和弦」对后世和声影响深远。"
+        }
+      ],
       "source": {
         "label": "IMSLP：Tristan und Isolde, WWV 90 (Wagner)",
         "url": "https://imslp.org/wiki/Tristan_und_Isolde,_WWV_90_(Wagner,_Richard)",
-        "summary": "IMSLP 收录《特里斯坦与伊索尔德》(WWV 90) 的乐谱与版本信息：作于 1857–1859 年，1860 年由 Breitkopf & Härtel 首版，1865 年 6 月 10 日在慕尼黑首演（汉斯·冯·彪罗指挥）。"
+        "summary": "IMSLP 收录《特里斯坦与伊索尔德》(WWV 90) 的乐谱与版本信息：作于 1857–1859 年，1860 年首版，1865 年 6 月 10 日在慕尼黑首演（汉斯·冯·彪罗指挥）。"
       },
       "listening": { "target": "Wagner Tristan und Isolde Prelude and Liebestod", "query": "Wagner Tristan und Isolde Prelude and Liebestod" }
     },
@@ -166,7 +250,21 @@
       "lng": 11.3235,
       "mood": "激情 · 倾诉",
       "collections": ["love", "piano", "night"],
-      "blurb": "三首钢琴夜曲于 1850 年出版。第三首基于弗赖利格拉特的诗《爱吧，只要你能爱》(O lieb, so lang du lieben kannst)，写的是无条件的成熟之爱。钢琴如歌唱般倾诉，是李斯特最「不炫技」却最动人的作品之一。",
+      "blurb": "钢琴如歌唱般倾诉，是李斯特最「不炫技」却最动人的作品之一。",
+      "background": "《爱之梦》三首钢琴夜曲于 1850 年出版，原本是李斯特根据乌兰德与弗赖利格拉特的诗谱写的艺术歌曲，后改编为钢琴独奏。第三首基于弗赖利格拉特的诗《爱吧，只要你能爱》(O lieb, so lang du lieben kannst)，写的是无条件、要趁还能爱时去爱的成熟之爱。此时李斯特正驻于魏玛，处于他作为作曲家最丰产的时期。",
+      "meaning": "全曲分三段，每段之间以一段炫技华彩相连，但它最动人的并不是技巧，而是那条「会唱歌」的旋律——李斯特让钢琴模仿人声，把诗中「趁还能爱时去爱」的恳切直接唱了出来。在以炫技闻名的李斯特作品里，这首《爱之梦》以其罕见的歌唱性与深情，成为最被钟爱的一首。",
+      "sources": [
+        {
+          "label": "IMSLP：Liebesträume, S. 541 (Liszt)",
+          "url": "https://imslp.org/wiki/Liebestr%C3%A4ume,_S.541_(Liszt,_Franz)",
+          "summary": "IMSLP 收录《爱之梦》(S. 541) 的乐谱与版本信息：三首钢琴夜曲 1850 年出版，原为基于乌兰德与弗赖利格拉特诗作的艺术歌曲；第三首基于弗赖利格拉特《O lieb, so lang du lieben kannst》。"
+        },
+        {
+          "label": "Wikipedia：Liebesträume",
+          "url": "https://en.wikipedia.org/wiki/Liebestr%C3%A4ume",
+          "summary": "补充：第三首在 A♭ 大调，是三首中最著名者，每段之间有快速华彩；诗作主题为「无条件的成熟之爱」。"
+        }
+      ],
       "source": {
         "label": "IMSLP：Liebesträume, S. 541 (Liszt)",
         "url": "https://imslp.org/wiki/Liebestr%C3%A4ume,_S.541_(Liszt,_Franz)",
@@ -186,11 +284,25 @@
       "lng": 37.6173,
       "mood": "激情 · 冲突",
       "collections": ["love"],
-      "blurb": "1869 年创作，题材由巴拉基列夫建议，1870 年在莫斯科首演。它用管弦乐写家族仇恨与少年爱情的冲突——著名的「爱情主题」由英国管与中提琴奏出时，像一道光照进黑暗。",
+      "blurb": "著名的「爱情主题」奏出时，像一道光照进家族仇恨的黑暗。",
+      "background": "1869 年夏，作曲家巴拉基列夫在莫斯科向柴可夫斯基建议以《罗密欧与朱丽叶》为题，并为他拟定了结构与基本设想。柴可夫斯基同年 10–11 月完成初稿，并把作品题献给巴拉基列夫；此后又于 1870 年、1880 年两度大幅修订，定稿是我们今天常听的版本。",
+      "meaning": "这部 B 小调幻想序曲用奏鸣曲式承载三组主题：庄严如圣咏的「劳伦斯神父」引子、凶猛冲突的「世仇」主题，以及那条著名的「爱情主题」——它先由英国管与中提琴轻轻奏出，在仇恨的黑暗里像一道突然照进的光。正因为爱情与死亡、温柔与暴力被并置在同一部作品里，它成了古典音乐中最常被引用的「爱情主题」。",
+      "sources": [
+        {
+          "label": "Tchaikovsky Research：Romeo and Juliet",
+          "url": "https://en.tchaikovsky-research.net/pages/Romeo_and_Juliet",
+          "summary": "学术资料库 Tchaikovsky Research 记载：B 小调幻想序曲题材由巴拉基列夫建议、并题献给他；作于 1869 年 10–11 月，后于 1870、1880 年两度修订；含「神父／世仇／爱情」三组主题。"
+        },
+        {
+          "label": "Wikipedia：Romeo and Juliet (Tchaikovsky)",
+          "url": "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(Tchaikovsky)",
+          "summary": "补充：1870 年 3 月在莫斯科首演；著名的爱情主题最初由英国管与中提琴奏出，常被影视引用。"
+        }
+      ],
       "source": {
         "label": "Tchaikovsky Research：Romeo and Juliet",
         "url": "https://en.tchaikovsky-research.net/pages/Romeo_and_Juliet",
-        "summary": "学术资料库 Tchaikovsky Research 记载：B 小调幻想序曲作于 1869 年 10–11 月，题材由巴拉基列夫建议，1870 年 3 月在莫斯科首演，后经多次修订，定稿于 1880 年。"
+        "summary": "学术资料库 Tchaikovsky Research 记载：B 小调幻想序曲题材由巴拉基列夫建议、并题献给他；作于 1869 年 10–11 月，后于 1870、1880 年两度修订；含「神父／世仇／爱情」三组主题。"
       },
       "listening": { "target": "Tchaikovsky Romeo and Juliet Fantasy Overture", "query": "Tchaikovsky Romeo and Juliet Fantasy Overture" }
     },
@@ -206,7 +318,21 @@
       "lng": 37.6173,
       "mood": "激情 · 深情",
       "collections": ["love", "night"],
-      "blurb": "1900–1901 年创作，1901 年在莫斯科由作曲家本人独奏完整首演；为感谢治愈他抑郁的达尔医生而题献。第二乐章极其宽广的旋律，像是在深夜对爱人说出从未说出口的话，深情到令人窒息。",
+      "blurb": "极其宽广的旋律，像在深夜对爱人说出从未说出口的话。",
+      "background": "1897 年《第一交响曲》首演惨败后，拉赫玛尼诺夫陷入长期抑郁、几乎无法创作。经神经科医生尼古拉·达尔以催眠暗示与耐心鼓励的长期治疗，他逐渐恢复信心，于 1900–1901 年写成这部 C 小调第二钢琴协奏曲，并把它题献给达尔医生。1901 年 11 月由作曲家本人独奏在莫斯科完整首演，获得巨大成功。",
+      "meaning": "第二乐章（Adagio sostenuto）以极其宽广、绵延不绝的旋律著称：钢琴与乐队像在低声交谈，把那些深夜里想说却没能说出口的话一点点铺展开来。它深情到几乎令人窒息，也因此成为最广为人知的浪漫主义慢乐章之一——既是一封写给爱与生命的情书，也是作曲家走出绝望、重获创造力的见证。",
+      "sources": [
+        {
+          "label": "IMSLP：Piano Concerto No. 2, Op. 18 (Rachmaninoff)",
+          "url": "https://imslp.org/wiki/Piano_Concerto_No.2,_Op.18_(Rachmaninoff,_Sergei)",
+          "summary": "IMSLP 收录 C 小调第二钢琴协奏曲 (Op. 18) 的乐谱与版本信息：作于 1900–1901 年，1901 年 11 月在莫斯科首演（作曲家独奏），题献给尼古拉·达尔医生。"
+        },
+        {
+          "label": "Wikipedia：Piano Concerto No. 2 (Rachmaninoff)",
+          "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Rachmaninoff)",
+          "summary": "补充：作品题献给以催眠暗示治疗帮助其走出抑郁的达尔医生；首演大获成功，奠定其协奏曲作曲家的声誉。"
+        }
+      ],
       "source": {
         "label": "IMSLP：Piano Concerto No. 2, Op. 18 (Rachmaninoff)",
         "url": "https://imslp.org/wiki/Piano_Concerto_No.2,_Op.18_(Rachmaninoff,_Sergei)",
@@ -226,11 +352,25 @@
       "lng": 2.3522,
       "mood": "激情 · 野性",
       "collections": ["love", "stage"],
-      "blurb": "比才 1875 年的歌剧《卡门》中卡门的登场咏叹调，同年 3 月 3 日在巴黎喜歌剧院首演。它不是甜蜜，而是野性的占有欲——哈巴涅拉舞曲告诉你：爱情若不能自由，便不是爱情。",
+      "blurb": "野性的占有欲：爱情若不能自由，便不是爱情。",
+      "background": "《卡门》是比才 1875 年的歌剧，同年 3 月 3 日在巴黎喜歌剧院首演。这首「哈巴涅拉」是女主角卡门的登场咏叹调；其旋律改编自西班牙作曲家伊拉迪埃的哈巴涅拉舞曲《El Arreglito》，比才一度误以为是民歌。据记载，他为这段音乐反复修改了十余遍，直到首演的卡门 Célestine Galli-Marié 满意为止。",
+      "meaning": "卡门用一段慵懒而挑衅的哈巴涅拉宣告她的爱情观：「爱情是一只不羁的鸟儿，没人能驯服它。」这不是甜蜜的情话，而是一种野性的、拒绝被占有的自由——爱情若不能自由，便不再是爱情。她对台上众人、对唐·何塞、也对剧场里的观众发出挑战，使这首咏叹调成为歌剧史上最著名、也最危险迷人的登场。",
+      "sources": [
+        {
+          "label": "Palazzetto Bru Zane Mediabase：Carmen",
+          "url": "https://www.bruzanemediabase.com/en/exploration/works/carmen-meilhac-l-halevy-bizet",
+          "summary": "法国浪漫音乐中心 Palazzetto Bru Zane 的资料库记载比才《卡门》(1875)；登场咏叹调「哈巴涅拉」L'amour est un oiseau rebelle 在 1875 年 3 月 3 日的巴黎喜歌剧院首演中由 Célestine Galli-Marié 首唱，比才曾反复修改多次。"
+        },
+        {
+          "label": "Wikipedia：Habanera (aria)",
+          "url": "https://en.wikipedia.org/wiki/Habanera_(aria)",
+          "summary": "补充：旋律改编自伊拉迪埃的哈巴涅拉《El Arreglito》，比才曾误以为是民歌；为卡门第一幕的登场咏叹调。"
+        }
+      ],
       "source": {
         "label": "Palazzetto Bru Zane Mediabase：Carmen",
         "url": "https://www.bruzanemediabase.com/en/exploration/works/carmen-meilhac-l-halevy-bizet",
-        "summary": "法国浪漫音乐中心 Palazzetto Bru Zane 的资料库记载比才《卡门》(1875)；其登场咏叹调「哈巴涅拉」L'amour est un oiseau rebelle 在 1875 年 3 月 3 日的巴黎喜歌剧院首演中由 Célestine Galli-Marié 首唱。"
+        "summary": "法国浪漫音乐中心 Palazzetto Bru Zane 的资料库记载比才《卡门》(1875)；登场咏叹调「哈巴涅拉」L'amour est un oiseau rebelle 在 1875 年 3 月 3 日的巴黎喜歌剧院首演中由 Célestine Galli-Marié 首唱，比才曾反复修改多次。"
       },
       "listening": { "target": "Bizet Carmen Habanera (L'amour est un oiseau rebelle)", "query": "Bizet Carmen Habanera L amour est un oiseau rebelle" }
     },
@@ -246,11 +386,25 @@
       "lng": 16.3738,
       "mood": "思念 · 告别",
       "collections": ["love", "night", "farewell"],
-      "blurb": "通常被认为是马勒写给妻子阿尔玛的「无言情书」——两人于 1901 年在维也纳相识、订婚。弦乐如呼吸般轻柔。后来这段音乐竟成了悼念的常用乐曲，深情化作了永恒的告别。",
+      "blurb": "写给阿尔玛的「无言情书」，后来却成了告别的音乐。",
+      "background": "《第五交响曲》作于 1901–1902 年，主要在马勒位于迈尔尼希的作曲小屋完成。其间，他于 1901 年 11 月在维也纳结识阿尔玛·辛德勒，12 月订婚，1902 年 3 月成婚。第四乐章「小柔板」只用弦乐与一架竖琴，与全曲庞大的乐队编制形成鲜明对照。据指挥家门格尔贝格记载，马勒没有附信，只把这一乐章的手稿寄给阿尔玛——而她读懂了，回话让他来。",
+      "meaning": "因此它常被解读为马勒写给阿尔玛的「无言情书」：弦乐如呼吸般轻柔起伏，把爱意写得近乎耳语。（也有学者对这一解读持保留态度，但门格尔贝格的批注提供了有力旁证。）耐人寻味的是，这段最温柔的音乐后来频频用于告别场合——维斯康蒂电影《魂断威尼斯》(1971) 让它广为人知，伯恩斯坦也曾在罗伯特·肯尼迪的葬礼上指挥它。深情，最终化作了永恒的告别。",
+      "sources": [
+        {
+          "label": "Mahler Foundation：Symphony No. 5, Adagietto",
+          "url": "https://mahlerfoundation.org/mahler/compositions/symphony-no-5/symphony-no-5-movement-4-adagietto-sehr-langsam/",
+          "summary": "马勒基金会（Mahler Foundation）记载：第五交响曲 1901–1902 年作于迈尔尼希；第四乐章仅用弦乐与竖琴，据门格尔贝格所述是马勒寄给阿尔玛的无言情书；后被《魂断威尼斯》采用，并曾用于肯尼迪葬礼。"
+        },
+        {
+          "label": "Wikipedia：Symphony No. 5 (Mahler)",
+          "url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Mahler)",
+          "summary": "补充：马勒 1901 年在维也纳结识阿尔玛、同年订婚；Adagietto 仅用弦乐与竖琴，常被认为是写给阿尔玛的爱情告白。"
+        }
+      ],
       "source": {
         "label": "Mahler Foundation：Symphony No. 5, Adagietto",
         "url": "https://mahlerfoundation.org/mahler/compositions/symphony-no-5/symphony-no-5-movement-4-adagietto-sehr-langsam/",
-        "summary": "马勒基金会（Mahler Foundation）记载：第五交响曲作于 1901–1902 年；第四乐章 Adagietto 仅用弦乐与竖琴，常被认为是马勒写给阿尔玛的爱情告白，并被维斯康蒂电影《魂断威尼斯》采用。"
+        "summary": "马勒基金会（Mahler Foundation）记载：第五交响曲 1901–1902 年作于迈尔尼希；第四乐章仅用弦乐与竖琴，据门格尔贝格所述是马勒寄给阿尔玛的无言情书；后被《魂断威尼斯》采用，并曾用于肯尼迪葬礼。"
       },
       "listening": { "target": "Mahler Symphony No. 5 Adagietto", "query": "Mahler Symphony No 5 Adagietto" }
     },
@@ -266,7 +420,21 @@
       "lng": 13.6233,
       "mood": "慰藉 · 摇篮曲",
       "collections": ["night", "piano", "farewell"],
-      "blurb": "1892 年夏天作于巴德伊舍。勃拉姆斯把这三首称为「我悲伤的三首摇篮曲」，第一首前还引了一首苏格兰民谣的诗句。勃拉姆斯终生未娶，把对克拉拉（舒曼之妻）的感情化为这种爱而不得的悲悯。",
+      "blurb": "勃拉姆斯称之为「我悲伤的摇篮曲」，爱而不得化为悲悯。",
+      "background": "1892 年夏天，勃拉姆斯在奥地利温泉小镇巴德伊舍写下《三首间奏曲》op. 117，同年 11 月由 N. Simrock 在柏林出版。这是他晚年内省的钢琴小品之一。第一首在乐谱前引了一段苏格兰民谣《Lady Anne Bothwell's Lament》（经赫尔德译为德文）的诗句——一首摇篮曲式的哀歌。",
+      "meaning": "勃拉姆斯曾对友人说，这三首是「我悲伤的三首摇篮曲」。第一首以摇篮曲的节奏轻轻摇动，温柔之下是深深的孤独。终生未娶的勃拉姆斯，把对克拉拉·舒曼一生的、无法言说也无法实现的情感，沉淀成这种不诉苦、只安慰的悲悯——它不属于炽烈的情爱，而是爱而不得之后，留给自己与他人的慰藉。",
+      "sources": [
+        {
+          "label": "Brahms-Portal：Drei Intermezzi op. 117",
+          "url": "https://www.brahms-portal.de/werk/dc00007551/",
+          "summary": "勃拉姆斯研究机构维护的官方 Brahms-Portal 收录《三首间奏曲》op. 117；据吕贝克勃拉姆斯研究所记载，作品 1892 年夏作于巴德伊舍，同年 11 月由 N. Simrock 在柏林首版。"
+        },
+        {
+          "label": "Wikipedia：Three Intermezzi for piano, Op. 117 (Brahms)",
+          "url": "https://en.wikipedia.org/wiki/Three_Intermezzi_for_piano,_Op._117_(Brahms)",
+          "summary": "补充：勃拉姆斯称三首为「我悲伤的摇篮曲」；第一首前引苏格兰民谣《Lady Anne Bothwell's Lament》的德译诗句。"
+        }
+      ],
       "source": {
         "label": "Brahms-Portal：Drei Intermezzi op. 117",
         "url": "https://www.brahms-portal.de/werk/dc00007551/",
@@ -286,7 +454,21 @@
       "lng": 9.1900,
       "mood": "思念 · 等待",
       "collections": ["love", "stage", "farewell"],
-      "blurb": "出自普契尼 1904 年的歌剧《蝴蝶夫人》，1904 年 2 月 17 日在米兰斯卡拉歌剧院首演。等待的极致：女高音唱出「他会在某个晴朗的一天回来」，每一个音符都是希望与绝望的撕扯。",
+      "blurb": "等待的极致：「他会在某个晴朗的一天回来」，希望与绝望的撕扯。",
+      "background": "《蝴蝶夫人》是普契尼的悲剧歌剧，1904 年 2 月 17 日在米兰斯卡拉歌剧院首演（首演意外失败，普契尼随后修订）。这首咏叹调出自第二幕，由女主角巧巧桑（蝴蝶）唱给女仆铃木——她被美国军官平克尔顿抛弃后，仍坚信他会归来。",
+      "meaning": "「在某个晴朗的一天，我们会看见……」蝴蝶为自己描绘出爱人归来的整个画面：海平线上的轻烟、白色的军舰、远远走来的身影。音乐从近乎呢喃的弱声一点点累积到炽烈的高潮——每一个音符都是希望与绝望的撕扯。她唱的不是事实，而是用想象支撑自己的等待，这种「明知会落空仍要相信」的执念，使它成为女高音曲目中最催人泪下的一首。",
+      "sources": [
+        {
+          "label": "Centro Studi Giacomo Puccini：Madama Butterfly",
+          "url": "https://puccini.it/opera/madama-butterfly/",
+          "summary": "卢卡的普契尼研究中心（Centro Studi Giacomo Puccini）官网设有《蝴蝶夫人》专页；该剧 1904 年 2 月 17 日在米兰斯卡拉歌剧院首演，第二幕咏叹调「Un bel dì, vedremo」由 Cio-Cio-San 演唱。"
+        },
+        {
+          "label": "Wikipedia：Un bel dì, vedremo",
+          "url": "https://en.wikipedia.org/wiki/Un_bel_d%C3%AC,_vedremo",
+          "summary": "补充：蝴蝶向铃木描绘平克尔顿归来的情景；是《蝴蝶夫人》中最著名、最受欢迎的女高音咏叹调之一。"
+        }
+      ],
       "source": {
         "label": "Centro Studi Giacomo Puccini：Madama Butterfly",
         "url": "https://puccini.it/opera/madama-butterfly/",
@@ -306,11 +488,25 @@
       "lng": 2.3522,
       "mood": "思念 · 消逝",
       "collections": ["love", "night", "farewell"],
-      "blurb": "《动物狂欢节》第十三首，1886 年创作，同年 3 月 3 日在巴黎的一场私人音乐会上首演。大提琴独奏，钢琴伴奏如水波。天鹅象征纯洁而无法触及的爱，优雅中带着注定的消逝感。",
+      "blurb": "纯洁而无法触及的爱，优雅中带着注定的消逝感。",
+      "background": "《天鹅》是圣-桑《动物狂欢节》的第十三（也是倒数第二）乐章，1886 年创作，由大提琴独奏、两架钢琴伴奏。圣-桑生前禁止公开演出整部《动物狂欢节》，怕它损害自己「严肃作曲家」的形象——唯独《天鹅》，他允许在生前（1887）出版。1905 年，编舞家福金为芭蕾舞者安娜·巴甫洛娃编了著名的独舞《天鹅之死》，正是用这段音乐。",
+      "meaning": "钢琴的分解和弦像水面的粼粼波光，大提琴在其上奏出一条优雅、绵长的歌唱旋律，描绘天鹅静静滑过水面。它常被用来象征纯洁而无法触及的爱——那种只可远观、注定要消逝的美。优雅之中始终笼着一层淡淡的哀伤，这也是它后来被赋予「天鹅之死」意象、并成为大提琴最著名独奏小品的原因。",
+      "sources": [
+        {
+          "label": "Palazzetto Bru Zane Mediabase：Le Carnaval des animaux – Le Cygne",
+          "url": "https://www.bruzanemediabase.com/en/exploration/works/carnaval-animaux-cygne-camille-saint-saens",
+          "summary": "法国浪漫音乐中心 Palazzetto Bru Zane 的资料库记载：《天鹅》是圣-桑《动物狂欢节》第十三乐章，1886 年作，大提琴与两架钢琴；是作曲家生前唯一允许出版（1887）的乐章，福金 1905 年据此为巴甫洛娃编《天鹅之死》。"
+        },
+        {
+          "label": "Wikipedia：Le cygne",
+          "url": "https://en.wikipedia.org/wiki/Le_cygne",
+          "summary": "补充：原为大提琴与两架钢琴；1886 年 3 月 3 日私人首演，整部《动物狂欢节》在作曲家生前不许公开演出。"
+        }
+      ],
       "source": {
         "label": "Palazzetto Bru Zane Mediabase：Le Carnaval des animaux – Le Cygne",
         "url": "https://www.bruzanemediabase.com/en/exploration/works/carnaval-animaux-cygne-camille-saint-saens",
-        "summary": "法国浪漫音乐中心 Palazzetto Bru Zane 的资料库记载：《天鹅》是圣-桑《动物狂欢节》第十三乐章，1886 年 2 月创作，同年 3 月 3 日私人首演；是作曲家生前唯一允许出版（1887）的乐章。"
+        "summary": "法国浪漫音乐中心 Palazzetto Bru Zane 的资料库记载：《天鹅》是圣-桑《动物狂欢节》第十三乐章，1886 年作，大提琴与两架钢琴；是作曲家生前唯一允许出版（1887）的乐章，福金 1905 年据此为巴甫洛娃编《天鹅之死》。"
       },
       "listening": { "target": "Saint-Saëns Le Cygne (The Swan)", "query": "Saint-Saens Le Cygne The Swan" }
     },
@@ -326,7 +522,21 @@
       "lng": 16.3738,
       "mood": "歌剧 · 困惑",
       "collections": ["love", "stage"],
-      "blurb": "莫扎特 1786 年歌剧《费加罗的婚礼》第二幕中少年凯鲁比诺的咏叹调，1786 年 5 月 1 日在维也纳城堡剧院首演。这不是回答，而是少年对爱情的困惑——「我不知道它是什么，但它让我无法呼吸」。",
+      "blurb": "少年凯鲁比诺对爱情的困惑：「我不知道它是什么，但它让我无法呼吸。」",
+      "background": "《费加罗的婚礼》(KV 492) 是莫扎特与剧作家达·彭特合作的四幕喜歌剧，1786 年 5 月 1 日在维也纳城堡剧院首演。这首咏叹调出现在第二幕：少年侍童凯鲁比诺在伯爵夫人与苏珊娜面前，应苏珊娜之请，唱出自己写的情歌。凯鲁比诺一角传统上由女高音「裤角色」反串。",
+      "meaning": "「你们这些懂得爱情的人啊，请告诉我，我心里这是不是爱？」——这不是一个答案，而是一连串困惑的提问。莫扎特用轻盈又微微颤动的旋律，精准地写出青春期那种「说不清它是什么，却让人坐立难安、无法呼吸」的悸动。它是歌剧史上对「初识爱情」最可爱、也最真实的一次刻画。",
+      "sources": [
+        {
+          "label": "Stiftung Mozarteum · Köchel-Verzeichnis：Le nozze di Figaro KV 492",
+          "url": "https://kv.mozarteum.at/en/work/le-nozze-di-figaro-opera-buffa-commedia-per-musica-in-4-acts-11980",
+          "summary": "萨尔茨堡国际莫扎特基金会（Stiftung Mozarteum）官方柯歇尔目录收录《费加罗的婚礼》KV 492：四幕喜歌剧，达·彭特作词，1786 年 5 月 1 日在维也纳城堡剧院首演；「Voi che sapete」为第二幕凯鲁比诺咏叹调。"
+        },
+        {
+          "label": "Wikipedia：The Marriage of Figaro",
+          "url": "https://en.wikipedia.org/wiki/The_Marriage_of_Figaro",
+          "summary": "补充：凯鲁比诺为女高音反串的「裤角色」；他在第二幕中应苏珊娜之请，向伯爵夫人唱出自己写的情歌「Voi che sapete」。"
+        }
+      ],
       "source": {
         "label": "Stiftung Mozarteum · Köchel-Verzeichnis：Le nozze di Figaro KV 492",
         "url": "https://kv.mozarteum.at/en/work/le-nozze-di-figaro-opera-buffa-commedia-per-musica-in-4-acts-11980",
@@ -346,11 +556,25 @@
       "lng": 12.3155,
       "mood": "歌剧 · 及时行乐",
       "collections": ["love", "stage"],
-      "blurb": "出自威尔第 1853 年歌剧《茶花女》第一幕，1853 年 3 月 6 日在威尼斯凤凰歌剧院首演。薇奥莱塔与阿尔弗雷多在深夜宴会上同唱的祝酒二重唱：及时行乐的爱情观，华丽、短暂，像香槟气泡。",
+      "blurb": "及时行乐的爱情观，华丽、短暂，像香槟气泡。",
+      "background": "《茶花女》是威尔第 1853 年的三幕歌剧，皮亚韦作词，改编自小仲马的《茶花女》；同年 3 月 6 日在威尼斯凤凰歌剧院首演（首演反响不佳，后经修订才大获成功）。这首「祝酒歌」(Brindisi) 出现在第一幕：在交际花薇奥莱塔家的深夜宴会上，年轻的阿尔弗雷多举杯，与薇奥莱塔及众宾客对唱。",
+      "meaning": "「让我们举起欢乐的酒杯——」这是一首及时行乐的颂歌：旋律以三拍子的圆舞曲节奏流转，华丽、轻快、转瞬即逝，像不断升起又破灭的香槟气泡。它表面是宴会的助兴曲，实则点出了全剧的爱情底色——一段明知短暂、却要奋力抓住此刻的爱。也正因这份「热闹中的脆弱」，它成为最家喻户晓的歌剧旋律之一。",
+      "sources": [
+        {
+          "label": "Teatro La Fenice：Giuseppe Verdi, La traviata",
+          "url": "https://www.teatrolafenice.it/en/event/giuseppe-verdi-la-traviata/",
+          "summary": "威尼斯凤凰歌剧院（Teatro La Fenice）官网剧目页：《茶花女》1853 年 3 月 6 日在该院首演，皮亚韦作词，改编自小仲马《茶花女》；第一幕祝酒歌「Libiamo ne' lieti calici」由薇奥莱塔与阿尔弗雷多对唱。"
+        },
+        {
+          "label": "Wikipedia：Libiamo ne' lieti calici",
+          "url": "https://en.wikipedia.org/wiki/Libiamo_ne'_lieti_calici",
+          "summary": "补充：祝酒歌为三拍子圆舞曲风格，出现在第一幕薇奥莱塔家的宴会；是最著名的歌剧旋律之一。"
+        }
+      ],
       "source": {
         "label": "Teatro La Fenice：Giuseppe Verdi, La traviata",
         "url": "https://www.teatrolafenice.it/en/event/giuseppe-verdi-la-traviata/",
-        "summary": "威尼斯凤凰歌剧院（Teatro La Fenice）官网的剧目页：《茶花女》1853 年 3 月 6 日在该院首演，皮亚韦作词，改编自小仲马《茶花女》；第一幕祝酒歌「Libiamo ne' lieti calici」由薇奥莱塔与阿尔弗雷多对唱。"
+        "summary": "威尼斯凤凰歌剧院（Teatro La Fenice）官网剧目页：《茶花女》1853 年 3 月 6 日在该院首演，皮亚韦作词，改编自小仲马《茶花女》；第一幕祝酒歌「Libiamo ne' lieti calici」由薇奥莱塔与阿尔弗雷多对唱。"
       },
       "listening": { "target": "Verdi Libiamo ne' lieti calici (La traviata)", "query": "Verdi Libiamo ne lieti calici La traviata Brindisi" }
     },
@@ -366,7 +590,21 @@
       "lng": 12.4964,
       "mood": "歌剧 · 诀别",
       "collections": ["love", "stage", "farewell"],
-      "blurb": "出自普契尼 1900 年歌剧《托斯卡》第三幕，1900 年 1 月 14 日在罗马科斯坦齐剧院首演。画家卡瓦拉多西临刑前在圣天使堡屋顶上对爱人的最后凝望——爱情与死亡同框。",
+      "blurb": "临刑前对爱人的最后凝望——爱情与死亡同框。",
+      "background": "《托斯卡》是普契尼 1900 年的三幕歌剧，1900 年 1 月 14 日在罗马科斯坦齐剧院首演。这首咏叹调出现在第三幕：画家卡瓦拉多西被判死刑，黎明前在圣天使堡的屋顶上等待行刑，回忆与爱人托斯卡共度的时光。",
+      "meaning": "「星光曾经那样灿烂……」卡瓦拉多西在生命的最后时刻，回想起与托斯卡相会的夜晚——星光、花园、她的衣香。旋律由克制的回忆一步步推向绝望的爆发，最后以「我从未如此热爱生命」收束。它把爱情与死亡放进同一个画面：越是留恋人间的美好，诀别就越令人心碎，这也使它成为男高音曲目中最动人的咏叹调之一。",
+      "sources": [
+        {
+          "label": "Centro Studi Giacomo Puccini：Tosca",
+          "url": "https://puccini.it/opera/tosca/",
+          "summary": "卢卡的普契尼研究中心（Centro Studi Giacomo Puccini）官网设有《托斯卡》专页；该剧 1900 年 1 月 14 日在罗马科斯坦齐剧院首演，第三幕男高音咏叹调「E lucevan le stelle」由临刑前的画家卡瓦拉多西演唱。"
+        },
+        {
+          "label": "Wikipedia：E lucevan le stelle",
+          "url": "https://en.wikipedia.org/wiki/E_lucevan_le_stelle",
+          "summary": "补充：咏叹调出现在第三幕，卡瓦拉多西在圣天使堡屋顶等待行刑时回忆与托斯卡的时光。"
+        }
+      ],
       "source": {
         "label": "Centro Studi Giacomo Puccini：Tosca",
         "url": "https://puccini.it/opera/tosca/",
@@ -386,11 +624,25 @@
       "lng": 13.7373,
       "mood": "歌剧 · 惆怅",
       "collections": ["love", "stage"],
-      "blurb": "歌剧《玫瑰骑士》1911 年 1 月 26 日在德累斯顿首演。剧中刻意使用了在故事年代（1740 年代）尚不存在的圆舞曲，以营造帝国维也纳的怀旧氛围——维也纳式的爱情，华尔兹的旋转中带着一丝惆怅。",
+      "blurb": "维也纳式的爱情，华尔兹的旋转中带着一丝惆怅。",
+      "background": "《玫瑰骑士》是理查·施特劳斯与剧作家霍夫曼斯塔尔合作的喜歌剧，1910 年完成、1911 年 1 月 26 日在德累斯顿宫廷歌剧院首演。剧情设在十八世纪四十年代的维也纳，讲一位成熟的元帅夫人主动成全年轻情人与少女的爱情。后世常演的《玫瑰骑士组曲》多由指挥家罗津斯基于 1944 年从全剧中辑成。",
+      "meaning": "施特劳斯刻意在十八世纪的故事里用了当时还不存在的维也纳圆舞曲——这是有意的「时代错置」，为的是营造帝国维也纳的怀旧气氛。于是整部作品的爱情都带着一种「华尔兹式」的味道：旋转、华美、令人陶醉，却又因元帅夫人「明知青春终将逝去、仍优雅退场」的自觉，始终笼着一丝惆怅。它写的不只是相爱，更是关于年华与放手的成熟之爱。",
+      "sources": [
+        {
+          "label": "IMSLP：Der Rosenkavalier, Op. 59 (R. Strauss)",
+          "url": "https://imslp.org/wiki/Der_Rosenkavalier,_Op.59_(Strauss,_Richard)",
+          "summary": "IMSLP 收录《玫瑰骑士》(Op. 59) 的乐谱与版本信息：歌剧 1910 年完成、1911 年 1 月 26 日在德累斯顿首演；后世常演的组曲多由 Artur Rodziński 于 1944 年编订。"
+        },
+        {
+          "label": "Wikipedia：Der Rosenkavalier",
+          "url": "https://en.wikipedia.org/wiki/Der_Rosenkavalier",
+          "summary": "补充：剧情设于 1740 年代的维也纳，剧中圆舞曲为有意的时代错置，用以营造怀旧的维也纳气氛；霍夫曼斯塔尔作词。"
+        }
+      ],
       "source": {
         "label": "IMSLP：Der Rosenkavalier, Op. 59 (R. Strauss)",
         "url": "https://imslp.org/wiki/Der_Rosenkavalier,_Op.59_(Strauss,_Richard)",
-        "summary": "IMSLP 收录《玫瑰骑士》(Op. 59) 的乐谱与版本信息：歌剧 1910 年完成、1911 年 1 月 26 日在德累斯顿宫廷歌剧院首演；后世常演的组曲多由 Artur Rodziński 于 1944 年编订。"
+        "summary": "IMSLP 收录《玫瑰骑士》(Op. 59) 的乐谱与版本信息：歌剧 1910 年完成、1911 年 1 月 26 日在德累斯顿首演；后世常演的组曲多由 Artur Rodziński 于 1944 年编订。"
       },
       "listening": { "target": "Richard Strauss Der Rosenkavalier Suite", "query": "Richard Strauss Der Rosenkavalier Suite waltz" }
     },
@@ -406,11 +658,25 @@
       "lng": 2.3522,
       "mood": "夜 · 温柔",
       "collections": ["night", "piano"],
-      "blurb": "肖邦最著名的夜曲之一，约作于 1830–1832 年、1832 年在巴黎出版，题献给玛丽·普莱耶尔。左手是绵延不断的分解和弦，右手如即兴歌唱般自由飘移——沙龙里最温柔的夜。",
+      "blurb": "沙龙里最温柔的夜，右手如即兴歌唱般自由飘移。",
+      "background": "这首降 E 大调夜曲约作于 1830–1832 年、1833 年出版，是《夜曲》op. 9 三首中的第二首，题献给玛丽·普莱耶尔（Marie Pleyel）。它是肖邦二十岁出头、初到巴黎时期的早期作品。夜曲这一体裁本由爱尔兰作曲家约翰·菲尔德开创，肖邦在其基础上大大发展、深化，写出了属于自己的「夜的语言」。",
+      "meaning": "左手是绵延不断、温柔起伏的分解和弦，像夜色本身；右手则唱出一条如即兴吟咏般自由的歌唱旋律，并随着反复一次次添上更繁复的装饰音。它把「夜晚」写成了一种亲密的私语——没有戏剧冲突，只有沙龙烛光下最温柔的倾诉。这首夜曲也成为肖邦流传最广、最常被演奏与改编的作品之一。",
+      "sources": [
+        {
+          "label": "NIFC 肖邦国家研究所：Nocturne in E-flat major, Op. 9 No. 2",
+          "url": "https://chopin.nifc.pl/en/chopin/kompozycja/154_nocturne-in-e-flat-major",
+          "summary": "波兰肖邦国家研究所（NIFC）的肖邦信息中心收录降 E 大调夜曲 Op. 9 No. 2：约作于 1830–1832 年、1833 年出版，为 op. 9 三首夜曲之第二首，题献给玛丽·普莱耶尔，是肖邦最著名的作品之一。"
+        },
+        {
+          "label": "Wikipedia：Nocturnes, Op. 9 (Chopin)",
+          "url": "https://en.wikipedia.org/wiki/Nocturnes,_Op._9_(Chopin)",
+          "summary": "补充：op. 9 三首夜曲 1830–1832 年作、1832 年出版，题献给玛丽·普莱耶尔；第二首左手为连绵的分解和弦，右手自由加花，是肖邦最著名的乐曲之一。"
+        }
+      ],
       "source": {
         "label": "NIFC 肖邦国家研究所：Nocturne in E-flat major, Op. 9 No. 2",
         "url": "https://chopin.nifc.pl/en/chopin/kompozycja/154_nocturne-in-e-flat-major",
-        "summary": "波兰肖邦国家研究所（Narodowy Instytut Fryderyka Chopina, NIFC）的肖邦信息中心收录降 E 大调夜曲 Op. 9 No. 2：作于约 1830–1832 年，1832 年出版，题献给玛丽·普莱耶尔，是肖邦最著名的作品之一。"
+        "summary": "波兰肖邦国家研究所（NIFC）的肖邦信息中心收录降 E 大调夜曲 Op. 9 No. 2：约作于 1830–1832 年、1833 年出版，为 op. 9 三首夜曲之第二首，题献给玛丽·普莱耶尔，是肖邦最著名的作品之一。"
       },
       "listening": { "target": "Chopin Nocturne in E-flat major, Op. 9 No. 2", "query": "Chopin Nocturne Op 9 No 2 E flat major" }
     },
@@ -426,7 +692,21 @@
       "lng": 2.3522,
       "mood": "离别 · 怀旧",
       "collections": ["love", "piano", "farewell"],
-      "blurb": "E 大调练习曲，1832 年作、1833 年出版。「离别曲(Tristesse)」「L'Adieu」都是后人起的名字而非肖邦本意；但据记载，肖邦自己认为这是他写过最美的旋律。一首被极度激动打断的怀旧之歌。",
+      "blurb": "一首被极度激动打断的怀旧之歌；肖邦自认是他写过最美的旋律。",
+      "background": "E 大调练习曲作于 1832 年，1833 年作为《练习曲》op. 10 的第三首出版。「离别曲(Tristesse)」「L'Adieu」这些名字都是后人（评论者）所加，并非肖邦本意。和大多数练习曲一样，它采用 A–B–A 的三段式结构，是一首训练歌唱性、复调与表情性连奏的慢板练习曲。",
+      "meaning": "据记载，肖邦自己认为这条 E 大调的旋律是他写过最美的一支。乐曲以一段极其温柔、怀旧的歌唱开始，中段却被一阵极度激动、近乎痛苦的爆发打断，最后又回到最初的宁静——技术训练的外壳里，藏着一次完整的情感起伏。正是这条「最美旋律」与「离别」之名的结合，使它超越练习曲的范畴，成为爱与告别的代名词。",
+      "sources": [
+        {
+          "label": "NIFC 肖邦国家研究所：Etude in E major, Op. 10 No. 3",
+          "url": "https://chopin.nifc.pl/en/chopin/kompozycja/162",
+          "summary": "波兰肖邦国家研究所（NIFC）的肖邦信息中心收录 E 大调练习曲 Op. 10 No. 3：作于 1832 年，1833 年作为《练习曲》Op. 10 第三首出版。「Tristesse / L'Adieu」之名为后人所加，非肖邦本意。"
+        },
+        {
+          "label": "Wikipedia：Étude Op. 10, No. 3 (Chopin)",
+          "url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._10,_No._3_(Chopin)",
+          "summary": "补充：别名「Tristesse／L'Adieu」为评论者所加而非肖邦；为 A–B–A 三段式的歌唱性慢练习曲，肖邦自认其旋律为他最美的创作。"
+        }
+      ],
       "source": {
         "label": "NIFC 肖邦国家研究所：Etude in E major, Op. 10 No. 3",
         "url": "https://chopin.nifc.pl/en/chopin/kompozycja/162",

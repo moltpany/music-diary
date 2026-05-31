@@ -47,6 +47,12 @@
     return COLLECTIONS.filter(function (c) { return entry.collections.indexOf(c.id) !== -1; });
   }
 
+  function getEntrySources(entry) {
+    if (!entry) { return []; }
+    if (Array.isArray(entry.sources) && entry.sources.length) { return entry.sources; }
+    return entry.source ? [entry.source] : [];
+  }
+
   function buildListeningLinks(listening) {
     if (!listening || !listening.query) { return []; }
     var q = encodeURIComponent(listening.query);
@@ -237,11 +243,13 @@
     if (!entry) {
       setText("detail-title", "没有匹配的作品");
       setText("detail-meta", "请调整筛选条件。");
-      setText("detail-blurb", "当前筛选没有结果。");
+      setText("detail-lead", "");
+      setText("detail-background", "当前筛选没有结果。");
+      setText("detail-meaning", "当前筛选没有结果。");
       $("detail-collections").hidden = true;
       $("detail-listening").hidden = true;
+      $("detail-sources").hidden = true;
       $("detail-map-link").hidden = true;
-      $("detail-source").hidden = true;
       return;
     }
 
@@ -249,7 +257,9 @@
     var meta = entry.composer + " · " + entry.work + " · " + entry.year + " · " + entry.city + "，" + entry.country;
     if (entry.mood) { meta += " · " + entry.mood; }
     setText("detail-meta", meta);
-    setText("detail-blurb", entry.blurb || "");
+    setText("detail-lead", entry.blurb || "");
+    setText("detail-background", entry.background || entry.blurb || "");
+    setText("detail-meaning", entry.meaning || "");
 
     var collContainer = $("detail-collections");
     var collections = getEntryCollections(entry);
@@ -274,13 +284,20 @@
       $("detail-listening").hidden = true;
     }
 
-    var source = $("detail-source");
-    if (entry.source && entry.source.url) {
-      source.href = entry.source.url;
-      source.textContent = "查看参考来源：" + (entry.source.label || "来源");
-      source.hidden = false;
+    var sources = getEntrySources(entry);
+    var sourcesBox = $("detail-sources");
+    if (sources.length) {
+      $("detail-sources-list").innerHTML = sources.map(function (s) {
+        return (
+          '<div class="detail-source-item">' +
+            '<a href="' + escapeHtml(s.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(s.label || s.url) + " ↗</a>" +
+            (s.summary ? "<p>" + escapeHtml(s.summary) + "</p>" : "") +
+          "</div>"
+        );
+      }).join("");
+      sourcesBox.hidden = false;
     } else {
-      source.hidden = true;
+      sourcesBox.hidden = true;
     }
 
     $("detail-map-link").hidden = !(typeof entry.lat === "number" && typeof entry.lng === "number");
@@ -306,13 +323,20 @@
     var container = $("source-list");
     if (!container) { return; }
     container.innerHTML = ENTRIES.slice().sort(byYearThenCity).map(function (e) {
-      if (!e.source) { return ""; }
+      var sources = getEntrySources(e);
+      if (!sources.length) { return ""; }
+      var links = sources.map(function (s) {
+        return (
+          '<div class="source-item">' +
+            '<a href="' + escapeHtml(s.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(s.label || s.url) + " ↗</a>" +
+            (s.summary ? "<p>" + escapeHtml(s.summary) + "</p>" : "") +
+          "</div>"
+        );
+      }).join("");
       return (
         '<article class="source-row">' +
           "<h3>" + escapeHtml(e.title) + ' <span class="source-composer">' + escapeHtml(e.composer) + "</span></h3>" +
-          "<p>" + escapeHtml(e.source.summary || "") + "</p>" +
-          '<a href="' + escapeHtml(e.source.url) + '" target="_blank" rel="noreferrer">' +
-            escapeHtml(e.source.label || e.source.url) + " ↗</a>" +
+          links +
         "</article>"
       );
     }).join("");

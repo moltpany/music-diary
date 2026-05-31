@@ -94,17 +94,27 @@
           <h2 id="detail-title">选择一首作品</h2>
           <p id="detail-meta" class="detail-meta">点击地图图标弹出的「查看作品详情」按钮，或歌单里的任意一首，这里会显示作品背景与官方来源。</p>
           <div id="detail-collections" class="detail-collections" hidden></div>
-          <div id="detail-listening" class="detail-listening" hidden>
+          <p id="detail-lead" class="detail-lead"></p>
+          <div class="detail-listening" id="detail-listening" hidden>
             <strong id="detail-listening-target" class="listening-target"></strong>
             <div id="detail-listening-links"></div>
           </div>
-          <article class="detail-blurb">
-            <h3>为何经典</h3>
-            <p id="detail-blurb">等待选择。</p>
-          </article>
+          <div class="detail-grid">
+            <article>
+              <h3>创作背景</h3>
+              <p id="detail-background">等待选择。</p>
+            </article>
+            <article>
+              <h3>作品含义</h3>
+              <p id="detail-meaning">等待选择。</p>
+            </article>
+          </div>
+          <div id="detail-sources" class="detail-sources" hidden>
+            <h4>参考来源</h4>
+            <div id="detail-sources-list"></div>
+          </div>
           <div class="detail-actions">
             <button id="detail-map-link" class="detail-map-link" type="button" hidden>在地图上查看</button>
-            <a id="detail-source" class="source-link" href="#" target="_blank" rel="noreferrer" hidden>查看参考来源</a>
           </div>
         </div>
       </section>
