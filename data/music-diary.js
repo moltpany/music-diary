@@ -175,9 +175,14 @@ window.MUSIC_DIARY_DATA = {
       "meaning": "歌词是一位恋人在月夜花园里的低声恳求：「我的歌声穿过夜色轻轻哀求……来到我身边吧。」钢琴伴奏模仿拨弦小夜曲，音型轻轻晃动，像是深夜里按捺不住、又不敢惊动对方的脚步声。它把初恋的渴望写得既炽热又克制，成为艺术歌曲中「小夜曲」体裁的典范。",
       "sources": [
         {
+          "label": "Bärenreiter（新舒伯特全集 Urtext）：Schwanengesang D 957",
+          "url": "https://www.barenreiter.us/products/schubert-schwanengesang-d-957-barenreiter",
+          "summary": "Bärenreiter 出版、Walther Dürr 校订、基于《新舒伯特全集》(Neue Schubert-Ausgabe) 的 Urtext 版本：《天鹅之歌》(D 957) 含 14 首歌曲，作于 1828 年，1829 年由 Haslinger 在维也纳出版；第四首《小夜曲》取自雷尔斯塔布的诗。"
+        },
+        {
           "label": "IMSLP：Schwanengesang, D. 957 (Schubert)",
           "url": "https://imslp.org/wiki/Schwanengesang,_D.957_(Schubert,_Franz)",
-          "summary": "IMSLP 收录《天鹅之歌》(D. 957) 的原始版本与乐谱信息：14 首歌曲均作于 1828 年，1829 年由 Tobias Haslinger 在维也纳出版；第四首《小夜曲》取自雷尔斯塔布的诗。"
+          "summary": "乐谱档案，收录《天鹅之歌》的原始版本与各版乐谱信息。"
         },
         {
           "label": "Wikipedia：Schwanengesang",
@@ -186,9 +191,9 @@ window.MUSIC_DIARY_DATA = {
         }
       ],
       "source": {
-        "label": "IMSLP：Schwanengesang, D. 957 (Schubert)",
-        "url": "https://imslp.org/wiki/Schwanengesang,_D.957_(Schubert,_Franz)",
-        "summary": "IMSLP 收录《天鹅之歌》(D. 957) 的原始版本与乐谱信息：14 首歌曲均作于 1828 年，1829 年由 Tobias Haslinger 在维也纳出版；第四首《小夜曲》取自雷尔斯塔布的诗。"
+        "label": "Bärenreiter（新舒伯特全集 Urtext）：Schwanengesang D 957",
+        "url": "https://www.barenreiter.us/products/schubert-schwanengesang-d-957-barenreiter",
+        "summary": "Bärenreiter 出版、Walther Dürr 校订、基于《新舒伯特全集》(Neue Schubert-Ausgabe) 的 Urtext 版本：《天鹅之歌》(D 957) 含 14 首歌曲，作于 1828 年，1829 年由 Haslinger 在维也纳出版；第四首《小夜曲》取自雷尔斯塔布的诗。"
       },
       "listening": {
         "target": "Schubert Ständchen (Schwanengesang D. 957 No. 4)",
@@ -254,9 +259,14 @@ window.MUSIC_DIARY_DATA = {
       "meaning": "这被视为古典音乐史上最极端的爱情描写：渴望被推到极致，肉身之爱被升华为近乎宗教的、唯有在死亡中才能圆满的合一。开篇那个悬而不决、迟迟不肯解决的「特里斯坦和弦」，把「欲望」直接写进了和声本身，模糊了调性的边界——它被公认为直接改变了西方和声语言、并预示了二十世纪音乐的转折点。",
       "sources": [
         {
+          "label": "Breitkopf & Härtel：Tristan und Isolde WWV 90",
+          "url": "https://www.breitkopf.com/work/6930/tristan-und-isolde-wwv-90",
+          "summary": "Breitkopf & Härtel 是《特里斯坦与伊索尔德》(WWV 90) 1860 年的原始出版社，其官方作品页记载：瓦格纳作于 1857–1859 年，1865 年 6 月 10 日在慕尼黑首演（汉斯·冯·彪罗指挥）。"
+        },
+        {
           "label": "IMSLP：Tristan und Isolde, WWV 90 (Wagner)",
           "url": "https://imslp.org/wiki/Tristan_und_Isolde,_WWV_90_(Wagner,_Richard)",
-          "summary": "IMSLP 收录《特里斯坦与伊索尔德》(WWV 90) 的乐谱与版本信息：作于 1857–1859 年，1860 年首版，1865 年 6 月 10 日在慕尼黑首演（汉斯·冯·彪罗指挥）。"
+          "summary": "乐谱档案，收录全剧及「前奏曲与爱之死」音乐会版本的乐谱与版本信息。"
         },
         {
           "label": "Wikipedia：Tristan und Isolde",
@@ -265,9 +275,9 @@ window.MUSIC_DIARY_DATA = {
         }
       ],
       "source": {
-        "label": "IMSLP：Tristan und Isolde, WWV 90 (Wagner)",
-        "url": "https://imslp.org/wiki/Tristan_und_Isolde,_WWV_90_(Wagner,_Richard)",
-        "summary": "IMSLP 收录《特里斯坦与伊索尔德》(WWV 90) 的乐谱与版本信息：作于 1857–1859 年，1860 年首版，1865 年 6 月 10 日在慕尼黑首演（汉斯·冯·彪罗指挥）。"
+        "label": "Breitkopf & Härtel：Tristan und Isolde WWV 90",
+        "url": "https://www.breitkopf.com/work/6930/tristan-und-isolde-wwv-90",
+        "summary": "Breitkopf & Härtel 是《特里斯坦与伊索尔德》(WWV 90) 1860 年的原始出版社，其官方作品页记载：瓦格纳作于 1857–1859 年，1865 年 6 月 10 日在慕尼黑首演（汉斯·冯·彪罗指挥）。"
       },
       "listening": {
         "target": "Wagner Tristan und Isolde Prelude and Liebestod",
@@ -295,9 +305,14 @@ window.MUSIC_DIARY_DATA = {
       "meaning": "全曲分三段，每段之间以一段炫技华彩相连，但它最动人的并不是技巧，而是那条「会唱歌」的旋律——李斯特让钢琴模仿人声，把诗中「趁还能爱时去爱」的恳切直接唱了出来。在以炫技闻名的李斯特作品里，这首《爱之梦》以其罕见的歌唱性与深情，成为最被钟爱的一首。",
       "sources": [
         {
+          "label": "G. Henle Verlag（Urtext, HN 634）：Liebesträume, 3 Notturnos",
+          "url": "https://www.henle.de/en/Liebestraeume-3-Notturnos/HN-634",
+          "summary": "亨乐出版社（G. Henle Verlag）Urtext 版（HN 634）记载：《爱之梦》三首夜曲 1850 年以两种版本面世（高声部与钢琴、钢琴独奏）；第三首《O lieb, so lang Du lieben kannst》（弗赖利格拉特诗）是流传最广的钢琴小品之一。"
+        },
+        {
           "label": "IMSLP：Liebesträume, S. 541 (Liszt)",
           "url": "https://imslp.org/wiki/Liebestr%C3%A4ume,_S.541_(Liszt,_Franz)",
-          "summary": "IMSLP 收录《爱之梦》(S. 541) 的乐谱与版本信息：三首钢琴夜曲 1850 年出版，原为基于乌兰德与弗赖利格拉特诗作的艺术歌曲；第三首基于弗赖利格拉特《O lieb, so lang du lieben kannst》。"
+          "summary": "乐谱档案，收录《爱之梦》(S. 541) 的各版乐谱与《新李斯特全集》信息。"
         },
         {
           "label": "Wikipedia：Liebesträume",
@@ -306,9 +321,9 @@ window.MUSIC_DIARY_DATA = {
         }
       ],
       "source": {
-        "label": "IMSLP：Liebesträume, S. 541 (Liszt)",
-        "url": "https://imslp.org/wiki/Liebestr%C3%A4ume,_S.541_(Liszt,_Franz)",
-        "summary": "IMSLP 收录《爱之梦》(S. 541) 的乐谱与版本信息：三首钢琴夜曲 1850 年出版，原为基于乌兰德与弗赖利格拉特诗作的艺术歌曲；第三首基于弗赖利格拉特《O lieb, so lang du lieben kannst》。"
+        "label": "G. Henle Verlag（Urtext, HN 634）：Liebesträume, 3 Notturnos",
+        "url": "https://www.henle.de/en/Liebestraeume-3-Notturnos/HN-634",
+        "summary": "亨乐出版社（G. Henle Verlag）Urtext 版（HN 634）记载：《爱之梦》三首夜曲 1850 年以两种版本面世（高声部与钢琴、钢琴独奏）；第三首《O lieb, so lang Du lieben kannst》（弗赖利格拉特诗）是流传最广的钢琴小品之一。"
       },
       "listening": {
         "target": "Liszt Liebestraum No. 3 in A-flat major",
@@ -374,9 +389,14 @@ window.MUSIC_DIARY_DATA = {
       "meaning": "第二乐章（Adagio sostenuto）以极其宽广、绵延不绝的旋律著称：钢琴与乐队像在低声交谈，把那些深夜里想说却没能说出口的话一点点铺展开来。它深情到几乎令人窒息，也因此成为最广为人知的浪漫主义慢乐章之一——既是一封写给爱与生命的情书，也是作曲家走出绝望、重获创造力的见证。",
       "sources": [
         {
+          "label": "G. Henle Verlag（Urtext, HN 1214）：Piano Concerto no. 2 c minor op. 18",
+          "url": "https://www.henle.de/HN-1214",
+          "summary": "亨乐出版社（G. Henle Verlag）首个 Urtext 版（HN 1214，Dominik Rahmer 校订）记载：编订时查阅了莫斯科格林卡博物馆所藏自笔总谱、并参考了拉赫玛尼诺夫本人的录音；C 小调第二钢琴协奏曲 (op. 18) 作于 1900–1901 年。"
+        },
+        {
           "label": "IMSLP：Piano Concerto No. 2, Op. 18 (Rachmaninoff)",
           "url": "https://imslp.org/wiki/Piano_Concerto_No.2,_Op.18_(Rachmaninoff,_Sergei)",
-          "summary": "IMSLP 收录 C 小调第二钢琴协奏曲 (Op. 18) 的乐谱与版本信息：作于 1900–1901 年，1901 年 11 月在莫斯科首演（作曲家独奏），题献给尼古拉·达尔医生。"
+          "summary": "乐谱档案，收录第二钢琴协奏曲 (Op. 18) 的乐谱与版本信息；1901 年 11 月在莫斯科首演（作曲家独奏），题献给尼古拉·达尔医生。"
         },
         {
           "label": "Wikipedia：Piano Concerto No. 2 (Rachmaninoff)",
@@ -385,9 +405,9 @@ window.MUSIC_DIARY_DATA = {
         }
       ],
       "source": {
-        "label": "IMSLP：Piano Concerto No. 2, Op. 18 (Rachmaninoff)",
-        "url": "https://imslp.org/wiki/Piano_Concerto_No.2,_Op.18_(Rachmaninoff,_Sergei)",
-        "summary": "IMSLP 收录 C 小调第二钢琴协奏曲 (Op. 18) 的乐谱与版本信息：作于 1900–1901 年，1901 年 11 月在莫斯科首演（作曲家独奏），题献给尼古拉·达尔医生。"
+        "label": "G. Henle Verlag（Urtext, HN 1214）：Piano Concerto no. 2 c minor op. 18",
+        "url": "https://www.henle.de/HN-1214",
+        "summary": "亨乐出版社（G. Henle Verlag）首个 Urtext 版（HN 1214，Dominik Rahmer 校订）记载：编订时查阅了莫斯科格林卡博物馆所藏自笔总谱、并参考了拉赫玛尼诺夫本人的录音；C 小调第二钢琴协奏曲 (op. 18) 作于 1900–1901 年。"
       },
       "listening": {
         "target": "Rachmaninoff Piano Concerto No. 2, Adagio sostenuto",
@@ -739,9 +759,14 @@ window.MUSIC_DIARY_DATA = {
       "meaning": "施特劳斯刻意在十八世纪的故事里用了当时还不存在的维也纳圆舞曲——这是有意的「时代错置」，为的是营造帝国维也纳的怀旧气氛。于是整部作品的爱情都带着一种「华尔兹式」的味道：旋转、华美、令人陶醉，却又因元帅夫人「明知青春终将逝去、仍优雅退场」的自觉，始终笼着一丝惆怅。它写的不只是相爱，更是关于年华与放手的成熟之爱。",
       "sources": [
         {
+          "label": "Schott Music：Der Rosenkavalier, op. 59",
+          "url": "https://www.schott-music.com/en/der-rosenkavalier-op-59-no156111.html",
+          "summary": "Schott Music 的官方作品页收录理查·施特劳斯《玫瑰骑士》(op. 59)：三幕喜歌剧，霍夫曼斯塔尔作词，1911 年 1 月 26 日在德累斯顿首演。"
+        },
+        {
           "label": "IMSLP：Der Rosenkavalier, Op. 59 (R. Strauss)",
           "url": "https://imslp.org/wiki/Der_Rosenkavalier,_Op.59_(Strauss,_Richard)",
-          "summary": "IMSLP 收录《玫瑰骑士》(Op. 59) 的乐谱与版本信息：歌剧 1910 年完成、1911 年 1 月 26 日在德累斯顿首演；后世常演的组曲多由 Artur Rodziński 于 1944 年编订。"
+          "summary": "乐谱档案，收录全剧与组曲的乐谱与版本信息；后世常演的组曲多由 Artur Rodziński 于 1944 年编订。"
         },
         {
           "label": "Wikipedia：Der Rosenkavalier",
@@ -750,9 +775,9 @@ window.MUSIC_DIARY_DATA = {
         }
       ],
       "source": {
-        "label": "IMSLP：Der Rosenkavalier, Op. 59 (R. Strauss)",
-        "url": "https://imslp.org/wiki/Der_Rosenkavalier,_Op.59_(Strauss,_Richard)",
-        "summary": "IMSLP 收录《玫瑰骑士》(Op. 59) 的乐谱与版本信息：歌剧 1910 年完成、1911 年 1 月 26 日在德累斯顿首演；后世常演的组曲多由 Artur Rodziński 于 1944 年编订。"
+        "label": "Schott Music：Der Rosenkavalier, op. 59",
+        "url": "https://www.schott-music.com/en/der-rosenkavalier-op-59-no156111.html",
+        "summary": "Schott Music 的官方作品页收录理查·施特劳斯《玫瑰骑士》(op. 59)：三幕喜歌剧，霍夫曼斯塔尔作词，1911 年 1 月 26 日在德累斯顿首演。"
       },
       "listening": {
         "target": "Richard Strauss Der Rosenkavalier Suite",

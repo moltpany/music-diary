@@ -15,12 +15,12 @@ v0.3 进一步：每首作品的介绍拆成 **`blurb` 提要 + `background` 创
 | schumann-traumerei | 梦幻曲 | **Schumann-Portal** | 官方门户 ✅ |
 | debussy-clair-de-lune | 月光 | **Palazzetto Bru Zane** Mediabase | 法国浪漫音乐研究机构 ✅ |
 | beethoven-fur-elise | 致爱丽丝 | **Beethoven-Haus Bonn** | 官方故居作品库 ✅ |
-| schubert-standchen | 小夜曲 | IMSLP | 权威乐谱档案 ⚠️（暂无官方逐曲页） |
+| schubert-standchen | 小夜曲 | **Bärenreiter**（新舒伯特全集 Urtext） | 官方出版方（版权方）✅ |
 | elgar-salut-damour | 爱的礼赞 | **The Elgar Society** | 官方协会 ✅ |
-| wagner-tristan-liebestod | 特里斯坦前奏曲与爱之死 | IMSLP（WWV 90） | 权威乐谱档案 ⚠️ |
-| liszt-liebestraum-3 | 爱之梦第三首 | IMSLP（S. 541） | 权威乐谱档案 ⚠️ |
+| wagner-tristan-liebestod | 特里斯坦前奏曲与爱之死 | **Breitkopf & Härtel**（原始出版社） | 官方出版方 ✅ |
+| liszt-liebestraum-3 | 爱之梦第三首 | **G. Henle Verlag** Urtext (HN 634) | 官方出版方 ✅ |
 | tchaikovsky-romeo-juliet | 罗密欧与朱丽叶 | **Tchaikovsky Research** | 权威学术资料库 ✅ |
-| rachmaninoff-piano-concerto-2 | 第二钢协第二乐章 | IMSLP（Op. 18） | 权威乐谱档案 ⚠️ |
+| rachmaninoff-piano-concerto-2 | 第二钢协第二乐章 | **G. Henle Verlag** Urtext (HN 1214) | 官方出版方 ✅ |
 | bizet-carmen-habanera | 卡门·哈巴涅拉 | **Palazzetto Bru Zane** Mediabase | 法国浪漫音乐研究机构 ✅ |
 | mahler-adagietto | 第五交响曲小柔板 | **Mahler Foundation** | 官方基金会 ✅ |
 | brahms-intermezzo-op117-1 | 间奏曲 Op.117 No.1 | **Brahms-Portal** | 官方门户 ✅ |
@@ -29,18 +29,25 @@ v0.3 进一步：每首作品的介绍拆成 **`blurb` 提要 + `background` 创
 | mozart-voi-che-sapete | 费加罗·你们可知道什么是爱情 | **Stiftung Mozarteum**（柯歇尔目录） | 官方基金会 ✅ |
 | verdi-libiamo | 茶花女·祝酒歌 | **Teatro La Fenice**（首演剧院） | 官方剧院剧目页 ✅ |
 | puccini-e-lucevan-le-stelle | 托斯卡·星光灿烂 | **Centro Studi Giacomo Puccini** | 官方研究中心 ✅ |
-| strauss-rosenkavalier | 玫瑰骑士组曲 | IMSLP（Op. 59） | 权威乐谱档案 ⚠️ |
+| strauss-rosenkavalier | 玫瑰骑士组曲 | **Schott Music**（出版方） | 官方出版方 ✅ |
 | chopin-nocturne-op9-2 | 降 E 大调夜曲 | **NIFC 肖邦国家研究所** | 官方机构 ✅ |
 | chopin-etude-op10-3 | 离别曲 | **NIFC 肖邦国家研究所** | 官方机构 ✅ |
 
-## 待办（Boya 的下一轮 portal-source-harvester）
+## 来源升级进度
 
-把仍标 ⚠️ 的五项升级到官方逐曲页面：
-- Schubert → Neue Schubert-Ausgabe / Wiener Schubertbund 的逐曲资源
-- Wagner → Richard-Wagner-Werkverzeichnis（WWV）官方条目（如可稳定深链）
-- Liszt → 新李斯特全集 / Liszt-Gesellschaft 逐曲页
-- Rachmaninoff → 可信的拉赫玛尼诺夫研究机构逐曲页
-- Strauss → Richard-Strauss-Institut / Richard-Strauss-Werkverzeichnis 逐曲页
+v0.4：原先用 IMSLP 作主来源的 5 首已全部升级到**官方出版方（版权方）**的作品页——
+- Schubert《小夜曲》→ Bärenreiter（新舒伯特全集 Urtext，Walther Dürr 校订）
+- Wagner《特里斯坦》→ Breitkopf & Härtel（WWV 90 原始出版社）
+- Liszt《爱之梦》→ G. Henle Verlag Urtext (HN 634)
+- Rachmaninoff《第二钢协》→ G. Henle Verlag Urtext (HN 1214，据格林卡博物馆自笔谱)
+- Strauss《玫瑰骑士》→ Schott Music
+
+IMSLP 现已全部降为**辅来源**（乐谱档案仍有价值），不再作为任何作品的主来源。
+
+## 待办（Boya 的下一轮）
+
+- 若相关研究机构（Wiener Schubertbund、Richard-Strauss-Institut、Liszt-Gesellschaft 等）日后提供可稳定深链的**逐曲解说页**，可将主来源从「出版方作品页」进一步替换为「研究机构逐曲页」。
+- 周期性复核所有外链有效性（出版方页面偶有改版）。
 
 ## 保守措辞约定
 
