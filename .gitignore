@@ -1,0 +1,9 @@
+.playwright-cli/
+.superpowers/
+.worktrees/
+
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Diary · 古典音乐中的爱情</title>
+    <meta name="description" content="一本以爱情为线索的古典音乐日记：地图视图按地点浏览，主题视图按情感维度浏览，每条都带可信来源。Boya 维护。">
+    <script>
+      // Pre-init theme before render to avoid a flash of the wrong theme/label
+      (function () {
+        try {
+          var stored = window.localStorage && window.localStorage.getItem("music-diary-theme");
+          var theme = (stored === "dark" || stored === "light")
+            ? stored
+            : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.dataset.initialThemeLabel = theme === "dark" ? "白天" : "黑夜";
+        } catch (e) {
+          document.documentElement.dataset.theme = "light";
+          document.documentElement.dataset.initialThemeLabel = "黑夜";
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://tile.openstreetmap.org">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%237a1f3d'/%3E%3Ctext x='16' y='23' font-size='18' text-anchor='middle' fill='%23f6eef0' font-family='serif'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar" aria-label="页面导航">
+        <a href="#top" class="brand">Music Diary</a>
+        <div class="nav-links">
+          <a href="#explore">浏览</a>
+          <a href="#detail">作品详情</a>
+          <a href="#sources">来源</a>
+          <a class="cross-link" href="https://moltpany.github.io/mozart-journey/">Mozart Journey ↗</a>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="切换显示模式"></button>
+        </div>
+      </nav>
+      <script>
+        // Fill the toggle label immediately so dark-mode visitors don't see a flash
+        (function () {
+          var btn = document.getElementById("theme-toggle");
+          if (!btn) return;
+          var theme = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+          btn.textContent = document.documentElement.dataset.initialThemeLabel || (theme === "dark" ? "白天" : "黑夜");
+          btn.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+          btn.setAttribute("aria-label", theme === "dark" ? "切换到白天模式" : "切换到黑夜模式");
+        })();
+      </script>
+      <div class="hero-content" id="top">
+        <p class="eyebrow">古典音乐中的爱情 · 由 Boya 维护</p>
+        <h1>Music Diary</h1>
+        <p class="hero-copy">古典音乐里的「爱情」很少是直白的甜言蜜语，更多是克制的悸动、炽热的渴望、忧伤的思念，乃至近乎宗教般的狂喜。这本日记把不同作曲家、不同时代的作品按情感维度与诞生地点整理在一起——同一份带来源的数据，可以按<strong>地图</strong>看，也可以按<strong>主题</strong>看。</p>
+        <p class="hero-sub">姊妹作品：<a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> —— 专注莫扎特一个人的足迹地图。</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="explore-section" id="explore" aria-labelledby="explore-title">
+        <div class="explore-head">
+          <div>
+            <p class="section-kicker">浏览方式</p>
+            <h2 id="explore-title">按地图，或按情感主题</h2>
+          </div>
+          <div class="view-switch" role="tablist" aria-label="切换浏览视图">
+            <button id="view-map" class="view-btn" role="tab" type="button" aria-selected="true">地图视图</button>
+            <button id="view-theme" class="view-btn" role="tab" type="button" aria-selected="false">主题视图</button>
+          </div>
+        </div>
+
+        <form class="filters" aria-label="作品筛选">
+          <label>
+            搜索
+            <input id="search-filter" class="search-input" type="search" placeholder="肖邦 / 月光 / Vienna / 歌剧">
+          </label>
+          <label>
+            主题
+            <select id="theme-filter"></select>
+          </label>
+          <label>
+            作曲家
+            <select id="composer-filter"></select>
+          </label>
+          <p id="result-count" class="result-count" aria-live="polite"></p>
+        </form>
+
+        <!-- MAP VIEW -->
+        <div id="map-view" class="view-panel">
+          <div id="map" role="application" aria-label="爱情主题作品诞生地点互动地图"></div>
+          <p id="map-warning" class="map-warning" hidden>地图底图需要联网加载；可以切换到「主题视图」继续阅读。</p>
+        </div>
+
+        <!-- THEME VIEW -->
+        <div id="theme-view" class="view-panel" hidden>
+          <div id="theme-groups" class="theme-groups"></div>
+        </div>
+      </section>
+
+      <section class="detail-section" id="detail" aria-live="polite">
+        <div class="detail-main">
+          <p class="section-kicker">作品详情</p>
+          <h2 id="detail-title">选择一首作品</h2>
+          <p id="detail-meta" class="detail-meta">点击地图点位，或主题视图里的卡片，这里会显示作品背景与来源。</p>
+          <div id="detail-themes" class="detail-themes" hidden></div>
+          <div id="detail-listening" class="detail-listening" hidden>
+            <strong id="detail-listening-target" class="listening-target"></strong>
+            <div id="detail-listening-links"></div>
+          </div>
+          <article class="detail-blurb">
+            <h3>为何经典</h3>
+            <p id="detail-blurb">等待选择。</p>
+          </article>
+          <div class="detail-actions">
+            <button id="detail-map-link" class="detail-map-link" type="button" hidden>在地图上查看</button>
+            <a id="detail-source" class="source-link" href="#" target="_blank" rel="noreferrer" hidden>查看参考来源</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sources-section" id="sources" aria-labelledby="sources-title">
+        <p class="section-kicker">资料说明</p>
+        <h2 id="sources-title">每一条都带来源</h2>
+        <p>本作品的立场与 Mozart Journey 一致：不编造日期、地点或创作背景；对不确定的史实采用保守措辞。每首作品都保存一份 <code>source.label</code> + <code>source.url</code>，数据维护在 <code>data/music-diary.json</code>。第一版的来源以权威音乐百科与门户为起点，后续由 Boya 持续升级为作曲家官方门户。</p>
+        <div id="source-list" class="source-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Boya 的作品 · 静态网页 · Leaflet + OpenStreetMap · 数据维护在 <code>data/music-diary.json</code></p>
+      <p>姊妹作品：<a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> · 回到 <a href="https://moltpany.github.io/">Moltpany</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="data/music-diary.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
