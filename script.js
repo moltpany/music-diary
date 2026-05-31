@@ -7,15 +7,17 @@
   var COLLECTIONS = Array.isArray(DATA.collections) ? DATA.collections : [];
   var ENTRIES = Array.isArray(DATA.entries) ? DATA.entries : [];
 
-  var collectionById = {};
-  COLLECTIONS.forEach(function (c) { collectionById[c.id] = c; });
-
   var state = {
     filtered: ENTRIES.slice(),
     selectedId: null,
     map: null,
-    markers: {}
+    markers: {},
+    markerByEntry: {}
   };
+
+  function coordKey(entry) {
+    return entry.lat + "," + entry.lng;
+  }
 
   // ---- Helpers ------------------------------------------------------------
   function $(id) { return document.getElementById(id); }
@@ -126,42 +128,90 @@
     tiles.addTo(state.map);
   }
 
+  function cityIcon(count, isActive) {
+    var cls = "city-marker" + (isActive ? " is-active" : "");
+    return L.divIcon({
+      className: "city-marker-wrap",
+      html: '<span class="' + cls + '">' + count + "</span>",
+      iconSize: [30, 30],
+      iconAnchor: [15, 15],
+      popupAnchor: [0, -14]
+    });
+  }
+
+  function buildCityPopup(group) {
+    var head =
+      '<strong class="popup-city">' + escapeHtml(group.city) + "</strong>" +
+      '<span class="popup-meta">' + group.entries.length + " 首作品</span>";
+    var items = group.entries.map(function (entry) {
+      return (
+        '<button type="button" class="popup-item" data-id="' + escapeHtml(entry.id) + '">' +
+          '<span class="popup-item-title">' + escapeHtml(entry.title) + "</span>" +
+          '<span class="popup-item-sub">' + escapeHtml(entry.composer + " · " + entry.year) + "</span>" +
+        "</button>"
+      );
+    }).join("");
+    return '<div class="popup-city-card">' + head + '<div class="popup-items">' + items + "</div></div>";
+  }
+
   function renderMarkers(entries) {
     if (!state.map) { return; }
     state.map.closePopup();
-    Object.keys(state.markers).forEach(function (id) {
-      state.map.removeLayer(state.markers[id]);
+    Object.keys(state.markers).forEach(function (key) {
+      state.map.removeLayer(state.markers[key]);
     });
     state.markers = {};
+    state.markerByEntry = {};
 
+    // Group entries that share the same coordinates into one city marker.
+    var groups = {};
+    var order = [];
     entries.forEach(function (entry) {
       if (typeof entry.lat !== "number" || typeof entry.lng !== "number") { return; }
-      var marker = L.marker([entry.lat, entry.lng]).addTo(state.map);
-      marker.bindPopup(
-        '<strong>' + escapeHtml(entry.title) + "</strong><br>" +
-        escapeHtml(entry.composer) + "<br>" +
-        '<span class="popup-meta">' + escapeHtml(entry.year + " · " + entry.city) + "</span><br>" +
-        '<button type="button" class="popup-detail-link" data-id="' + escapeHtml(entry.id) +
-        '" aria-label="查看 ' + escapeHtml(entry.title) + ' 的作品详情">查看作品详情 →</button>'
-      );
-      marker.on("popupopen", function () {
-        var popupEl = marker.getPopup() && marker.getPopup().getElement ? marker.getPopup().getElement() : null;
-        var link = popupEl ? popupEl.querySelector(".popup-detail-link") : null;
-        if (link) {
-          link.addEventListener("click", function () { selectEntry(entry.id, { scrollDetail: true }); }, { once: true });
-        }
-      });
-      state.markers[entry.id] = marker;
+      var key = coordKey(entry);
+      if (!groups[key]) {
+        groups[key] = { key: key, lat: entry.lat, lng: entry.lng, city: entry.city, entries: [] };
+        order.push(key);
+      }
+      groups[key].entries.push(entry);
     });
 
-    var coords = entries
-      .filter(function (e) { return typeof e.lat === "number" && typeof e.lng === "number"; })
-      .map(function (e) { return [e.lat, e.lng]; });
-    if (coords.length > 1) {
-      state.map.fitBounds(L.latLngBounds(coords), { padding: [36, 36] });
-    } else if (coords.length === 1) {
-      state.map.setView(coords[0], 6);
+    order.forEach(function (key) {
+      var group = groups[key];
+      var marker = L.marker([group.lat, group.lng], {
+        icon: cityIcon(group.entries.length, false),
+        title: group.city
+      }).addTo(state.map);
+      marker.bindPopup(buildCityPopup(group), { minWidth: 200 });
+      marker.cityGroup = group;
+      marker.on("popupopen", function () {
+        var popupEl = marker.getPopup() && marker.getPopup().getElement ? marker.getPopup().getElement() : null;
+        if (!popupEl) { return; }
+        Array.prototype.forEach.call(popupEl.querySelectorAll(".popup-item"), function (btn) {
+          btn.addEventListener("click", function () {
+            selectEntry(btn.getAttribute("data-id"), { scrollDetail: true });
+          });
+        });
+      });
+      state.markers[key] = marker;
+      group.entries.forEach(function (entry) { state.markerByEntry[entry.id] = marker; });
+    });
+
+    if (order.length > 1) {
+      state.map.fitBounds(L.latLngBounds(order.map(function (k) { return [groups[k].lat, groups[k].lng]; })), { padding: [36, 36] });
+    } else if (order.length === 1) {
+      state.map.setView([groups[order[0]].lat, groups[order[0]].lng], 6);
     }
+    refreshMarkerHighlight();
+  }
+
+  function refreshMarkerHighlight() {
+    var activeMarker = state.selectedId ? state.markerByEntry[state.selectedId] : null;
+    Object.keys(state.markers).forEach(function (key) {
+      var marker = state.markers[key];
+      var isActive = marker === activeMarker;
+      marker.setIcon(cityIcon(marker.cityGroup.entries.length, isActive));
+    });
   }
 
   function focusEntryOnMap(entry, scrollToMap) {
@@ -171,7 +221,7 @@
     }
     if (state.map && typeof entry.lat === "number") {
       state.map.setView([entry.lat, entry.lng], Math.max(state.map.getZoom(), 6), { animate: true });
-      if (state.markers[entry.id]) { state.markers[entry.id].openPopup(); }
+      if (state.markerByEntry[entry.id]) { state.markerByEntry[entry.id].openPopup(); }
     }
   }
 
@@ -310,6 +360,7 @@
     state.selectedId = entry.id;
     renderDetail(entry);
     highlightSelected();
+    refreshMarkerHighlight();
 
     if (opts.focusMap) { focusEntryOnMap(entry, false); }
     if (opts.scrollDetail) {

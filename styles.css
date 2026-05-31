@@ -221,6 +221,11 @@ h3 { font-size: 1.15rem; }
   border: 1px solid var(--line);
   z-index: 0;
 }
+.map-hint {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
 .map-warning {
   margin-top: 10px;
   padding: 10px 14px;
@@ -231,21 +236,61 @@ h3 { font-size: 1.15rem; }
   color: var(--ink-soft);
 }
 
-/* ---- Map popup --------------------------------------------------------- */
-.leaflet-popup-content { font-family: inherit; line-height: 1.5; }
-.leaflet-popup-content .popup-meta { color: var(--ink-soft); font-size: 0.85rem; }
-.popup-detail-link {
-  margin-top: 8px;
+/* ---- City markers ------------------------------------------------------ */
+.city-marker-wrap { background: transparent; border: none; }
+.city-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   background: var(--accent);
   color: #fff;
-  border: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(80, 20, 40, 0.4);
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+.city-marker.is-active {
+  background: var(--accent-soft);
+  transform: scale(1.28);
+  box-shadow: 0 4px 12px rgba(80, 20, 40, 0.55);
+}
+
+/* ---- Map popup --------------------------------------------------------- */
+.leaflet-popup-content { font-family: inherit; line-height: 1.5; margin: 12px 14px; }
+.leaflet-popup-content .popup-meta { color: var(--ink-soft); font-size: 0.82rem; }
+.popup-city { display: block; font-size: 1.05rem; }
+.popup-city-card .popup-items { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.popup-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  text-align: left;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 6px 12px;
+  padding: 7px 10px;
   cursor: pointer;
   font-family: inherit;
-  font-size: 0.86rem;
+  color: var(--ink);
+  transition: border-color 0.12s ease, background 0.12s ease;
 }
-.popup-detail-link:hover { background: var(--accent-soft); }
+.popup-item:hover { border-color: var(--accent-soft); background: var(--surface); }
+.popup-item-title { font-size: 0.9rem; font-weight: 700; }
+.popup-item-sub { font-size: 0.78rem; color: var(--ink-soft); }
+
+/* Make Leaflet popups follow the dark/light theme */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--surface);
+  color: var(--ink);
+}
+.leaflet-popup-content-wrapper { border: 1px solid var(--line); }
+.leaflet-container a.leaflet-popup-close-button { color: var(--ink-soft); }
 
 /* ---- Collections (歌单) ------------------------------------------------ */
 .collections-section {
