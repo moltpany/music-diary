@@ -356,6 +356,16 @@ h3 { font-size: 1.15rem; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 12px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-soft) transparent;
+}
+.collection-items::-webkit-scrollbar { width: 6px; }
+.collection-items::-webkit-scrollbar-thumb {
+  background: var(--accent-soft);
+  border-radius: 999px;
 }
 .collection-item {
   display: flex;

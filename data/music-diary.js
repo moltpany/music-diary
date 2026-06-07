@@ -37,6 +37,12 @@ window.MUSIC_DIARY_DATA = {
       "title": "柏林电影之夜 · 约翰·威廉姆斯",
       "description": "2021 年 10 月，约翰·威廉姆斯首度执棒柏林爱乐，亲自指挥自己的电影配乐。这份歌单按这场音乐会（后由 DG 录制为《The Berlin Concert》）的曲目整理——从《奥林匹克号角》到《帝国进行曲》，一位电影作曲家如何用管弦乐写就一代人的集体记忆。地点统一标注柏林爱乐厅。",
       "order": "asis"
+    },
+    {
+      "id": "concert-vienna-2025",
+      "title": "我现场听过的 · 维也纳爱乐 2025",
+      "order": "asis",
+      "description": "2025 年 3 月 29 日，维也纳金色大厅，弗朗茨·威尔瑟-莫斯特指挥维也纳爱乐乐团，纪念约翰·施特劳斯诞辰 200 周年的「轻歌剧集萃」(Operetten-Pasticcio)。这是我亲临现场的一晚——曲目刻意避开了《蓝色多瑙河》这类大热门，转而挖掘施特劳斯那些少被搬演的轻歌剧珍品。歌单按当晚演出顺序排列。"
     }
   ],
   "entries": [
@@ -2036,6 +2042,496 @@ window.MUSIC_DIARY_DATA = {
           "label": "The Imperial March (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/The_Imperial_March"
         }
+      }
+    },
+    {
+      "id": "js-karneval-rom-ouverture",
+      "title": "《罗马狂欢节》序曲 (Ouvertüre)",
+      "work": "轻歌剧《罗马狂欢节》(Der Karneval in Rom, 1873)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1873,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "开场 · 明快",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "音乐会的开场——施特劳斯第二部轻歌剧的序曲，明快而少见。",
+      "background": "《罗马狂欢节》是小约翰·施特劳斯 1873 年于维也纳河畔剧院首演的轻歌剧，取材自萨杜的喜剧，是他继《因迪戈》之后的第二部舞台作品。这首序曲为当晚音乐会揭幕。",
+      "meaning": "比起家喻户晓的圆舞曲，这部轻歌剧今天已少有人搬演。以它的序曲开场，正点明整场音乐会的用意：到「圆舞曲之王」庞大的舞台作品宝库里，去打捞那些被遗忘的珍珠。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Der Karneval in Rom",
+          "url": "https://en.wikipedia.org/wiki/Der_Karneval_in_Rom",
+          "summary": "小约翰·施特劳斯 1873 年的轻歌剧，维也纳河畔剧院首演，为其第二部舞台作品。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Der Karneval in Rom",
+        "url": "https://en.wikipedia.org/wiki/Der_Karneval_in_Rom",
+        "summary": "小约翰·施特劳斯 1873 年的轻歌剧，维也纳河畔剧院首演，为其第二部舞台作品。"
+      },
+      "listening": {
+        "target": "《罗马狂欢节》序曲 (Ouvertüre) Johann Strauss",
+        "query": "Johann Strauss 罗马狂欢节 《罗马狂欢节》序曲 (Ouvertüre)"
+      }
+    },
+    {
+      "id": "js-ninetta-frauenzimmer",
+      "title": "宁妮塔咏叹调「Ein Frauenzimmer bin ich」",
+      "work": "轻歌剧《宁妮塔郡主》(Fürstin Ninetta, 1893)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1893,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "诙谐 · 灵巧",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "出自施特劳斯晚期一部几乎被遗忘的轻歌剧的女声咏叹调。",
+      "background": "《宁妮塔郡主》是施特劳斯 1893 年的轻歌剧，曾由他亲自指挥首演。这首宁妮塔的咏叹调「我是个女子」是其中的女声唱段，今日极少在音乐会上听到。",
+      "meaning": "这正是「集萃」的价值所在：把一部冷门轻歌剧里灵巧诙谐的唱段重新带回金色大厅。在 200 周年这样的时刻，让这些被埋没的旋律重新发声，本身就是一种纪念。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Fürstin Ninetta",
+          "url": "https://en.wikipedia.org/wiki/F%C3%BCrstin_Ninetta",
+          "summary": "小约翰·施特劳斯 1893 年的轻歌剧。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Fürstin Ninetta",
+        "url": "https://en.wikipedia.org/wiki/F%C3%BCrstin_Ninetta",
+        "summary": "小约翰·施特劳斯 1893 年的轻歌剧。"
+      },
+      "listening": {
+        "target": "宁妮塔咏叹调 Johann Strauss",
+        "query": "Johann Strauss 宁妮塔郡主 宁妮塔咏叹调Ein Frauenzimmer bin ich"
+      }
+    },
+    {
+      "id": "js-simplicius-fruhling",
+      "title": "阿尔尼姆咏叹调「Der Frühling lacht」",
+      "work": "轻歌剧《辛普里丘斯》(Simplicius, 1887)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1887,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "抒情 · 春意",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "「春天在欢笑」——出自施特劳斯一部罕演轻歌剧的抒情男声唱段。",
+      "background": "《辛普里丘斯》是施特劳斯 1887 年的轻歌剧，取材自格里梅尔斯豪森的同名巴洛克小说，是他较少被搬演的作品之一。这首「春天在欢笑」是其中的抒情唱段。",
+      "meaning": "施特劳斯不只是圆舞曲作曲家，他在轻歌剧里也写下大量动人的声乐旋律。这首春意盎然的咏叹调，让人看到「圆舞曲之王」笔下抒情、歌唱性的一面。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Simplicius (operetta)",
+          "url": "https://en.wikipedia.org/wiki/Simplicius_(operetta)",
+          "summary": "小约翰·施特劳斯 1887 年的轻歌剧，取材自格里梅尔斯豪森的小说《痴儿西木传》。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Simplicius (operetta)",
+        "url": "https://en.wikipedia.org/wiki/Simplicius_(operetta)",
+        "summary": "小约翰·施特劳斯 1887 年的轻歌剧，取材自格里梅尔斯豪森的小说《痴儿西木传》。"
+      },
+      "listening": {
+        "target": "阿尔尼姆咏叹调 Johann Strauss",
+        "query": "Johann Strauss 辛普里丘斯 阿尔尼姆咏叹调Der Frühling lacht"
+      }
+    },
+    {
+      "id": "js-zigeunerbaron-wer-uns-getraut",
+      "title": "萨菲–巴林凯二重唱「Wer uns getraut」",
+      "work": "轻歌剧《吉普赛男爵》(Der Zigeunerbaron, 1885)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1885,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "深情 · 二重唱",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "《吉普赛男爵》里最动人的爱情二重唱——「是谁为我们证婚」。",
+      "background": "《吉普赛男爵》是施特劳斯 1885 年的轻歌剧，也是他最成功的舞台作品之一。这首萨菲与巴林凯的二重唱「是谁为我们证婚」描写两人以夜莺与星空为见证的结合，是全剧的抒情高潮。",
+      "meaning": "在一整晚的冷门珍品中间，这首二重唱是观众较熟悉的一首。它温柔、真挚，证明施特劳斯的轻歌剧不止于欢快的舞曲，也能写出深情的爱情场面。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：The Gypsy Baron",
+          "url": "https://en.wikipedia.org/wiki/The_Gypsy_Baron",
+          "summary": "小约翰·施特劳斯 1885 年的轻歌剧《吉普赛男爵》，其最成功的舞台作品之一；「Wer uns getraut」为萨菲与巴林凯的二重唱。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：The Gypsy Baron",
+        "url": "https://en.wikipedia.org/wiki/The_Gypsy_Baron",
+        "summary": "小约翰·施特劳斯 1885 年的轻歌剧《吉普赛男爵》，其最成功的舞台作品之一；「Wer uns getraut」为萨菲与巴林凯的二重唱。"
+      },
+      "listening": {
+        "target": "萨菲–巴林凯二重唱 Johann Strauss",
+        "query": "Johann Strauss 吉普赛男爵 萨菲–巴林凯二重唱Wer uns getraut"
+      }
+    },
+    {
+      "id": "js-karneval-rom-entreact",
+      "title": "《罗马狂欢节》幕间进行曲、间奏曲与芭蕾",
+      "work": "轻歌剧《罗马狂欢节》(Der Karneval in Rom, 1873)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1873,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "舞曲 · 色彩",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "同一部轻歌剧里的器乐段落，管弦乐色彩斑斓。",
+      "background": "选自《罗马狂欢节》的器乐段落——幕间进行曲、间奏曲与芭蕾音乐，展示施特劳斯在舞台作品中纯器乐写作的功力。",
+      "meaning": "这些原本服务于舞台换景与舞蹈的器乐段落，单独拿到音乐会上听，反而能纯粹地欣赏施特劳斯的配器与节奏魅力——这正是「集萃」式音乐会的乐趣。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Der Karneval in Rom",
+          "url": "https://en.wikipedia.org/wiki/Der_Karneval_in_Rom",
+          "summary": "选自小约翰·施特劳斯 1873 年轻歌剧《罗马狂欢节》的器乐段落。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Der Karneval in Rom",
+        "url": "https://en.wikipedia.org/wiki/Der_Karneval_in_Rom",
+        "summary": "选自小约翰·施特劳斯 1873 年轻歌剧《罗马狂欢节》的器乐段落。"
+      },
+      "listening": {
+        "target": "《罗马狂欢节》幕间进行曲、间奏曲与芭蕾 Johann Strauss",
+        "query": "Johann Strauss 罗马狂欢节 《罗马狂欢节》幕间进行曲、间奏曲与芭蕾"
+      }
+    },
+    {
+      "id": "js-karneval-rom-jauchzt",
+      "title": "阿瑟小咏叹调「Es jauchzt mir im Innern」",
+      "work": "轻歌剧《罗马狂欢节》(Der Karneval in Rom, 1873)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1873,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "欢欣 · 男声",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "「我心中欢呼」——《罗马狂欢节》里的男声小咏叹调。",
+      "background": "出自《罗马狂欢节》，是角色阿瑟(Arthur) 的小咏叹调「我心中欢呼」。当晚由男高音独唱呈现。",
+      "meaning": "音乐会用同一部《罗马狂欢节》的序曲、器乐段与唱段多次回望，等于带观众较完整地认识这部冷门之作——这种编排让被遗忘的轻歌剧有机会被重新「拼」回完整的样子。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Der Karneval in Rom",
+          "url": "https://en.wikipedia.org/wiki/Der_Karneval_in_Rom",
+          "summary": "小约翰·施特劳斯 1873 年轻歌剧；「Es jauchzt mir im Innern」为剧中角色阿瑟的咏叹调。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Der Karneval in Rom",
+        "url": "https://en.wikipedia.org/wiki/Der_Karneval_in_Rom",
+        "summary": "小约翰·施特劳斯 1873 年轻歌剧；「Es jauchzt mir im Innern」为剧中角色阿瑟的咏叹调。"
+      },
+      "listening": {
+        "target": "阿瑟小咏叹调 Johann Strauss",
+        "query": "Johann Strauss 罗马狂欢节 阿瑟小咏叹调Es jauchzt mir im Innern"
+      }
+    },
+    {
+      "id": "js-waldmeister-duett",
+      "title": "二重唱「Nur eine rasche Sekunde」",
+      "work": "轻歌剧《车叶草》(Waldmeister, 1895)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1895,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "诙谐 · 二重唱",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "出自施特劳斯晚年轻歌剧《车叶草》的俏皮二重唱。",
+      "background": "《车叶草》(Waldmeister) 是施特劳斯 1895 年的轻歌剧，是他晚期的舞台作品，序曲至今偶有演出，但整剧已罕见。这首博托与弗蕾达的二重唱「只需匆匆一秒」是其中的唱段。",
+      "meaning": "施特劳斯七十岁高龄仍在写轻歌剧。这首晚期二重唱的轻盈与机智，说明「圆舞曲之王」直到暮年依然保有舞台喜剧的灵动笔触。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Waldmeister (operetta)",
+          "url": "https://en.wikipedia.org/wiki/Waldmeister_(operetta)",
+          "summary": "小约翰·施特劳斯 1895 年的晚期轻歌剧《车叶草》。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Waldmeister (operetta)",
+        "url": "https://en.wikipedia.org/wiki/Waldmeister_(operetta)",
+        "summary": "小约翰·施特劳斯 1895 年的晚期轻歌剧《车叶草》。"
+      },
+      "listening": {
+        "target": "二重唱 Johann Strauss",
+        "query": "Johann Strauss 车叶草 二重唱Nur eine rasche Sekunde"
+      }
+    },
+    {
+      "id": "js-lustige-krieg-ouverture",
+      "title": "《快乐的战争》序曲 (Ouvertüre)",
+      "work": "轻歌剧《快乐的战争》(Der lustige Krieg, 1881)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1881,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "活泼 · 序曲",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "一部以「战争」为名却满是欢笑的轻歌剧序曲。",
+      "background": "《快乐的战争》是施特劳斯 1881 年的轻歌剧，剧名虽叫「战争」，内容却是一场没有人真正流血的喜剧式纷争。这首序曲在当晚再次把音乐会推向活泼明快的气氛。",
+      "meaning": "施特劳斯的序曲是他舞台音乐里最精炼的部分——往往把全剧最动听的旋律集于一炉。把几部冷门轻歌剧的序曲并置聆听，能清晰感受他作为旋律大师与配器高手的本色。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Der lustige Krieg",
+          "url": "https://en.wikipedia.org/wiki/Der_lustige_Krieg",
+          "summary": "小约翰·施特劳斯 1881 年的轻歌剧《快乐的战争》。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Der lustige Krieg",
+        "url": "https://en.wikipedia.org/wiki/Der_lustige_Krieg",
+        "summary": "小约翰·施特劳斯 1881 年的轻歌剧《快乐的战争》。"
+      },
+      "listening": {
+        "target": "《快乐的战争》序曲 (Ouvertüre) Johann Strauss",
+        "query": "Johann Strauss 快乐的战争 《快乐的战争》序曲 (Ouvertüre)"
+      }
+    },
+    {
+      "id": "js-nacht-venedig-caramello",
+      "title": "卡拉梅洛圆舞曲「Ach, wie so herrlich zu schau'n」",
+      "work": "轻歌剧《威尼斯之夜》(Eine Nacht in Venedig, 1883)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1883,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "圆舞 · 旖旎",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "《威尼斯之夜》里卡拉梅洛的圆舞曲咏叹，旖旎醉人。",
+      "background": "《威尼斯之夜》是施特劳斯 1883 年的轻歌剧，以威尼斯狂欢节为背景。这首卡拉梅洛(Caramello) 的圆舞曲咏叹「啊，看上去多么壮丽」是其中著名的男声唱段。",
+      "meaning": "把圆舞曲写进咏叹调，让歌声随三拍子摇曳——这是施特劳斯独有的本事。它把维也纳的舞曲灵魂与威尼斯的浪漫夜色融在一起，旖旎而醉人。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Eine Nacht in Venedig",
+          "url": "https://en.wikipedia.org/wiki/Eine_Nacht_in_Venedig",
+          "summary": "小约翰·施特劳斯 1883 年以威尼斯狂欢节为背景的轻歌剧；卡拉梅洛的圆舞曲咏叹为其名段。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Eine Nacht in Venedig",
+        "url": "https://en.wikipedia.org/wiki/Eine_Nacht_in_Venedig",
+        "summary": "小约翰·施特劳斯 1883 年以威尼斯狂欢节为背景的轻歌剧；卡拉梅洛的圆舞曲咏叹为其名段。"
+      },
+      "listening": {
+        "target": "卡拉梅洛圆舞曲 Johann Strauss",
+        "query": "Johann Strauss 威尼斯之夜 卡拉梅洛圆舞曲Ach, wie so herrlich zu schau'n"
+      }
+    },
+    {
+      "id": "js-lagunen-walzer",
+      "title": "《泻湖圆舞曲》(Lagunen-Walzer)",
+      "work": "改编自轻歌剧《威尼斯之夜》(Eine Nacht in Venedig, 1883)",
+      "composer": "小约翰·施特劳斯 (Johann Strauss II)",
+      "year": 1883,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2006,
+      "lng": 16.3725,
+      "mood": "圆舞 · 收束",
+      "collections": [
+        "concert-vienna-2025"
+      ],
+      "blurb": "由《威尼斯之夜》旋律编成的圆舞曲——当晚醉人的收束。",
+      "background": "《泻湖圆舞曲》(Lagunen-Walzer, op. 411) 是施特劳斯从轻歌剧《威尼斯之夜》的旋律中编织而成的独立圆舞曲，把剧中最美的几段化作一首可单独演奏的舞曲。",
+      "meaning": "把轻歌剧的精华提炼成圆舞曲，是施特劳斯让舞台旋律走进音乐厅与舞会的惯用手法。以这首荡漾着威尼斯水波的圆舞曲收束全场，是对「圆舞曲之王」200 周年最贴切的致敬——也是我那一晚最难忘的余韵。",
+      "place": {
+        "name": "Wiener Musikverein · Großer Saal（维也纳金色大厅）",
+        "address": "Musikvereinsplatz 1, 1010 Wien",
+        "certainty": "高",
+        "note": "2025 年 3 月 29 日维也纳爱乐 200 周年「轻歌剧集萃」音乐会在此演出本曲（演出地点，非作品原始首演地）。",
+        "source": {
+          "label": "Musikverein (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Musikverein"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Eine Nacht in Venedig",
+          "url": "https://en.wikipedia.org/wiki/Eine_Nacht_in_Venedig",
+          "summary": "《泻湖圆舞曲》(op. 411) 由小约翰·施特劳斯从轻歌剧《威尼斯之夜》的旋律编成。"
+        },
+        {
+          "label": "Johann Strauss 2025 Wien：Operetten-Pasticcio",
+          "url": "https://www.johannstrauss2025.at/event/operetten-pasticcio/",
+          "summary": "约翰·施特劳斯 200 周年官方项目页记载：2025 年 3 月 29、30 日维也纳爱乐乐团于金色大厅演出「轻歌剧集萃」，弗朗茨·威尔瑟-莫斯特指挥，独唱 Christiane Karg、Maximilian Schmitt、Mauro Peter。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Eine Nacht in Venedig",
+        "url": "https://en.wikipedia.org/wiki/Eine_Nacht_in_Venedig",
+        "summary": "《泻湖圆舞曲》(op. 411) 由小约翰·施特劳斯从轻歌剧《威尼斯之夜》的旋律编成。"
+      },
+      "listening": {
+        "target": "《泻湖圆舞曲》(Lagunen-Walzer) Johann Strauss",
+        "query": "Johann Strauss 威尼斯之夜 《泻湖圆舞曲》(Lagunen-Walzer)"
       }
     }
   ]
