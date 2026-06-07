@@ -229,25 +229,42 @@
   }
 
   function focusEntryOnMap(entry, scrollToMap) {
+    if (!state.map || typeof entry.lat !== "number") { return; }
+    var marker = state.markerByEntry[entry.id];
     if (scrollToMap) {
       var mapEl = $("map");
       if (mapEl && mapEl.scrollIntoView) { mapEl.scrollIntoView({ behavior: "smooth", block: "center" }); }
     }
-    if (state.map && typeof entry.lat === "number") {
-      state.map.setView([entry.lat, entry.lng], Math.max(state.map.getZoom(), 6), { animate: true });
-      if (state.markerByEntry[entry.id]) { state.markerByEntry[entry.id].openPopup(); }
-    }
+    // Close any stale popup first so the next open re-fires popupopen (re-binding
+    // the list's click handlers) and is positioned for the final map view.
+    state.map.closePopup();
+    state.map.setView([entry.lat, entry.lng], Math.max(state.map.getZoom(), 6), { animate: true });
+    if (!marker) { return; }
+    // Open the popup once the view settles, otherwise autoPan can mis-place it
+    // (and leave the list unclickable) when the map was off-screen / mid-animation.
+    var opened = false;
+    var open = function () {
+      if (opened) { return; }
+      opened = true;
+      marker.openPopup();
+    };
+    state.map.once("moveend", open);
+    // Fallback: if the view doesn't actually move, moveend never fires.
+    setTimeout(open, 400);
   }
 
   // ---- Collections (歌单) -------------------------------------------------
   function getCollectionGroups(entries) {
     return COLLECTIONS.map(function (collection) {
-      // entries.filter preserves the dataset's array order; collections marked
-      // order:"asis" keep that order (e.g. a concert program), others sort by year.
       var picked = entries.filter(function (e) {
         return Array.isArray(e.collections) && e.collections.indexOf(collection.id) !== -1;
       });
-      if (collection.order !== "asis") {
+      // collections marked order:"asis" follow the dataset order (e.g. a concert
+      // program); others sort by year. We sort by ENTRY_INDEX rather than relying
+      // on the incoming array, which arrives already year-sorted from applyFilters.
+      if (collection.order === "asis") {
+        picked = picked.sort(function (a, b) { return ENTRY_INDEX[a.id] - ENTRY_INDEX[b.id]; });
+      } else {
         picked = picked.sort(byYearThenCity);
       }
       return { collection: collection, entries: picked };
