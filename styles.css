@@ -270,7 +270,21 @@ h3 { font-size: 1.15rem; }
 .leaflet-popup-content { font-family: inherit; line-height: 1.5; margin: 12px 14px; }
 .leaflet-popup-content .popup-meta { color: var(--ink-soft); font-size: 0.82rem; }
 .popup-city { display: block; font-size: 1.05rem; }
-.popup-city-card .popup-items { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.popup-city-card .popup-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+  max-height: 240px;
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+}
+.popup-city-card .popup-items::-webkit-scrollbar { width: 6px; }
+.popup-city-card .popup-items::-webkit-scrollbar-thumb {
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
 .popup-item {
   display: flex;
   flex-direction: column;
@@ -454,6 +468,29 @@ h3 { font-size: 1.15rem; }
 }
 .detail-grid article h3 { margin: 0 0 6px; }
 .detail-grid article p { margin: 0; }
+
+.detail-quote {
+  margin: 0 0 18px;
+  padding: 14px 16px 12px;
+  background: var(--surface-2);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+}
+.detail-quote-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.detail-quote blockquote {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.detail-quote blockquote::before { content: "\201C"; }
+.detail-quote blockquote::after { content: "\201D"; }
+.detail-quote-source { display: inline-block; margin-top: 8px; font-size: 0.82rem; }
 
 .detail-sources {
   border-top: 1px solid var(--line);

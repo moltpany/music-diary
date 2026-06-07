@@ -35,7 +35,8 @@
     {
       "id": "concert-berlin",
       "title": "柏林电影之夜 · 约翰·威廉姆斯",
-      "description": "2021 年 10 月，约翰·威廉姆斯首度执棒柏林爱乐，亲自指挥自己的电影配乐。这份歌单按这场音乐会（后由 DG 录制为《The Berlin Concert》）的曲目整理——从《奥林匹克号角》到《帝国进行曲》，一位电影作曲家如何用管弦乐写就一代人的集体记忆。地点统一标注柏林爱乐厅。"
+      "description": "2021 年 10 月，约翰·威廉姆斯首度执棒柏林爱乐，亲自指挥自己的电影配乐。这份歌单按这场音乐会（后由 DG 录制为《The Berlin Concert》）的曲目整理——从《奥林匹克号角》到《帝国进行曲》，一位电影作曲家如何用管弦乐写就一代人的集体记忆。地点统一标注柏林爱乐厅。",
+      "order": "asis"
     }
   ],
   "entries": [
@@ -86,6 +87,13 @@
         "source": {
           "label": "Schumann-Haus Leipzig",
           "url": "https://www.schumannhaus.de/en/"
+        }
+      },
+      "quote": {
+        "text": "舒曼说，《童年情景》并非写给孩子，而是「成年人写给成年人的回望」——是「诗人」回忆中的童年，而非孩子眼里的童年。灵感部分来自克拉拉曾说他「常显得孩子气」。",
+        "source": {
+          "label": "Kinderszenen (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kinderszenen"
         }
       }
     },
@@ -346,6 +354,13 @@
         "source": {
           "label": "National Theatre, Munich (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/National_Theatre_(Munich)"
+        }
+      },
+      "quote": {
+        "text": "瓦格纳 1854 年致李斯特信中说：「因为我此生从未享受过爱情真正的幸福，我要为这最美的梦再立一座丰碑——在其中，爱将从头到尾被彻底满足。」这部《特里斯坦》便是其结果。",
+        "source": {
+          "label": "Tristan und Isolde (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tristan_und_Isolde"
         }
       }
     },
@@ -608,6 +623,13 @@
           "label": "Mahler Foundation：Symphony No. 5, Adagietto",
           "url": "https://mahlerfoundation.org/mahler/compositions/symphony-no-5/symphony-no-5-movement-4-adagietto-sehr-langsam/"
         }
+      },
+      "quote": {
+        "text": "据阿尔玛致门格尔贝格的信，马勒在手稿上留下小诗：「我有多爱你，我的太阳，我无法用言语相告；只能向你倾诉我的渴望、我的爱与我的极乐。」这段词恰好能唱在小柔板的第一主题上。",
+        "source": {
+          "label": "Symphony No. 5 (Mahler) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Mahler)"
+        }
       }
     },
     {
@@ -658,6 +680,13 @@
         "source": {
           "label": "Bad Ischl (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Bad_Ischl"
+        }
+      },
+      "quote": {
+        "text": "勃拉姆斯把这三首间奏曲称作「我悲伤的摇篮曲」(Wiegenlieder meiner Schmerzen)；第一首乐谱前还引了苏格兰民谣《Lady Anne Bothwell 的悲歌》：「安睡吧我的孩子……见你哭泣，我心如绞。」",
+        "source": {
+          "label": "Three Intermezzi, Op. 117 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Three_Intermezzi_for_piano,_Op._117_(Brahms)"
         }
       }
     },
@@ -1068,6 +1097,13 @@
           "label": "Square d'Orléans (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Square_d'Orl%C3%A9ans"
         }
+      },
+      "quote": {
+        "text": "据钢琴家尼克斯记载，肖邦曾对学生兼抄谱者古特曼说，自己「一生中再没有写出过这样美的旋律」。",
+        "source": {
+          "label": "Étude Op. 10, No. 3 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._10,_No._3_(Chopin)"
+        }
       }
     },
     {
@@ -1166,6 +1202,13 @@
       "listening": {
         "target": "John Williams Close Encounters of the Third Kind Suite",
         "query": "John Williams Close Encounters of the Third Kind Suite"
+      },
+      "quote": {
+        "text": "威廉姆斯回忆，剧本要求一个五音动机，他「一连写了 350 多个」，反复寻找那个让人喊出「就是它」的版本；他和斯皮尔伯格还请教数学家，得知 12 个半音里的五音组合约有 13.4 万种。",
+        "source": {
+          "label": "John Williams, 1997 年 Total Film 访谈",
+          "url": "https://www.classicfm.com/composers/williams/music/close-encounters-third-kind/"
+        }
       }
     },
     {
@@ -1264,6 +1307,13 @@
       "listening": {
         "target": "John Williams Hedwig's Theme",
         "query": "John Williams Hedwig's Theme Harry Potter"
+      },
+      "quote": {
+        "text": "威廉姆斯说，海德薇——那只神奇地为哈利送信的猫头鹰——由钢片琴来刻画，「这件能以炫目速度奏出珍珠般、水晶般音色的小巧乐器」先独自起飞，随即由小提琴加入，一同挣脱地心引力。",
+        "source": {
+          "label": "John Williams 谈《哈利·波特儿童组曲》",
+          "url": "https://www.charlottesymphony.org/blog/john-williams-his-harry-potter-children-suite-orchestra/"
+        }
       }
     },
     {
@@ -1460,6 +1510,13 @@
       "listening": {
         "target": "John Williams Superman March",
         "query": "John Williams Superman March"
+      },
+      "quote": {
+        "text": "威廉姆斯为《超人》写了七个主题（含一段抒情的爱情主题、一段科普兰式的乡愁主题）；其标志性的主标题动机被普遍认为在节奏上「念出」了 Su-per-man 三个音节。",
+        "source": {
+          "label": "Roger Ebert：Music to Make A Man Fly",
+          "url": "https://www.rogerebert.com/features/music-to-make-a-man-fly-the-power-of-john-williams-theme-to-superman"
+        }
       }
     },
     {
@@ -1607,6 +1664,13 @@
       "listening": {
         "target": "John Williams Raiders March",
         "query": "John Williams Raiders March Indiana Jones"
+      },
+      "quote": {
+        "text": "威廉姆斯本来写了两条旋律让斯皮尔伯格挑，导演太喜欢，反问「能不能两条都用？」于是这首进行曲一条作 A 段、一条作 B 段，合成了印第安纳·琼斯的招牌主题。",
+        "source": {
+          "label": "Film Music Notes：The Raiders March",
+          "url": "https://filmmusicnotes.com/john-williams-themes-part-4-of-6-the-raiders-march-indiana-jones-theme/"
+        }
       }
     },
     {
@@ -1804,6 +1868,13 @@
       "listening": {
         "target": "John Williams Throne Room and End Title",
         "query": "John Williams Throne Room End Title Star Wars"
+      },
+      "quote": {
+        "text": "谈到为卢克所写的主题，威廉姆斯说他「想写出我在这个角色身上看到的那种铜管般、果敢、阳刚而高贵的气质」，并把它放在小号、圆号与长号最辉煌的音区，做成一段「灿烂夺目的号角」。",
+        "source": {
+          "label": "Music of Star Wars (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Music_of_Star_Wars"
+        }
       }
     },
     {
@@ -1902,6 +1973,13 @@
       "listening": {
         "target": "John Williams Flying Theme E.T.",
         "query": "John Williams Flying Theme ET"
+      },
+      "quote": {
+        "text": "录制结尾追逐段时威廉姆斯难以精准卡点，斯皮尔伯格干脆关掉放映机，让他「按音乐自然的呼吸去演奏」，事后再把画面剪来迁就音乐——影片最后十五分钟因此是为这段旋律而重剪的。",
+        "source": {
+          "label": "E.T. the Extra-Terrestrial (soundtrack) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial_(soundtrack)"
+        }
       }
     },
     {
@@ -1951,6 +2029,13 @@
       "listening": {
         "target": "John Williams The Imperial March",
         "query": "John Williams Imperial March Darth Vader"
+      },
+      "quote": {
+        "text": "这首反派主题在写法上借鉴了肖邦《第二钢琴奏鸣曲》的葬礼进行曲与霍尔斯特《行星组曲·火星》；威廉姆斯用 G 小调、宽大的旋律跳进与半音化的不协和，把威胁直接写进了音符里。",
+        "source": {
+          "label": "The Imperial March (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/The_Imperial_March"
+        }
       }
     }
   ]

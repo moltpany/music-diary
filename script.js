@@ -7,6 +7,10 @@
   var COLLECTIONS = Array.isArray(DATA.collections) ? DATA.collections : [];
   var ENTRIES = Array.isArray(DATA.entries) ? DATA.entries : [];
 
+  // Original dataset index per entry — used to keep concert/program order.
+  var ENTRY_INDEX = {};
+  ENTRIES.forEach(function (e, i) { ENTRY_INDEX[e.id] = i; });
+
   var state = {
     filtered: ENTRIES.slice(),
     selectedId: null,
@@ -178,6 +182,14 @@
       groups[key].entries.push(entry);
     });
 
+    // Within each marker, list works in dataset order (= concert order for the
+    // Berlin Film Night) so a venue popup reads top-to-bottom as the program.
+    order.forEach(function (key) {
+      groups[key].entries.sort(function (a, b) {
+        return ENTRY_INDEX[a.id] - ENTRY_INDEX[b.id];
+      });
+    });
+
     order.forEach(function (key) {
       var group = groups[key];
       var marker = L.marker([group.lat, group.lng], {
@@ -230,12 +242,15 @@
   // ---- Collections (歌单) -------------------------------------------------
   function getCollectionGroups(entries) {
     return COLLECTIONS.map(function (collection) {
-      return {
-        collection: collection,
-        entries: entries.filter(function (e) {
-          return Array.isArray(e.collections) && e.collections.indexOf(collection.id) !== -1;
-        }).sort(byYearThenCity)
-      };
+      // entries.filter preserves the dataset's array order; collections marked
+      // order:"asis" keep that order (e.g. a concert program), others sort by year.
+      var picked = entries.filter(function (e) {
+        return Array.isArray(e.collections) && e.collections.indexOf(collection.id) !== -1;
+      });
+      if (collection.order !== "asis") {
+        picked = picked.sort(byYearThenCity);
+      }
+      return { collection: collection, entries: picked };
     }).filter(function (group) { return group.entries.length > 0; });
   }
 
@@ -300,6 +315,7 @@
       setText("detail-meaning", "当前筛选没有结果。");
       $("detail-collections").hidden = true;
       $("detail-listening").hidden = true;
+      $("detail-quote").hidden = true;
       $("detail-sources").hidden = true;
       $("detail-map-link").hidden = true;
       return;
@@ -353,6 +369,22 @@
       $("detail-listening").hidden = false;
     } else {
       $("detail-listening").hidden = true;
+    }
+
+    var quoteBox = $("detail-quote");
+    if (entry.quote && entry.quote.text) {
+      setText("detail-quote-text", entry.quote.text);
+      var qs = $("detail-quote-source");
+      if (entry.quote.source && entry.quote.source.url) {
+        qs.href = entry.quote.source.url;
+        qs.textContent = "出处：" + (entry.quote.source.label || "查看") + " ↗";
+        qs.hidden = false;
+      } else {
+        qs.hidden = true;
+      }
+      quoteBox.hidden = false;
+    } else {
+      quoteBox.hidden = true;
     }
 
     var sources = getEntrySources(entry);
