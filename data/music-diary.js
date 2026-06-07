@@ -31,6 +31,11 @@ window.MUSIC_DIARY_DATA = {
       "id": "farewell",
       "title": "思念与告别",
       "description": "深情常常与告别同框：等待、爱而不得、永别，以及化作悲悯的慰藉。"
+    },
+    {
+      "id": "concert-berlin",
+      "title": "柏林电影之夜 · 约翰·威廉姆斯",
+      "description": "2021 年 10 月，约翰·威廉姆斯首度执棒柏林爱乐，亲自指挥自己的电影配乐。这份歌单按这场音乐会（后由 DG 录制为《The Berlin Concert》）的曲目整理——从《奥林匹克号角》到《帝国进行曲》，一位电影作曲家如何用管弦乐写就一代人的集体记忆。地点统一标注柏林爱乐厅。"
     }
   ],
   "entries": [
@@ -1063,6 +1068,889 @@ window.MUSIC_DIARY_DATA = {
           "label": "Square d'Orléans (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Square_d'Orl%C3%A9ans"
         }
+      }
+    },
+    {
+      "id": "jw-olympic-fanfare",
+      "title": "《奥林匹克号角与主题》(Olympic Fanfare and Theme)",
+      "work": "音乐会开场（1984）",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1984,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "号角 · 荣耀",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "音乐会的开场曲，铜管炸响的那一刻，全场就知道这一夜属于电影。",
+      "background": "受洛杉矶奥组委委约而作，1984 年由威廉姆斯指挥波士顿流行管弦乐团首演，并在同年第 23 届洛杉矶奥运会开幕式上奏响。它是威廉姆斯四首奥运号角中最著名的一首，长期用于奥运转播。2021 年柏林音乐会以它开场。",
+      "meaning": "威廉姆斯说这首曲子要表现「合作的精神、英雄式的成就，以及赛前所有的努力与赛后所有的掌声」。开篇的小号号角几乎是「庄严庆典」的代名词——把它放在音乐会开头，等于先竖起一面旗：接下来你将听到的，是足以承载集体记忆的管弦乐。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "John Williams 官方作品库：Olympic Fanfare and Theme",
+          "url": "https://www.johnwilliams.org/compositions/concert/olympic-fanfare-and-theme",
+          "summary": "约翰·威廉姆斯官方网站记载：受洛杉矶奥组委委约，1984 年作，同年 6 月 12 日由波士顿流行管弦乐团首演，并在洛杉矶奥运会开幕式奏响。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "John Williams 官方作品库：Olympic Fanfare and Theme",
+        "url": "https://www.johnwilliams.org/compositions/concert/olympic-fanfare-and-theme",
+        "summary": "约翰·威廉姆斯官方网站记载：受洛杉矶奥组委委约，1984 年作，同年 6 月 12 日由波士顿流行管弦乐团首演，并在洛杉矶奥运会开幕式奏响。"
+      },
+      "listening": {
+        "target": "John Williams Olympic Fanfare and Theme",
+        "query": "John Williams Olympic Fanfare and Theme"
+      }
+    },
+    {
+      "id": "jw-close-encounters",
+      "title": "《第三类接触》组曲 (Close Encounters of the Third Kind)",
+      "work": "电影《第三类接触》(1977) 配乐组曲",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1977,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "神秘 · 沟通",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "用五个音符和外星文明对话——电影史上最著名的「音乐即语言」。",
+      "background": "斯皮尔伯格 1977 年科幻片《第三类接触》的配乐。影片里人类与外星飞船用一段五音动机互相「应答」，威廉姆斯为此试验了数百种音型才定稿。这部与《星球大战》同年的作品，是他与斯皮尔伯格长期合作中的早期高峰。",
+      "meaning": "它把「沟通」本身谱成音乐：五个音符既是剧情里的接触信号，也是观众与未知之间的桥。组曲在音乐会上呈现时，神秘的色彩与渐强的合奏让人想起仰望星空的那种敬畏——电影配乐不只是背景，它可以是叙事的主角。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Close Encounters of the Third Kind (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Close_Encounters_of_the_Third_Kind_(soundtrack)",
+          "summary": "1977 年斯皮尔伯格影片配乐，著名的五音动机作为人类与外星飞船的沟通信号。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Close Encounters of the Third Kind (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Close_Encounters_of_the_Third_Kind_(soundtrack)",
+        "summary": "1977 年斯皮尔伯格影片配乐，著名的五音动机作为人类与外星飞船的沟通信号。"
+      },
+      "listening": {
+        "target": "John Williams Close Encounters of the Third Kind Suite",
+        "query": "John Williams Close Encounters of the Third Kind Suite"
+      }
+    },
+    {
+      "id": "jw-far-and-away",
+      "title": "《大地雄心》组曲 (Far and Away)",
+      "work": "电影《大地雄心》(1992) 配乐组曲",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1992,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "乡愁 · 辽阔",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "爱尔兰风笛与弦乐铺开的移民史诗，威廉姆斯较少被听到的抒情面。",
+      "background": "朗·霍华德 1992 年影片《大地雄心》的配乐，讲爱尔兰人远渡重洋赴美拓荒的故事。威廉姆斯融入爱尔兰民间音乐的语汇（风笛、踢踏节奏与悠长的弦乐旋律）。柏林音乐会特意选了这首相对冷门的组曲。",
+      "meaning": "相比星战的辉煌，这部组曲展现威廉姆斯抒情、思乡的一面：辽阔的旋律像横越大西洋的航程，既有离乡的怅惘，也有对新土地的憧憬。它提醒人们，这位「大场面」作曲家同样擅长写细腻的人情与乡愁。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Far and Away",
+          "url": "https://en.wikipedia.org/wiki/Far_and_Away",
+          "summary": "1992 年朗·霍华德影片，约翰·威廉姆斯配乐，融入爱尔兰民间音乐元素的移民题材史诗。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Far and Away",
+        "url": "https://en.wikipedia.org/wiki/Far_and_Away",
+        "summary": "1992 年朗·霍华德影片，约翰·威廉姆斯配乐，融入爱尔兰民间音乐元素的移民题材史诗。"
+      },
+      "listening": {
+        "target": "John Williams Far and Away Suite",
+        "query": "John Williams Far and Away Suite"
+      }
+    },
+    {
+      "id": "jw-hedwig-theme",
+      "title": "《海德薇主题》(Hedwig's Theme)",
+      "work": "电影《哈利·波特与魔法石》(2001)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 2001,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "魔法 · 神秘",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "钢片琴一响起，全世界都知道——魔法开始了。",
+      "background": "威廉姆斯为 2001 年《哈利·波特与魔法石》所作的核心主题，以钢片琴（celesta）奏出。它贯穿前几部影片，并成为整个「哈利·波特」系列的音乐标识，即便后续配乐换人，这段旋律仍被保留。",
+      "meaning": "钢片琴清冷、晶莹的音色把「神秘」与「童话」一次性写定。它在 3/8 拍上轻盈摇曳，似魔杖划过夜空。对一代观众而言，前奏一起便是通往霍格沃茨的门——这正是电影主题音乐的魔力：几小节就能召唤出整个世界。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Hedwig's Theme",
+          "url": "https://en.wikipedia.org/wiki/Hedwig%27s_Theme",
+          "summary": "约翰·威廉姆斯为 2001 年《哈利·波特与魔法石》创作的主题，以钢片琴演奏，成为整个系列的音乐标识。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Hedwig's Theme",
+        "url": "https://en.wikipedia.org/wiki/Hedwig%27s_Theme",
+        "summary": "约翰·威廉姆斯为 2001 年《哈利·波特与魔法石》创作的主题，以钢片琴演奏，成为整个系列的音乐标识。"
+      },
+      "listening": {
+        "target": "John Williams Hedwig's Theme",
+        "query": "John Williams Hedwig's Theme Harry Potter"
+      }
+    },
+    {
+      "id": "jw-nimbus-2000",
+      "title": "《光轮 2000》(Nimbus 2000)",
+      "work": "电影《哈利·波特与魔法石》(2001)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 2001,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "轻盈 · 顽皮",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "一段轻快诙谐的飞天小品，像第一次骑上扫帚的雀跃。",
+      "background": "同样出自 2001 年《哈利·波特与魔法石》，描写哈利第一次得到飞天扫帚「光轮 2000」、学习飞行的段落。是系列配乐中较短小、灵动的一首。",
+      "meaning": "与庄严的《海德薇主题》形成对照，这首小品轻盈、顽皮，木管与弦乐跳跃飞旋，把少年第一次升空的兴奋与失重感写得活灵活现。它展示威廉姆斯写「童真欢乐」的笔力——魔法世界不只神秘，也有纯粹的快活。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Harry Potter and the Philosopher's Stone (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(soundtrack)",
+          "summary": "2001 年《哈利·波特与魔法石》配乐曲目之一，描写哈利学习骑乘飞天扫帚「光轮 2000」。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Harry Potter and the Philosopher's Stone (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(soundtrack)",
+        "summary": "2001 年《哈利·波特与魔法石》配乐曲目之一，描写哈利学习骑乘飞天扫帚「光轮 2000」。"
+      },
+      "listening": {
+        "target": "John Williams Nimbus 2000",
+        "query": "John Williams Nimbus 2000 Harry Potter"
+      }
+    },
+    {
+      "id": "jw-harrys-wondrous-world",
+      "title": "《哈利的奇妙世界》(Harry's Wondrous World)",
+      "work": "电影《哈利·波特与魔法石》(2001) 片尾",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 2001,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "壮丽 · 奇想",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "把魔法世界的所有主题汇成一首壮丽的终曲。",
+      "background": "《哈利·波特与魔法石》的片尾音乐，威廉姆斯把影片中的多个主题（含《海德薇主题》）编织成一首华丽的管弦乐总结，作为系列首部曲的音乐谢幕。",
+      "meaning": "它像一次「主题大巡礼」：把零散出现的动机收束成宏大、明亮的合奏，让观众带着饱满的情绪走出影院。这种「片尾总结曲」是威廉姆斯的拿手好戏——用交响化的手法，把两个多小时的旅程凝成几分钟的回味。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Harry Potter and the Philosopher's Stone (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(soundtrack)",
+          "summary": "影片片尾曲，将多个主题（含《海德薇主题》）汇编为华丽的管弦乐终曲。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Harry Potter and the Philosopher's Stone (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(soundtrack)",
+        "summary": "影片片尾曲，将多个主题（含《海德薇主题》）汇编为华丽的管弦乐终曲。"
+      },
+      "listening": {
+        "target": "John Williams Harry's Wondrous World",
+        "query": "John Williams Harry's Wondrous World"
+      }
+    },
+    {
+      "id": "jw-jurassic-park",
+      "title": "《侏罗纪公园》主题 (Theme from Jurassic Park)",
+      "work": "电影《侏罗纪公园》(1993)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1993,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "敬畏 · 壮美",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "当恐龙第一次出现，这段宽广的旋律让「惊奇」有了声音。",
+      "background": "斯皮尔伯格 1993 年《侏罗纪公园》的主题。影片中众人第一次见到活生生的恐龙时，威廉姆斯用圆号与弦乐奏出这条宽广、近乎赞美诗般的旋律。",
+      "meaning": "它写的不是恐怖，而是「敬畏」——面对复活的远古生命，人类的渺小与惊叹被升华成一种庄严的美。这条主题证明：电影配乐能放大银幕上的情感，让一个「看见」的瞬间变成全场屏息的崇高体验。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Jurassic Park (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Jurassic_Park_(soundtrack)",
+          "summary": "1993 年斯皮尔伯格影片主题，以圆号与弦乐奏出宽广、赞美诗般的旋律，表现面对恐龙的敬畏。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Jurassic Park (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Jurassic_Park_(soundtrack)",
+        "summary": "1993 年斯皮尔伯格影片主题，以圆号与弦乐奏出宽广、赞美诗般的旋律，表现面对恐龙的敬畏。"
+      },
+      "listening": {
+        "target": "John Williams Jurassic Park Theme",
+        "query": "John Williams Theme from Jurassic Park"
+      }
+    },
+    {
+      "id": "jw-superman-march",
+      "title": "《超人进行曲》(Superman March)",
+      "work": "电影《超人》(1978)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1978,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "英雄 · 飞翔",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "「能让人相信人会飞」的音乐——英雄主题的黄金标准。",
+      "background": "理查德·唐纳 1978 年《超人》的主题。威廉姆斯写下了铜管嘹亮、节奏果决的进行曲，连同片中「飞翔」的抒情段，定义了此后几十年「超级英雄音乐」的范式。",
+      "meaning": "影评常说这段音乐「让人相信人真的会飞」。它把正直、勇敢、无畏一次性谱进铜管的上行音型里——你几乎能从旋律里听见斗篷迎风。它与威廉姆斯同期的星战、夺宝奇兵一起，奠定了「主题即角色」的好莱坞作曲传统。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Superman (1978 film soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Superman_(1978_film)#Music",
+          "summary": "1978 年《超人》主题，威廉姆斯所作的铜管进行曲，定义了超级英雄电影音乐的范式。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Superman (1978 film soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Superman_(1978_film)#Music",
+        "summary": "1978 年《超人》主题，威廉姆斯所作的铜管进行曲，定义了超级英雄电影音乐的范式。"
+      },
+      "listening": {
+        "target": "John Williams Superman March",
+        "query": "John Williams Superman March"
+      }
+    },
+    {
+      "id": "jw-scherzo-motorcycle",
+      "title": "《摩托车与管弦乐谐谑曲》(Scherzo for Motorcycle and Orchestra)",
+      "work": "电影《夺宝奇兵之圣战奇兵》(1989)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1989,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "诙谐 · 追逐",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "把一场摩托车追逐写成交响谐谑曲，紧张又幽默。",
+      "background": "出自 1989 年《夺宝奇兵之圣战奇兵》(Indiana Jones and the Last Crusade)，为片中印第与父亲的摩托车追逐段落而作，威廉姆斯后来整理为音乐会用的谐谑曲。",
+      "meaning": "「谐谑曲」(scherzo) 本意即「玩笑」。威廉姆斯用急速的节奏、突兀的重音和俏皮的乐队对答，把银幕上的追车戏变成一场管弦乐的杂技。它体现电影音乐的另一种本事：不只煽情或壮丽，也能精准地「卡」住动作的节奏与幽默。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Indiana Jones and the Last Crusade",
+          "url": "https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Last_Crusade",
+          "summary": "1989 年影片配乐，《摩托车与管弦乐谐谑曲》为片中摩托车追逐段落改编的音乐会作品。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Indiana Jones and the Last Crusade",
+        "url": "https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Last_Crusade",
+        "summary": "1989 年影片配乐，《摩托车与管弦乐谐谑曲》为片中摩托车追逐段落改编的音乐会作品。"
+      },
+      "listening": {
+        "target": "John Williams Scherzo for Motorcycle and Orchestra",
+        "query": "John Williams Scherzo for Motorcycle and Orchestra"
+      }
+    },
+    {
+      "id": "jw-marions-theme",
+      "title": "《玛丽安主题》(Marion's Theme)",
+      "work": "电影《夺宝奇兵》(1981)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1981,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "柔情 · 怀旧",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "冒险片里的一抹温柔——写给印第安纳·琼斯旧爱的情意。",
+      "background": "出自 1981 年《夺宝奇兵》(Raiders of the Lost Ark)，是写给女主角玛丽安的抒情主题，与雄壮的《夺宝奇兵进行曲》形成柔与刚的对照。",
+      "meaning": "在以动作和冒险著称的系列里，这条温暖的旋律承载了印第与玛丽安之间的旧情。它说明威廉姆斯的「主题写作」不止于英雄号角——他给每个重要角色一段可被记住的旋律，让冒险有了情感的锚。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Raiders of the Lost Ark (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Raiders_of_the_Lost_Ark_(soundtrack)",
+          "summary": "1981 年《夺宝奇兵》中写给女主角玛丽安的抒情主题。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Raiders of the Lost Ark (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Raiders_of_the_Lost_Ark_(soundtrack)",
+        "summary": "1981 年《夺宝奇兵》中写给女主角玛丽安的抒情主题。"
+      },
+      "listening": {
+        "target": "John Williams Marion's Theme",
+        "query": "John Williams Marion's Theme Raiders"
+      }
+    },
+    {
+      "id": "jw-raiders-march",
+      "title": "《夺宝奇兵进行曲》(Raiders March)",
+      "work": "电影《夺宝奇兵》(1981)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1981,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "冒险 · 豪迈",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "印第安纳·琼斯的招牌主题，一响起就想戴上帽子去冒险。",
+      "background": "1981 年《夺宝奇兵》的核心主题，又称「印第安纳·琼斯进行曲」，贯穿整个系列。据说威廉姆斯写了两个旋律给斯皮尔伯格挑，导演干脆要求把两条合在一起，于是有了这段标志性的进行曲。",
+      "meaning": "果敢的铜管、昂扬的附点节奏，把「冒险家」三个字写进了旋律的 DNA。它和星战、超人一起，成为「听到主题就看见角色」的典范——这正是威廉姆斯重塑好莱坞交响配乐的核心成就。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：The Raiders March",
+          "url": "https://en.wikipedia.org/wiki/The_Raiders_March",
+          "summary": "1981 年《夺宝奇兵》核心主题，又称印第安纳·琼斯进行曲，贯穿整个系列。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：The Raiders March",
+        "url": "https://en.wikipedia.org/wiki/The_Raiders_March",
+        "summary": "1981 年《夺宝奇兵》核心主题，又称印第安纳·琼斯进行曲，贯穿整个系列。"
+      },
+      "listening": {
+        "target": "John Williams Raiders March",
+        "query": "John Williams Raiders March Indiana Jones"
+      }
+    },
+    {
+      "id": "jw-elegy-cello",
+      "title": "《大提琴与管弦乐的挽歌》(Elegy for Cello and Orchestra)",
+      "work": "音乐会作品（1997 / 管弦乐版 2002）",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 2002,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "哀悼 · 深情",
+      "collections": [
+        "concert-berlin",
+        "farewell"
+      ],
+      "blurb": "全场最安静的时刻——一首为逝去孩子而写的挽歌，由大提琴独诉。",
+      "background": "并非电影配乐，而是威廉姆斯的音乐会作品。1997 年因友人两个年幼孩子的离世而作，最初为大提琴与钢琴，用于追思会；后于 2002 年为大提琴与乐队配器并由马友友录制。柏林音乐会由柏林爱乐大提琴首席布鲁诺·德勒佩莱尔(Bruno Delepelaire) 独奏。",
+      "meaning": "在一整晚的银幕辉煌中间，这首挽歌是最私密、最沉痛的一笔。大提琴像一个独自低语的人，把无法言说的哀恸缓缓道出。它提醒人们，写惯了宏大场面的威廉姆斯，也能用最克制的方式触及最深的悲伤——电影作曲家首先是作曲家。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：John Williams",
+          "url": "https://en.wikipedia.org/wiki/John_Williams",
+          "summary": "《大提琴挽歌》1997 年原为大提琴与钢琴而作，后配器为大提琴与乐队，由马友友录制；柏林音乐会由 Bruno Delepelaire 独奏。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：John Williams",
+        "url": "https://en.wikipedia.org/wiki/John_Williams",
+        "summary": "《大提琴挽歌》1997 年原为大提琴与钢琴而作，后配器为大提琴与乐队，由马友友录制；柏林音乐会由 Bruno Delepelaire 独奏。"
+      },
+      "listening": {
+        "target": "John Williams Elegy for Cello and Orchestra",
+        "query": "John Williams Elegy for Cello and Orchestra"
+      }
+    },
+    {
+      "id": "jw-adventures-of-han",
+      "title": "《韩的冒险》(The Adventures of Han)",
+      "work": "电影《游侠索罗：星球大战外传》(2018)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 2018,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "冒险 · 潇洒",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "为韩·索罗量身写的新主题，老顽童作曲家八十多岁仍在创造经典。",
+      "background": "出自 2018 年《游侠索罗：星球大战外传》(Solo)。威廉姆斯为年轻的韩·索罗谱写了这段融合「英雄主题」与「探寻主题」的新曲，2018 年 5 月由他指挥波士顿流行管弦乐团首演。当时他已逾八十六岁。",
+      "meaning": "它潇洒、风趣，带着旧式冒险片的浪漫，又自然衔接星战宇宙既有的音乐语汇。一位高龄作曲家仍能为新角色写出令人记住的主题——这本身就是对「电影作曲家了不起」最好的注脚。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Solo: A Star Wars Story (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Solo:_A_Star_Wars_Story_(soundtrack)",
+          "summary": "2018 年《游侠索罗》中为韩·索罗创作的新主题，结合英雄主题与探寻主题，2018 年 5 月由波士顿流行管弦乐团首演。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Solo: A Star Wars Story (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Solo:_A_Star_Wars_Story_(soundtrack)",
+        "summary": "2018 年《游侠索罗》中为韩·索罗创作的新主题，结合英雄主题与探寻主题，2018 年 5 月由波士顿流行管弦乐团首演。"
+      },
+      "listening": {
+        "target": "John Williams The Adventures of Han",
+        "query": "John Williams The Adventures of Han Solo"
+      }
+    },
+    {
+      "id": "jw-yodas-theme",
+      "title": "《尤达大师主题》(Yoda's Theme)",
+      "work": "电影《星球大战：帝国反击战》(1980)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1980,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "睿智 · 温厚",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "为最矮小的绝地大师写的最温厚的旋律。",
+      "background": "出自 1980 年《星球大战：帝国反击战》(The Empire Strikes Back)，是绝地大师尤达的主题，常以圆号与弦乐温和奏出。",
+      "meaning": "尤达身形矮小、言语古怪，却是最深的智者。威廉姆斯没有用滑稽的笔法，而是给他一段庄重、温厚又略带神秘的旋律，写出他外表之下的力量与慈悲。这正是「主题即性格」的精妙：旋律替角色说出了台词之外的本质。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：The Empire Strikes Back (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/The_Empire_Strikes_Back_(soundtrack)",
+          "summary": "1980 年《帝国反击战》中绝地大师尤达的主题，以温和庄重的旋律刻画其智慧与慈悲。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：The Empire Strikes Back (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/The_Empire_Strikes_Back_(soundtrack)",
+        "summary": "1980 年《帝国反击战》中绝地大师尤达的主题，以温和庄重的旋律刻画其智慧与慈悲。"
+      },
+      "listening": {
+        "target": "John Williams Yoda's Theme",
+        "query": "John Williams Yoda's Theme Star Wars"
+      }
+    },
+    {
+      "id": "jw-throne-room",
+      "title": "《加冕大厅与终曲》(Throne Room & End Title)",
+      "work": "电影《星球大战：新希望》(1977) 片尾",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1977,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "凯旋 · 荣耀",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "星战首部曲的胜利凯歌，铜管齐鸣的英雄加冕。",
+      "background": "1977 年《星球大战：新希望》(A New Hope) 的片尾音乐，对应反抗军摧毁死星后的授勋场面。威廉姆斯以恢弘的铜管进行曲收束全片。",
+      "meaning": "它是「胜利」的声音化身：庄严的进行曲、辉煌的合奏，把英雄受勋的荣耀推到顶点，再以星战主题作结。1977 年的《星球大战》几乎以一己之力，让宏大的交响配乐重新回到好莱坞主流——这首终曲正是那场复兴的号角。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Star Wars (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars_(soundtrack)",
+          "summary": "1977 年《星球大战：新希望》片尾「加冕大厅与终曲」，恢弘的铜管进行曲对应授勋场面。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Star Wars (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Star_Wars_(soundtrack)",
+        "summary": "1977 年《星球大战：新希望》片尾「加冕大厅与终曲」，恢弘的铜管进行曲对应授勋场面。"
+      },
+      "listening": {
+        "target": "John Williams Throne Room and End Title",
+        "query": "John Williams Throne Room End Title Star Wars"
+      }
+    },
+    {
+      "id": "jw-princess-leia",
+      "title": "《莱娅公主主题》(Princess Leia's Theme)",
+      "work": "电影《星球大战：新希望》(1977)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1977,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "柔美 · 高贵",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "战火宇宙里的一段柔美旋律，写给公主的温柔与坚毅。",
+      "background": "1977 年《星球大战：新希望》中莱娅公主的主题，以圆号与弦乐奏出抒情的旋律，是首部曲中最温柔的段落之一。柏林音乐会作为返场曲之一演出。",
+      "meaning": "在激烈的太空战之间，这条旋律给了星战一颗柔软的心。它温柔却不柔弱，既有公主的高贵，也藏着莱娅的坚毅。威廉姆斯用「角色主题」的手法，让一个人物在音乐里立体起来——这是他整套星战配乐的灵魂方法。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：Star Wars (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars_(soundtrack)",
+          "summary": "1977 年《星球大战：新希望》中莱娅公主的抒情主题；柏林音乐会作为返场曲演出。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Star Wars (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/Star_Wars_(soundtrack)",
+        "summary": "1977 年《星球大战：新希望》中莱娅公主的抒情主题；柏林音乐会作为返场曲演出。"
+      },
+      "listening": {
+        "target": "John Williams Princess Leia's Theme",
+        "query": "John Williams Princess Leia's Theme Star Wars"
+      }
+    },
+    {
+      "id": "jw-flying-theme-et",
+      "title": "《飞翔主题》(Flying Theme, from E.T.)",
+      "work": "电影《E.T. 外星人》(1982)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1982,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "奇迹 · 飞翔",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "自行车飞越明月的那一刻——电影与音乐合二为一的奇迹。",
+      "background": "出自斯皮尔伯格 1982 年《E.T. 外星人》，对应少年骑车载着 E.T. 飞越夜空、掠过满月的著名段落。威廉姆斯凭此片配乐获奥斯卡奖。柏林音乐会作为返场曲之一。",
+      "meaning": "据说斯皮尔伯格按音乐重新剪辑了这场戏，让画面去贴合旋律——音乐与影像彻底融为一体。上行飞旋的弦乐把「飞翔」与「奇迹」写到极致，几乎成了纯真与想象力的代名词。它是「电影作曲家了不起」的最佳例证之一。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：E.T. the Extra-Terrestrial (soundtrack)",
+          "url": "https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial_(soundtrack)",
+          "summary": "1982 年《E.T.》的飞翔主题，对应自行车飞越明月的段落；威廉姆斯凭此片获奥斯卡最佳原创配乐。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：E.T. the Extra-Terrestrial (soundtrack)",
+        "url": "https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial_(soundtrack)",
+        "summary": "1982 年《E.T.》的飞翔主题，对应自行车飞越明月的段落；威廉姆斯凭此片获奥斯卡最佳原创配乐。"
+      },
+      "listening": {
+        "target": "John Williams Flying Theme E.T.",
+        "query": "John Williams Flying Theme ET"
+      }
+    },
+    {
+      "id": "jw-imperial-march",
+      "title": "《帝国进行曲》(The Imperial March)",
+      "work": "电影《星球大战：帝国反击战》(1980)",
+      "composer": "约翰·威廉姆斯 (John Williams)",
+      "year": 1980,
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.51,
+      "lng": 13.3697,
+      "mood": "威压 · 黑暗",
+      "collections": [
+        "concert-berlin"
+      ],
+      "blurb": "达斯·维达登场的脚步声——史上最著名的反派主题，全场压轴。",
+      "background": "出自 1980 年《帝国反击战》，是达斯·维达与银河帝国的主题，又称「维达主题」。它是首部曲之后加入的角色主题，如今已成为「反派音乐」的代名词。柏林音乐会以它作为压轴返场。",
+      "meaning": "沉重的小调进行曲、铁蹄般的固定节奏，把「威压」与「恐惧」写得不容置疑。它强大到脱离电影独立存在——人们用它来形容一切「大反派登场」。以它收尾整场音乐会，是把电影音乐的力量推到顶点的谢幕。",
+      "place": {
+        "name": "Berliner Philharmonie（柏林爱乐厅）",
+        "address": "Herbert-von-Karajan-Straße 1, 10785 Berlin",
+        "certainty": "高",
+        "note": "约翰·威廉姆斯 2021 年 10 月在此首度执棒柏林爱乐，亲自指挥本曲。（本条按 2021 年 10 月柏林爱乐音乐会的演出地点标注，非电影配乐的原始创作地。）",
+        "source": {
+          "label": "Berliner Philharmonie (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+        }
+      },
+      "sources": [
+        {
+          "label": "Wikipedia：The Imperial March",
+          "url": "https://en.wikipedia.org/wiki/The_Imperial_March",
+          "summary": "1980 年《帝国反击战》中达斯·维达与银河帝国的主题，史上最著名的反派主题之一。"
+        },
+        {
+          "label": "Deutsche Grammophon：John Williams – The Berlin Concert",
+          "url": "https://www.deutschegrammophon.com/en/catalogue/products/the-berlin-concert-john-williams-standard-edition-12559",
+          "summary": "DG 官方《The Berlin Concert》专辑收录此曲，为 2021 年 10 月约翰·威廉姆斯指挥柏林爱乐音乐会的曲目之一。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：The Imperial March",
+        "url": "https://en.wikipedia.org/wiki/The_Imperial_March",
+        "summary": "1980 年《帝国反击战》中达斯·维达与银河帝国的主题，史上最著名的反派主题之一。"
+      },
+      "listening": {
+        "target": "John Williams The Imperial March",
+        "query": "John Williams Imperial March Darth Vader"
       }
     }
   ]
