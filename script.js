@@ -272,11 +272,22 @@
   }
 
   function renderCollections(entries) {
-    var nav = $("collection-section-nav");
-    var list = $("collection-section-list");
-    if (!list) { return; }
+    var allGroups = getCollectionGroups(entries);
+    renderCollectionGroups(
+      allGroups.filter(function (g) { return (g.collection.kind || "playlist") !== "concert"; }),
+      "collection-section-nav", "collection-section-list"
+    );
+    renderCollectionGroups(
+      allGroups.filter(function (g) { return g.collection.kind === "concert"; }),
+      "concert-section-nav", "concert-section-list"
+    );
+    highlightSelected();
+  }
 
-    var groups = getCollectionGroups(entries);
+  function renderCollectionGroups(groups, navId, listId) {
+    var nav = $(navId);
+    var list = $(listId);
+    if (!list) { return; }
 
     if (nav) {
       nav.innerHTML = groups.map(function (g) {
@@ -295,10 +306,14 @@
           "</button>"
         );
       }).join("");
+      var badge = g.collection.badge
+        ? ' <span class="collection-badge">' + escapeHtml(g.collection.badge) + "</span>"
+        : "";
       return (
         '<article class="collection-card" id="collection-' + escapeHtml(g.collection.id) + '">' +
           '<div class="collection-card-head">' +
-            "<h3>" + escapeHtml(g.collection.title) + ' <span class="collection-count">' + g.entries.length + " 首</span></h3>" +
+            "<h3>" + escapeHtml(g.collection.title) + badge +
+              ' <span class="collection-count">' + g.entries.length + " 首</span></h3>" +
             "<p>" + escapeHtml(g.collection.description) + "</p>" +
           "</div>" +
           '<div class="collection-items">' + items + "</div>" +
@@ -311,7 +326,6 @@
         selectEntry(btn.getAttribute("data-id"), { focusMap: true, scrollDetail: true });
       });
     });
-    highlightSelected();
   }
 
   function highlightSelected() {
@@ -439,30 +453,6 @@
     }
   }
 
-  // ---- Sources ------------------------------------------------------------
-  function renderSources() {
-    var container = $("source-list");
-    if (!container) { return; }
-    container.innerHTML = ENTRIES.slice().sort(byYearThenCity).map(function (e) {
-      var sources = getEntrySources(e);
-      if (!sources.length) { return ""; }
-      var links = sources.map(function (s) {
-        return (
-          '<div class="source-item">' +
-            '<a href="' + escapeHtml(s.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(s.label || s.url) + " ↗</a>" +
-            (s.summary ? "<p>" + escapeHtml(s.summary) + "</p>" : "") +
-          "</div>"
-        );
-      }).join("");
-      return (
-        '<article class="source-row">' +
-          "<h3>" + escapeHtml(e.title) + ' <span class="source-composer">' + escapeHtml(e.composer) + "</span></h3>" +
-          links +
-        "</article>"
-      );
-    }).join("");
-  }
-
   // ---- Theme toggle -------------------------------------------------------
   function initTheme() {
     var btn = $("theme-toggle");
@@ -510,7 +500,6 @@
     populateFilters();
     initMap();
     initDetailActions();
-    renderSources();
     applyFilters();
   }
 

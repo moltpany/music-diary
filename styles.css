@@ -350,6 +350,18 @@ h3 { font-size: 1.15rem; }
 }
 .collection-card-head h3 { margin: 0 0 4px; }
 .collection-count { color: var(--accent); font-weight: 400; font-size: 0.85rem; }
+.collection-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
 .collection-card-head p { margin: 0 0 14px; color: var(--ink-soft); font-size: 0.92rem; max-width: 760px; }
 
 .collection-items {
