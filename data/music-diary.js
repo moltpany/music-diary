@@ -38,6 +38,12 @@ window.MUSIC_DIARY_DATA = {
       "kind": "playlist"
     },
     {
+      "id": "sleep",
+      "kind": "playlist",
+      "title": "睡前",
+      "description": "安静、节奏缓慢、力度克制的音乐——夜曲、摇篮曲与「梦」的曲子，适合临睡前听。其中不少本就属于「爱情」或「深夜与月光」里偏柔的那一面。"
+    },
+    {
       "id": "concert-berlin",
       "title": "柏林电影之夜 · 约翰·威廉姆斯",
       "description": "2021 年 10 月，约翰·威廉姆斯首度执棒柏林爱乐，亲自指挥自己的电影配乐。这份歌单按这场音乐会（后由 DG 录制为《The Berlin Concert》）的曲目整理——从《奥林匹克号角》到《帝国进行曲》，一位电影作曲家如何用管弦乐写就一代人的集体记忆。地点统一标注柏林爱乐厅。",
@@ -67,7 +73,8 @@ window.MUSIC_DIARY_DATA = {
       "mood": "初恋 · 温柔",
       "collections": [
         "love",
-        "piano"
+        "piano",
+        "sleep"
       ],
       "blurb": "《童年情景》第七首，成年人回忆童年时那种纯净到近乎忧伤的温柔。",
       "background": "1838 年 2–3 月，舒曼一口气写了约 30 首钢琴小品，从中选出 13 首编成《童年情景》op. 15，次年由 Breitkopf & Härtel 在莱比锡出版。这正是他与未来妻子克拉拉·维克因其父反对而被迫分离、苦苦争取婚姻的时期；他在 1838 年 3 月 19 日写给克拉拉的信里提到这些「小巧古怪的小东西」。第七首《梦幻曲》(Träumerei，意为「梦想/出神」) 是其中最著名的一首。",
@@ -125,7 +132,8 @@ window.MUSIC_DIARY_DATA = {
       "collections": [
         "love",
         "night",
-        "piano"
+        "piano",
+        "sleep"
       ],
       "blurb": "暧昧、朦胧、不敢触碰，音符像月光洒在湖面上。",
       "background": "《贝加马斯克组曲》是德彪西第一部重要的钢琴作品，约 1890 年（他二十八岁左右）开始构思，却直到 1905 年出版前才大幅修订定稿。第三乐章《月光》最初题为《感伤的散步》(Promenade sentimentale)，后改用现名；标题与整部组曲的灵感都来自魏尔伦的诗——「月光」一词与「假面与贝加摩舞」都出自他的诗句。",
@@ -225,7 +233,8 @@ window.MUSIC_DIARY_DATA = {
       "mood": "初恋 · 小夜曲",
       "collections": [
         "love",
-        "night"
+        "night",
+        "sleep"
       ],
       "blurb": "深夜花园里，恋人按捺不住的脚步声。",
       "background": "1828 年，舒伯特在生命的最后几个月里写下一批歌曲；他去世后，出版商哈斯林格把它们结集为《天鹅之歌》(Schwanengesang, D. 957)，1829 年于维也纳出版。全集共 14 首，前 7 首用雷尔斯塔布的诗、6 首用海涅的诗。第四首《小夜曲》取自雷尔斯塔布，是其中最著名的一首。",
@@ -392,7 +401,8 @@ window.MUSIC_DIARY_DATA = {
       "collections": [
         "love",
         "piano",
-        "night"
+        "night",
+        "sleep"
       ],
       "blurb": "钢琴如歌唱般倾诉，是李斯特最「不炫技」却最动人的作品之一。",
       "background": "《爱之梦》三首钢琴夜曲于 1850 年出版，原本是李斯特根据乌兰德与弗赖利格拉特的诗谱写的艺术歌曲，后改编为钢琴独奏。第三首基于弗赖利格拉特的诗《爱吧，只要你能爱》(O lieb, so lang du lieben kannst)，写的是无条件、要趁还能爱时去爱的成熟之爱。此时李斯特正驻于魏玛，处于他作为作曲家最丰产的时期。",
@@ -496,7 +506,8 @@ window.MUSIC_DIARY_DATA = {
       "mood": "激情 · 深情",
       "collections": [
         "love",
-        "night"
+        "night",
+        "sleep"
       ],
       "blurb": "极其宽广的旋律，像在深夜对爱人说出从未说出口的话。",
       "background": "1897 年《第一交响曲》首演惨败后，拉赫玛尼诺夫陷入长期抑郁、几乎无法创作。经神经科医生尼古拉·达尔以催眠暗示与耐心鼓励的长期治疗，他逐渐恢复信心，于 1900–1901 年写成这部 C 小调第二钢琴协奏曲，并把它题献给达尔医生。1901 年 11 月由作曲家本人独奏在莫斯科完整首演，获得巨大成功。",
@@ -602,7 +613,8 @@ window.MUSIC_DIARY_DATA = {
       "collections": [
         "love",
         "night",
-        "farewell"
+        "farewell",
+        "sleep"
       ],
       "blurb": "写给阿尔玛的「无言情书」，后来却成了告别的音乐。",
       "background": "《第五交响曲》作于 1901–1902 年，主要在马勒位于迈尔尼希的作曲小屋完成。其间，他于 1901 年 11 月在维也纳结识阿尔玛·辛德勒，12 月订婚，1902 年 3 月成婚。第四乐章「小柔板」只用弦乐与一架竖琴，与全曲庞大的乐队编制形成鲜明对照。据指挥家门格尔贝格记载，马勒没有附信，只把这一乐章的手稿寄给阿尔玛——而她读懂了，回话让他来。",
@@ -660,7 +672,8 @@ window.MUSIC_DIARY_DATA = {
       "collections": [
         "night",
         "piano",
-        "farewell"
+        "farewell",
+        "sleep"
       ],
       "blurb": "勃拉姆斯称之为「我悲伤的摇篮曲」，爱而不得化为悲悯。",
       "background": "1892 年夏天，勃拉姆斯在奥地利温泉小镇巴德伊舍写下《三首间奏曲》op. 117，同年 11 月由 N. Simrock 在柏林出版。这是他晚年内省的钢琴小品之一。第一首在乐谱前引了一段苏格兰民谣《Lady Anne Bothwell's Lament》（经赫尔德译为德文）的诗句——一首摇篮曲式的哀歌。",
@@ -769,7 +782,8 @@ window.MUSIC_DIARY_DATA = {
       "collections": [
         "love",
         "night",
-        "farewell"
+        "farewell",
+        "sleep"
       ],
       "blurb": "纯洁而无法触及的爱，优雅中带着注定的消逝感。",
       "background": "《天鹅》是圣-桑《动物狂欢节》的第十三（也是倒数第二）乐章，1886 年创作，由大提琴独奏、两架钢琴伴奏。圣-桑生前禁止公开演出整部《动物狂欢节》，怕它损害自己「严肃作曲家」的形象——唯独《天鹅》，他允许在生前（1887）出版。1905 年，编舞家福金为芭蕾舞者安娜·巴甫洛娃编了著名的独舞《天鹅之死》，正是用这段音乐。",
@@ -1025,7 +1039,8 @@ window.MUSIC_DIARY_DATA = {
       "mood": "夜 · 温柔",
       "collections": [
         "night",
-        "piano"
+        "piano",
+        "sleep"
       ],
       "blurb": "沙龙里最温柔的夜，右手如即兴歌唱般自由飘移。",
       "background": "这首降 E 大调夜曲约作于 1830–1832 年、1833 年出版，是《夜曲》op. 9 三首中的第二首，题献给玛丽·普莱耶尔（Marie Pleyel）。它是肖邦二十岁出头、初到巴黎时期的早期作品。夜曲这一体裁本由爱尔兰作曲家约翰·菲尔德开创，肖邦在其基础上大大发展、深化，写出了属于自己的「夜的语言」。",
@@ -2540,6 +2555,145 @@ window.MUSIC_DIARY_DATA = {
       "listening": {
         "target": "《泻湖圆舞曲》(Lagunen-Walzer) Johann Strauss",
         "query": "Johann Strauss 威尼斯之夜 《泻湖圆舞曲》(Lagunen-Walzer)"
+      }
+    },
+    {
+      "id": "brahms-wiegenlied-op49-4",
+      "title": "《摇篮曲》(Wiegenlied)",
+      "work": "Fünf Lieder, Op. 49 No. 4",
+      "composer": "约翰内斯·勃拉姆斯 (Johannes Brahms)",
+      "year": 1868,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2082,
+      "lng": 16.3738,
+      "mood": "安睡 · 温柔",
+      "collections": [
+        "sleep"
+      ],
+      "blurb": "全世界最有名的摇篮曲。勃拉姆斯为旧友贝尔塔·法贝尔次子的出生而写，旋律里藏着她当年唱给他听的歌。",
+      "background": "《摇篮曲》是勃拉姆斯《五首歌曲》op. 49 的第四首，1868 年由 N. Simrock 在柏林出版。它写给勃拉姆斯的旧识贝尔塔·法贝尔（Bertha Faber），祝贺她次子的出生；勃拉姆斯年轻时曾对她有过情愫，便在伴奏里暗藏一段对位，呼应她当年常哼给他听的一支歌（取自亚历山大·鲍曼的二重唱）。第一段歌词出自德国民歌集《男孩的神奇号角》，第二段为格奥尔格·舍雷尔 1849 年所作。1869 年 12 月 22 日由女高音 Louise Dustmann 与钢琴家克拉拉·舒曼在维也纳首演。",
+      "meaning": "它把「哄睡」这件最日常的小事，写成了一段近乎完美的旋律：摇摆的伴奏像轻轻晃动的摇篮，歌声平缓、不带任何戏剧性的起伏，一切都为了「安静下来」。勃拉姆斯把对一位旧友的温柔藏进暗藏的对位里——这首曲子之所以传遍全世界，正因为它说的不是激情，而是守护：愿你安睡。",
+      "source": {
+        "label": "IMSLP：5 Lieder, Op. 49 (Brahms)",
+        "url": "https://imslp.org/wiki/5_Lieder,_Op.49_(Brahms,_Johannes)",
+        "summary": "权威乐谱档案 IMSLP 收录勃拉姆斯《五首歌曲》op. 49（1868 年由 N. Simrock 在柏林首版）；其中第四首即著名的《摇篮曲》(Wiegenlied)，第一段歌词取自民歌集《男孩的神奇号角》。"
+      },
+      "sources": [
+        {
+          "label": "IMSLP：5 Lieder, Op. 49 (Brahms)",
+          "url": "https://imslp.org/wiki/5_Lieder,_Op.49_(Brahms,_Johannes)",
+          "summary": "权威乐谱档案 IMSLP 收录勃拉姆斯《五首歌曲》op. 49（1868 年由 N. Simrock 在柏林首版）；其中第四首即著名的《摇篮曲》(Wiegenlied)，第一段歌词取自民歌集《男孩的神奇号角》。"
+        },
+        {
+          "label": "Wikipedia：Wiegenlied (Brahms)",
+          "url": "https://en.wikipedia.org/wiki/Wiegenlied_(Brahms)",
+          "summary": "补充：作品献给贝尔塔·法贝尔，伴奏暗藏她旧日所唱歌曲的对位；1869 年 12 月 22 日由 Louise Dustmann 与克拉拉·舒曼在维也纳首演。"
+        }
+      ],
+      "listening": {
+        "target": "Brahms Wiegenlied Op. 49 No. 4 (Lullaby)",
+        "query": "Brahms Wiegenlied Op 49 No 4 lullaby"
+      },
+      "quote": {
+        "text": "伴奏里那段暗藏的旋律，呼应着贝尔塔年轻时常哼给勃拉姆斯听的一支歌——他把私人的回忆，缝进了一首给婴儿的摇篮曲。",
+        "source": {
+          "label": "Wiegenlied (Brahms) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Wiegenlied_(Brahms)"
+        }
+      }
+    },
+    {
+      "id": "chopin-berceuse-op57",
+      "title": "《摇篮曲》(Berceuse)",
+      "work": "Berceuse in D-flat major, Op. 57",
+      "composer": "弗里德里克·肖邦 (Frédéric Chopin)",
+      "year": 1844,
+      "city": "Paris",
+      "country": "France",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "mood": "安睡 · 出神",
+      "collections": [
+        "sleep",
+        "piano"
+      ],
+      "blurb": "左手一个固定的摇摆音型从头晃到尾，右手在上面织出越来越精致的花边——一首始终保持轻声的钢琴摇篮曲。",
+      "background": "肖邦的《摇篮曲》降 D 大调 op. 57 于 1843 年夏起笔、1844 年在巴黎完成，1845 年出版，题献给 Élise Gavard。全曲建立在一个几乎从不改变的固定低音（ostinato）之上，右手则是一连串变奏，越来越华丽精巧，而整首作品始终维持 piano 到 pianissimo 的轻柔力度——这正是「摇篮曲」体裁的要求。",
+      "meaning": "它几乎只做一件事：让左手那个轻轻摇摆的音型一刻不停，像摇篮恒定的节奏；右手在这片安稳之上做梦，音符越来越细、越来越亮，却始终不肯大声。肖邦把「入睡」写成了一种悬浮的状态——意识慢慢飘远，而底下那只手始终温柔地托着你。",
+      "source": {
+        "label": "Fryderyk Chopin Institute (NIFC)：Berceuse, Op. 57",
+        "url": "https://en.chopin.nifc.pl/chopin/composition/detail/id/121",
+        "summary": "肖邦国家研究所（NIFC）官方资料库收录《摇篮曲》(Berceuse) 降 D 大调 op. 57：1843 年夏起笔、1844 年于巴黎完成，1845 年出版；全曲为固定低音上的一系列变奏，始终保持 piano / pianissimo 的轻柔力度，献给 Élise Gavard。"
+      },
+      "sources": [
+        {
+          "label": "Fryderyk Chopin Institute (NIFC)：Berceuse, Op. 57",
+          "url": "https://en.chopin.nifc.pl/chopin/composition/detail/id/121",
+          "summary": "肖邦国家研究所（NIFC）官方资料库收录《摇篮曲》(Berceuse) 降 D 大调 op. 57：1843 年夏起笔、1844 年于巴黎完成，1845 年出版；全曲为固定低音上的一系列变奏，始终保持 piano / pianissimo 的轻柔力度，献给 Élise Gavard。"
+        },
+        {
+          "label": "Wikipedia：Berceuse (Chopin)",
+          "url": "https://en.wikipedia.org/wiki/Berceuse_(Chopin)",
+          "summary": "补充：作品为固定低音上的十六段变奏，1845 年由巴黎 Meissonnier、伦敦 Wessel、莱比锡 Breitkopf & Härtel 分别出版。"
+        }
+      ],
+      "listening": {
+        "target": "Chopin Berceuse Op. 57",
+        "query": "Chopin Berceuse Op 57 D flat major"
+      },
+      "quote": {
+        "text": "在真正的摇篮曲应有的克制里，《摇篮曲》始终守着 piano 与 pianissimo——它是固定低音之上的一系列变奏，被公认为肖邦最非凡的抒情杰作之一。",
+        "source": {
+          "label": "Fryderyk Chopin Institute (NIFC)",
+          "url": "https://en.chopin.nifc.pl/chopin/composition/detail/id/121"
+        }
+      }
+    },
+    {
+      "id": "mozart-eine-kleine-nachtmusik-romanze",
+      "title": "《弦乐小夜曲》第二乐章 Romanze",
+      "work": "Serenade No. 13 \"Eine kleine Nachtmusik\", K. 525 — II. Romanze (Andante)",
+      "composer": "沃尔夫冈·阿马德乌斯·莫扎特 (Wolfgang Amadeus Mozart)",
+      "year": 1787,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2082,
+      "lng": 16.3738,
+      "mood": "夜曲 · 安宁",
+      "collections": [
+        "sleep"
+      ],
+      "blurb": "《弦乐小夜曲》里最温柔的一段。Romanze（浪漫曲）在 C 大调里缓步而行，亲密、安宁，是古典主义对「夜」最优雅的想象。",
+      "background": "《弦乐小夜曲》(Eine kleine Nachtmusik) 即 G 大调第十三号小夜曲 KV 525，1787 年 8 月 10 日在维也纳完成，是莫扎特最广为人知的器乐作品之一。全曲共四个乐章；第二乐章 Romanze 标记 Andante，转入下属调 C 大调，采用回旋曲式（A–B–A–C–A 加尾声），通篇弥漫着亲密与温柔的气息。",
+      "meaning": "「Eine kleine Nachtmusik」字面就是「一首小小的夜曲」。在欢快的首乐章之后，这段 Romanze 把速度放慢、把音量收住，旋律像低声的诉说，从容、安稳、不慌不忙。它没有浪漫主义那种汹涌的情感，而是古典主义特有的均衡之美——正是这种「什么都不打扰你」的优雅，让它格外适合在夜里、在临睡前听。",
+      "source": {
+        "label": "Stiftung Mozarteum · Köchel-Verzeichnis：Eine kleine Nachtmusik KV 525",
+        "url": "https://kv.mozarteum.at/en/work/eine-kleine-nachtmusik-a-little-night-music-divertimento-in-g-for-strings-6049",
+        "summary": "萨尔茨堡国际莫扎特基金会官方柯歇尔目录收录《弦乐小夜曲》KV 525：G 大调，1787 年 8 月 10 日在维也纳完成；第二乐章 Romanze (Andante) 为 C 大调，温柔亲密。"
+      },
+      "sources": [
+        {
+          "label": "Stiftung Mozarteum · Köchel-Verzeichnis：Eine kleine Nachtmusik KV 525",
+          "url": "https://kv.mozarteum.at/en/work/eine-kleine-nachtmusik-a-little-night-music-divertimento-in-g-for-strings-6049",
+          "summary": "萨尔茨堡国际莫扎特基金会官方柯歇尔目录收录《弦乐小夜曲》KV 525：G 大调，1787 年 8 月 10 日在维也纳完成；第二乐章 Romanze (Andante) 为 C 大调，温柔亲密。"
+        },
+        {
+          "label": "Wikipedia：Eine kleine Nachtmusik",
+          "url": "https://en.wikipedia.org/wiki/Eine_kleine_Nachtmusik",
+          "summary": "补充：第二乐章 Romanze 为 C 大调、回旋曲式（A–B–A–C–A 加尾声），全曲 1787 年作于维也纳。"
+        }
+      ],
+      "listening": {
+        "target": "Mozart Eine kleine Nachtmusik K. 525 Romanze (2nd movement)",
+        "query": "Mozart Eine kleine Nachtmusik K 525 Romanze Andante second movement"
+      },
+      "quote": {
+        "text": "标记 Andante 的 Romanze 转入下属调 C 大调——整个乐章自始至终弥漫着一种亲密与温柔。",
+        "source": {
+          "label": "Eine kleine Nachtmusik — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eine_kleine_Nachtmusik"
+        }
       }
     }
   ]
