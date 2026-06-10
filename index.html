@@ -35,6 +35,7 @@
           <a href="#explore">浏览</a>
           <a href="#collections">歌单</a>
           <a href="#concerts">音乐会</a>
+          <a href="#play">弹一首</a>
           <a href="#detail">作品详情</a>
           <a href="#sources">来源</a>
           <a class="cross-link" href="https://moltpany.github.io/mozart-journey/">Mozart Journey ↗</a>
@@ -155,6 +156,31 @@
         <div id="concert-section-list" class="collection-list"></div>
       </section>
 
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <p class="section-kicker">小游戏</p>
+          <h2 id="play-title">照着乐谱，用键盘弹一首</h2>
+        </div>
+        <p class="collections-intro">选一首乐谱、挑一种音色，然后用电脑键盘弹奏：中排字母键（A S D F G H J K L ; '）是白键，上排（W E T Y U O P）是黑键；也可以直接点击下面的琴键。乐谱上高亮的音符就是下一个要弹的键，弹完整首会有小惊喜。</p>
+
+        <div class="play-controls">
+          <label>
+            乐谱
+            <select id="play-melody"></select>
+          </label>
+          <label>
+            音色
+            <select id="play-timbre"></select>
+          </label>
+          <button id="play-restart" class="play-restart" type="button">从头再弹</button>
+        </div>
+
+        <div id="play-score" class="play-score" aria-live="off"></div>
+        <p id="play-status" class="play-status" aria-live="polite"></p>
+        <div id="play-keyboard" class="play-keyboard" role="group" aria-label="屏幕钢琴键盘"></div>
+        <p class="play-hint">音色由浏览器 Web Audio 实时合成，无需联网加载音源；手机上也可以直接点琴键弹奏。</p>
+      </section>
+
       <section class="sources-section" id="sources" aria-labelledby="sources-title">
         <p class="section-kicker">资料说明</p>
         <h2 id="sources-title">关于来源与立场</h2>
@@ -170,5 +196,6 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="data/music-diary.js"></script>
     <script src="script.js"></script>
+    <script src="keyboard-game.js"></script>
   </body>
 </html>

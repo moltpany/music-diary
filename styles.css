@@ -555,6 +555,166 @@ h3 { font-size: 1.15rem; }
 .source-item a { font-size: 0.88rem; }
 .source-item p { margin: 3px 0 0; font-size: 0.85rem; color: var(--ink-soft); }
 
+/* ---- Play (键盘弹奏小游戏) ---------------------------------------------- */
+.play-section {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px;
+}
+
+.play-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  margin: 18px 0;
+}
+.play-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  flex: 1 1 220px;
+  min-width: 0;
+}
+.play-controls select {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface-2);
+  color: var(--ink);
+  width: 100%;
+}
+.play-restart {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 9px 18px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.92rem;
+}
+.play-restart:hover { background: var(--accent-soft); }
+
+.play-score {
+  overflow-x: auto;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 6px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-soft) transparent;
+  scroll-behavior: smooth;
+}
+.play-score::-webkit-scrollbar { height: 6px; }
+.play-score::-webkit-scrollbar-thumb {
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
+.play-score svg { display: block; }
+.score-free-note {
+  margin: 24px 12px;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.score-line { stroke: var(--ink-soft); stroke-width: 1; opacity: 0.7; }
+.score-clef { font-size: 58px; fill: var(--ink); }
+.score-head { fill: var(--ink); }
+.score-stem { stroke: var(--ink); stroke-width: 1.6; }
+.score-accidental { font-size: 15px; fill: var(--ink); }
+.score-key {
+  font-size: 12px;
+  fill: var(--ink-soft);
+  text-anchor: middle;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.score-note.is-done .score-head,
+.score-note.is-done .score-accidental { fill: var(--accent-soft); opacity: 0.55; }
+.score-note.is-done .score-stem { stroke: var(--accent-soft); opacity: 0.55; }
+.score-note.is-done .score-key { opacity: 0.4; }
+.score-note.is-current .score-head,
+.score-note.is-current .score-accidental { fill: var(--accent); }
+.score-note.is-current .score-stem { stroke: var(--accent); }
+.score-note.is-current .score-key {
+  fill: var(--accent);
+  font-weight: 700;
+  font-size: 14px;
+}
+.score-note.is-wrong .score-head { fill: #c0392b; }
+
+.play-status {
+  margin: 12px 2px;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  min-height: 1.6em;
+}
+
+.play-keyboard {
+  position: relative;
+  display: flex;
+  height: 170px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.piano-key {
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.piano-white {
+  flex: 1 1 0;
+  background: #fdfbfc;
+  color: #8a7480;
+  border-top: none;
+  padding-bottom: 8px;
+  gap: 2px;
+}
+html[data-theme="dark"] .piano-white { background: #e8dde2; color: #5d4753; }
+.piano-white.is-down,
+.piano-white:active { background: var(--accent-soft); color: #fff; }
+.piano-black {
+  position: absolute;
+  top: 0;
+  width: 5.4%;
+  height: 58%;
+  background: #322028;
+  color: #d8c2cb;
+  border-radius: 0 0 6px 6px;
+  border: 1px solid #1c1116;
+  z-index: 2;
+  padding-bottom: 6px;
+}
+.piano-black.is-down,
+.piano-black:active { background: var(--accent); color: #fff; }
+.piano-keycap {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.piano-notename { font-size: 0.68rem; opacity: 0.75; }
+
+.play-hint {
+  margin: 12px 2px 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
 /* ---- Footer ------------------------------------------------------------ */
 footer {
   border-top: 1px solid var(--line);
@@ -568,7 +728,9 @@ footer p { margin: 4px 0; }
 /* ---- Responsive -------------------------------------------------------- */
 @media (max-width: 640px) {
   #map { height: 380px; }
-  .explore-section, .detail-section, .sources-section, .collections-section { padding: 18px; }
+  .explore-section, .detail-section, .sources-section, .collections-section, .play-section { padding: 18px; }
+  .play-keyboard { height: 130px; }
+  .piano-notename { display: none; }
   .result-count { margin: 6px 0 0; }
   .detail-grid { grid-template-columns: 1fr; gap: 14px; }
   /* stack filters one per row so long composer names never overflow */
