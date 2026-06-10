@@ -625,10 +625,17 @@ h3 { font-size: 1.15rem; }
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 4px;
   min-width: 32px;
   padding: 3px 3px 4px;
   border-radius: 8px;
   transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.2s ease;
+}
+/* one pitch = octave dot / number / low dot / keycap; chords stack melody over bass */
+.jianpu-pitch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .jianpu-dot {
   width: 4px;
@@ -637,14 +644,16 @@ h3 { font-size: 1.15rem; }
   background: transparent;
   margin-bottom: 2px;
 }
+.jianpu-dot-low { margin-bottom: 0; margin-top: 2px; }
 .jianpu-dot.is-on { background: var(--ink); }
+.jianpu-pitch.is-got { opacity: 0.35; }
 .jianpu-num {
   font-size: 1.3rem;
   line-height: 1.15;
   color: var(--ink);
 }
 .jianpu-key {
-  margin-top: 4px;
+  margin-top: 3px;
   padding: 0 6px;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.74rem;
@@ -703,10 +712,21 @@ h3 { font-size: 1.15rem; }
   min-height: 1.6em;
 }
 
+.play-keyboard-scroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-soft) transparent;
+}
+.play-keyboard-scroll::-webkit-scrollbar { height: 6px; }
+.play-keyboard-scroll::-webkit-scrollbar-thumb {
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
 .play-keyboard {
   position: relative;
   display: flex;
   height: 170px;
+  min-width: 720px;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -738,7 +758,6 @@ html[data-theme="dark"] .piano-white { background: #e8dde2; color: #5d4753; }
 .piano-black {
   position: absolute;
   top: 0;
-  width: 5.4%;
   height: 58%;
   background: #322028;
   color: #d8c2cb;

@@ -161,7 +161,7 @@
           <p class="section-kicker">小游戏</p>
           <h2 id="play-title">照着乐谱，用键盘弹一首</h2>
         </div>
-        <p class="collections-intro">乐谱都选自本日记歌单里收藏的作品，用<strong>简谱</strong>标记（按 1 = C 记写，数字上方的圆点表示高八度，♯ 表示半音）；每个数字下面就是要按的键盘字母——中排字母键（A S D F G H J K L ; '）是白键，上排（W E T Y U O P）是黑键，也可以直接点击下面的琴键。高亮的音符就是下一个要弹的键，弹完整首会有小惊喜。先放三张乐谱做 demo，以后会陆续把歌单里更多经典旋律加进来。</p>
+        <p class="collections-intro">乐谱都选自本日记歌单里收藏的作品，用<strong>简谱</strong>标记（按 1 = C 记写，数字上方圆点为高八度、下方圆点为低八度，♯ 为半音），每个数字下面就是要按的键。键位支持<strong>双手</strong>：右手区白键是 Q W E R T Y U I O P [，黑键在数字排（2 3 5 6 7 9 0）；左手低音区白键是 Z X C V B N M，黑键是 S D G H J。带「双手」的乐谱里，同一格上下两个数字要一起按（先后按下也算）；也可以直接点击下面的琴键。弹完整首会有小惊喜，更多歌单里的旋律会陆续加进来。</p>
 
         <div class="play-controls">
           <label>
@@ -178,7 +178,9 @@
         <div id="play-score" class="play-score" aria-live="off"></div>
         <p id="play-entry" class="play-entry" hidden></p>
         <p id="play-status" class="play-status" aria-live="polite"></p>
-        <div id="play-keyboard" class="play-keyboard" role="group" aria-label="屏幕钢琴键盘"></div>
+        <div class="play-keyboard-scroll">
+          <div id="play-keyboard" class="play-keyboard" role="group" aria-label="屏幕钢琴键盘"></div>
+        </div>
         <p class="play-hint">音色由浏览器 Web Audio 实时合成，无需联网加载音源；手机上也可以直接点琴键弹奏。</p>
       </section>
 
