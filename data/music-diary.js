@@ -2565,8 +2565,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1868,
       "city": "Vienna",
       "country": "Austria",
-      "lat": 48.2082,
-      "lng": 16.3738,
+      "lat": 48.2003,
+      "lng": 16.3699,
       "mood": "安睡 · 温柔",
       "collections": [
         "sleep"
@@ -2601,6 +2601,16 @@ window.MUSIC_DIARY_DATA = {
           "label": "Wiegenlied (Brahms) — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Wiegenlied_(Brahms)"
         }
+      },
+      "place": {
+        "name": "Johannes-Brahms-Denkmal（卡尔广场勃拉姆斯纪念碑）",
+        "address": "Karlsplatz / Resselpark, 1040 Wien",
+        "certainty": "低",
+        "note": "《摇篮曲》op. 49 No. 4 题献给维也纳的旧友贝尔塔·法贝尔，1869 年 12 月 22 日由 Louise Dustmann 与克拉拉·舒曼在维也纳首演；此处取勃拉姆斯长期定居的维也纳、卡尔广场纪念碑作城市级定位。",
+        "source": {
+          "label": "Johannes Brahms (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Johannes_Brahms"
+        }
       }
     },
     {
@@ -2611,8 +2621,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1844,
       "city": "Paris",
       "country": "France",
-      "lat": 48.8566,
-      "lng": 2.3522,
+      "lat": 48.8782,
+      "lng": 2.3387,
       "mood": "安睡 · 出神",
       "collections": [
         "sleep",
@@ -2648,6 +2658,16 @@ window.MUSIC_DIARY_DATA = {
           "label": "Fryderyk Chopin Institute (NIFC)",
           "url": "https://en.chopin.nifc.pl/chopin/composition/detail/id/121"
         }
+      },
+      "place": {
+        "name": "Square d'Orléans（肖邦巴黎住所）",
+        "address": "80 rue Taitbout, 75009 Paris",
+        "certainty": "中",
+        "note": "《摇篮曲》op. 57 于 1843–1844 年作于巴黎，正值肖邦居于 Square d'Orléans 时期；此处取其巴黎住所作为纪念地标，非确切创作房间。",
+        "source": {
+          "label": "Square d'Orléans (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Square_d'Orl%C3%A9ans"
+        }
       }
     },
     {
@@ -2658,8 +2678,8 @@ window.MUSIC_DIARY_DATA = {
       "year": 1787,
       "city": "Vienna",
       "country": "Austria",
-      "lat": 48.2082,
-      "lng": 16.3738,
+      "lat": 48.2081,
+      "lng": 16.3761,
       "mood": "夜曲 · 安宁",
       "collections": [
         "sleep"
@@ -2693,6 +2713,16 @@ window.MUSIC_DIARY_DATA = {
         "source": {
           "label": "Eine kleine Nachtmusik — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Eine_kleine_Nachtmusik"
+        }
+      },
+      "place": {
+        "name": "Mozarthaus Vienna（维也纳莫扎特故居）",
+        "address": "Domgasse 5, 1010 Wien",
+        "certainty": "低",
+        "note": "《弦乐小夜曲》KV 525 于 1787 年 8 月 10 日在维也纳完成；莫扎特 1784–1787 年居于多姆巷此宅（今 Mozarthaus Vienna），此处取作维也纳城市级纪念地标，非确切完成地点。",
+        "source": {
+          "label": "Mozarthaus Vienna",
+          "url": "https://www.mozarthausvienna.at/en/"
         }
       }
     }
