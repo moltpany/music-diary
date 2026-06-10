@@ -309,12 +309,16 @@
       var badge = g.collection.badge
         ? ' <span class="collection-badge">' + escapeHtml(g.collection.badge) + "</span>"
         : "";
+      var intro = g.collection.intro
+        ? '<p class="collection-intro-note">' + escapeHtml(g.collection.intro) + "</p>"
+        : "";
       return (
         '<article class="collection-card" id="collection-' + escapeHtml(g.collection.id) + '">' +
           '<div class="collection-card-head">' +
             "<h3>" + escapeHtml(g.collection.title) + badge +
               ' <span class="collection-count">' + g.entries.length + " 首</span></h3>" +
             "<p>" + escapeHtml(g.collection.description) + "</p>" +
+            intro +
           "</div>" +
           '<div class="collection-items">' + items + "</div>" +
         "</article>"
