@@ -38,6 +38,20 @@ v0.3 进一步：每首作品的介绍拆成 **`blurb` 提要 + `background` 创
 
 > ⚠️ **IMSLP 主来源标注（睡前歌单 v0.6）**：`brahms-wiegenlied-op49-4`（勃拉姆斯《摇篮曲》）暂以 IMSLP《5 Lieder, Op. 49》页为主来源。官方 Brahms-Portal 收录此套歌曲，但其逐曲页面对自动抓取返回 403、当前无法稳定核实具体作品 ID，故按本项目策略退用 IMSLP，并以 Wikipedia 词条为辅来源核实题献与首演（贝尔塔·法贝尔；1869-12-22 维也纳，Dustmann／克拉拉·舒曼）。待 Brahms-Portal 逐曲页可稳定深链后再升级为官方主来源。另外两首睡前新曲（肖邦《摇篮曲》、莫扎特 K.525 Romanze）均已用官方门户（NIFC、Mozarteum 柯歇尔目录）作主来源。
 
+## 音乐会曲目（concerts）的来源现状
+
+上表覆盖的是**歌单（playlists）**里的古典正典曲目。两场**音乐会**共 28 首曲目的来源标准与歌单不同，单列于此，如实记录：
+
+| 音乐会 | 曲目数 | 主来源现状 |
+|--------|--------|-----------|
+| `concert-berlin`（约翰·威廉姆斯电影之夜） | 18 | 1 首用 **John Williams 官方作品库**（johnwilliams.org），其余 17 首用 **Wikipedia** |
+| `concert-vienna-2025`（小约翰·施特劳斯轻歌剧选段） | 10 | 全部用 **Wikipedia**（对应轻歌剧词条） |
+
+说明与待办：
+- **为什么不是官方门户**：电影配乐与轻歌剧选段大多没有古典正典那样可稳定深链的「官方逐曲解说页」。约翰·威廉姆斯官网（johnwilliams.org）有作品库但并非每首音乐会改编都有独立页；小约翰·施特劳斯尚无类似 NIFC／Mozarteum 的官方逐曲门户。故这两场暂以 Wikipedia 作主来源——**Wikipedia 是已核实的权威条目，不是编造**，立场与歌单一致（不编造日期/地点/首演背景）。
+- **升级方向**：约翰·威廉姆斯曲目可逐步迁移到 johnwilliams.org 官方作品页（已迁 1 首：`jw-olympic-fanfare`）；施特劳斯曲目若日后出现可深链的官方／研究机构逐曲页（如 Johann-Strauss-Gesellschaft），再行升级。
+- 完整 28 首的逐条来源见 `data/music-diary.json` 各 entry 的 `source` / `sources` 字段。
+
 ## 来源升级进度
 
 v0.4：原先用 IMSLP 作主来源的 5 首已全部升级到**官方出版方（版权方）**的作品页——
