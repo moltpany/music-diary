@@ -2,26 +2,41 @@
   "use strict";
 
   // ---- Notes & keyboard mapping --------------------------------------------
+  // Two and a half octaves (C3–F5), laid out like common virtual-piano sites so
+  // both hands can play: left hand C3–B3 on the bottom row (blacks on the home
+  // row), right hand C4–F5 on the QWERTY row (blacks on the number row).
   // semitone: half steps above middle C (C4).
   var NOTES = [
-    { name: "C4",  semitone: 0,  black: false, key: "A" },
-    { name: "C#4", semitone: 1,  black: true,  key: "W" },
-    { name: "D4",  semitone: 2,  black: false, key: "S" },
-    { name: "D#4", semitone: 3,  black: true,  key: "E" },
-    { name: "E4",  semitone: 4,  black: false, key: "D" },
-    { name: "F4",  semitone: 5,  black: false, key: "F" },
-    { name: "F#4", semitone: 6,  black: true,  key: "T" },
-    { name: "G4",  semitone: 7,  black: false, key: "G" },
-    { name: "G#4", semitone: 8,  black: true,  key: "Y" },
-    { name: "A4",  semitone: 9,  black: false, key: "H" },
-    { name: "A#4", semitone: 10, black: true,  key: "U" },
-    { name: "B4",  semitone: 11, black: false, key: "J" },
-    { name: "C5",  semitone: 12, black: false, key: "K" },
-    { name: "C#5", semitone: 13, black: true,  key: "O" },
-    { name: "D5",  semitone: 14, black: false, key: "L" },
-    { name: "D#5", semitone: 15, black: true,  key: "P" },
-    { name: "E5",  semitone: 16, black: false, key: ";" },
-    { name: "F5",  semitone: 17, black: false, key: "'" }
+    { name: "C3",  semitone: -12, black: false, key: "Z" },
+    { name: "C#3", semitone: -11, black: true,  key: "S" },
+    { name: "D3",  semitone: -10, black: false, key: "X" },
+    { name: "D#3", semitone: -9,  black: true,  key: "D" },
+    { name: "E3",  semitone: -8,  black: false, key: "C" },
+    { name: "F3",  semitone: -7,  black: false, key: "V" },
+    { name: "F#3", semitone: -6,  black: true,  key: "G" },
+    { name: "G3",  semitone: -5,  black: false, key: "B" },
+    { name: "G#3", semitone: -4,  black: true,  key: "H" },
+    { name: "A3",  semitone: -3,  black: false, key: "N" },
+    { name: "A#3", semitone: -2,  black: true,  key: "J" },
+    { name: "B3",  semitone: -1,  black: false, key: "M" },
+    { name: "C4",  semitone: 0,   black: false, key: "Q" },
+    { name: "C#4", semitone: 1,   black: true,  key: "2" },
+    { name: "D4",  semitone: 2,   black: false, key: "W" },
+    { name: "D#4", semitone: 3,   black: true,  key: "3" },
+    { name: "E4",  semitone: 4,   black: false, key: "E" },
+    { name: "F4",  semitone: 5,   black: false, key: "R" },
+    { name: "F#4", semitone: 6,   black: true,  key: "5" },
+    { name: "G4",  semitone: 7,   black: false, key: "T" },
+    { name: "G#4", semitone: 8,   black: true,  key: "6" },
+    { name: "A4",  semitone: 9,   black: false, key: "Y" },
+    { name: "A#4", semitone: 10,  black: true,  key: "7" },
+    { name: "B4",  semitone: 11,  black: false, key: "U" },
+    { name: "C5",  semitone: 12,  black: false, key: "I" },
+    { name: "C#5", semitone: 13,  black: true,  key: "9" },
+    { name: "D5",  semitone: 14,  black: false, key: "O" },
+    { name: "D#5", semitone: 15,  black: true,  key: "0" },
+    { name: "E5",  semitone: 16,  black: false, key: "P" },
+    { name: "F5",  semitone: 17,  black: false, key: "[" }
   ];
 
   var NOTE_BY_NAME = {};
@@ -37,19 +52,30 @@
 
   // ---- Melodies -------------------------------------------------------------
   // Demo scores all come from works collected in this diary (entryId links to
-  // data/music-diary.json), transcribed into C-based jianpu; "|" marks a phrase
-  // break shown as a barline. More playlist melodies can be added over time.
+  // data/music-diary.json), transcribed into C-based jianpu. "|" marks a phrase
+  // break shown as a barline; "A4+A3" means both notes belong to one step (a
+  // two-hand chord: melody first, bass after the plus). The "（双手）" scores use
+  // simplified accompaniments — bass notes only, marked as arrangements. More
+  // playlist melodies can be added over time in the same format.
   var MELODIES = [
     {
-      id: "elise",
-      title: "致爱丽丝（开头）· 贝多芬",
+      id: "elise-intro",
+      title: "致爱丽丝 · 开头（右手入门）",
       short: "致爱丽丝",
       entryId: "beethoven-fur-elise",
       score: "E5 D#5 E5 D#5 E5 B4 D5 C5 A4 | C4 E4 A4 B4 | E4 G#4 B4 C5"
     },
     {
+      id: "elise-a",
+      title: "致爱丽丝 · A 段完整（双手）",
+      short: "致爱丽丝",
+      entryId: "beethoven-fur-elise",
+      score: "E5 D#5 | E5 D#5 E5 B4 D5 C5 | A4+A3 C4 E4 A4 | B4+E3 E4 G#4 B4 | " +
+             "C5+A3 E4 E5 D#5 | E5 D#5 E5 B4 D5 C5 | A4+A3 C4 E4 A4 | B4+E3 E4 C5 B4 | A4+A3"
+    },
+    {
       id: "wiegenlied",
-      title: "摇篮曲（前半段）· 勃拉姆斯",
+      title: "摇篮曲 · 前半段（右手）· 勃拉姆斯",
       short: "摇篮曲",
       entryId: "brahms-wiegenlied-op49-4",
       score: "E4 E4 G4 | E4 E4 G4 | E4 G4 C5 B4 | A4 A4 G4 | " +
@@ -57,11 +83,19 @@
     },
     {
       id: "imperial",
-      title: "帝国进行曲（主题）· 约翰·威廉姆斯",
+      title: "帝国进行曲 · 主题（右手）",
       short: "帝国进行曲",
       entryId: "jw-imperial-march",
       score: "G4 G4 G4 | D#4 A#4 G4 | D#4 A#4 G4 | " +
              "D5 D5 D5 | D#5 A#4 F#4 | D#4 A#4 G4"
+    },
+    {
+      id: "imperial-duo",
+      title: "帝国进行曲 · 主题（双手低音）",
+      short: "帝国进行曲",
+      entryId: "jw-imperial-march",
+      score: "G4+G3 G4 G4 | D#4+G3 A#4 G4 | D#4+G3 A#4 G4 | " +
+             "D5 D5 D5 | D#5 A#4 F#4 | D#4+G3 A#4 G4"
     },
     {
       id: "free",
@@ -74,7 +108,11 @@
 
   MELODIES.forEach(function (m) {
     m.tokens = m.score ? m.score.split(/\s+/) : [];
-    m.notes = m.tokens.filter(function (t) { return t !== "|"; });
+    // steps: each playable position is an array of note names (1 = single note,
+    // 2 = a two-hand chord that must all be pressed to advance).
+    m.steps = m.tokens
+      .filter(function (t) { return t !== "|"; })
+      .map(function (t) { return t.split("+"); });
   });
 
   // ---- Web Audio synth -------------------------------------------------------
@@ -236,6 +274,7 @@
     timbre: "piano",
     melody: MELODIES[0],
     pos: 0,
+    got: {},         // notes of the current step already pressed (for chords)
     finished: false,
     voices: {},      // note name -> active voice
     keysHeld: {}     // physical key -> note name (so keyup matches keydown)
@@ -273,22 +312,33 @@
   // ---- Game logic ---------------------------------------------------------------
   function advanceGame(name) {
     var melody = state.melody;
-    if (!melody.notes.length || state.finished) { return; }
-    var expected = melody.notes[state.pos];
-    if (name === expected) {
-      state.pos += 1;
-      if (state.pos >= melody.notes.length) {
-        state.finished = true;
-        setStatus("🎉 弹完了《" + (melody.short || melody.title) + "》！换一首乐谱或换个音色再来一遍？");
-        playFlourish();
-      } else {
-        setStatus("弹得对！第 " + (state.pos + 1) + " / " + melody.notes.length + " 个音。");
-      }
-      refreshScoreClasses();
-      scrollScoreToCurrent();
-    } else {
+    if (!melody.steps.length || state.finished) { return; }
+    var expected = melody.steps[state.pos];
+    if (expected.indexOf(name) === -1) {
       flashWrong();
+      return;
     }
+    state.got[name] = true;
+    var missing = expected.filter(function (n) { return !state.got[n]; });
+    if (missing.length) {
+      // A chord step: wait for the other hand (notes may land in any order).
+      setStatus("还差一个音：再按 " + missing.map(function (n) {
+        return NOTE_BY_NAME[n].key;
+      }).join(" 和 ") + "。");
+      refreshScoreClasses();
+      return;
+    }
+    state.pos += 1;
+    state.got = {};
+    if (state.pos >= melody.steps.length) {
+      state.finished = true;
+      setStatus("🎉 弹完了《" + (melody.short || melody.title) + "》！换一首乐谱或换个音色再来一遍？");
+      playFlourish();
+    } else {
+      setStatus("弹得对！第 " + (state.pos + 1) + " / " + melody.steps.length + " 步。");
+    }
+    refreshScoreClasses();
+    scrollScoreToCurrent();
   }
 
   function playFlourish() {
@@ -305,14 +355,21 @@
 
   function resetGame() {
     state.pos = 0;
+    state.got = {};
     state.finished = false;
-    if (state.melody.notes.length) {
-      setStatus("从第一个音开始：高亮的音符就是下一个要弹的键。");
-    } else {
+    if (!state.melody.steps.length) {
       setStatus("自由弹奏模式：没有乐谱，随便弹，享受音色就好。");
+    } else if (hasChords(state.melody)) {
+      setStatus("从第一步开始：高亮的就是下一步；上下两个数字表示双手要一起按（先后按下也算）。");
+    } else {
+      setStatus("从第一个音开始：高亮的音符就是下一个要弹的键。");
     }
     refreshScoreClasses();
     scrollScoreToCurrent();
+  }
+
+  function hasChords(melody) {
+    return melody.steps.some(function (step) { return step.length > 1; });
   }
 
   function setStatus(text) {
@@ -328,22 +385,38 @@
   }
 
   // ---- Score rendering (简谱 numbered notation) ------------------------------------
-  // Numbers are C-based jianpu (1 = C4)：a dot above means the higher octave,
-  // ♯ marks a sharp; the keyboard letter to press sits right under each number.
+  // Numbers are C-based jianpu (1 = C4)：a dot above means the higher octave, a
+  // dot below the lower octave, ♯ marks a sharp; the keyboard letter to press
+  // sits right under each number. Chord steps stack melody over bass in one cell.
   function jianpuOf(name) {
     var degree = { C: 1, D: 2, E: 3, F: 4, G: 5, A: 6, B: 7 }[name.charAt(0)];
+    var octave = name.charAt(name.length - 1);
     return {
       num: degree,
       sharp: name.indexOf("#") !== -1,
-      high: name.charAt(name.length - 1) === "5"
+      high: octave === "5",
+      low: octave === "3"
     };
+  }
+
+  function pitchHtml(name) {
+    var note = NOTE_BY_NAME[name];
+    var jp = jianpuOf(name);
+    return (
+      '<span class="jianpu-pitch" data-note="' + name + '">' +
+        '<span class="jianpu-dot' + (jp.high ? " is-on" : "") + '"></span>' +
+        '<span class="jianpu-num">' + (jp.sharp ? "♯" : "") + jp.num + "</span>" +
+        '<span class="jianpu-dot jianpu-dot-low' + (jp.low ? " is-on" : "") + '"></span>' +
+        '<span class="jianpu-key">' + note.key + "</span>" +
+      "</span>"
+    );
   }
 
   function renderScore() {
     var wrap = $("play-score");
     if (!wrap) { return; }
     var melody = state.melody;
-    if (!melody.notes.length) {
+    if (!melody.steps.length) {
       wrap.innerHTML = '<p class="score-free-note">自由弹奏模式没有乐谱——整张琴都是你的。</p>';
       renderEntryLink();
       return;
@@ -356,13 +429,9 @@
         parts.push('<span class="jianpu-bar" aria-hidden="true"></span>');
         return;
       }
-      var note = NOTE_BY_NAME[tok];
-      var jp = jianpuOf(tok);
       parts.push(
         '<span class="jianpu-note score-note" data-idx="' + idx + '">' +
-          '<span class="jianpu-dot' + (jp.high ? " is-on" : "") + '"></span>' +
-          '<span class="jianpu-num">' + (jp.sharp ? "♯" : "") + jp.num + "</span>" +
-          '<span class="jianpu-key">' + note.key + "</span>" +
+          tok.split("+").map(pitchHtml).join("") +
         "</span>"
       );
       idx += 1;
@@ -399,6 +468,9 @@
     Array.prototype.forEach.call(groups, function (g, i) {
       g.classList.toggle("is-done", i < state.pos);
       g.classList.toggle("is-current", !state.finished && i === state.pos);
+      Array.prototype.forEach.call(g.querySelectorAll(".jianpu-pitch"), function (p) {
+        p.classList.toggle("is-got", i === state.pos && !!state.got[p.getAttribute("data-note")]);
+      });
     });
   }
 
@@ -419,11 +491,12 @@
       parts.push(
         '<button type="button" class="piano-key piano-white" data-note="' + n.name + '" aria-label="' + n.name + '">' +
           '<span class="piano-keycap">' + n.key + "</span>" +
-          '<span class="piano-notename">' + n.name.replace(/\d/, "") + "</span>" +
+          '<span class="piano-notename">' + n.name + "</span>" +
         "</button>"
       );
     });
 
+    var blackWidth = whiteWidth * 0.62;
     NOTES.forEach(function (n) {
       if (!n.black) { return; }
       // A black key sits on the boundary after the white key one semitone below.
@@ -431,9 +504,9 @@
       for (var i = 0; i < whites.length; i++) {
         if (whites[i].semitone < n.semitone) { whiteIdx = i; }
       }
-      var left = (whiteIdx + 1) * whiteWidth - whiteWidth * 0.3;
+      var left = (whiteIdx + 1) * whiteWidth - blackWidth / 2;
       parts.push(
-        '<button type="button" class="piano-key piano-black" style="left:' + left.toFixed(3) + '%" data-note="' + n.name + '" aria-label="' + n.name + '">' +
+        '<button type="button" class="piano-key piano-black" style="left:' + left.toFixed(3) + "%;width:" + blackWidth.toFixed(3) + '%" data-note="' + n.name + '" aria-label="' + n.name + '">' +
           '<span class="piano-keycap">' + n.key + "</span>" +
         "</button>"
       );
