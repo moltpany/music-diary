@@ -49,7 +49,10 @@ v0.3 进一步：每首作品的介绍拆成 **`blurb` 提要 + `background` 创
 
 说明与待办：
 - **为什么不是官方门户**：电影配乐与轻歌剧选段大多没有古典正典那样可稳定深链的「官方逐曲解说页」。约翰·威廉姆斯官网（johnwilliams.org）有作品库但并非每首音乐会改编都有独立页；小约翰·施特劳斯尚无类似 NIFC／Mozarteum 的官方逐曲门户。故这两场暂以 Wikipedia 作主来源——**Wikipedia 是已核实的权威条目，不是编造**，立场与歌单一致（不编造日期/地点/首演背景）。
-- **升级方向**：约翰·威廉姆斯曲目可逐步迁移到 johnwilliams.org 官方作品页（已迁 1 首：`jw-olympic-fanfare`）；施特劳斯曲目若日后出现可深链的官方／研究机构逐曲页（如 Johann-Strauss-Gesellschaft），再行升级。
+- **升级可行性（v0.7 已核查，结论：暂不可批量升级）**：
+  - 约翰·威廉姆斯——johnwilliams.org 确有可深链的**独立曲目页**（已核实 `olympic-fanfare-and-theme`、`hymn-to-new-england`、`liberty-fanfare` 等，会被搜索索引）。但本场 18 首中：①电影单曲（帝国进行曲、海德薇主题、飞翔主题等）官网只有「影片页」、无逐曲页；②音乐会作品《大提琴挽歌》经多次定向检索仅见于作品库索引、未见独立页。官网对自动抓取返回 403，无法核实确切 URL。**唯一有官方页的 Olympic Fanfare 已迁（`jw-olympic-fanfare`）；其余不构造未核实链接。**
+  - 小约翰·施特劳斯——无官方逐曲门户。维也纳官方诞辰 200 周年站 johannstrauss2025.at 只有 **2025 演出活动页**（`/event/...`），属临时性宣传页、音乐节后可能下线，作为事实来源稳定性不及 Wikipedia，故不采用。IMSLP 有逐部轻歌剧页（项目层级高于 Wikipedia），但对「选段事实」仅为平移，价值有限。
+  - **结论**：保持 Wikipedia 为主来源是当前诚实的最优解。待 johnwilliams.org 逐曲页可稳定深链核实、或出现 Johann-Strauss 官方/研究机构逐曲页时，再逐条升级——不为凑「官方」而编造或改用易失效链接。
 - 完整 28 首的逐条来源见 `data/music-diary.json` 各 entry 的 `source` / `sources` 字段。
 
 ## 来源升级进度
