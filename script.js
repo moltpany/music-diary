@@ -457,6 +457,11 @@
     }
   }
 
+  // Exposed so the play-along game (keyboard-game.js) can open a work's detail.
+  if (typeof window !== "undefined") {
+    window.musicDiarySelectEntry = selectEntry;
+  }
+
   // ---- Theme toggle -------------------------------------------------------
   function initTheme() {
     var btn = $("theme-toggle");

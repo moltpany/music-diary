@@ -2,27 +2,26 @@
   "use strict";
 
   // ---- Notes & keyboard mapping --------------------------------------------
-  // semitone: half steps above middle C (C4). step: diatonic position on the
-  // treble staff (E4 = 0 = bottom line), sharps share the step of their letter.
+  // semitone: half steps above middle C (C4).
   var NOTES = [
-    { name: "C4",  semitone: 0,  black: false, key: "A", step: -2 },
-    { name: "C#4", semitone: 1,  black: true,  key: "W", step: -2 },
-    { name: "D4",  semitone: 2,  black: false, key: "S", step: -1 },
-    { name: "D#4", semitone: 3,  black: true,  key: "E", step: -1 },
-    { name: "E4",  semitone: 4,  black: false, key: "D", step: 0 },
-    { name: "F4",  semitone: 5,  black: false, key: "F", step: 1 },
-    { name: "F#4", semitone: 6,  black: true,  key: "T", step: 1 },
-    { name: "G4",  semitone: 7,  black: false, key: "G", step: 2 },
-    { name: "G#4", semitone: 8,  black: true,  key: "Y", step: 2 },
-    { name: "A4",  semitone: 9,  black: false, key: "H", step: 3 },
-    { name: "A#4", semitone: 10, black: true,  key: "U", step: 3 },
-    { name: "B4",  semitone: 11, black: false, key: "J", step: 4 },
-    { name: "C5",  semitone: 12, black: false, key: "K", step: 5 },
-    { name: "C#5", semitone: 13, black: true,  key: "O", step: 5 },
-    { name: "D5",  semitone: 14, black: false, key: "L", step: 6 },
-    { name: "D#5", semitone: 15, black: true,  key: "P", step: 6 },
-    { name: "E5",  semitone: 16, black: false, key: ";", step: 7 },
-    { name: "F5",  semitone: 17, black: false, key: "'", step: 8 }
+    { name: "C4",  semitone: 0,  black: false, key: "A" },
+    { name: "C#4", semitone: 1,  black: true,  key: "W" },
+    { name: "D4",  semitone: 2,  black: false, key: "S" },
+    { name: "D#4", semitone: 3,  black: true,  key: "E" },
+    { name: "E4",  semitone: 4,  black: false, key: "D" },
+    { name: "F4",  semitone: 5,  black: false, key: "F" },
+    { name: "F#4", semitone: 6,  black: true,  key: "T" },
+    { name: "G4",  semitone: 7,  black: false, key: "G" },
+    { name: "G#4", semitone: 8,  black: true,  key: "Y" },
+    { name: "A4",  semitone: 9,  black: false, key: "H" },
+    { name: "A#4", semitone: 10, black: true,  key: "U" },
+    { name: "B4",  semitone: 11, black: false, key: "J" },
+    { name: "C5",  semitone: 12, black: false, key: "K" },
+    { name: "C#5", semitone: 13, black: true,  key: "O" },
+    { name: "D5",  semitone: 14, black: false, key: "L" },
+    { name: "D#5", semitone: 15, black: true,  key: "P" },
+    { name: "E5",  semitone: 16, black: false, key: ";" },
+    { name: "F5",  semitone: 17, black: false, key: "'" }
   ];
 
   var NOTE_BY_NAME = {};
@@ -37,29 +36,46 @@
   }
 
   // ---- Melodies -------------------------------------------------------------
+  // Demo scores all come from works collected in this diary (entryId links to
+  // data/music-diary.json), transcribed into C-based jianpu; "|" marks a phrase
+  // break shown as a barline. More playlist melodies can be added over time.
   var MELODIES = [
-    {
-      id: "ode",
-      title: "欢乐颂 · 贝多芬",
-      notes: ("E4 E4 F4 G4 G4 F4 E4 D4 C4 C4 D4 E4 E4 D4 D4 " +
-              "E4 E4 F4 G4 G4 F4 E4 D4 C4 C4 D4 E4 D4 C4 C4").split(" ")
-    },
-    {
-      id: "twinkle",
-      title: "小星星 · 莫扎特变奏曲主题",
-      notes: "C4 C4 G4 G4 A4 A4 G4 F4 F4 E4 E4 D4 D4 C4".split(" ")
-    },
     {
       id: "elise",
       title: "致爱丽丝（开头）· 贝多芬",
-      notes: "E5 D#5 E5 D#5 E5 B4 D5 C5 A4 C4 E4 A4 B4 E4 G#4 B4 C5".split(" ")
+      short: "致爱丽丝",
+      entryId: "beethoven-fur-elise",
+      score: "E5 D#5 E5 D#5 E5 B4 D5 C5 A4 | C4 E4 A4 B4 | E4 G#4 B4 C5"
+    },
+    {
+      id: "wiegenlied",
+      title: "摇篮曲（前半段）· 勃拉姆斯",
+      short: "摇篮曲",
+      entryId: "brahms-wiegenlied-op49-4",
+      score: "E4 E4 G4 | E4 E4 G4 | E4 G4 C5 B4 | A4 A4 G4 | " +
+             "D4 E4 F4 | D4 D4 E4 F4 | D4 F4 B4 A4 | G4 B4 C5"
+    },
+    {
+      id: "imperial",
+      title: "帝国进行曲（主题）· 约翰·威廉姆斯",
+      short: "帝国进行曲",
+      entryId: "jw-imperial-march",
+      score: "G4 G4 G4 | D#4 A#4 G4 | D#4 A#4 G4 | " +
+             "D5 D5 D5 | D#5 A#4 F#4 | D#4 A#4 G4"
     },
     {
       id: "free",
       title: "自由弹奏（不看谱）",
-      notes: []
+      short: "",
+      entryId: null,
+      score: ""
     }
   ];
+
+  MELODIES.forEach(function (m) {
+    m.tokens = m.score ? m.score.split(/\s+/) : [];
+    m.notes = m.tokens.filter(function (t) { return t !== "|"; });
+  });
 
   // ---- Web Audio synth -------------------------------------------------------
   var audio = { ctx: null, master: null };
@@ -263,7 +279,7 @@
       state.pos += 1;
       if (state.pos >= melody.notes.length) {
         state.finished = true;
-        setStatus("🎉 弹完整首《" + melody.title.split(" ·")[0] + "》！换一首乐谱或换个音色再来一遍？");
+        setStatus("🎉 弹完了《" + (melody.short || melody.title) + "》！换一首乐谱或换个音色再来一遍？");
         playFlourish();
       } else {
         setStatus("弹得对！第 " + (state.pos + 1) + " / " + melody.notes.length + " 个音。");
@@ -311,57 +327,71 @@
     setTimeout(function () { current.classList.remove("is-wrong"); }, 220);
   }
 
-  // ---- Score rendering (SVG treble staff) -----------------------------------------
-  var SCORE = { leftPad: 64, spacing: 44, bottomLineY: 88, halfGap: 6 };
+  // ---- Score rendering (简谱 numbered notation) ------------------------------------
+  // Numbers are C-based jianpu (1 = C4)：a dot above means the higher octave,
+  // ♯ marks a sharp; the keyboard letter to press sits right under each number.
+  function jianpuOf(name) {
+    var degree = { C: 1, D: 2, E: 3, F: 4, G: 5, A: 6, B: 7 }[name.charAt(0)];
+    return {
+      num: degree,
+      sharp: name.indexOf("#") !== -1,
+      high: name.charAt(name.length - 1) === "5"
+    };
+  }
 
   function renderScore() {
     var wrap = $("play-score");
     if (!wrap) { return; }
-    var notes = state.melody.notes;
-    if (!notes.length) {
+    var melody = state.melody;
+    if (!melody.notes.length) {
       wrap.innerHTML = '<p class="score-free-note">自由弹奏模式没有乐谱——整张琴都是你的。</p>';
+      renderEntryLink();
       return;
     }
 
-    var width = SCORE.leftPad + notes.length * SCORE.spacing + 26;
     var parts = [];
-    parts.push('<svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="148" viewBox="0 0 ' + width + ' 148" role="img" aria-label="乐谱：' + state.melody.title + '">');
-
-    // Five staff lines (bottom line = E4).
-    for (var l = 0; l < 5; l++) {
-      var y = SCORE.bottomLineY - l * SCORE.halfGap * 2;
-      parts.push('<line class="score-line" x1="10" y1="' + y + '" x2="' + (width - 10) + '" y2="' + y + '"/>');
-    }
-    parts.push('<text class="score-clef" x="14" y="' + (SCORE.bottomLineY + 7) + '">𝄞</text>');
-
-    notes.forEach(function (name, i) {
-      var note = NOTE_BY_NAME[name];
-      var x = SCORE.leftPad + i * SCORE.spacing;
-      var y = SCORE.bottomLineY - note.step * SCORE.halfGap;
-      var stemDown = note.step >= 4;
-      var g = ['<g class="score-note" data-idx="' + i + '">'];
-      // Ledger line for middle C / C# below the staff.
-      if (note.step <= -2) {
-        g.push('<line class="score-line" x1="' + (x - 10) + '" y1="' + y + '" x2="' + (x + 10) + '" y2="' + y + '"/>');
+    var idx = 0;
+    melody.tokens.forEach(function (tok) {
+      if (tok === "|") {
+        parts.push('<span class="jianpu-bar" aria-hidden="true"></span>');
+        return;
       }
-      if (name.indexOf("#") !== -1) {
-        g.push('<text class="score-accidental" x="' + (x - 17) + '" y="' + (y + 4) + '">♯</text>');
-      }
-      g.push('<ellipse class="score-head" cx="' + x + '" cy="' + y + '" rx="6.4" ry="4.8" transform="rotate(-18 ' + x + " " + y + ')"/>');
-      if (stemDown) {
-        g.push('<line class="score-stem" x1="' + (x - 6) + '" y1="' + y + '" x2="' + (x - 6) + '" y2="' + (y + 30) + '"/>');
-      } else {
-        g.push('<line class="score-stem" x1="' + (x + 6) + '" y1="' + y + '" x2="' + (x + 6) + '" y2="' + (y - 30) + '"/>');
-      }
-      // The computer key to press, printed under the staff as a play-along aid.
-      g.push('<text class="score-key" x="' + x + '" y="128">' + note.key + "</text>");
-      g.push("</g>");
-      parts.push(g.join(""));
+      var note = NOTE_BY_NAME[tok];
+      var jp = jianpuOf(tok);
+      parts.push(
+        '<span class="jianpu-note score-note" data-idx="' + idx + '">' +
+          '<span class="jianpu-dot' + (jp.high ? " is-on" : "") + '"></span>' +
+          '<span class="jianpu-num">' + (jp.sharp ? "♯" : "") + jp.num + "</span>" +
+          '<span class="jianpu-key">' + note.key + "</span>" +
+        "</span>"
+      );
+      idx += 1;
     });
-
-    parts.push("</svg>");
-    wrap.innerHTML = parts.join("");
+    wrap.innerHTML = '<div class="jianpu-sheet" role="img" aria-label="简谱：' + melody.title + '">' + parts.join("") + "</div>";
+    renderEntryLink();
     refreshScoreClasses();
+  }
+
+  function renderEntryLink() {
+    var box = $("play-entry");
+    if (!box) { return; }
+    var melody = state.melody;
+    if (!melody.entryId) {
+      box.hidden = true;
+      box.innerHTML = "";
+      return;
+    }
+    box.hidden = false;
+    box.innerHTML =
+      "<span>这段旋律来自日记里收藏的作品：</span>" +
+      '<button type="button" class="play-entry-link" id="play-entry-link">查看《' + melody.short + "》作品详情 →</button>";
+    $("play-entry-link").addEventListener("click", function () {
+      if (typeof window.musicDiarySelectEntry === "function") {
+        window.musicDiarySelectEntry(melody.entryId, { focusMap: true, scrollDetail: true });
+      } else {
+        window.location.hash = "#detail";
+      }
+    });
   }
 
   function refreshScoreClasses() {
@@ -373,11 +403,8 @@
   }
 
   function scrollScoreToCurrent() {
-    var wrap = $("play-score");
-    if (!wrap || !state.melody.notes.length) { return; }
-    var idx = Math.min(state.pos, state.melody.notes.length - 1);
-    var x = SCORE.leftPad + idx * SCORE.spacing;
-    wrap.scrollLeft = Math.max(0, x - wrap.clientWidth / 2);
+    var el = document.querySelector("#play-score .score-note.is-current");
+    if (el && el.scrollIntoView) { el.scrollIntoView({ block: "nearest", inline: "nearest" }); }
   }
 
   // ---- On-screen piano --------------------------------------------------------------

@@ -603,51 +603,98 @@ h3 { font-size: 1.15rem; }
 .play-restart:hover { background: var(--accent-soft); }
 
 .play-score {
-  overflow-x: auto;
   background: var(--surface-2);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 10px 6px;
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent-soft) transparent;
-  scroll-behavior: smooth;
+  padding: 14px 16px;
 }
-.play-score::-webkit-scrollbar { height: 6px; }
-.play-score::-webkit-scrollbar-thumb {
-  background: var(--accent-soft);
-  border-radius: 999px;
-}
-.play-score svg { display: block; }
 .score-free-note {
-  margin: 24px 12px;
+  margin: 18px 12px;
   color: var(--ink-soft);
   text-align: center;
 }
 
-.score-line { stroke: var(--ink-soft); stroke-width: 1; opacity: 0.7; }
-.score-clef { font-size: 58px; fill: var(--ink); }
-.score-head { fill: var(--ink); }
-.score-stem { stroke: var(--ink); stroke-width: 1.6; }
-.score-accidental { font-size: 15px; fill: var(--ink); }
-.score-key {
-  font-size: 12px;
-  fill: var(--ink-soft);
-  text-anchor: middle;
+/* 简谱 (numbered notation) cells: number on top, keyboard letter below */
+.jianpu-sheet {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px 3px;
+}
+.jianpu-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 32px;
+  padding: 3px 3px 4px;
+  border-radius: 8px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.2s ease;
+}
+.jianpu-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: transparent;
+  margin-bottom: 2px;
+}
+.jianpu-dot.is-on { background: var(--ink); }
+.jianpu-num {
+  font-size: 1.3rem;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.jianpu-key {
+  margin-top: 4px;
+  padding: 0 6px;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 5px;
 }
-.score-note.is-done .score-head,
-.score-note.is-done .score-accidental { fill: var(--accent-soft); opacity: 0.55; }
-.score-note.is-done .score-stem { stroke: var(--accent-soft); opacity: 0.55; }
-.score-note.is-done .score-key { opacity: 0.4; }
-.score-note.is-current .score-head,
-.score-note.is-current .score-accidental { fill: var(--accent); }
-.score-note.is-current .score-stem { stroke: var(--accent); }
-.score-note.is-current .score-key {
-  fill: var(--accent);
+.jianpu-bar {
+  width: 1px;
+  align-self: stretch;
+  background: var(--line);
+  margin: 2px 9px;
+}
+.score-note.is-done { opacity: 0.35; }
+.score-note.is-current {
+  box-shadow: 0 0 0 2px var(--accent);
+  transform: scale(1.08);
+  background: var(--surface);
+}
+.score-note.is-current .jianpu-num { color: var(--accent); font-weight: 700; }
+.score-note.is-current .jianpu-dot.is-on { background: var(--accent); }
+.score-note.is-current .jianpu-key {
+  color: var(--accent);
+  border-color: var(--accent);
   font-weight: 700;
-  font-size: 14px;
 }
-.score-note.is-wrong .score-head { fill: #c0392b; }
+.score-note.is-wrong { box-shadow: 0 0 0 2px #c0392b; }
+.score-note.is-wrong .jianpu-num { color: #c0392b; }
+
+.play-entry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 2px 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+.play-entry-link {
+  background: none;
+  border: 1px solid var(--accent-soft);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 4px 14px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.88rem;
+}
+.play-entry-link:hover { background: var(--accent); color: #fff; }
 
 .play-status {
   margin: 12px 2px;
