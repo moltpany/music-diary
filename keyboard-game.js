@@ -46,6 +46,13 @@
     KEY_TO_NOTE[n.key.toLowerCase()] = n.name;
   });
 
+  // Bottom-row extension: ", . /" continue past M into the middle octave (same
+  // notes as Q W E), with L and ; as the black keys in between — so the left
+  // hand can reach C4–E4 without jumping rows. Aliases only affect key input;
+  // the on-screen piano keeps showing each note's primary keycap.
+  var KEY_ALIASES = { ",": "C4", "l": "C#4", ".": "D4", ";": "D#4", "/": "E4" };
+  Object.keys(KEY_ALIASES).forEach(function (k) { KEY_TO_NOTE[k] = KEY_ALIASES[k]; });
+
   function freqOf(note) {
     return 261.626 * Math.pow(2, note.semitone / 12);
   }
