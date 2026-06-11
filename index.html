@@ -6,18 +6,25 @@
     <title>Music Diary · 音乐日记（古典与电影配乐）</title>
     <meta name="description" content="一本音乐日记：多个歌单（爱情、深夜与月光、钢琴独语、歌剧舞台、思念与告别，以及约翰·威廉姆斯柏林电影之夜），地图可弹出作品详情，歌单里每首可点击跳转，配创作背景、作品含义与来源。Boya 维护。">
     <script>
-      // Pre-init theme before render to avoid a flash of the wrong theme/label
+      // Pre-init theme + language before render to avoid a flash of the wrong state
       (function () {
+        var lang = "zh";
+        try {
+          var storedLang = window.localStorage && window.localStorage.getItem("music-diary-lang");
+          if (storedLang === "en" || storedLang === "zh") { lang = storedLang; }
+        } catch (e) {}
+        document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+        var labels = lang === "en" ? { light: "Light", dark: "Dark" } : { light: "白天", dark: "黑夜" };
         try {
           var stored = window.localStorage && window.localStorage.getItem("music-diary-theme");
           var theme = (stored === "dark" || stored === "light")
             ? stored
             : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
           document.documentElement.dataset.theme = theme;
-          document.documentElement.dataset.initialThemeLabel = theme === "dark" ? "白天" : "黑夜";
+          document.documentElement.dataset.initialThemeLabel = theme === "dark" ? labels.light : labels.dark;
         } catch (e) {
           document.documentElement.dataset.theme = "light";
-          document.documentElement.dataset.initialThemeLabel = "黑夜";
+          document.documentElement.dataset.initialThemeLabel = labels.dark;
         }
       })();
     </script>
@@ -32,12 +39,13 @@
       <nav class="topbar" aria-label="页面导航">
         <a href="#top" class="brand">Music Diary</a>
         <div class="nav-links">
-          <a href="#explore">浏览</a>
-          <a href="#collections">歌单</a>
-          <a href="#concerts">音乐会</a>
-          <a href="#detail">作品详情</a>
-          <a href="#sources">来源</a>
+          <a href="#explore" data-i18n="nav.explore">浏览</a>
+          <a href="#collections" data-i18n="nav.collections">歌单</a>
+          <a href="#concerts" data-i18n="nav.concerts">音乐会</a>
+          <a href="#detail" data-i18n="nav.detail">作品详情</a>
+          <a href="#sources" data-i18n="nav.sources">来源</a>
           <a class="cross-link" href="https://moltpany.github.io/mozart-journey/">Mozart Journey ↗</a>
+          <button id="lang-toggle" class="theme-toggle lang-toggle" type="button" aria-label="Switch to English">EN</button>
           <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="切换显示模式"></button>
         </div>
       </nav>
@@ -53,10 +61,10 @@
         })();
       </script>
       <div class="hero-content" id="top">
-        <p class="eyebrow">音乐日记 · 由 Boya 维护</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">音乐日记 · 由 Boya 维护</p>
         <h1>Music Diary</h1>
-        <p class="hero-copy">一本音乐日记——从古典到电影配乐。按主题分成<strong><a href="#collections">歌单</a></strong>（爱情、深夜与月光、钢琴独语、歌剧舞台、思念与告别），按整场演出分成<strong><a href="#concerts">音乐会</a></strong>（约翰·威廉姆斯柏林电影之夜、维也纳爱乐现场）。在<strong>地图</strong>上点开标记可弹出作品并跳到详情；每一首都配有创作背景、作品含义、作曲家创作心得与试听链接。</p>
-        <p class="hero-sub">姊妹作品：<a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> —— 专注莫扎特一个人的足迹地图。</p>
+        <p class="hero-copy" data-i18n-html="hero.copy">一本音乐日记——从古典到电影配乐。按主题分成<strong><a href="#collections">歌单</a></strong>（爱情、深夜与月光、钢琴独语、歌剧舞台、思念与告别），按整场演出分成<strong><a href="#concerts">音乐会</a></strong>（约翰·威廉姆斯柏林电影之夜、维也纳爱乐现场）。在<strong>地图</strong>上点开标记可弹出作品并跳到详情；每一首都配有创作背景、作品含义、作曲家创作心得与试听链接。</p>
+        <p class="hero-sub" data-i18n-html="hero.sub">姊妹作品：<a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> —— 专注莫扎特一个人的足迹地图。</p>
       </div>
     </header>
 
@@ -64,37 +72,37 @@
       <section class="explore-section" id="explore" aria-labelledby="explore-title">
         <div class="explore-head">
           <div>
-            <p class="section-kicker">地图</p>
-            <h2 id="explore-title">在地图上点开作品</h2>
+            <p class="section-kicker" data-i18n="explore.kicker">地图</p>
+            <h2 id="explore-title" data-i18n="explore.title">在地图上点开作品</h2>
           </div>
           <p id="result-count" class="result-count" aria-live="polite"></p>
         </div>
 
         <form class="filters" aria-label="作品筛选">
           <label>
-            搜索
-            <input id="search-filter" class="search-input" type="search" placeholder="肖邦 / 夜曲 / Vienna / 歌剧">
+            <span data-i18n="filter.search">搜索</span>
+            <input id="search-filter" class="search-input" type="search" placeholder="肖邦 / 夜曲 / Vienna / 歌剧" data-i18n-ph="filter.searchPh">
           </label>
           <label>
-            歌单
+            <span data-i18n="filter.collection">歌单</span>
             <select id="collection-filter"></select>
           </label>
           <label>
-            作曲家
+            <span data-i18n="filter.composer">作曲家</span>
             <select id="composer-filter"></select>
           </label>
         </form>
 
-        <p class="map-hint">圆形标记上的数字是该城市的作品数；同一城市的多首作品会聚在一个标记里，点开即可逐一选择。</p>
+        <p class="map-hint" data-i18n="map.hint">圆形标记上的数字是该城市的作品数；同一城市的多首作品会聚在一个标记里，点开即可逐一选择。</p>
         <div id="map" role="application" aria-label="作品诞生地点互动地图；点击城市标记可弹出该城作品列表并查看详情"></div>
-        <p id="map-warning" class="map-warning" hidden>地图底图需要联网加载；下方「歌单与收藏」仍可正常浏览与跳转。</p>
+        <p id="map-warning" class="map-warning" hidden data-i18n="map.warning">地图底图需要联网加载；下方「歌单与收藏」仍可正常浏览与跳转。</p>
       </section>
 
       <section class="detail-section" id="detail" aria-live="polite">
         <div class="detail-main">
-          <p class="section-kicker">作品详情</p>
-          <h2 id="detail-title">选择一首作品</h2>
-          <p id="detail-meta" class="detail-meta">点击地图图标弹出的「查看作品详情」按钮，或歌单里的任意一首，这里会显示作品背景与官方来源。</p>
+          <p class="section-kicker" data-i18n="detail.kicker">作品详情</p>
+          <h2 id="detail-title" data-i18n="detail.title">选择一首作品</h2>
+          <p id="detail-meta" class="detail-meta" data-i18n="detail.metaDefault">点击地图图标弹出的「查看作品详情」按钮，或歌单里的任意一首，这里会显示作品背景与官方来源。</p>
           <div id="detail-collections" class="detail-collections" hidden></div>
           <div id="detail-place" class="detail-place" hidden>
             <span class="detail-place-pin" aria-hidden="true">📍</span>
@@ -112,59 +120,59 @@
           </div>
           <div class="detail-grid">
             <article>
-              <h3>创作背景</h3>
-              <p id="detail-background">从地图或歌单选择一首作品，这里会显示创作背景。</p>
+              <h3 data-i18n="detail.bgHead">创作背景</h3>
+              <p id="detail-background" data-i18n="detail.bgDefault">从地图或歌单选择一首作品，这里会显示创作背景。</p>
             </article>
             <article>
-              <h3>作品含义</h3>
-              <p id="detail-meaning">从地图或歌单选择一首作品，这里会显示作品含义。</p>
+              <h3 data-i18n="detail.meaningHead">作品含义</h3>
+              <p id="detail-meaning" data-i18n="detail.meaningDefault">从地图或歌单选择一首作品，这里会显示作品含义。</p>
             </article>
           </div>
           <figure id="detail-quote" class="detail-quote" hidden>
-            <figcaption class="detail-quote-label">作曲家创作心得</figcaption>
+            <figcaption class="detail-quote-label" data-i18n="detail.quoteLabel">作曲家创作心得</figcaption>
             <blockquote id="detail-quote-text"></blockquote>
             <a id="detail-quote-source" class="detail-quote-source" href="#" target="_blank" rel="noreferrer">出处 ↗</a>
           </figure>
           <div id="detail-sources" class="detail-sources" hidden>
-            <h4>参考来源</h4>
+            <h4 data-i18n="detail.sourcesHead">参考来源</h4>
             <div id="detail-sources-list"></div>
           </div>
           <div class="detail-actions">
-            <button id="detail-map-link" class="detail-map-link" type="button" hidden>在地图上查看</button>
+            <button id="detail-map-link" class="detail-map-link" type="button" hidden data-i18n="detail.mapLink">在地图上查看</button>
           </div>
         </div>
       </section>
 
       <section class="collections-section" id="collections" aria-labelledby="collections-title">
         <div class="section-heading">
-          <p class="section-kicker">歌单与收藏</p>
-          <h2 id="collections-title">把作品按收藏整理</h2>
+          <p class="section-kicker" data-i18n="collections.kicker">歌单与收藏</p>
+          <h2 id="collections-title" data-i18n="collections.title">把作品按收藏整理</h2>
         </div>
-        <p class="collections-intro">一首作品可以同时属于多个歌单（例如《天鹅》既在「爱情」也在「深夜与月光」「思念与告别」）。点击任意一首即可跳到作品详情。</p>
+        <p class="collections-intro" data-i18n-html="collections.intro">一首作品可以同时属于多个歌单（例如《天鹅》既在「爱情」也在「深夜与月光」「思念与告别」）。点击任意一首即可跳到作品详情。</p>
         <nav id="collection-section-nav" class="collection-nav" aria-label="歌单快速导航"></nav>
         <div id="collection-section-list" class="collection-list"></div>
       </section>
 
       <section class="collections-section" id="concerts" aria-labelledby="concerts-title">
         <div class="section-heading">
-          <p class="section-kicker">音乐会</p>
-          <h2 id="concerts-title">按一场演出整理</h2>
+          <p class="section-kicker" data-i18n="concerts.kicker">音乐会</p>
+          <h2 id="concerts-title" data-i18n="concerts.title">按一场演出整理</h2>
         </div>
-        <p class="collections-intro">完整的音乐会曲目，按当晚的演出顺序排列。点击任意一首即可跳到作品详情。</p>
+        <p class="collections-intro" data-i18n="concerts.intro">完整的音乐会曲目，按当晚的演出顺序排列。点击任意一首即可跳到作品详情。</p>
         <nav id="concert-section-nav" class="collection-nav" aria-label="音乐会快速导航"></nav>
         <div id="concert-section-list" class="collection-list"></div>
       </section>
 
       <section class="sources-section" id="sources" aria-labelledby="sources-title">
-        <p class="section-kicker">资料说明</p>
-        <h2 id="sources-title">关于来源与立场</h2>
-        <p>本作品的立场与 Mozart Journey 一致：不编造日期、地点或创作背景；对不确定的史实采用保守措辞。来源优先采用<strong>音乐家官方门户与研究机构</strong>（如波恩贝多芬故居、Schumann-Portal、肖邦国家研究所 NIFC、Brahms-Portal、Mahler Foundation、Palazzetto Bru Zane、普契尼研究中心、莫扎特基金会柯歇尔目录等）；少数尚无官方逐曲页面的作品，使用权威乐谱档案 IMSLP。每首作品的具体来源见其<a href="#detail">作品详情</a>。数据维护在 <code>data/music-diary.json</code>。</p>
+        <p class="section-kicker" data-i18n="sources.kicker">资料说明</p>
+        <h2 id="sources-title" data-i18n="sources.title">关于来源与立场</h2>
+        <p data-i18n-html="sources.body">本作品的立场与 Mozart Journey 一致：不编造日期、地点或创作背景；对不确定的史实采用保守措辞。来源优先采用<strong>音乐家官方门户与研究机构</strong>（如波恩贝多芬故居、Schumann-Portal、肖邦国家研究所 NIFC、Brahms-Portal、Mahler Foundation、Palazzetto Bru Zane、普契尼研究中心、莫扎特基金会柯歇尔目录等）；少数尚无官方逐曲页面的作品，使用权威乐谱档案 IMSLP。每首作品的具体来源见其<a href="#detail">作品详情</a>。数据维护在 <code>data/music-diary.json</code>。</p>
       </section>
     </main>
 
     <footer>
-      <p>Boya 的作品 · 静态网页 · Leaflet + OpenStreetMap · 数据维护在 <code>data/music-diary.json</code></p>
-      <p>姊妹作品：<a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> · 回到 <a href="https://moltpany.github.io/">Moltpany</a></p>
+      <p data-i18n-html="footer.line1">Boya 的作品 · 静态网页 · Leaflet + OpenStreetMap · 数据维护在 <code>data/music-diary.json</code></p>
+      <p data-i18n-html="footer.line2">姊妹作品：<a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> · 回到 <a href="https://moltpany.github.io/">Moltpany</a></p>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
