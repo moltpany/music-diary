@@ -169,7 +169,7 @@
           <p class="section-kicker" data-i18n="play.kicker">小游戏</p>
           <h2 id="play-title" data-i18n="play.title">照着乐谱，用键盘弹一首</h2>
         </div>
-        <p class="collections-intro" data-i18n-html="play.intro">乐谱都选自本日记歌单里收藏的作品，用<strong>简谱</strong>标记（按 1 = C 记写，数字上方圆点为高八度、下方圆点为低八度，♯ 为半音），每个数字下面就是要按的键。键位支持<strong>双手</strong>：右手区白键是 Q W E R T Y U I O P [，黑键在数字排（2 3 5 6 7 9 0）；左手低音区白键是 Z X C V B N M，黑键是 S D G H J。带「双手」的乐谱里，同一格上下两个数字要一起按（先后按下也算）；也可以直接点击下面的琴键。弹完整首会有小惊喜，更多歌单里的旋律会陆续加进来。</p>
+        <p class="collections-intro" data-i18n-html="play.intro">乐谱都选自本日记歌单里收藏的作品，用<strong>简谱</strong>标记（按 1 = C 记写，数字上方圆点为高八度、下方圆点为低八度，♯ 为半音），每个数字下面就是要按的键。键位支持<strong>双手</strong>：右手区白键是 Q W E R T Y U I O P [，黑键在数字排（2 3 5 6 7 9 0）；左手低音区白键是 Z X C V B N M，黑键是 S D G H J。带「双手」的乐谱里，同一格上下两个数字要一起按（先后按下也算）；也可以直接点击下面的琴键。想要更高或更低的音区，用「八度 ±」按钮或键盘的 <code>−</code> / <code>＝</code> 键把整张琴移一个八度（自由弹奏时相当于 C2–F6；选乐谱时会自动回到原位，保证谱上的键位标注准确）。弹完整首会有小惊喜，更多歌单里的旋律会陆续加进来。</p>
 
         <div class="play-controls">
           <label>
@@ -180,6 +180,11 @@
             <span data-i18n="play.labelTimbre">音色</span>
             <select id="play-timbre"></select>
           </label>
+          <div class="play-octave" role="group" aria-label="键盘八度移位">
+            <button id="play-octave-down" class="play-octave-btn" type="button" aria-label="降低八度">八度 −</button>
+            <span id="play-octave-label" class="play-octave-label" aria-live="polite">原位</span>
+            <button id="play-octave-up" class="play-octave-btn" type="button" aria-label="升高八度">八度 +</button>
+          </div>
           <button id="play-restart" class="play-restart" type="button" data-i18n="play.restart">从头再弹</button>
         </div>
 
