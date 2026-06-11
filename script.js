@@ -63,7 +63,11 @@
   // English overrides for static HTML, keyed by data-i18n* attribute values.
   var STATIC_EN = {
     "nav.explore": "Explore", "nav.collections": "Playlists", "nav.concerts": "Concerts",
-    "nav.detail": "Work detail", "nav.sources": "Sources",
+    "nav.play": "Play one", "nav.detail": "Work detail", "nav.sources": "Sources",
+    "play.kicker": "Mini-game", "play.title": "Follow the score, play one on your keyboard",
+    "play.intro": 'The scores are all drawn from works collected in this diary\'s playlists, written in <strong>jianpu</strong> (numbered notation: 1 = C, a dot above a number means an octave up, a dot below an octave down, ♯ is a semitone); under each number is the key to press. The layout supports <strong>two hands</strong>: the right-hand white keys are Q W E R T Y U I O P [ with black keys on the number row (2 3 5 6 7 9 0), and the left-hand bass white keys are Z X C V B N M with black keys S D G H J. In two-hand scores the upper and lower numbers in one slot are pressed together (one after the other counts too); you can also just click the keys below. Finish a whole piece for a little surprise — more playlist melodies will be added over time. (The mini-game\'s notation and melody names are currently shown in Chinese only.)',
+    "play.labelMelody": "Score", "play.labelTimbre": "Timbre", "play.restart": "Restart",
+    "play.hint": "Timbres are synthesized live in the browser with Web Audio — no audio files to download; on a phone you can tap the keys directly.",
     "hero.eyebrow": "Music Diary · maintained by Boya",
     "hero.copy": 'A music diary — from the classical canon to film scores. Organized by theme into <strong><a href="#collections">playlists</a></strong> (Love, Night &amp; Moonlight, Solo Piano, Opera Stage, Longing &amp; Farewell, Before Sleep), and by whole performance into <strong><a href="#concerts">concerts</a></strong> (John Williams\' Berlin film night, the Vienna Philharmonic live). Click a marker on the <strong>map</strong> to pop up a work and jump to its detail; every piece comes with its background, meaning, a note from the composer, and listening links.',
     "hero.sub": 'Sister project: <a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> — a map of Mozart\'s footsteps alone.',
@@ -592,6 +596,11 @@
       var detail = $("detail");
       if (detail && detail.scrollIntoView) { detail.scrollIntoView({ behavior: "smooth", block: "start" }); }
     }
+  }
+
+  // Exposed so the play-along game (keyboard-game.js) can open a work's detail.
+  if (typeof window !== "undefined") {
+    window.musicDiarySelectEntry = selectEntry;
   }
 
   // ---- Theme toggle -------------------------------------------------------
