@@ -55,11 +55,13 @@
   // data/music-diary.json), transcribed into C-based jianpu. "|" marks a phrase
   // break shown as a barline; "A4+A3" means both notes belong to one step (a
   // two-hand chord: melody first, bass after the plus). The "（双手）" scores use
-  // simplified accompaniments — bass notes only, marked as arrangements. More
-  // playlist melodies can be added over time in the same format.
+  // simplified accompaniments — bass notes only, marked as arrangements.
+  // 旋律均与公开记谱来源逐音核对（Mutopia/Wikifonia 的 LilyPond/ABC 转录、字母谱教程，
+  // 至少两个独立来源吻合才收录），必要时整体移调装入 C3–F5 音域。
   var MELODIES = [
     {
       id: "elise-intro",
+      group: "古典与歌剧",
       title: "致爱丽丝 · 开头（右手入门）",
       short: "致爱丽丝",
       entryId: "beethoven-fur-elise",
@@ -67,6 +69,7 @@
     },
     {
       id: "elise-a",
+      group: "古典与歌剧",
       title: "致爱丽丝 · A 段完整（双手）",
       short: "致爱丽丝",
       entryId: "beethoven-fur-elise",
@@ -74,15 +77,66 @@
              "C5+A3 E4 E5 D#5 | E5 D#5 E5 B4 D5 C5 | A4+A3 C4 E4 A4 | B4+E3 E4 C5 B4 | A4+A3"
     },
     {
+      // 核对：Mutopia Wiegenlied.ly + kjpye/Songs BrahmsLullaby.ly（降E原调移到 C）
       id: "wiegenlied",
-      title: "摇篮曲 · 前半段（右手）· 勃拉姆斯",
+      group: "古典与歌剧",
+      title: "摇篮曲 · 完整（右手）· 勃拉姆斯",
       short: "摇篮曲",
       entryId: "brahms-wiegenlied-op49-4",
       score: "E4 E4 G4 | E4 E4 G4 | E4 G4 C5 B4 | A4 A4 G4 | " +
-             "D4 E4 F4 | D4 D4 E4 F4 | D4 F4 B4 A4 | G4 B4 C5"
+             "D4 E4 F4 | D4 D4 E4 F4 | D4 F4 B4 A4 | G4 B4 C5 | " +
+             "C4 C4 C5 | A4 F4 G4 | E4 C4 F4 G4 A4 G4 | " +
+             "C4 C4 C5 | A4 F4 G4 | E4 C4 F4 E4 D4 C4"
+    },
+    {
+      // 核对：Chris Brace ABC（D小调）+ cellist 四重奏 LilyPond（G小调，移调逐音吻合）
+      id: "standchen",
+      group: "古典与歌剧",
+      title: "小夜曲 · 开头（右手）· 舒伯特",
+      short: "小夜曲",
+      entryId: "schubert-standchen",
+      score: "A4 A#4 A4 D5 A4 | G4 A4 G4 D5 G4 | A4 G4 G4 F4 E4 | F4"
+    },
+    {
+      // 核对：Wikifonia Habanera 领谱 + 独立 ABC 转录（低全音版，音程逐一吻合）
+      id: "habanera",
+      group: "古典与歌剧",
+      title: "哈巴涅拉 · 开头（右手）· 比才",
+      short: "哈巴涅拉",
+      entryId: "bizet-carmen-habanera",
+      score: "D5 C#5 | C5 C5 B4 A#4 | A4 A4 G#4 G4 | F4 G4 F4 E4 F4 G4 F4 | D4"
+    },
+    {
+      // 核对：cellist LilyPond（降B原调）+ abc2book ABC（G大调版，此处采用 G 版避免连串升降号）
+      id: "voi-che-sapete",
+      group: "古典与歌剧",
+      title: "你们可知道 · 开头（右手）· 莫扎特",
+      short: "你们可知道",
+      entryId: "mozart-voi-che-sapete",
+      score: "G4 D4 D4 | A4 D4 | B4 G4 A4 B4 C5 | B4 A4"
+    },
+    {
+      // 核对：ASF Brindisi ABC + Mutopia Traviata_02.ly（降B原调，含两处半音回音）
+      id: "libiamo",
+      group: "古典与歌剧",
+      title: "祝酒歌 · 开头（右手）· 威尔第",
+      short: "祝酒歌",
+      entryId: "verdi-libiamo",
+      score: "D5 | D5 F5 D#5 | D5 D5 C#5 D5 D#5 | C5 C5 B4 C5 D5 | A#4"
+    },
+    {
+      // 核对：andrewminer LilyPond（B小调）+ Wikifonia 领谱（A小调，移调吻合）；整体下移纯四度入音域
+      id: "lucevan",
+      group: "古典与歌剧",
+      title: "星光灿烂 · 主题（右手）· 普契尼",
+      short: "星光灿烂",
+      entryId: "puccini-e-lucevan-le-stelle",
+      score: "C#4 | G#4 A4 B4 C#5 | B4 A4 G#4 C#4 | F#4 F#4 G#4 A4 | " +
+             "D4 D4 D4 E4 F#4 G#4 A4 | B4 C#5 D5 E5 D5 B4 | C#5"
     },
     {
       id: "imperial",
+      group: "电影配乐",
       title: "帝国进行曲 · 主题（右手）",
       short: "帝国进行曲",
       entryId: "jw-imperial-march",
@@ -91,6 +145,7 @@
     },
     {
       id: "imperial-duo",
+      group: "电影配乐",
       title: "帝国进行曲 · 主题（双手低音）",
       short: "帝国进行曲",
       entryId: "jw-imperial-march",
@@ -98,7 +153,44 @@
              "D5 D5 D5 | D#5 A#4 F#4 | D#4+G3 A#4 G4"
     },
     {
+      // 核对：A小调与E小调两版字母谱互相移调验证（含忠实版的 G#/A# 半音）
+      id: "hedwig",
+      group: "电影配乐",
+      title: "海德薇主题 · 开头（右手）",
+      short: "海德薇主题",
+      entryId: "jw-hedwig-theme",
+      score: "E4 | A4 C5 B4 | A4 E5 | D5 B4 | A4 C5 B4 | G#4 A#4 | E4"
+    },
+    {
+      // 核对：两个字母谱来源逐音吻合（C大调易弹版）
+      id: "jurassic",
+      group: "电影配乐",
+      title: "侏罗纪公园 · 主题（右手）",
+      short: "侏罗纪公园",
+      entryId: "jw-jurassic-park",
+      score: "C5 B4 C5 C5 B4 C5 | C5 B4 C5 D5 D5 | F5 F5 E5 C5 D5 B4 G4 | E5 C5 D5 G4"
+    },
+    {
+      // 核对：两个易弹谱来源逐音吻合（C大调版）
+      id: "raiders",
+      group: "电影配乐",
+      title: "夺宝奇兵 · 开头（右手）",
+      short: "夺宝奇兵进行曲",
+      entryId: "jw-raiders-march",
+      score: "E4 F4 G4 C5 | D4 E4 F4 | G4 A4 B4 F5 | A4 B4 C5 D5 E5"
+    },
+    {
+      // 核对：多个来源确认五音为 Re Mi Do Do(低八度) Sol；影片中反复出现，这里弹两遍
+      id: "encounters",
+      group: "电影配乐",
+      title: "第三类接触 · 五音动机（含左手）",
+      short: "第三类接触",
+      entryId: "jw-close-encounters",
+      score: "D4 E4 C4 C3 G3 | D4 E4 C4 C3 G3"
+    },
+    {
       id: "free",
+      group: "",
       title: "自由弹奏（不看谱）",
       short: "",
       entryId: null,
@@ -563,8 +655,19 @@
     var restart = $("play-restart");
     if (!melodySel || !timbreSel) { return; }
 
-    melodySel.innerHTML = MELODIES.map(function (m) {
-      return '<option value="' + m.id + '">' + m.title + "</option>";
+    // Group melodies into <optgroup>s (古典与歌剧 / 电影配乐 / ungrouped at the end).
+    var groupOrder = [];
+    var byGroup = {};
+    MELODIES.forEach(function (m) {
+      var g = m.group || "";
+      if (!byGroup[g]) { byGroup[g] = []; groupOrder.push(g); }
+      byGroup[g].push(m);
+    });
+    melodySel.innerHTML = groupOrder.map(function (g) {
+      var opts = byGroup[g].map(function (m) {
+        return '<option value="' + m.id + '">' + m.title + "</option>";
+      }).join("");
+      return g ? '<optgroup label="' + g + '">' + opts + "</optgroup>" : opts;
     }).join("");
     timbreSel.innerHTML = Object.keys(TIMBRES).map(function (id) {
       return '<option value="' + id + '">' + TIMBRES[id].label + "</option>";
