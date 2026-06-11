@@ -61,7 +61,7 @@
   var MELODIES = [
     {
       id: "elise-intro",
-      group: "古典与歌剧",
+      group: "钢琴与器乐",
       title: "致爱丽丝 · 开头（右手入门）",
       short: "致爱丽丝",
       entryId: "beethoven-fur-elise",
@@ -69,7 +69,7 @@
     },
     {
       id: "elise-a",
-      group: "古典与歌剧",
+      group: "钢琴与器乐",
       title: "致爱丽丝 · A 段完整（双手）",
       short: "致爱丽丝",
       entryId: "beethoven-fur-elise",
@@ -77,9 +77,86 @@
              "C5+A3 E4 E5 D#5 | E5 D#5 E5 B4 D5 C5 | A4+A3 C4 E4 A4 | B4+E3 E4 C5 B4 | A4+A3"
     },
     {
+      // 核对：madrisan/open-scores 与 Buschke/sheet-music（Mutopia）两份 LilyPond 逐音吻合；F 大调原调
+      id: "traumerei",
+      group: "钢琴与器乐",
+      title: "梦幻曲 · 开头（右手）· 舒曼",
+      short: "梦幻曲",
+      entryId: "schumann-traumerei",
+      score: "C4 | F4 E4 F4 A4 | C5 F5 | F5 E5 D5 C5"
+    },
+    {
+      // 核对：Mutopia 与 rdj/music 两份 LilyPond 逐音吻合；降D原调整体下移纯四度入音域
+      id: "clair",
+      group: "钢琴与器乐",
+      title: "月光 · 开头（右手 · 移调）· 德彪西",
+      short: "月光",
+      entryId: "debussy-clair-de-lune",
+      score: "D#4 | D#5 C5 | C5 A#4 C5 A#4 | A#4 G#4 A#4 G#4 C5 C5 G#4 | " +
+             "G#4 G4 G#4 G4 | G4 F4 G4 F4 A#4 F4 D#4 F4 D#4 | D#4 C#4 D#4 C#4 C4"
+    },
+    {
+      // 核对：演奏 MIDI、OpenEWLD 领谱、classtab 等四源一致的主题动机；降A原调
+      id: "liebestraum",
+      group: "钢琴与器乐",
+      title: "爱之梦 · 主题（右手）· 李斯特",
+      short: "爱之梦",
+      entryId: "liszt-liebestraum-3",
+      score: "C4 C4 C4 C4 C#4 C4 | F3 G3 G#3 C4 A#3 | G#3"
+    },
+    {
+      // 核对：Mutopia 与 rdj/music 两份 LilyPond 逐音吻合；降E原调整体低八度入音域
+      id: "nocturne",
+      group: "钢琴与器乐",
+      title: "夜曲 Op.9-2 · 开头（右手 · 低八度）· 肖邦",
+      short: "夜曲",
+      entryId: "chopin-nocturne-op9-2",
+      score: "A#3 | G4 G4 F4 G4 F4 D#4 A#3 | G4 C4 C5 G4 A#4 G#4 G4 | " +
+             "F4 G4 D4 D#4 C4 | A#3 D5 C5 A#4 G#4 G4 G#4 C4 D4 D#4"
+    },
+    {
+      // 核对：肖邦学院 humdrum-chopin-first-editions 两版初版数字化逐音吻合；E 大调原调
+      id: "etude",
+      group: "钢琴与器乐",
+      title: "离别曲 · 开头（右手）· 肖邦",
+      short: "离别曲",
+      entryId: "chopin-etude-op10-3",
+      score: "B3 | E4 D#4 E4 F#4 | F#4 G#4 G#4 F#4 G#4 | G#4 A4 A4 G#4 C#5 B4 | " +
+             "A4 G#4 D#4 E4 F#4 | F#4 G#4 G#4 F#4 E4"
+    },
+    {
+      // 核对：nwhetsell 圆号/大提琴 LilyPond 与独立 ABC 全谱逐音吻合；G 大调原调（大提琴音区，多用左手区）
+      id: "cygne",
+      group: "钢琴与器乐",
+      title: "天鹅 · 开头（低音区）· 圣-桑",
+      short: "天鹅",
+      entryId: "saint-saens-le-cygne",
+      score: "G4 F#4 B3 E4 D4 G3 | A3 B3 C4 | E3 F#3 G3 A3 B3 C4 D4 E4 F#4 | B4 | " +
+             "G4 F#4 B3 E4 D4 G3 | A#3 B3 C#4"
+    },
+    {
+      // 核对：cellist 仓库两位编曲者（D 大调/G 大调）逐音吻合；取 D 大调版低八度入音域
+      id: "salut",
+      group: "钢琴与器乐",
+      title: "爱的礼赞 · 开头（右手 · 移调）· 埃尔加",
+      short: "爱的礼赞",
+      entryId: "elgar-salut-damour",
+      score: "F#4 A3 F#4 | E4 D4 C#4 D4 | G4 G4 | G4 A3 | F#4 A#3 F#4 | E4 D4 C#4 D4 | E4 E4"
+    },
+    {
+      // 核对：glorl/LilyArchive 与莫扎特数字版（DME）转录逐音吻合；C 大调原调低八度入音域
+      id: "romanze",
+      group: "钢琴与器乐",
+      title: "弦乐小夜曲 Romanze · 主题（右手 · 低八度）· 莫扎特",
+      short: "弦乐小夜曲 Romanze",
+      entryId: "mozart-eine-kleine-nachtmusik-romanze",
+      score: "E4 E4 | E4 G4 F4 D4 F4 A4 | G4 E4 G4 C5 C5 B4 | A4 A4 G4 G4 F4 F4 E4 | G4 E4 D4 | " +
+             "E4 E4 | E4 G4 F4 D4 F4 A4 | G4 E4 G4 C5 G4 G4 E4 | D4 A4 | F4 E4 D4 C4 | E4 D4 C4 D4 | C4"
+    },
+    {
       // 核对：Mutopia Wiegenlied.ly + kjpye/Songs BrahmsLullaby.ly（降E原调移到 C）
       id: "wiegenlied",
-      group: "古典与歌剧",
+      group: "声乐与歌剧",
       title: "摇篮曲 · 完整（右手）· 勃拉姆斯",
       short: "摇篮曲",
       entryId: "brahms-wiegenlied-op49-4",
@@ -91,7 +168,7 @@
     {
       // 核对：Chris Brace ABC（D小调）+ cellist 四重奏 LilyPond（G小调，移调逐音吻合）
       id: "standchen",
-      group: "古典与歌剧",
+      group: "声乐与歌剧",
       title: "小夜曲 · 开头（右手）· 舒伯特",
       short: "小夜曲",
       entryId: "schubert-standchen",
@@ -100,7 +177,7 @@
     {
       // 核对：Wikifonia Habanera 领谱 + 独立 ABC 转录（低全音版，音程逐一吻合）
       id: "habanera",
-      group: "古典与歌剧",
+      group: "声乐与歌剧",
       title: "哈巴涅拉 · 开头（右手）· 比才",
       short: "哈巴涅拉",
       entryId: "bizet-carmen-habanera",
@@ -109,7 +186,7 @@
     {
       // 核对：cellist LilyPond（降B原调）+ abc2book ABC（G大调版，此处采用 G 版避免连串升降号）
       id: "voi-che-sapete",
-      group: "古典与歌剧",
+      group: "声乐与歌剧",
       title: "你们可知道 · 开头（右手）· 莫扎特",
       short: "你们可知道",
       entryId: "mozart-voi-che-sapete",
@@ -118,7 +195,7 @@
     {
       // 核对：ASF Brindisi ABC + Mutopia Traviata_02.ly（降B原调，含两处半音回音）
       id: "libiamo",
-      group: "古典与歌剧",
+      group: "声乐与歌剧",
       title: "祝酒歌 · 开头（右手）· 威尔第",
       short: "祝酒歌",
       entryId: "verdi-libiamo",
@@ -127,7 +204,7 @@
     {
       // 核对：andrewminer LilyPond（B小调）+ Wikifonia 领谱（A小调，移调吻合）；整体下移纯四度入音域
       id: "lucevan",
-      group: "古典与歌剧",
+      group: "声乐与歌剧",
       title: "星光灿烂 · 主题（右手）· 普契尼",
       short: "星光灿烂",
       entryId: "puccini-e-lucevan-le-stelle",
