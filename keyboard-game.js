@@ -379,6 +379,39 @@
         };
       }
     },
+    guitar: {
+      label: "吉他",
+      spec: function (freq) {
+        return {
+          partials: [
+            { type: "triangle", gain: 0.55 },
+            { type: "sawtooth", gain: 0.22 },
+            { type: "sine", gain: 0.18, ratio: 2 },
+            { type: "sine", gain: 0.06, ratio: 3 }
+          ],
+          // darker cap than the piano gives the nylon-string warmth
+          filter: function (f) { return Math.min(f * 3.2, 2800); },
+          attack: 0.003, peak: 0.95, decayTo: 0.001, decay: 1.3,
+          release: 0.18, maxSeconds: 2
+        };
+      }
+    },
+    violin: {
+      label: "小提琴",
+      spec: function (freq) {
+        return {
+          partials: [
+            { type: "sawtooth", gain: 0.38 },
+            { type: "sawtooth", gain: 0.1, detune: 1.002 },
+            { type: "sine", gain: 0.2 }
+          ],
+          // solo voice: brighter and with a wider vibrato than the ensemble strings
+          filter: function (f) { return Math.min(f * 4.5, 4200); },
+          vibrato: { rate: 6, depth: 0.007 },
+          attack: 0.08, peak: 0.8, release: 0.3
+        };
+      }
+    },
     musicbox: {
       label: "八音盒",
       spec: function () {
