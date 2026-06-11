@@ -368,11 +368,27 @@
     pos: 0,
     got: {},         // notes of the current step already pressed (for chords)
     finished: false,
+    octave: 0,       // whole-keyboard octave shift, -1..+1 ("-" / "=" keys)
     voices: {},      // note name -> active voice
     keysHeld: {}     // physical key -> note name (so keyup matches keydown)
   };
 
   function $(id) { return document.getElementById(id); }
+
+  // ---- Octave shift -------------------------------------------------------------
+  function shiftNoteName(name, shift) {
+    if (!shift) { return name; }
+    var octave = parseInt(name.charAt(name.length - 1), 10) + shift;
+    return name.slice(0, -1) + octave;
+  }
+
+  function setOctave(value) {
+    state.octave = Math.max(-1, Math.min(1, value));
+    var label = $("play-octave-label");
+    if (label) {
+      label.textContent = state.octave === 0 ? "原位" : (state.octave > 0 ? "+1 八度" : "−1 八度");
+    }
+  }
 
   // ---- Sound + visuals ---------------------------------------------------------
   function noteOn(name) {
@@ -381,11 +397,14 @@
     var ctx = ensureAudio();
     if (ctx) {
       if (state.voices[name]) { state.voices[name].stop(); }
-      state.voices[name] = buildVoice(ctx, freqOf(note), TIMBRES[state.timbre].spec(freqOf(note)));
+      var freq = freqOf(note) * Math.pow(2, state.octave);
+      state.voices[name] = buildVoice(ctx, freq, TIMBRES[state.timbre].spec(freq));
     }
     var keyEl = document.querySelector('#play-keyboard [data-note="' + cssEscape(name) + '"]');
     if (keyEl) { keyEl.classList.add("is-down"); }
-    advanceGame(name);
+    // The game listens to the *sounding* pitch, so an octave-shifted keyboard
+    // still has to produce the score's written notes to advance.
+    advanceGame(shiftNoteName(name, state.octave));
   }
 
   function noteOff(name) {
@@ -630,7 +649,18 @@
     document.addEventListener("keydown", function (e) {
       if (e.repeat || e.metaKey || e.ctrlKey || e.altKey) { return; }
       if (isTypingTarget(e.target)) { return; }
-      var name = KEY_TO_NOTE[(e.key || "").toLowerCase()];
+      var key = (e.key || "").toLowerCase();
+      if (key === "-" || key === "_") {
+        e.preventDefault();
+        setOctave(state.octave - 1);
+        return;
+      }
+      if (key === "=" || key === "+") {
+        e.preventDefault();
+        setOctave(state.octave + 1);
+        return;
+      }
+      var name = KEY_TO_NOTE[key];
       if (!name || state.keysHeld[e.key]) { return; }
       e.preventDefault();
       state.keysHeld[e.key] = name;
@@ -677,6 +707,9 @@
       for (var i = 0; i < MELODIES.length; i++) {
         if (MELODIES[i].id === melodySel.value) { state.melody = MELODIES[i]; }
       }
+      // A shifted keyboard would contradict the printed keycaps, so scores
+      // always start from the home position; free play keeps the shift.
+      if (state.melody.steps.length) { setOctave(0); }
       renderScore();
       resetGame();
     });
@@ -689,6 +722,16 @@
         restart.blur();
       });
     }
+
+    var octDown = $("play-octave-down");
+    var octUp = $("play-octave-up");
+    if (octDown) {
+      octDown.addEventListener("click", function () { setOctave(state.octave - 1); octDown.blur(); });
+    }
+    if (octUp) {
+      octUp.addEventListener("click", function () { setOctave(state.octave + 1); octUp.blur(); });
+    }
+    setOctave(0);
   }
 
   // ---- Init ----------------------------------------------------------------------------
