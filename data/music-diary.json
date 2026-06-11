@@ -282,6 +282,19 @@
           "label": "Pasqualati House (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Pasqualati_House"
         }
+      },
+      "en": {
+        "title": "Für Elise (For Elise)",
+        "work": "Bagatelle in A minor, WoO 59",
+        "composer": "Ludwig van Beethoven",
+        "mood": "A flutter of the heart",
+        "blurb": "For two centuries the definitive emblem of the ‘heart-flutter’ moment — yet who ‘Elise’ was remains unsettled.",
+        "background": "The sketch of this A-minor piano piece is dated 1810. Beethoven never published it in his lifetime; only about forty years after his death did the scholar Ludwig Nohl claim to have seen the original and publish it in 1867 — the name ‘Für Elise’ (For Elise) comes from him, and since the original manuscript later went missing, the title cannot be verified. The Bodmer Collection at the Beethoven-Haus in Bonn still holds a sketch manuscript of the piece.",
+        "meaning": "Just who ‘Elise’ was is much disputed (Therese Malfatti, Elisabeth Röckel and others have all been proposed) and remains unsettled. That very uncertainty has become part of its charm: it may not really be a love letter, yet in the simplest rondo form it freezes the instant of a quickening heart into a tune anyone can hum — over two centuries it has become almost a synonym, in Western music, for the flutter of the heart itself.",
+        "place": {
+          "name": "Pasqualatihaus (a Beethoven residence)",
+          "note": "One of the places Beethoven lived during his many Vienna residences, today a Beethoven memorial. Für Elise was written around 1810 during his Vienna years; this stands as his Vienna landmark, not the exact room of composition."
+        }
       }
     },
     {
@@ -400,6 +413,19 @@
           "label": "The Elgar Society：Salut d'Amour",
           "url": "https://www.elgar.org/3salut.htm"
         }
+      },
+      "en": {
+        "title": "Salut d’Amour (Love’s Greeting)",
+        "work": "Op. 12",
+        "composer": "Edward Elgar",
+        "mood": "Sweet · A declaration",
+        "blurb": "An engagement gift to his fiancée — an English gentleman’s elegant declaration of love.",
+        "background": "In 1888 Elgar was deeply in love with Caroline Alice Roberts. He wrote this little piece as an engagement gift, naming it ‘Liebesgruss’ (Love’s Greeting) because Alice was fluent in German, and dedicating it ‘à Carice’ — Carice being a contraction of Caroline and Alice, later also their daughter’s name. The publisher Schott changed the title to the French ‘Salut d’Amour,’ a French name selling better across Europe.",
+        "meaning": "It is a classic salon piece: the melody tender, elegant and warm, writing affection as a seemly yet sincere ‘greeting.’ It has no dramatic swells, but with its understated, English-gentleman sweetness it became one of Elgar’s most widely played and most often arranged works — a token of courtship written in music.",
+        "place": {
+          "name": "London (the city where Elgar then lived)",
+          "note": "The piece was published in London by Schott around Elgar’s 1888 engagement; his exact residences shifted often, so this is only a city-level location."
+        }
       }
     },
     {
@@ -461,6 +487,22 @@
         "source": {
           "label": "Tristan und Isolde (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Tristan_und_Isolde"
+        }
+      },
+      "en": {
+        "title": "Tristan und Isolde — Prelude and ‘Liebestod’",
+        "work": "Prelude and Liebestod, WWV 90",
+        "composer": "Richard Wagner",
+        "mood": "Passion · Ecstasy",
+        "blurb": "Forbidden love sublimated into an almost religious ecstasy; the ‘Tristan chord’ changed Western harmony.",
+        "background": "Wagner composed the opera Tristan und Isolde in 1857–1859, first published by Breitkopf & Härtel in 1860 and premiered in Munich on 10 June 1865 (conducted by Hans von Bülow). During its composition Wagner was himself caught up in an affair with Mathilde Wesendonck, and this unattainable love is widely thought to have been projected into the whole work. In concert the opening Prelude is often joined to the heroine’s final-act ‘Liebestod’ (Love-Death) as one continuous piece.",
+        "meaning": "This is regarded as one of the most extreme depictions of love in the history of classical music: longing pushed to its limit, bodily love sublimated into an almost religious union that can be consummated only in death. The opening ‘Tristan chord,’ suspended and refusing for so long to resolve, writes ‘desire’ into harmony itself and blurs the boundaries of key — it is widely held to have directly changed the language of Western harmony and foreshadowed the turn into twentieth-century music.",
+        "place": {
+          "name": "Nationaltheater München (Bavarian State Opera)",
+          "note": "Tristan und Isolde was premiered here on 10 June 1865, conducted by Hans von Bülow."
+        },
+        "quote": {
+          "text": "In an 1854 letter to Liszt, Wagner wrote: ‘As I have never in my life enjoyed the true happiness of love, I will raise one more monument to this most beautiful of dreams, in which love shall, from beginning to end, be utterly fulfilled.’ Tristan was the result."
         }
       }
     },
@@ -581,6 +623,19 @@
           "label": "Moscow Conservatory (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Moscow_Conservatory"
         }
+      },
+      "en": {
+        "title": "Romeo and Juliet, Overture-Fantasy",
+        "work": "Overture-Fantasia, TH 42",
+        "composer": "Pyotr Ilyich Tchaikovsky",
+        "mood": "Passion · Conflict",
+        "blurb": "When the famous ‘love theme’ sounds, it is like a beam of light breaking into the darkness of a family feud.",
+        "background": "In the summer of 1869 the composer Balakirev, in Moscow, suggested Romeo and Juliet to Tchaikovsky as a subject and sketched out a structure and basic conception for him. Tchaikovsky finished a first draft that October–November and dedicated the work to Balakirev; he then revised it heavily twice more, in 1870 and 1880, the final version being the one usually heard today.",
+        "meaning": "This B-minor overture-fantasy carries three groups of themes in sonata form: a solemn, chorale-like ‘Friar Laurence’ introduction, the fiercely clashing ‘feud’ theme, and the famous ‘love theme’ — first sounded softly by english horn and violas, like light suddenly breaking into the darkness of hatred. Precisely because love and death, tenderness and violence are set side by side in one work, it has become one of the most frequently quoted ‘love themes’ in classical music.",
+        "place": {
+          "name": "Around the Moscow Conservatory",
+          "note": "Romeo and Juliet was written in Moscow in 1869 and premiered there in 1870; Tchaikovsky then taught at the Moscow Conservatory, taken here as his Moscow landmark."
+        }
       }
     },
     {
@@ -699,6 +754,19 @@
         "source": {
           "label": "Opéra-Comique（Salle Favart）",
           "url": "https://www.opera-comique.com/en/salle-favart"
+        }
+      },
+      "en": {
+        "title": "Carmen — ‘L’amour est un oiseau rebelle’ (Habanera)",
+        "work": "Carmen, Act I — L’amour est un oiseau rebelle",
+        "composer": "Georges Bizet",
+        "mood": "Passion · Wild",
+        "blurb": "A wild freedom that refuses to be owned: if love cannot be free, it is not love.",
+        "background": "Carmen is Bizet’s 1875 opera, premiered at the Opéra-Comique in Paris on 3 March 1875. This ‘Habanera’ is the heroine Carmen’s entrance aria; its melody is adapted from the habanera ‘El Arreglito’ by the Spanish composer Iradier, which Bizet at first mistook for a folk song. He is said to have rewritten the number more than a dozen times until the first Carmen, Célestine Galli-Marié, was satisfied.",
+        "meaning": "Carmen declares her view of love in a languid, provocative habanera: ‘Love is a rebellious bird that no one can tame.’ These are not sweet nothings but a wild freedom that refuses to be possessed — if love cannot be free, it is no longer love. She throws down the challenge to those on stage, to Don José, and to the audience in the house alike, making this aria one of the most famous and most dangerously alluring entrances in all of opera.",
+        "place": {
+          "name": "Opéra-Comique (Salle Favart)",
+          "note": "Carmen was premiered here on 3 March 1875; the entrance aria ‘Habanera’ was first sung by Galli-Marié."
         }
       }
     },
@@ -901,6 +969,19 @@
           "label": "La Scala (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/La_Scala"
         }
+      },
+      "en": {
+        "title": "Madama Butterfly — ‘Un bel dì vedremo’ (One Fine Day)",
+        "work": "Madama Butterfly, Act II",
+        "composer": "Giacomo Puccini",
+        "mood": "Longing · Waiting",
+        "blurb": "Waiting at its utmost: ‘one fine day he will return’ — hope and despair pulling at each other.",
+        "background": "Madama Butterfly is Puccini’s tragic opera, premiered at La Scala in Milan on 17 February 1904 (the premiere unexpectedly failed, and Puccini then revised it). This aria comes from Act II, sung by the heroine Cio-Cio-San (Butterfly) to her maid Suzuki: abandoned by the American officer Pinkerton, she still firmly believes he will come back.",
+        "meaning": "‘One fine day, we shall see…’ Butterfly paints the whole scene of her lover’s return: a thread of smoke on the horizon, a white warship, a figure approaching from afar. The music builds from an almost whispered pianissimo to an ardent climax — every note a tug-of-war between hope and despair. She sings not fact but the imagining that sustains her wait, and this obstinacy of ‘believing even while knowing it will come to nothing’ makes it one of the most tear-inducing arias in the soprano repertoire.",
+        "place": {
+          "name": "Teatro alla Scala (La Scala, Milan)",
+          "note": "Madama Butterfly was premiered here on 17 February 1904."
+        }
       }
     },
     {
@@ -1016,6 +1097,19 @@
           "label": "Burgtheater (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Burgtheater"
         }
+      },
+      "en": {
+        "title": "The Marriage of Figaro — ‘Voi che sapete’ (You who know what love is)",
+        "work": "Le nozze di Figaro, KV 492, Act II",
+        "composer": "Wolfgang Amadeus Mozart",
+        "mood": "Opera · Bewilderment",
+        "blurb": "The boy Cherubino’s bewilderment at love: ‘I don’t know what it is, but it leaves me breathless.’",
+        "background": "The Marriage of Figaro (KV 492) is the four-act comic opera Mozart wrote with the librettist Da Ponte, premiered at the Burgtheater in Vienna on 1 May 1786. This aria comes in Act II: the young page Cherubino, at Susanna’s request, sings the love song he has written before the Countess and Susanna. The role of Cherubino is traditionally a soprano ‘trouser role.’",
+        "meaning": "‘You who know what love is — tell me, is this what’s in my heart?’ This is not an answer but a string of bewildered questions. With a light, faintly trembling melody, Mozart captures exactly that adolescent flutter you ‘can’t name, yet which leaves you restless and breathless.’ It is one of opera’s most endearing and truest portraits of love first discovered.",
+        "place": {
+          "name": "Site of the Altes Burgtheater on Michaelerplatz",
+          "note": "The Marriage of Figaro was premiered at the old Burgtheater on Michaelerplatz on 1 May 1786 (the theater was demolished in 1888; its site is on Michaelerplatz)."
+        }
       }
     },
     {
@@ -1065,6 +1159,19 @@
         "source": {
           "label": "Teatro La Fenice：La traviata",
           "url": "https://www.teatrolafenice.it/en/event/giuseppe-verdi-la-traviata/"
+        }
+      },
+      "en": {
+        "title": "La traviata — Brindisi (‘Libiamo ne’ lieti calici’)",
+        "work": "La traviata, Act I",
+        "composer": "Giuseppe Verdi",
+        "mood": "Opera · Seize the day",
+        "blurb": "A seize-the-day view of love — dazzling, fleeting, like champagne bubbles.",
+        "background": "La traviata is Verdi’s 1853 three-act opera, with a libretto by Piave after Dumas fils’s The Lady of the Camellias; it premiered at La Fenice in Venice on 6 March 1853 (the premiere was poorly received and succeeded only after revision). This ‘Brindisi’ (drinking song) comes in Act I: at a late-night party at the courtesan Violetta’s home, the young Alfredo raises his glass in a duet with Violetta and the guests.",
+        "meaning": "‘Let us drink from the joyful cups —’ this is a hymn to seizing the moment: the melody turns in a three-beat waltz rhythm, dazzling, light and fleeting, like champagne bubbles forever rising and bursting. On the surface a party number, it really states the opera’s underlying view of love — a love known to be brief yet seized with all one’s might. It is exactly this ‘fragility within the festivity’ that has made it one of the most familiar melodies in all of opera.",
+        "place": {
+          "name": "Teatro La Fenice (Venice)",
+          "note": "La traviata was premiered here on 6 March 1853."
         }
       }
     },
@@ -1116,6 +1223,19 @@
         "source": {
           "label": "Teatro dell'Opera di Roma (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Teatro_dell'Opera_di_Roma"
+        }
+      },
+      "en": {
+        "title": "Tosca — ‘E lucevan le stelle’ (And the stars were shining)",
+        "work": "Tosca, Act III",
+        "composer": "Giacomo Puccini",
+        "mood": "Opera · Farewell",
+        "blurb": "A last gaze toward the beloved before execution — love and death in one frame.",
+        "background": "Tosca is Puccini’s 1900 three-act opera, premiered at the Teatro Costanzi in Rome on 14 January 1900. This aria comes in Act III: the painter Cavaradossi, condemned to death, waits before dawn on the roof of the Castel Sant’Angelo for his execution, recalling the time he spent with his beloved Tosca.",
+        "meaning": "‘And the stars were shining…’ In his final moments Cavaradossi recalls the night he met Tosca — the starlight, the garden, the scent of her. The melody moves step by step from restrained memory to a despairing outburst, closing on ‘and never have I loved life so much.’ It places love and death in a single frame: the more one clings to the beauty of being alive, the more heartbreaking the farewell — which makes it one of the most moving arias in the tenor repertoire.",
+        "place": {
+          "name": "Teatro Costanzi (today the Rome Opera)",
+          "note": "Tosca was premiered at the Teatro Costanzi on 14 January 1900."
         }
       }
     },
@@ -1171,6 +1291,19 @@
         "source": {
           "label": "Semperoper (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Semperoper"
+        }
+      },
+      "en": {
+        "title": "Der Rosenkavalier, Suite",
+        "work": "Der Rosenkavalier, Op. 59 (Suite)",
+        "composer": "Richard Strauss",
+        "mood": "Opera · Wistful",
+        "blurb": "A Viennese kind of love — a touch of wistfulness within the spin of the waltz.",
+        "background": "Der Rosenkavalier is the comic opera Richard Strauss wrote with the playwright Hofmannsthal, completed in 1910 and premiered at the Dresden Court Opera on 26 January 1911. Set in 1740s Vienna, it tells of a mature Marschallin who willingly gives up her young lover so he can be with a young girl. The often-performed Rosenkavalier Suite was largely assembled from the opera by the conductor Rodziński in 1944.",
+        "meaning": "Strauss deliberately used the Viennese waltz — which did not yet exist — in this eighteenth-century story: a knowing anachronism, meant to conjure a nostalgic, imperial-Vienna mood. So the love throughout the work carries a ‘waltz-like’ flavor: turning, sumptuous, intoxicating, yet always veiled in wistfulness by the Marschallin’s awareness that youth must pass — and her choice to bow out gracefully. It writes not only of being in love but of a mature love that is about time and about letting go.",
+        "place": {
+          "name": "Semperoper (Dresden)",
+          "note": "Der Rosenkavalier was premiered at the Dresden Court Opera (today the Semperoper) on 26 January 1911."
         }
       }
     },
@@ -1293,6 +1426,22 @@
         "source": {
           "label": "Étude Op. 10, No. 3 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._10,_No._3_(Chopin)"
+        }
+      },
+      "en": {
+        "title": "Étude in E major, Op. 10 No. 3 (‘Tristesse’)",
+        "work": "Étude in E major, Op. 10 No. 3 (Tristesse)",
+        "composer": "Frédéric Chopin",
+        "mood": "Parting · Nostalgia",
+        "blurb": "A nostalgic song interrupted by extreme agitation; Chopin thought it his most beautiful melody.",
+        "background": "The Étude in E major was written in 1832 and published in 1833 as the third of the Études, Op. 10. The names ‘Tristesse’ and ‘L’Adieu’ were added later by others (critics), not by Chopin. Like most of the études it uses an A–B–A ternary form, a slow étude for training cantabile, polyphony and expressive legato.",
+        "meaning": "Chopin himself is said to have considered this E-major melody the most beautiful he ever wrote. The piece opens with an exceedingly tender, nostalgic song, but the middle section is interrupted by an extremely agitated, almost anguished outburst before returning to the opening calm — within the shell of technical training hides a complete arc of feeling. It is exactly this union of ‘the most beautiful melody’ with the name ‘parting’ that lifts it beyond the étude and into a byword for love and farewell.",
+        "place": {
+          "name": "Square d’Orléans (Chopin’s Paris residence)",
+          "note": "The Op. 10 études were written in 1832 and published in 1833, just after Chopin arrived in Paris; this takes his later Square d’Orléans residence as his Paris landmark."
+        },
+        "quote": {
+          "text": "According to the pianist Niecks, Chopin told his pupil and copyist Gutmann that ‘never in his life had he written another melody so beautiful.’"
         }
       }
     },
