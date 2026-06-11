@@ -11,45 +11,74 @@
       "id": "love",
       "title": "爱情",
       "description": "古典音乐中的爱情：很少是直白的甜言蜜语，更多是克制的悸动、炽热的渴望、忧伤的思念，乃至近乎宗教般的狂喜。涵盖初恋的朦胧、激情的燃烧、离别的思念与歌剧舞台上的爱情宣言。",
-      "kind": "playlist"
+      "kind": "playlist",
+      "en": {
+        "title": "Love",
+        "description": "Love in classical music is rarely sweet nothings — more often a restrained flutter, a burning longing, a sorrowful yearning, even an almost religious ecstasy. It spans the haze of first love, the blaze of passion, the ache of parting, and declarations of love on the opera stage."
+      }
     },
     {
       "id": "night",
       "title": "深夜与月光",
       "description": "适合独处与入睡前：夜曲、柔板与月光下的旋律，安静、流动、不打扰。",
-      "kind": "playlist"
+      "kind": "playlist",
+      "en": {
+        "title": "Night & Moonlight",
+        "description": "For solitude and the hour before sleep: nocturnes, adagios and melodies under the moon — quiet, flowing, undisturbing."
+      }
     },
     {
       "id": "piano",
       "title": "钢琴独语",
       "description": "一架钢琴的倾诉：独奏小品与练习曲，最私密的低声诉说。",
-      "kind": "playlist"
+      "kind": "playlist",
+      "en": {
+        "title": "Solo Piano",
+        "description": "The confession of a single piano: solo miniatures and études, the most private of whispered confidences."
+      }
     },
     {
       "id": "stage",
       "title": "歌剧舞台",
       "description": "歌剧舞台的高光时刻：咏叹调与序曲，爱情表达最直白、也最戏剧化的形式。",
-      "kind": "playlist"
+      "kind": "playlist",
+      "en": {
+        "title": "Opera Stage",
+        "description": "The opera stage at its brightest: arias and overtures, love expressed in its most direct and most dramatic form."
+      }
     },
     {
       "id": "farewell",
       "title": "思念与告别",
       "description": "深情常常与告别同框：等待、爱而不得、永别，以及化作悲悯的慰藉。",
-      "kind": "playlist"
+      "kind": "playlist",
+      "en": {
+        "title": "Longing & Farewell",
+        "description": "Deep feeling so often shares the frame with farewell: waiting, love unfulfilled, final goodbyes, and consolation turned to compassion."
+      }
     },
     {
       "id": "sleep",
       "kind": "playlist",
       "title": "睡前",
       "description": "安静、节奏缓慢、力度克制的音乐——夜曲、摇篮曲与「梦」的曲子，适合临睡前听。其中不少本就属于「爱情」或「深夜与月光」里偏柔的那一面。",
-      "intro": "选曲只看一个标准：能不能让人安静下来。所以这里既有勃拉姆斯和肖邦各自的《摇篮曲》、莫扎特《弦乐小夜曲》里最温柔的 Romanze 这些天生为「安睡」而写的曲子，也收了《梦幻曲》《天鹅》《降 E 大调夜曲》——它们本属于「爱情」或「深夜与月光」，这里取的是它们最轻、最不打扰人的那一面。怎么听：把音量调得比平时更小，让旋律若有若无；单曲循环也无妨。其中拉赫玛尼诺夫《第二钢协》第二乐章与马勒《小柔板》情感更饱满，是「安静却不空」的另一种夜——若只想放空，可以留到清醒时再听。"
+      "intro": "选曲只看一个标准：能不能让人安静下来。所以这里既有勃拉姆斯和肖邦各自的《摇篮曲》、莫扎特《弦乐小夜曲》里最温柔的 Romanze 这些天生为「安睡」而写的曲子，也收了《梦幻曲》《天鹅》《降 E 大调夜曲》——它们本属于「爱情」或「深夜与月光」，这里取的是它们最轻、最不打扰人的那一面。怎么听：把音量调得比平时更小，让旋律若有若无；单曲循环也无妨。其中拉赫玛尼诺夫《第二钢协》第二乐章与马勒《小柔板》情感更饱满，是「安静却不空」的另一种夜——若只想放空，可以留到清醒时再听。",
+      "en": {
+        "title": "Before Sleep",
+        "description": "Quiet, slow, restrained music — nocturnes, lullabies and ‘dream’ pieces, made for the hour before sleep. Many of them already belong to ‘Love’ or ‘Night & Moonlight’, taken here from their gentlest side.",
+        "intro": "There’s just one test for getting in: can it quiet you down. So alongside pieces written to send you to sleep — Brahms’s and Chopin’s respective Lullabies, the tender Romanze from Mozart’s Eine kleine Nachtmusik — it also gathers Träumerei, Le Cygne and the E-flat Nocturne, which belong to ‘Love’ or ‘Night & Moonlight’ but are taken here from their lightest, least intrusive side. How to listen: turn the volume lower than usual so the melody is barely there; looping a single track is fine. The Rachmaninoff (Piano Concerto No. 2, second movement) and the Mahler Adagietto carry fuller emotion — a ‘quiet but not empty’ kind of night; if you only want to drift, save them for waking hours."
+      }
     },
     {
       "id": "concert-berlin",
       "title": "柏林电影之夜 · 约翰·威廉姆斯",
       "description": "2021 年 10 月，约翰·威廉姆斯首度执棒柏林爱乐，亲自指挥自己的电影配乐。这份歌单按这场音乐会（后由 DG 录制为《The Berlin Concert》）的曲目整理——从《奥林匹克号角》到《帝国进行曲》，一位电影作曲家如何用管弦乐写就一代人的集体记忆。地点统一标注柏林爱乐厅。",
       "order": "asis",
-      "kind": "concert"
+      "kind": "concert",
+      "en": {
+        "title": "Film Night in Berlin · John Williams",
+        "description": "In October 2021, John Williams took up the baton with the Berlin Philharmonic for the first time, conducting his own film scores. This playlist follows that concert’s program (later recorded by DG as ‘The Berlin Concert’) — from the Olympic Fanfare to the Imperial March, a film composer writing a generation’s shared memory in orchestral sound. All locations are marked at the Berliner Philharmonie."
+      }
     },
     {
       "id": "concert-vienna-2025",
@@ -57,7 +86,12 @@
       "order": "asis",
       "description": "2025 年 3 月 29 日，维也纳金色大厅，弗朗茨·威尔瑟-莫斯特指挥维也纳爱乐乐团，纪念约翰·施特劳斯诞辰 200 周年的「轻歌剧集萃」(Operetten-Pasticcio)。这是我亲临现场的一晚——曲目刻意避开了《蓝色多瑙河》这类大热门，转而挖掘施特劳斯那些少被搬演的轻歌剧珍品。歌单按当晚演出顺序排列。",
       "kind": "concert",
-      "badge": "★ 我听过现场"
+      "badge": "★ 我听过现场",
+      "en": {
+        "title": "Heard Live · Vienna Philharmonic 2025",
+        "badge": "★ Heard live",
+        "description": "On 29 March 2025, in Vienna’s Musikverein, Franz Welser-Möst led the Vienna Philharmonic in an ‘Operetta Pasticcio’ marking the 200th anniversary of Johann Strauss’s birth. This was a night I attended in person — the program deliberately avoided warhorses like The Blue Danube, digging instead into Strauss’s rarely staged operetta gems. The playlist follows the order they were performed that night."
+      }
     }
   ],
   "entries": [
@@ -117,6 +151,22 @@
           "label": "Kinderszenen (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Kinderszenen"
         }
+      },
+      "en": {
+        "title": "Träumerei (Dreaming)",
+        "work": "Scenes from Childhood (Kinderszenen), Op. 15 No. 7",
+        "composer": "Robert Schumann",
+        "mood": "First love · Tender",
+        "blurb": "The seventh of Scenes from Childhood — the pure, almost wistful tenderness of an adult remembering childhood.",
+        "background": "Over February–March 1838 Schumann dashed off some 30 short piano pieces and chose 13 of them for Scenes from Childhood (Kinderszenen), Op. 15, published the next year by Breitkopf & Härtel in Leipzig. This was the time he and his future wife Clara Wieck were forced apart by her father’s opposition and were fighting for their marriage; in a letter to Clara on 19 March 1838 he mentioned these ‘little quirky things.’ The seventh piece, Träumerei (‘dreaming’ or ‘reverie’), is the most famous of them.",
+        "meaning": "Schumann was careful to note that this is not music for children to play or to hear, but an adult’s emotional projection looking back on childhood. Träumerei sets a phrase that keeps rising and gently falling back again, giving ‘longing’ a shape you can listen to over and over — not an ardent declaration but a restrained, pure, almost sorrowful tenderness, which is why it has become one of the best-loved moments in all of Romantic piano literature.",
+        "place": {
+          "name": "Schumann-Haus (Schumann’s house)",
+          "note": "Robert and Clara’s marital home in 1840–1844, today the Schumann House museum. Kinderszenen was written during the 1838 Leipzig period; this stands as Schumann’s Leipzig landmark, not the exact room of composition."
+        },
+        "quote": {
+          "text": "Schumann said Scenes from Childhood is not for children but ‘an adult’s look back, written by an adult’ — childhood as remembered by the ‘poet,’ not as seen by a child. The inspiration came partly from Clara’s remark that he ‘often seemed childlike.’"
+        }
       }
     },
     {
@@ -168,6 +218,19 @@
         "source": {
           "label": "Opéra-Comique（Salle Favart）",
           "url": "https://www.opera-comique.com/en/salle-favart"
+        }
+      },
+      "en": {
+        "title": "Clair de Lune (Moonlight)",
+        "work": "Suite bergamasque, CD 82 No. 3",
+        "composer": "Claude Debussy",
+        "mood": "First love · Hazy",
+        "blurb": "Ambiguous, hazy, afraid to touch — notes like moonlight scattered across a lake.",
+        "background": "Suite bergamasque was Debussy’s first important piano work, begun around 1890 (when he was about twenty-eight) but heavily revised and not finalized until just before its 1905 publication. Its third movement, Clair de Lune, was first titled Promenade sentimentale before taking its present name; the title and the whole suite draw on Verlaine’s poetry — both ‘clair de lune’ and ‘masques et bergamasques’ come from his verse.",
+        "meaning": "Debussy writes no clear-cut melodic line; instead, flowing harmonies and the resonance of the pedal let the sound spread like moonlight over water. It turns ‘love’ into an atmosphere too delicate to touch: ambiguous, hazy, withheld. It is exactly this Impressionist, almost tactile tenderness that has made Clair de Lune Debussy’s most famous piece and one of the most recognizable moments in all of classical music.",
+        "place": {
+          "name": "The 2nd arrondissement of Paris, around the Opéra-Comique (Salle Favart)",
+          "note": "Debussy lived and worked in Paris for years; Suite bergamasque was published there in 1905. This takes a definite central-Paris landmark as a city-level location, not the exact place of composition."
         }
       }
     },
@@ -274,6 +337,19 @@
         "source": {
           "label": "Wien Museum：Schubert Sterbewohnung",
           "url": "https://www.wienmuseum.at/schubert_sterbewohnung"
+        }
+      },
+      "en": {
+        "title": "Ständchen (Serenade)",
+        "work": "Schwanengesang (Swan Song), D. 957 No. 4",
+        "composer": "Franz Schubert",
+        "mood": "First love · Serenade",
+        "blurb": "In a midnight garden, a lover’s footsteps that can no longer be held back.",
+        "background": "In 1828, in the last months of his life, Schubert wrote a group of songs; after his death the publisher Haslinger gathered them as Schwanengesang (Swan Song), D. 957, published in Vienna in 1829. The set holds 14 songs — the first 7 on poems by Rellstab, 6 on Heine. The fourth, Ständchen, sets Rellstab and is the most famous of them.",
+        "meaning": "The text is a lover’s hushed pleading in a moonlit garden: ‘Softly my songs plead through the night… come to me.’ The piano imitates a plucked serenade, its figuration swaying gently, like footsteps at midnight that can’t be held back yet dare not disturb. It renders the longing of first love as both ardent and restrained, becoming a model of the ‘serenade’ within the art-song tradition.",
+        "place": {
+          "name": "Schubert Sterbewohnung (the apartment where Schubert died)",
+          "note": "Schubert died in 1828 in his brother Ferdinand’s apartment here, where Schwanengesang was written in those final months. Today it is the Schubert memorial under the Wien Museum."
         }
       }
     },
@@ -443,6 +519,19 @@
           "label": "Liszt-Haus Weimar",
           "url": "https://www.klassik-stiftung.de/en/liszt-house/"
         }
+      },
+      "en": {
+        "title": "Liebestraum No. 3 (Dream of Love)",
+        "work": "S. 541 No. 3",
+        "composer": "Franz Liszt",
+        "mood": "Passion · Confiding",
+        "blurb": "The piano confides as if singing — one of Liszt’s least show-off yet most moving works.",
+        "background": "The three Liebesträume, piano nocturnes published in 1850, were originally art songs Liszt set to poems by Uhland and Freiligrath, later arranged for solo piano. No. 3 is based on Freiligrath’s poem O lieb, so lang du lieben kannst (‘O love, as long as you can love’), about an unconditional, mature love to be given while one still can. Liszt was then based in Weimar, in his most productive period as a composer.",
+        "meaning": "The piece falls into three sections, joined by virtuosic cadenzas — yet what moves most is not the technique but the ‘singing’ melody. Liszt has the piano imitate the human voice, voicing the poem’s plea to ‘love while you still can’ outright. Among Liszt’s works, famous for their bravura, this Liebestraum is the best loved for its rare lyricism and depth of feeling.",
+        "place": {
+          "name": "Liszt-Haus Weimar (Liszt’s house)",
+          "note": "Liszt’s residence during his post at the Weimar court, today the Liszt memorial museum. Liebestraum was published in 1850 during his productive Weimar years; this stands as his Weimar landmark."
+        }
       }
     },
     {
@@ -547,6 +636,19 @@
         "source": {
           "label": "Moscow Conservatory (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Moscow_Conservatory"
+        }
+      },
+      "en": {
+        "title": "Piano Concerto No. 2, second movement",
+        "work": "Piano Concerto No. 2 in C minor, Op. 18 — Adagio sostenuto",
+        "composer": "Sergei Rachmaninoff",
+        "mood": "Passion · Tender",
+        "blurb": "An immensely broad melody, like saying to a lover, in the dead of night, what was never said aloud.",
+        "background": "After the disastrous 1897 premiere of his First Symphony, Rachmaninoff sank into a long depression and could barely compose. Through extended treatment by the neurologist Nikolai Dahl — hypnotic suggestion and patient encouragement — he gradually regained confidence and wrote this Piano Concerto No. 2 in C minor in 1900–1901, dedicating it to Dr. Dahl. The composer himself gave the complete premiere as soloist in Moscow in November 1901, to great success.",
+        "meaning": "The second movement (Adagio sostenuto) is famous for its immensely broad, unbroken melody: piano and orchestra seem to talk in low voices, gradually unfolding the things one means to say in the dead of night but never quite does. It is tender almost to the point of breathlessness, and so has become one of the best-known slow movements of Romanticism — at once a love letter to love and life, and proof of a composer climbing out of despair to create again.",
+        "place": {
+          "name": "Around the Great Hall of the Moscow Conservatory",
+          "note": "The Second Piano Concerto was premiered in Moscow in 1901 with the composer as soloist; this takes the Moscow Conservatory as his Moscow landmark, not the exact premiere hall."
         }
       }
     },
@@ -657,6 +759,22 @@
           "label": "Symphony No. 5 (Mahler) (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Mahler)"
         }
+      },
+      "en": {
+        "title": "Symphony No. 5, fourth movement ‘Adagietto’",
+        "work": "Symphony No. 5 — IV. Adagietto",
+        "composer": "Gustav Mahler",
+        "mood": "Longing · Farewell",
+        "blurb": "A ‘wordless love letter’ to Alma that later became music of farewell.",
+        "background": "The Fifth Symphony was written in 1901–1902, mostly finished in Mahler’s composing hut at Maiernigg. During that time he met Alma Schindler in Vienna in November 1901, became engaged in December, and married in March 1902. The fourth-movement Adagietto uses only strings and a single harp, in sharp contrast to the symphony’s vast orchestra. According to the conductor Mengelberg, Mahler sent Alma the manuscript of this movement with no letter at all — and she understood, and replied that he should come.",
+        "meaning": "It is therefore often read as Mahler’s ‘wordless love letter’ to Alma: the strings rise and fall as gently as breathing, writing love almost as a whisper. (Some scholars are cautious about this reading, but Mengelberg’s annotation is strong corroborating evidence.) Tellingly, this most tender music later came to be used again and again for farewells — Visconti’s film Death in Venice (1971) made it widely known, and Bernstein conducted it at Robert Kennedy’s funeral. Deep feeling, in the end, became an eternal farewell.",
+        "place": {
+          "name": "Vienna (the city where Mahler held his court-opera post and met Alma)",
+          "note": "The Fifth Symphony was written mainly in 1901–1902 at the Maiernigg summer hut; Mahler held his Vienna post and met and became engaged to Alma in that period, so this takes Vienna as the emotionally associated city-level location."
+        },
+        "quote": {
+          "text": "Per Alma’s letter to Mengelberg, Mahler left a little verse on the manuscript: ‘How much I love you, my sun, I cannot tell you in words; I can only lament to you my longing, my love and my bliss.’ The words fit exactly onto the Adagietto’s first theme."
+        }
       }
     },
     {
@@ -715,6 +833,22 @@
         "source": {
           "label": "Three Intermezzi, Op. 117 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Three_Intermezzi_for_piano,_Op._117_(Brahms)"
+        }
+      },
+      "en": {
+        "title": "Intermezzo, Op. 117 No. 1",
+        "work": "Three Intermezzi, Op. 117 No. 1 in E-flat major",
+        "composer": "Johannes Brahms",
+        "mood": "Consolation · Lullaby",
+        "blurb": "Brahms called them ‘the lullabies of my sorrows’ — love unfulfilled turned to compassion.",
+        "background": "In the summer of 1892, in the Austrian spa town of Bad Ischl, Brahms wrote the Three Intermezzi, Op. 117, published that November by N. Simrock in Berlin. They are among his introspective late piano miniatures. The first is prefaced in the score by lines from the Scottish ballad ‘Lady Anne Bothwell’s Lament’ (in Herder’s German translation) — a lullaby-like elegy.",
+        "meaning": "Brahms told a friend these three were ‘the lullabies of my sorrows.’ The first rocks gently to a cradle-song rhythm, deep loneliness beneath its tenderness. Brahms, who never married, distilled his lifelong, unspeakable and unfulfillable feeling for Clara Schumann into this kind of compassion — one that does not complain but only comforts. It belongs not to ardent love but to the consolation left, after love unfulfilled, for oneself and for others.",
+        "place": {
+          "name": "Bad Ischl (Brahms’s summer composing retreat)",
+          "note": "Brahms spent several summers in 1889–1896 composing at Bad Ischl, where the Three Intermezzi, Op. 117, were written in the summer of 1892. The coordinates take the town’s central landmark."
+        },
+        "quote": {
+          "text": "Brahms called these three intermezzi ‘the lullabies of my sorrows’ (Wiegenlieder meiner Schmerzen); the first is even prefaced in the score by the Scottish ballad ‘Lady Anne Bothwell’s Lament’: ‘Sleep softly, my child… it grieves my heart to see you weep.’"
         }
       }
     },
@@ -818,6 +952,19 @@
         "source": {
           "label": "Palazzetto Bru Zane：Le Cygne",
           "url": "https://www.bruzanemediabase.com/en/exploration/works/carnaval-animaux-cygne-camille-saint-saens"
+        }
+      },
+      "en": {
+        "title": "Le Cygne (The Swan)",
+        "work": "The Carnival of the Animals (Le Carnaval des animaux) No. 13",
+        "composer": "Camille Saint-Saëns",
+        "mood": "Longing · Fading",
+        "blurb": "A pure, untouchable love — grace shadowed by an inevitable sense of fading.",
+        "background": "Le Cygne is the thirteenth (and penultimate) movement of Saint-Saëns’s The Carnival of the Animals, written in 1886 for solo cello with two pianos. Saint-Saëns forbade public performance of the complete Carnival in his lifetime, fearing it would damage his image as a ‘serious composer’ — only Le Cygne he allowed to be published while he lived (1887). In 1905 the choreographer Fokine created the famous solo The Dying Swan for the ballerina Anna Pavlova to this very music.",
+        "meaning": "The pianos’ broken chords shimmer like light on water while the cello sings a graceful, long-breathed melody above, depicting a swan gliding quietly across the surface. It is often taken to symbolize a pure, untouchable love — a beauty to be admired only from afar, destined to fade. A faint sadness always veils its grace, which is why it later took on the image of ‘the dying swan’ and became the most famous of all short cello solos.",
+        "place": {
+          "name": "Paris (the city where Saint-Saëns long lived, and of the premiere)",
+          "note": "Le Cygne was written in 1886, first performed that year at a private Paris concert, and published in 1887. This takes a central-Paris landmark as a city-level location."
         }
       }
     },
@@ -1075,6 +1222,19 @@
         "source": {
           "label": "Square d'Orléans (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Square_d'Orl%C3%A9ans"
+        }
+      },
+      "en": {
+        "title": "Nocturne in E-flat major, Op. 9 No. 2",
+        "work": "Nocturne in E-flat major, Op. 9 No. 2",
+        "composer": "Frédéric Chopin",
+        "mood": "Night · Tender",
+        "blurb": "The salon’s most tender night — the right hand drifting free, like improvised song.",
+        "background": "This Nocturne in E-flat major, written around 1830–1832 and published in 1833, is the second of the three Nocturnes, Op. 9, dedicated to Marie Pleyel. It is an early work from Chopin’s early twenties, just after he arrived in Paris. The nocturne genre was pioneered by the Irish composer John Field; Chopin greatly developed and deepened it, writing a ‘language of the night’ all his own.",
+        "meaning": "The left hand is an unbroken, gently undulating arpeggiation, like the night itself; the right hand sings a freely improvised melody that adds ever more elaborate ornamentation on each return. It renders ‘night’ as an intimate whisper — no dramatic conflict, only the most tender confiding by salon candlelight. This nocturne has become one of Chopin’s most widely loved, performed and arranged works.",
+        "place": {
+          "name": "Square d’Orléans (Chopin’s Paris residence)",
+          "note": "Chopin lived at 9 Square d’Orléans in 1842–1848; the Op. 9 nocturnes date from his early Paris years (1832), and this stands as his Paris landmark."
         }
       }
     },
@@ -2612,6 +2772,22 @@
           "label": "Johannes Brahms (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Johannes_Brahms"
         }
+      },
+      "en": {
+        "title": "Wiegenlied (Lullaby)",
+        "work": "Five Songs (Fünf Lieder), Op. 49 No. 4",
+        "composer": "Johannes Brahms",
+        "mood": "Sleep · Tender",
+        "blurb": "The most famous lullaby in the world. Brahms wrote it for the birth of an old friend’s second son, hiding in the accompaniment a song she once sang to him.",
+        "background": "Wiegenlied is the fourth of Brahms’s Five Songs, Op. 49, published by N. Simrock in Berlin in 1868. It was written for Brahms’s old acquaintance Bertha Faber to mark the birth of her second son; Brahms had been fond of her in his youth, and hid in the accompaniment a countermelody echoing a song she used to hum to him (from a duet by Alexander Baumann). The first verse’s words come from the German folk-poetry collection Des Knaben Wunderhorn; the second was written by Georg Scherer in 1849. It was premiered in Vienna on 22 December 1869 by the soprano Louise Dustmann and the pianist Clara Schumann.",
+        "meaning": "It turns the most everyday act — lulling someone to sleep — into a near-perfect melody: the rocking accompaniment is like a gently swaying cradle, the vocal line calm and free of any dramatic swell, all of it aimed at ‘settling down.’ Brahms tucked his tenderness for an old friend into a hidden countermelody — and this piece traveled the whole world precisely because what it speaks of is not passion but protection: may you sleep in peace.",
+        "place": {
+          "name": "Johannes-Brahms-Denkmal (the Brahms monument at Karlsplatz)",
+          "note": "Wiegenlied, Op. 49 No. 4, was dedicated to Brahms’s old Viennese friend Bertha Faber and premiered in Vienna on 22 December 1869 by Louise Dustmann and Clara Schumann; this takes Vienna, where Brahms long settled, and the Karlsplatz monument as a city-level location."
+        },
+        "quote": {
+          "text": "The hidden melody in the accompaniment echoes a song Bertha used to hum to Brahms in her youth — he stitched a private memory into a lullaby for an infant."
+        }
       }
     },
     {
@@ -2669,6 +2845,22 @@
           "label": "Square d'Orléans (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Square_d'Orl%C3%A9ans"
         }
+      },
+      "en": {
+        "title": "Berceuse (Lullaby)",
+        "work": "Berceuse in D-flat major, Op. 57",
+        "composer": "Frédéric Chopin",
+        "mood": "Sleep · Reverie",
+        "blurb": "A single rocking figure sways in the left hand from start to finish while the right weaves ever finer lace above it — a piano lullaby kept quiet throughout.",
+        "background": "Chopin’s Berceuse in D-flat major, Op. 57, was begun in the summer of 1843, completed in Paris in 1844 and published in 1845, dedicated to Élise Gavard. The whole piece is built over an almost unchanging ostinato bass, while the right hand spins a series of ever more ornate variations, the music holding to a soft piano-to-pianissimo dynamic throughout — exactly as the ‘lullaby’ genre demands.",
+        "meaning": "It does almost one thing only: keep the left hand’s gently rocking figure going without pause, like a cradle’s steady rhythm; over that calm the right hand dreams, its notes growing finer and brighter yet never raising its voice. Chopin renders ‘falling asleep’ as a suspended state — consciousness slowly drifting away while the hand beneath holds you, tenderly, the whole time.",
+        "place": {
+          "name": "Square d’Orléans (Chopin’s Paris residence)",
+          "note": "The Berceuse, Op. 57, was written in Paris in 1843–1844, during Chopin’s time living at Square d’Orléans; this takes his Paris residence as a landmark, not the exact room of composition."
+        },
+        "quote": {
+          "text": "With all the restraint a true lullaby demands, the Berceuse holds to piano and pianissimo throughout — a series of variations over an ostinato bass, widely regarded as one of Chopin’s most extraordinary lyrical masterpieces."
+        }
       }
     },
     {
@@ -2724,6 +2916,22 @@
         "source": {
           "label": "Mozarthaus Vienna",
           "url": "https://www.mozarthausvienna.at/en/"
+        }
+      },
+      "en": {
+        "title": "Eine kleine Nachtmusik, second movement: Romanze",
+        "work": "Serenade No. 13 ‘Eine kleine Nachtmusik’, K. 525 — II. Romanze (Andante)",
+        "composer": "Wolfgang Amadeus Mozart",
+        "mood": "Nocturne · Serene",
+        "blurb": "The most tender stretch of Eine kleine Nachtmusik. The Romanze walks at an easy pace in C major — intimate, serene, the Classical era’s most elegant idea of ‘night.’",
+        "background": "Eine kleine Nachtmusik — Serenade No. 13 in G major, K. 525 — was completed in Vienna on 10 August 1787 and is one of Mozart’s best-known instrumental works. It has four movements; the second, Romanze, marked Andante, turns to the subdominant key of C major and takes a rondo form (A–B–A–C–A plus coda), suffused throughout with intimacy and tenderness.",
+        "meaning": "‘Eine kleine Nachtmusik’ means, literally, ‘a little night music.’ After the bright first movement, this Romanze slows the tempo and draws in the volume, the melody like a low confiding voice — unhurried, settled, in no rush. It carries none of Romanticism’s surging emotion but the balanced beauty particular to the Classical era — and it is exactly this ‘nothing to disturb you’ elegance that makes it so well suited to the night, to the hour before sleep.",
+        "place": {
+          "name": "Mozarthaus Vienna (Mozart’s Vienna residence)",
+          "note": "Eine kleine Nachtmusik, K. 525, was completed in Vienna on 10 August 1787; Mozart lived at this house on Domgasse in 1784–1787 (today Mozarthaus Vienna), taken here as a Vienna city-level landmark, not the exact place of completion."
+        },
+        "quote": {
+          "text": "The Romanze, marked Andante, turns to the subdominant key of C major — a feeling of intimacy and tenderness prevails throughout the movement."
         }
       }
     }

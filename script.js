@@ -2,6 +2,15 @@
   "use strict";
 
   var THEME_STORAGE_KEY = "music-diary-theme";
+  var LANG_STORAGE_KEY = "music-diary-lang";
+
+  function getStoredLang() {
+    try {
+      var l = window.localStorage && window.localStorage.getItem(LANG_STORAGE_KEY);
+      if (l === "en" || l === "zh") { return l; }
+    } catch (e) {}
+    return "zh";
+  }
 
   var DATA = (typeof window !== "undefined" && window.MUSIC_DIARY_DATA) || { collections: [], entries: [] };
   var COLLECTIONS = Array.isArray(DATA.collections) ? DATA.collections : [];
@@ -14,10 +23,119 @@
   var state = {
     filtered: ENTRIES.slice(),
     selectedId: null,
+    lang: getStoredLang(),
     map: null,
     markers: {},
     markerByEntry: {}
   };
+
+  // ---- i18n ---------------------------------------------------------------
+  // Dynamic strings built in JS. {n}/{total}/{v}/{t}/{label} are interpolated.
+  var STRINGS = {
+    zh: {
+      popupWorks: "{n} 首作品", collCount: "{n} 首",
+      noMatchTitle: "没有匹配的作品", adjustFilters: "请调整筛选条件。",
+      noResults: "当前筛选没有结果。", emptyNote: "没有匹配的作品，试试放宽筛选条件。",
+      cityCountrySep: "，", certainty: "（地点确定度：{v}）",
+      placeSource: "地点来源：{label} ↗", listen: "试听：{t}", quoteSource: "出处：{label} ↗",
+      view: "查看", inPlaylists: "收录于：",
+      allPlaylists: "全部歌单", allComposers: "全部作曲家",
+      resultCount: "共 {n} / {total} 首",
+      themeLight: "白天", themeDark: "黑夜",
+      switchToLight: "切换到白天模式", switchToDark: "切换到黑夜模式",
+      langLabel: "EN", langAria: "Switch to English", certHigh: "高", certMid: "中", certLow: "低"
+    },
+    en: {
+      popupWorks: "{n} works", collCount: "{n} pieces",
+      noMatchTitle: "No matching work", adjustFilters: "Try adjusting the filters.",
+      noResults: "No results for the current filters.", emptyNote: "No matching works — try loosening the filters.",
+      cityCountrySep: ", ", certainty: " (location certainty: {v})",
+      placeSource: "Location source: {label} ↗", listen: "Listen: {t}", quoteSource: "Source: {label} ↗",
+      view: "view", inPlaylists: "In playlists: ",
+      allPlaylists: "All playlists", allComposers: "All composers",
+      resultCount: "{n} / {total} works",
+      themeLight: "Light", themeDark: "Dark",
+      switchToLight: "Switch to light mode", switchToDark: "Switch to dark mode",
+      langLabel: "中", langAria: "切换到中文", certHigh: "High", certMid: "Medium", certLow: "Low"
+    }
+  };
+
+  // English overrides for static HTML, keyed by data-i18n* attribute values.
+  var STATIC_EN = {
+    "nav.explore": "Explore", "nav.collections": "Playlists", "nav.concerts": "Concerts",
+    "nav.play": "Play one", "nav.detail": "Work detail", "nav.sources": "Sources",
+    "play.kicker": "Mini-game", "play.title": "Follow the score, play one on your keyboard",
+    "play.intro": 'The scores are all drawn from works collected in this diary\'s playlists, written in <strong>jianpu</strong> (numbered notation: 1 = C, a dot above a number means an octave up, a dot below an octave down, ♯ is a semitone); under each number is the key to press. The layout supports <strong>two hands</strong>: the right-hand white keys are Q W E R T Y U I O P [ with black keys on the number row (2 3 5 6 7 9 0), and the left-hand bass white keys are Z X C V B N M with black keys S D G H J. In two-hand scores the upper and lower numbers in one slot are pressed together (one after the other counts too); you can also just click the keys below. To reach higher or lower registers, the octave ± buttons or the <code>−</code> / <code>=</code> keys shift the whole keyboard by an octave (effectively C2–F6 in free play; selecting a score snaps back to the home position so the printed key labels stay accurate). Finish a whole piece for a little surprise — more playlist melodies will be added over time. (The mini-game\'s notation and melody names are currently shown in Chinese only.)',
+    "play.labelMelody": "Score", "play.labelTimbre": "Timbre", "play.restart": "Restart",
+    "play.hint": "Timbres are synthesized live in the browser with Web Audio — no audio files to download; on a phone you can tap the keys directly.",
+    "hero.eyebrow": "Music Diary · maintained by Boya",
+    "hero.copy": 'A music diary — from the classical canon to film scores. Organized by theme into <strong><a href="#collections">playlists</a></strong> (Love, Night &amp; Moonlight, Solo Piano, Opera Stage, Longing &amp; Farewell, Before Sleep), and by whole performance into <strong><a href="#concerts">concerts</a></strong> (John Williams\' Berlin film night, the Vienna Philharmonic live). Click a marker on the <strong>map</strong> to pop up a work and jump to its detail; every piece comes with its background, meaning, a note from the composer, and listening links.',
+    "hero.sub": 'Sister project: <a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> — a map of Mozart\'s footsteps alone.',
+    "explore.kicker": "Map", "explore.title": "Open a work on the map",
+    "filter.search": "Search", "filter.collection": "Playlist", "filter.composer": "Composer",
+    "filter.searchPh": "Chopin / nocturne / Vienna / opera",
+    "map.hint": "The number on each round marker is that city's work count; works from the same city gather into one marker — open it to pick one.",
+    "map.warning": "The map tiles need a network connection to load; the playlists below still work and link through.",
+    "detail.kicker": "Work detail", "detail.title": "Select a work",
+    "detail.metaDefault": "Use the “View work detail” button in a map popup, or any piece in a playlist, and its background and official sources show here.",
+    "detail.bgHead": "Background", "detail.bgDefault": "Select a work from the map or a playlist and its background shows here.",
+    "detail.meaningHead": "Meaning", "detail.meaningDefault": "Select a work from the map or a playlist and its meaning shows here.",
+    "detail.quoteLabel": "A note from the composer", "detail.sourcesHead": "Sources",
+    "detail.mapLink": "Show on the map",
+    "collections.kicker": "Playlists & collections", "collections.title": "Works, organized into collections",
+    "collections.intro": "A work can belong to several playlists at once (Le Cygne, for instance, is in Love as well as Night &amp; Moonlight and Longing &amp; Farewell). Click any piece to jump to its detail.",
+    "concerts.kicker": "Concerts", "concerts.title": "Organized by a single performance",
+    "concerts.intro": "Complete concert programs, in the order they were played that night. Click any piece to jump to its detail.",
+    "sources.kicker": "About the sources", "sources.title": "On sourcing and stance",
+    "sources.body": 'This project follows the same stance as Mozart Journey: no invented dates, places or backstories, and cautious wording for uncertain history. Sources favor <strong>official composer portals and research institutions</strong> (Beethoven-Haus Bonn, Schumann-Portal, the Fryderyk Chopin Institute / NIFC, Brahms-Portal, the Mahler Foundation, Palazzetto Bru Zane, the Puccini study center, the Mozarteum Köchel catalogue, and so on); for the few works without an official per-piece page, the authoritative score archive IMSLP is used. Each work’s specific sources appear in its <a href="#detail">work detail</a>. Data lives in <code>data/music-diary.json</code>.',
+    "footer.line1": 'A work by Boya · static site · Leaflet + OpenStreetMap · data in <code>data/music-diary.json</code>',
+    "footer.line2": 'Sister project: <a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> · back to <a href="https://moltpany.github.io/">Moltpany</a>'
+  };
+
+  function t(key, vars) {
+    var s = (STRINGS[state.lang] && STRINGS[state.lang][key]) || (STRINGS.zh[key] || key);
+    if (vars) {
+      Object.keys(vars).forEach(function (k) {
+        s = s.replace("{" + k + "}", vars[k]);
+      });
+    }
+    return s;
+  }
+
+  function localizeCertainty(v) {
+    if (v === "高") { return t("certHigh"); }
+    if (v === "中") { return t("certMid"); }
+    if (v === "低") { return t("certLow"); }
+    return v;
+  }
+
+  // Localized scalar field with zh fallback: loc(obj, "title").
+  function loc(obj, field) {
+    if (state.lang === "en" && obj && obj.en && obj.en[field] != null && obj.en[field] !== "") {
+      return obj.en[field];
+    }
+    return obj ? obj[field] : undefined;
+  }
+
+  // Localized nested field with zh fallback: locIn(entry, "place", "name").
+  function locIn(obj, sub, field) {
+    if (state.lang === "en" && obj && obj.en && obj.en[sub] && obj.en[sub][field] != null && obj.en[sub][field] !== "") {
+      return obj.en[sub][field];
+    }
+    return obj && obj[sub] ? obj[sub][field] : undefined;
+  }
+
+  // Sources for display: in EN mode, drop summaries that have no English yet
+  // (label + link stay) so detail pages don't show stray Chinese prose.
+  function getLocalizedSources(entry) {
+    return getEntrySources(entry).map(function (s) {
+      if (state.lang === "en") {
+        var enSummary = s.en && s.en.summary ? s.en.summary : "";
+        return { label: s.en && s.en.label ? s.en.label : s.label, url: s.url, summary: enSummary };
+      }
+      return s;
+    });
+  }
 
   function coordKey(entry) {
     return entry.lat + "," + entry.lng;
@@ -85,30 +203,48 @@
     }
     if (filters.composer !== "all" && entry.composer !== filters.composer) { return false; }
     if (filters.query) {
-      var hay = [entry.title, entry.work, entry.composer, entry.city, entry.country, entry.blurb, entry.mood, String(entry.year)]
-        .join(" ").toLowerCase();
+      var parts = [entry.title, entry.work, entry.composer, entry.city, entry.country, entry.blurb, entry.mood, String(entry.year)];
+      if (entry.en) {
+        parts = parts.concat([entry.en.title, entry.en.work, entry.en.composer, entry.en.blurb, entry.en.mood]);
+      }
+      var hay = parts.filter(Boolean).join(" ").toLowerCase();
       if (hay.indexOf(filters.query) === -1) { return false; }
     }
     return true;
   }
 
   // ---- Filter UI ----------------------------------------------------------
-  function populateFilters() {
-    var collOpts = ['<option value="all">全部歌单</option>'];
+  // zh composer string -> en composer, for localized option labels.
+  var COMPOSER_EN = {};
+  ENTRIES.forEach(function (e) {
+    if (e.en && e.en.composer) { COMPOSER_EN[e.composer] = e.en.composer; }
+  });
+
+  function buildFilterOptions() {
+    var collFilter = $("collection-filter");
+    var compFilter = $("composer-filter");
+    var prevColl = collFilter ? collFilter.value : "all";
+    var prevComp = compFilter ? compFilter.value : "all";
+
+    var collOpts = ['<option value="all">' + escapeHtml(t("allPlaylists")) + "</option>"];
     COLLECTIONS.forEach(function (c) {
-      collOpts.push('<option value="' + escapeHtml(c.id) + '">' + escapeHtml(c.title) + "</option>");
+      collOpts.push('<option value="' + escapeHtml(c.id) + '">' + escapeHtml(loc(c, "title")) + "</option>");
     });
-    $("collection-filter").innerHTML = collOpts.join("");
+    if (collFilter) { collFilter.innerHTML = collOpts.join(""); collFilter.value = prevColl || "all"; }
 
     var composers = [];
     ENTRIES.forEach(function (e) { if (composers.indexOf(e.composer) === -1) { composers.push(e.composer); } });
     composers.sort();
-    var compOpts = ['<option value="all">全部作曲家</option>'];
+    var compOpts = ['<option value="all">' + escapeHtml(t("allComposers")) + "</option>"];
     composers.forEach(function (c) {
-      compOpts.push('<option value="' + escapeHtml(c) + '">' + escapeHtml(c) + "</option>");
+      var label = (state.lang === "en" && COMPOSER_EN[c]) ? COMPOSER_EN[c] : c;
+      compOpts.push('<option value="' + escapeHtml(c) + '">' + escapeHtml(label) + "</option>");
     });
-    $("composer-filter").innerHTML = compOpts.join("");
+    if (compFilter) { compFilter.innerHTML = compOpts.join(""); compFilter.value = prevComp || "all"; }
+  }
 
+  function populateFilters() {
+    buildFilterOptions();
     ["search-filter", "collection-filter", "composer-filter"].forEach(function (id) {
       var el = $(id);
       if (!el) { return; }
@@ -146,13 +282,13 @@
   function buildCityPopup(group) {
     var head =
       '<strong class="popup-city">' + escapeHtml(group.city) + "</strong>" +
-      '<span class="popup-meta">' + group.entries.length + " 首作品</span>";
+      '<span class="popup-meta">' + escapeHtml(t("popupWorks", { n: group.entries.length })) + "</span>";
     var items = group.entries.map(function (entry) {
-      var venue = entry.place && entry.place.name ? entry.place.name : "";
+      var venue = locIn(entry, "place", "name") || "";
       return (
         '<button type="button" class="popup-item" data-id="' + escapeHtml(entry.id) + '">' +
-          '<span class="popup-item-title">' + escapeHtml(entry.title) + "</span>" +
-          '<span class="popup-item-sub">' + escapeHtml(entry.composer + " · " + entry.year) + "</span>" +
+          '<span class="popup-item-title">' + escapeHtml(loc(entry, "title")) + "</span>" +
+          '<span class="popup-item-sub">' + escapeHtml(loc(entry, "composer") + " · " + entry.year) + "</span>" +
           (venue ? '<span class="popup-item-venue">📍 ' + escapeHtml(venue) + "</span>" : "") +
         "</button>"
       );
@@ -292,7 +428,7 @@
     if (nav) {
       nav.innerHTML = groups.map(function (g) {
         return '<a href="#collection-' + escapeHtml(g.collection.id) + '">' +
-          escapeHtml(g.collection.title) + " (" + g.entries.length + ")</a>";
+          escapeHtml(loc(g.collection, "title")) + " (" + g.entries.length + ")</a>";
       }).join("");
     }
 
@@ -300,30 +436,32 @@
       var items = g.entries.map(function (entry) {
         return (
           '<button type="button" class="collection-item" data-id="' + escapeHtml(entry.id) + '" aria-pressed="false">' +
-            "<strong>" + escapeHtml(entry.title) + "</strong>" +
-            "<span>" + escapeHtml(entry.composer) + "</span>" +
+            "<strong>" + escapeHtml(loc(entry, "title")) + "</strong>" +
+            "<span>" + escapeHtml(loc(entry, "composer")) + "</span>" +
             "<small>" + escapeHtml(entry.year + " · " + entry.city) + "</small>" +
           "</button>"
         );
       }).join("");
-      var badge = g.collection.badge
-        ? ' <span class="collection-badge">' + escapeHtml(g.collection.badge) + "</span>"
+      var badgeVal = loc(g.collection, "badge");
+      var badge = badgeVal
+        ? ' <span class="collection-badge">' + escapeHtml(badgeVal) + "</span>"
         : "";
-      var intro = g.collection.intro
-        ? '<p class="collection-intro-note">' + escapeHtml(g.collection.intro) + "</p>"
+      var introVal = loc(g.collection, "intro");
+      var intro = introVal
+        ? '<p class="collection-intro-note">' + escapeHtml(introVal) + "</p>"
         : "";
       return (
         '<article class="collection-card" id="collection-' + escapeHtml(g.collection.id) + '">' +
           '<div class="collection-card-head">' +
-            "<h3>" + escapeHtml(g.collection.title) + badge +
-              ' <span class="collection-count">' + g.entries.length + " 首</span></h3>" +
-            "<p>" + escapeHtml(g.collection.description) + "</p>" +
+            "<h3>" + escapeHtml(loc(g.collection, "title")) + badge +
+              ' <span class="collection-count">' + escapeHtml(t("collCount", { n: g.entries.length })) + "</span></h3>" +
+            "<p>" + escapeHtml(loc(g.collection, "description")) + "</p>" +
             intro +
           "</div>" +
           '<div class="collection-items">' + items + "</div>" +
         "</article>"
       );
-    }).join("") || '<p class="empty-note">没有匹配的作品，试试放宽筛选条件。</p>';
+    }).join("") || '<p class="empty-note">' + escapeHtml(t("emptyNote")) + "</p>";
 
     Array.prototype.forEach.call(list.querySelectorAll(".collection-item"), function (btn) {
       btn.addEventListener("click", function () {
@@ -343,11 +481,11 @@
   // ---- Detail -------------------------------------------------------------
   function renderDetail(entry) {
     if (!entry) {
-      setText("detail-title", "没有匹配的作品");
-      setText("detail-meta", "请调整筛选条件。");
+      setText("detail-title", t("noMatchTitle"));
+      setText("detail-meta", t("adjustFilters"));
       setText("detail-lead", "");
-      setText("detail-background", "当前筛选没有结果。");
-      setText("detail-meaning", "当前筛选没有结果。");
+      setText("detail-background", t("noResults"));
+      setText("detail-meaning", t("noResults"));
       $("detail-collections").hidden = true;
       $("detail-listening").hidden = true;
       $("detail-quote").hidden = true;
@@ -356,20 +494,21 @@
       return;
     }
 
-    setText("detail-title", entry.title);
-    var meta = entry.composer + " · " + entry.work + " · " + entry.year + " · " + entry.city + "，" + entry.country;
-    if (entry.mood) { meta += " · " + entry.mood; }
+    setText("detail-title", loc(entry, "title"));
+    var meta = loc(entry, "composer") + " · " + loc(entry, "work") + " · " + entry.year + " · " + entry.city + t("cityCountrySep") + entry.country;
+    var moodVal = loc(entry, "mood");
+    if (moodVal) { meta += " · " + moodVal; }
     setText("detail-meta", meta);
-    setText("detail-lead", entry.blurb || "");
-    setText("detail-background", entry.background || entry.blurb || "");
-    setText("detail-meaning", entry.meaning || "");
+    setText("detail-lead", loc(entry, "blurb") || "");
+    setText("detail-background", loc(entry, "background") || loc(entry, "blurb") || "");
+    setText("detail-meaning", loc(entry, "meaning") || "");
 
     var collContainer = $("detail-collections");
     var collections = getEntryCollections(entry);
     if (collections.length) {
-      collContainer.innerHTML = '<span class="detail-collections-label">收录于：</span>' +
+      collContainer.innerHTML = '<span class="detail-collections-label">' + escapeHtml(t("inPlaylists")) + "</span>" +
         collections.map(function (c) {
-          return '<a class="detail-collection-link" href="#collection-' + escapeHtml(c.id) + '">' + escapeHtml(c.title) + "</a>";
+          return '<a class="detail-collection-link" href="#collection-' + escapeHtml(c.id) + '">' + escapeHtml(loc(c, "title")) + "</a>";
         }).join("");
       collContainer.hidden = false;
     } else {
@@ -378,14 +517,15 @@
 
     var placeBox = $("detail-place");
     if (entry.place && entry.place.name) {
-      var p = entry.place;
-      setText("detail-place-name", p.name + (p.certainty ? "（地点确定度：" + p.certainty + "）" : ""));
-      setText("detail-place-address", p.address || "");
-      setText("detail-place-note", p.note || "");
+      var pName = locIn(entry, "place", "name");
+      var pCert = entry.place.certainty;
+      setText("detail-place-name", pName + (pCert ? t("certainty", { v: localizeCertainty(pCert) }) : ""));
+      setText("detail-place-address", locIn(entry, "place", "address") || "");
+      setText("detail-place-note", locIn(entry, "place", "note") || "");
       var ps = $("detail-place-source");
-      if (p.source && p.source.url) {
-        ps.href = p.source.url;
-        ps.textContent = "地点来源：" + (p.source.label || "查看") + " ↗";
+      if (entry.place.source && entry.place.source.url) {
+        ps.href = entry.place.source.url;
+        ps.textContent = t("placeSource", { label: entry.place.source.label || t("view") });
         ps.hidden = false;
       } else {
         ps.hidden = true;
@@ -397,7 +537,7 @@
 
     var links = buildListeningLinks(entry.listening);
     if (links.length) {
-      setText("detail-listening-target", "试听：" + ((entry.listening && entry.listening.target) || entry.title));
+      setText("detail-listening-target", t("listen", { t: (entry.listening && entry.listening.target) || loc(entry, "title") }));
       $("detail-listening-links").innerHTML = links.map(function (l) {
         return '<a href="' + l.url + '" target="_blank" rel="noreferrer">' + l.label + "</a>";
       }).join("");
@@ -407,12 +547,13 @@
     }
 
     var quoteBox = $("detail-quote");
-    if (entry.quote && entry.quote.text) {
-      setText("detail-quote-text", entry.quote.text);
+    var quoteText = locIn(entry, "quote", "text");
+    if (entry.quote && quoteText) {
+      setText("detail-quote-text", quoteText);
       var qs = $("detail-quote-source");
       if (entry.quote.source && entry.quote.source.url) {
         qs.href = entry.quote.source.url;
-        qs.textContent = "出处：" + (entry.quote.source.label || "查看") + " ↗";
+        qs.textContent = t("quoteSource", { label: entry.quote.source.label || t("view") });
         qs.hidden = false;
       } else {
         qs.hidden = true;
@@ -422,7 +563,7 @@
       quoteBox.hidden = true;
     }
 
-    var sources = getEntrySources(entry);
+    var sources = getLocalizedSources(entry);
     var sourcesBox = $("detail-sources");
     if (sources.length) {
       $("detail-sources-list").innerHTML = sources.map(function (s) {
@@ -463,16 +604,71 @@
   }
 
   // ---- Theme toggle -------------------------------------------------------
+  function refreshThemeButton() {
+    var btn = $("theme-toggle");
+    if (!btn) { return; }
+    var isDark = document.documentElement.dataset.theme === "dark";
+    btn.textContent = isDark ? t("themeLight") : t("themeDark");
+    btn.setAttribute("aria-pressed", isDark ? "true" : "false");
+    btn.setAttribute("aria-label", isDark ? t("switchToLight") : t("switchToDark"));
+  }
+
   function initTheme() {
     var btn = $("theme-toggle");
     if (!btn) { return; }
     btn.addEventListener("click", function () {
       var next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
       document.documentElement.dataset.theme = next;
-      btn.textContent = next === "dark" ? "白天" : "黑夜";
-      btn.setAttribute("aria-pressed", next === "dark" ? "true" : "false");
-      btn.setAttribute("aria-label", next === "dark" ? "切换到白天模式" : "切换到黑夜模式");
+      refreshThemeButton();
       try { localStorage.setItem(THEME_STORAGE_KEY, next); } catch (e) {}
+    });
+  }
+
+  // ---- Language toggle ----------------------------------------------------
+  function applyStaticI18n() {
+    var en = state.lang === "en";
+    Array.prototype.forEach.call(document.querySelectorAll("[data-i18n]"), function (el) {
+      if (el.dataset.zhText == null) { el.dataset.zhText = el.textContent; }
+      el.textContent = en ? (STATIC_EN[el.getAttribute("data-i18n")] || el.dataset.zhText) : el.dataset.zhText;
+    });
+    Array.prototype.forEach.call(document.querySelectorAll("[data-i18n-html]"), function (el) {
+      if (el.dataset.zhHtml == null) { el.dataset.zhHtml = el.innerHTML; }
+      el.innerHTML = en ? (STATIC_EN[el.getAttribute("data-i18n-html")] || el.dataset.zhHtml) : el.dataset.zhHtml;
+    });
+    Array.prototype.forEach.call(document.querySelectorAll("[data-i18n-ph]"), function (el) {
+      if (el.dataset.zhPh == null) { el.dataset.zhPh = el.getAttribute("placeholder") || ""; }
+      el.setAttribute("placeholder", en ? (STATIC_EN[el.getAttribute("data-i18n-ph")] || el.dataset.zhPh) : el.dataset.zhPh);
+    });
+  }
+
+  function refreshLangButton() {
+    var btn = $("lang-toggle");
+    if (!btn) { return; }
+    btn.textContent = t("langLabel");
+    btn.setAttribute("aria-label", t("langAria"));
+  }
+
+  function applyLang() {
+    document.documentElement.lang = state.lang === "en" ? "en" : "zh-CN";
+    applyStaticI18n();
+    refreshThemeButton();
+    refreshLangButton();
+    buildFilterOptions();
+    applyFilters();
+    renderDetail(getEntry(state.selectedId));
+    highlightSelected();
+  }
+
+  function initLang() {
+    document.documentElement.lang = state.lang === "en" ? "en" : "zh-CN";
+    applyStaticI18n();
+    refreshLangButton();
+    var btn = $("lang-toggle");
+    if (!btn) { return; }
+    btn.addEventListener("click", function () {
+      state.lang = state.lang === "en" ? "zh" : "en";
+      try { localStorage.setItem(LANG_STORAGE_KEY, state.lang); } catch (e) {}
+      applyLang();
     });
   }
 
@@ -490,7 +686,7 @@
   function applyFilters() {
     var filters = currentFilters();
     state.filtered = ENTRIES.filter(function (e) { return matchesFilters(e, filters); }).sort(byYearThenCity);
-    setText("result-count", "共 " + state.filtered.length + " / " + ENTRIES.length + " 首");
+    setText("result-count", t("resultCount", { n: state.filtered.length, total: ENTRIES.length }));
     renderMarkers(state.filtered);
     renderCollections(state.filtered);
 
@@ -506,6 +702,8 @@
   // ---- Init ---------------------------------------------------------------
   function init() {
     initTheme();
+    initLang();
+    refreshThemeButton();
     populateFilters();
     initMap();
     initDetailActions();
