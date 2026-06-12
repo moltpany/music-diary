@@ -70,6 +70,18 @@ window.MUSIC_DIARY_DATA = {
       }
     },
     {
+      "id": "childhood",
+      "kind": "playlist",
+      "title": "童年",
+      "description": "明亮、纯净、无忧的曲子——小号嘹亮的号角与欢快的回旋曲，像孩童眼里那个干净、雀跃的世界。也收一些和自己童年记忆缠在一起、苦苦找寻多年才重逢的旋律。",
+      "intro": "这个歌单有两层意思。一是曲子本身的气质：海顿与胡梅尔的小号协奏曲终乐章，明亮、利落、毫无阴霾——小号像清晨第一缕阳光，大概是最接近「童年」那种纯粹快乐的声音。二是私人的：其中胡梅尔那首，是我从小记得旋律、却多年叫不出名字的曲子，断断续续找了近二十年，才在一次偶然里终于和它重逢。这两首还恰好同根——都是为同一位小号家安东·魏丁格新发明的「键号」而写，而胡梅尔正是海顿在埃斯特哈齐宫廷的接班人。把它们放在一起，既是听两支小号隔着七年的对话，也是替自己把一段找了很久的童年记忆归了档。",
+      "en": {
+        "title": "Childhood",
+        "description": "Bright, pure, untroubled music — the trumpet's clarion fanfares and joyful rondos, like the clean, leaping world seen through a child's eyes. It also gathers a few melodies tangled up with one's own childhood, long searched for and finally found again.",
+        "intro": "This playlist has two meanings. One is the character of the music itself: the finales of Haydn's and Hummel's trumpet concertos — bright, crisp, without a cloud — where the trumpet is like the first ray of morning light, perhaps the sound closest to the pure joy of childhood. The other is personal: the Hummel is a piece whose melody I remembered from childhood but could never name, hunting for it on and off for nearly twenty years before stumbling on it at last. The two pieces also share a root — both were written for the keyed trumpet newly invented by the same player, Anton Weidinger, and Hummel was Haydn's very successor at the Esterházy court. Setting them side by side is to hear two trumpets in conversation across seven years — and to file away, at last, a childhood memory I spent a long time chasing."
+      }
+    },
+    {
       "id": "concert-berlin",
       "title": "柏林电影之夜 · 约翰·威廉姆斯",
       "description": "2021 年 10 月，约翰·威廉姆斯首度执棒柏林爱乐，亲自指挥自己的电影配乐。这份歌单按这场音乐会（后由 DG 录制为《The Berlin Concert》）的曲目整理——从《奥林匹克号角》到《帝国进行曲》，一位电影作曲家如何用管弦乐写就一代人的集体记忆。地点统一标注柏林爱乐厅。",
@@ -3445,6 +3457,130 @@ window.MUSIC_DIARY_DATA = {
         },
         "quote": {
           "text": "The Romanze, marked Andante, turns to the subdominant key of C major — a feeling of intimacy and tenderness prevails throughout the movement."
+        }
+      }
+    },
+    {
+      "id": "haydn-trumpet-concerto-finale",
+      "title": "《降 E 大调小号协奏曲》第三乐章 (Trumpet Concerto, III)",
+      "work": "Trumpet Concerto in E-flat major, Hob. VIIe:1, III. Finale (Allegro)",
+      "composer": "约瑟夫·海顿 (Joseph Haydn)",
+      "year": 1796,
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.1969,
+      "lng": 16.349,
+      "mood": "号角 · 明亮",
+      "collections": [
+        "childhood"
+      ],
+      "blurb": "晚年海顿最受欢迎的协奏曲终乐章——清亮的小号像号角般欢腾，是最接近「童年快乐」的声音。",
+      "background": "1796 年，海顿在维也纳为小号名家安东·魏丁格 (Anton Weidinger) 写下这部《降 E 大调小号协奏曲》(Hob. VIIe:1)。魏丁格发明了一种带按键的「键号」(keyed trumpet)，让小号挣脱只能吹奏自然泛音的限制，第一次能奏出完整的半音阶旋律。海顿特意在中低音区写下歌唱性的乐句，展示这件新乐器的能力。乐曲虽 1796 年完成，却等到魏丁格把乐器打磨成熟，才于 1800 年 3 月 28 日在维也纳城堡剧院 (Burgtheater) 由他本人首演。第三乐章是一首快速的奏鸣回旋曲。",
+      "meaning": "这是海顿晚年最受欢迎的一部协奏曲，终乐章尤其家喻户晓：清亮的小号像号角般明快利落，主题一次次欢腾地回来，毫无阴霾。它长期是小号学习者的必修曲目，也因此成了许多人最早记住、并把它和「明亮」「雀跃」这种纯粹快乐联系在一起的旋律之一。把一件「只能吹号角」的自然小号，第一次写成能完整歌唱的主角，这个乐章正是那场变革最灿烂的果实。",
+      "sources": [
+        {
+          "label": "Wikipedia：Trumpet Concerto (Haydn)",
+          "url": "https://en.wikipedia.org/wiki/Trumpet_Concerto_(Haydn)",
+          "summary": "记载：海顿 1796 年为安东·魏丁格的键号而作（Hob. VIIe:1，降 E 大调），魏丁格于 1800 年 3 月 28 日在维也纳城堡剧院首演；全曲三乐章，被视为「可能是海顿最受欢迎的协奏曲」。"
+        },
+        {
+          "label": "G. Henle Verlag：Trumpet Concerto E-flat major Hob. VIIe:1",
+          "url": "https://www.henle.de/en/detail/?Title=Trumpet+Concerto+E+flat+major+Hob.+VIIe%3A1_456",
+          "summary": "权威 Urtext 出版社亨乐版的作品页，提供 Hob. VIIe:1 的考订信息，佐证创作年代与乐器背景。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Trumpet Concerto (Haydn)",
+        "url": "https://en.wikipedia.org/wiki/Trumpet_Concerto_(Haydn)",
+        "summary": "记载：海顿 1796 年为安东·魏丁格的键号而作（Hob. VIIe:1，降 E 大调），魏丁格于 1800 年 3 月 28 日在维也纳城堡剧院首演；被视为「可能是海顿最受欢迎的协奏曲」。"
+      },
+      "listening": {
+        "target": "Haydn Trumpet Concerto in E-flat, Hob. VIIe:1 — III. Finale (Allegro)",
+        "query": "Haydn Trumpet Concerto Hob VIIe 1 third movement finale Allegro"
+      },
+      "place": {
+        "name": "Haydnhaus（海顿故居）",
+        "address": "Haydngasse 19, Wien",
+        "certainty": "中",
+        "note": "海顿 1797–1809 年的维也纳住所，今为海顿纪念馆。《小号协奏曲》1796 年作于维也纳、1800 年由魏丁格在城堡剧院首演；此处作为海顿晚年的维也纳地标，非确切创作房间。",
+        "source": {
+          "label": "Wien Museum：Haydn House",
+          "url": "https://www.wienmuseum.at/en/locations/haydn-house"
+        }
+      },
+      "en": {
+        "title": "Trumpet Concerto in E-flat — III. Finale",
+        "work": "Trumpet Concerto in E-flat major, Hob. VIIe:1, III. Finale (Allegro)",
+        "composer": "Joseph Haydn",
+        "mood": "Fanfare · Brightness",
+        "blurb": "The finale of late Haydn's most popular concerto — the bright trumpet rings out like a fanfare, the sound closest to the joy of childhood.",
+        "background": "In 1796, in Vienna, Haydn wrote this Trumpet Concerto in E-flat major (Hob. VIIe:1) for the trumpet virtuoso Anton Weidinger. Weidinger had invented a keyed trumpet that freed the instrument from playing only natural harmonics, letting it sound a full chromatic melody for the first time. Haydn deliberately wrote singing phrases in the middle and lower register to show off the new instrument's capabilities. Although finished in 1796, the work waited until Weidinger had perfected his instrument, premiering on 28 March 1800 at the Burgtheater in Vienna, played by Weidinger himself. The third movement is a fast sonata-rondo.",
+        "meaning": "This is the most popular of Haydn's late concertos, and the finale is especially famous: the bright trumpet is crisp and fanfare-like, the theme returning joyfully again and again without a cloud. It has long been a staple for trumpet students, and so became one of the first melodies many people remember — and link with the pure joy of 'brightness' and 'leaping delight.' Turning the natural trumpet, which could only sound fanfares, into a fully singing protagonist for the first time, this movement is the most radiant fruit of that transformation.",
+        "place": {
+          "name": "Haydnhaus (Haydn's house)",
+          "note": "Haydn's Vienna residence in 1797–1809, today a Haydn memorial museum. The Trumpet Concerto was written in Vienna in 1796 and premiered by Weidinger at the Burgtheater in 1800; this stands as Haydn's late-period Vienna landmark, not the exact room of composition."
+        }
+      }
+    },
+    {
+      "id": "hummel-trumpet-concerto-rondo",
+      "title": "《降 E 大调小号协奏曲》第三乐章·回旋曲 (Trumpet Concerto, S. 49, III)",
+      "work": "Trumpet Concerto in E-flat major, S. 49, III. Rondo",
+      "composer": "约翰·内波穆克·胡梅尔 (Johann Nepomuk Hummel)",
+      "year": 1803,
+      "city": "Eisenstadt",
+      "country": "Austria",
+      "lat": 47.8458,
+      "lng": 16.5203,
+      "mood": "灿烂 · 欢腾",
+      "collections": [
+        "childhood"
+      ],
+      "blurb": "比海顿那首更灿烂跳脱的小号回旋曲——也是我从小记得、却找了近二十年才重逢的曲子。",
+      "background": "1803 年 12 月，胡梅尔为同一位小号家安东·魏丁格的「键号」写下这部小号协奏曲（原调为 E 大调，今多移到降 E 大调演奏，在现代活塞小号上指法更顺手）。它于 1804 年 1 月 1 日首演，标志着胡梅尔正式接任埃斯特哈齐宫廷乐长——他接的正是海顿的班。也就是说，海顿与胡梅尔这两部最著名的小号协奏曲，出自同一位演奏家、同一件新乐器、同一座宫廷的前后两任乐长之手。第三乐章是一首活泼炫技的回旋曲。",
+      "meaning": "如果说海顿的终乐章是明快的号角，胡梅尔这首回旋曲则更灿烂、更跳脱：小号在飞快的音阶与跳音里几乎像在嬉戏，把键号的灵活发挥到极致。它和海顿那首常被并置录制，并称小号协奏曲文献的两座高峰。对我而言，它还有一层私人意义——这是我从小记得旋律、却多年叫不出名字的曲子，断断续续找了近二十年，才在某次偶然里终于和它重逢。",
+      "sources": [
+        {
+          "label": "Wikipedia：Trumpet Concerto (Hummel)",
+          "url": "https://en.wikipedia.org/wiki/Trumpet_Concerto_(Hummel)",
+          "summary": "记载：胡梅尔 1803 年 12 月为安东·魏丁格的键号而作（S. 49，原调 E 大调，今多奏降 E 大调）；1804 年 1 月 1 日首演，标志他接替海顿出任埃斯特哈齐宫廷乐职；三乐章，末乐章为 Rondo。"
+        },
+        {
+          "label": "IMSLP：Trumpet Concerto in E major, S.49 (Hummel)",
+          "url": "https://imslp.org/wiki/Trumpet_Concerto_in_E_major,_S.49_(Hummel,_Johann_Nepomuk)",
+          "summary": "权威乐谱档案 IMSLP 的作品页，保存原 E 大调总谱与版本信息（该曲尚无作曲家官方逐曲页面，按项目惯例退用 IMSLP 并在 content-audit 标注）。"
+        }
+      ],
+      "source": {
+        "label": "Wikipedia：Trumpet Concerto (Hummel)",
+        "url": "https://en.wikipedia.org/wiki/Trumpet_Concerto_(Hummel)",
+        "summary": "记载：胡梅尔 1803 年 12 月为安东·魏丁格的键号而作（S. 49，原调 E 大调，今多奏降 E 大调）；1804 年 1 月 1 日首演，标志他接替海顿出任埃斯特哈齐宫廷乐职；末乐章为 Rondo。"
+      },
+      "listening": {
+        "target": "Hummel Trumpet Concerto in E-flat, S. 49 — III. Rondo",
+        "query": "Hummel Trumpet Concerto S 49 third movement Rondo"
+      },
+      "place": {
+        "name": "Schloss Esterházy（埃斯特哈齐宫）",
+        "address": "Esterházyplatz 5, Eisenstadt",
+        "certainty": "中",
+        "note": "1804 年 1 月 1 日本曲首演，标志胡梅尔接任埃斯特哈齐宫廷乐长（海顿的继任者）；埃斯特哈齐家族主邸即艾森施塔特的埃斯特哈齐宫。首演确切场所略有不同说法，通常系于宫廷的新年庆典，此处取艾森施塔特宫为地标。",
+        "source": {
+          "label": "Esterházy：Schloss Esterházy",
+          "url": "https://www.esterhazy.at/en/schloss-esterhazy"
+        }
+      },
+      "en": {
+        "title": "Trumpet Concerto in E-flat, S. 49 — III. Rondo",
+        "work": "Trumpet Concerto in E-flat major, S. 49, III. Rondo",
+        "composer": "Johann Nepomuk Hummel",
+        "mood": "Brilliance · Exuberance",
+        "blurb": "A trumpet rondo even more brilliant and skipping than Haydn's — and the piece I remembered from childhood but searched nearly twenty years to find again.",
+        "background": "In December 1803 Hummel wrote this trumpet concerto for the keyed trumpet of the same player, Anton Weidinger (originally in E major, today usually transposed to E-flat for easier fingering on the modern valve trumpet). It premiered on 1 January 1804, marking Hummel's formal entrance as Kapellmeister at the Esterházy court — succeeding none other than Haydn. In other words, the two most famous trumpet concertos, Haydn's and Hummel's, came from the same player, the same new instrument, and two successive music directors of the same court. The third movement is a lively, virtuosic Rondo.",
+        "meaning": "If Haydn's finale is a bright fanfare, Hummel's rondo is more brilliant and more skittish: the trumpet almost plays in its racing scales and staccato leaps, pushing the keyed trumpet's agility to the limit. It is often recorded alongside the Haydn, the two standing as the twin peaks of the trumpet-concerto literature. For me it carries a personal meaning too — it is the piece whose melody I remembered from childhood but could never name, hunting for it on and off for nearly twenty years before stumbling on it again at last.",
+        "place": {
+          "name": "Schloss Esterházy (Esterházy Palace)",
+          "note": "This work premiered here on 1 January 1804, marking Hummel's appointment as Kapellmeister at the Esterházy court (Haydn's successor); the Esterházy family's chief seat is the palace at Eisenstadt. Accounts of the exact premiere venue vary slightly — it is usually tied to the court's New Year celebration; the Eisenstadt palace is taken as the landmark."
         }
       }
     }

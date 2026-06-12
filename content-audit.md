@@ -35,6 +35,10 @@ v0.3 进一步：每首作品的介绍拆成 **`blurb` 提要 + `background` 创
 | chopin-berceuse-op57 | 摇篮曲 Op.57 | **NIFC 肖邦国家研究所** | 官方机构 ✅ |
 | mozart-eine-kleine-nachtmusik-romanze | 弦乐小夜曲 K.525 第二乐章 Romanze | **Stiftung Mozarteum**（柯歇尔目录） | 官方基金会 ✅ |
 | brahms-wiegenlied-op49-4 | 摇篮曲 Op.49 No.4 | **IMSLP**（5 Lieder Op.49） | 权威乐谱档案 ⚠️ 见下 |
+| haydn-trumpet-concerto-finale | 小号协奏曲 Hob.VIIe:1 第三乐章 | **Wikipedia** + Henle Urtext (HN 456) | 权威条目＋官方出版方 ⚠️ 见童年注 |
+| hummel-trumpet-concerto-rondo | 小号协奏曲 S.49 回旋曲 | **Wikipedia** + IMSLP（原 E 大调 S.49） | 权威条目＋权威乐谱档案 ⚠️ 见童年注 |
+
+> ⚠️ **童年歌单来源标注（v0.8）**：`haydn-trumpet-concerto-finale`（海顿《小号协奏曲》Hob.VIIe:1 终乐章）与 `hummel-trumpet-concerto-rondo`（胡梅尔《小号协奏曲》S.49 回旋曲）均无 NIFC／Mozarteum 那样可稳定深链的官方逐曲门户，故以 **Wikipedia 对应词条为主来源**（已核实，非编造），并各配一条权威辅来源：海顿用 **G. Henle Verlag** Urtext 作品页（HN 456），胡梅尔用 **IMSLP**（保存原 E 大调 S.49 总谱，该曲今多奏降 E 大调）。两首已核实的共同事实：均为小号家**安东·魏丁格**的「键号」而作；海顿 1796 年作于维也纳、1800-03-28 由魏丁格在城堡剧院首演；胡梅尔 1803 年 12 月作、1804-01-01 首演并接任埃斯特哈齐宫廷乐职（海顿继任者）。胡梅尔首演确切场所略有不同说法，地图按埃斯特哈齐宫（艾森施塔特）标注并在 `place.note` 注明。立场与歌单一致：不编造日期／地点／首演背景。
 
 > ⚠️ **IMSLP 主来源标注（睡前歌单 v0.6）**：`brahms-wiegenlied-op49-4`（勃拉姆斯《摇篮曲》）暂以 IMSLP《5 Lieder, Op. 49》页为主来源。官方 Brahms-Portal 收录此套歌曲，但其逐曲页面对自动抓取返回 403、当前无法稳定核实具体作品 ID，故按本项目策略退用 IMSLP，并以 Wikipedia 词条为辅来源核实题献与首演（贝尔塔·法贝尔；1869-12-22 维也纳，Dustmann／克拉拉·舒曼）。待 Brahms-Portal 逐曲页可稳定深链后再升级为官方主来源。另外两首睡前新曲（肖邦《摇篮曲》、莫扎特 K.525 Romanze）均已用官方门户（NIFC、Mozarteum 柯歇尔目录）作主来源。
 
