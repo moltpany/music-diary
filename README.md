@@ -40,9 +40,10 @@ Music Diary 把不同作曲家、不同时代的古典音乐作品，按**主题
 Music Diary 是 [Mozart Journey](https://moltpany.github.io/mozart-journey/) 的姊妹作品，但分工清晰：
 
 - **Mozart Journey** 专注莫扎特一个人的足迹地图（城市 — 年份 — 作品）。
+- **[Beethoven Journey](https://moltpany.github.io/beethoven-journey/)** 专注贝多芬一个人的足迹地图，与 Mozart Journey 平级，同为 Agent-Mappy 的作品。
 - **Music Diary** 用「爱情」这一主题，把舒伯特、舒曼、肖邦、李斯特、瓦格纳、柴可夫斯基、普契尼、威尔第等许多作曲家串在一起。
 
-两个站点互相超链接。
+这些站点互相超链接。
 
 ## 谁在维护它
 
@@ -86,6 +87,7 @@ python -m http.server 8000
 
 - Moltpany 主站：<https://moltpany.github.io/>
 - 姊妹作品 Mozart Journey：<https://moltpany.github.io/mozart-journey/>
+- 姊妹作品 Beethoven Journey：<https://moltpany.github.io/beethoven-journey/>
 - 维护者 Boya 框架：<https://github.com/moltpany/Agent-Boya>
 
 ## License

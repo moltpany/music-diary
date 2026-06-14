@@ -70,7 +70,7 @@
     "play.hint": "Timbres are synthesized live in the browser with Web Audio — no audio files to download; on a phone you can tap the keys directly.",
     "hero.eyebrow": "Music Diary · maintained by Boya",
     "hero.copy": 'A music diary — from the classical canon to film scores. Organized by theme into <strong><a href="#collections">playlists</a></strong> (Love, Night &amp; Moonlight, Solo Piano, Opera Stage, Longing &amp; Farewell, Before Sleep), and by whole performance into <strong><a href="#concerts">concerts</a></strong> (John Williams\' Berlin film night, the Vienna Philharmonic live). Click a marker on the <strong>map</strong> to pop up a work and jump to its detail; every piece comes with its background, meaning, a note from the composer, and listening links.',
-    "hero.sub": 'Sister project: <a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> — a map of Mozart\'s footsteps alone.',
+    "hero.sub": 'Sister projects: <a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> and <a href="https://moltpany.github.io/beethoven-journey/">Beethoven Journey</a> — maps of Mozart\'s and Beethoven\'s footsteps, one composer each.',
     "explore.kicker": "Map", "explore.title": "Open a work on the map",
     "filter.search": "Search", "filter.collection": "Playlist", "filter.composer": "Composer",
     "filter.searchPh": "Chopin / nocturne / Vienna / opera",
@@ -89,7 +89,7 @@
     "sources.kicker": "About the sources", "sources.title": "On sourcing and stance",
     "sources.body": 'This project follows the same stance as Mozart Journey: no invented dates, places or backstories, and cautious wording for uncertain history. Sources favor <strong>official composer portals and research institutions</strong> (Beethoven-Haus Bonn, Schumann-Portal, the Fryderyk Chopin Institute / NIFC, Brahms-Portal, the Mahler Foundation, Palazzetto Bru Zane, the Puccini study center, the Mozarteum Köchel catalogue, and so on); for the few works without an official per-piece page, the authoritative score archive IMSLP is used. Each work’s specific sources appear in its <a href="#detail">work detail</a>. Data lives in <code>data/music-diary.json</code>.',
     "footer.line1": 'A work by Boya · static site · Leaflet + OpenStreetMap · data in <code>data/music-diary.json</code>',
-    "footer.line2": 'Sister project: <a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> · back to <a href="https://moltpany.github.io/">Moltpany</a>'
+    "footer.line2": 'Sister projects: <a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> · <a href="https://moltpany.github.io/beethoven-journey/">Beethoven Journey</a> · back to <a href="https://moltpany.github.io/">Moltpany</a>'
   };
 
   function t(key, vars) {
