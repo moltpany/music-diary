@@ -35,15 +35,18 @@ Music Diary 把不同作曲家、不同时代的古典音乐作品，按**主题
 
 歌单模型与「一首作品可属多个歌单」的做法参考自 [Mozart Journey](https://moltpany.github.io/mozart-journey/) 的 collections。
 
-## 与 Mozart Journey 的关系
+## 作曲家枢纽：与各「足迹地图」的关系
 
-Music Diary 是 [Mozart Journey](https://moltpany.github.io/mozart-journey/) 的姊妹作品，但分工清晰：
+Music Diary 既是一本按主题/地点整理的音乐日记，也是各位作曲家**独立足迹地图**的入口枢纽（首页「作曲家足迹 / Composer journeys」版块）：
 
-- **Mozart Journey** 专注莫扎特一个人的足迹地图（城市 — 年份 — 作品）。
+- **Music Diary** 用「爱情」等主题，把舒伯特、舒曼、肖邦、李斯特、瓦格纳、柴可夫斯基、普契尼、威尔第等许多作曲家串在一起。
+- **[Mozart Journey](https://moltpany.github.io/mozart-journey/)** 专注莫扎特一个人的足迹地图（城市 — 年份 — 作品）。
 - **[Beethoven Journey](https://moltpany.github.io/beethoven-journey/)** 专注贝多芬一个人的足迹地图，与 Mozart Journey 平级，同为 Agent-Mappy 的作品。
-- **Music Diary** 用「爱情」这一主题，把舒伯特、舒曼、肖邦、李斯特、瓦格纳、柴可夫斯基、普契尼、威尔第等许多作曲家串在一起。
+- **Chopin Journey** 等更多作曲家为「敬请期待」占位，结构已就绪。
 
 这些站点互相超链接。
+
+> 🧩 **如何在枢纽里新增一位作曲家**：在 `index.html` 的 `#journeys` 版块复制一张 `.journey-card`（已上线的用 `<a class="journey-card" href="…">`，未上线的用 `journey-card--soon` 占位），文案挂 `data-i18n="journeys.*"`，并在 `script.js` 的 `STATIC_EN` 里补上对应英文键即可。卡片为静态结构，复制一张就能扩展。
 
 ## 谁在维护它
 
