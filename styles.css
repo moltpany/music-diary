@@ -833,3 +833,84 @@ footer p { margin: 4px 0; }
 
 /* Leaflet tooltips pick up the page font */
 .leaflet-tooltip { font-family: inherit; }
+
+/* ---- Composer journeys hub (entry cards to the standalone footstep maps) ---- */
+.journeys-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 32px 8px;
+}
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+.journey-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+a.journey-card:hover,
+a.journey-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent-soft);
+  color: var(--ink);
+}
+.journey-card h3 {
+  margin: 4px 0 0;
+  font-size: 1.18rem;
+  color: var(--accent);
+}
+.journey-card .journey-name {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.journey-card .journey-desc {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.journey-tag {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+}
+.journey-tag--soon {
+  background: transparent;
+  color: var(--ink-soft);
+  border: 1px dashed var(--accent-soft);
+}
+.journey-cta {
+  margin-top: 4px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.journey-cta--soon { color: var(--ink-soft); }
+.journey-card--soon {
+  background: var(--surface-2);
+  border-style: dashed;
+  cursor: default;
+}
+@media (max-width: 640px) {
+  .journeys-section { padding: 18px; }
+}

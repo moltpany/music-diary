@@ -39,6 +39,7 @@
       <nav class="topbar" aria-label="页面导航">
         <a href="#top" class="brand">Music Diary</a>
         <div class="nav-links">
+          <a href="#journeys" data-i18n="nav.journeys">作曲家</a>
           <a href="#explore" data-i18n="nav.explore">浏览</a>
           <a href="#collections" data-i18n="nav.collections">歌单</a>
           <a href="#concerts" data-i18n="nav.concerts">音乐会</a>
@@ -66,11 +67,42 @@
         <p class="eyebrow" data-i18n="hero.eyebrow">音乐日记 · 由 Boya 维护</p>
         <h1>Music Diary</h1>
         <p class="hero-copy" data-i18n-html="hero.copy">一本音乐日记——从古典到电影配乐。按主题分成<strong><a href="#collections">歌单</a></strong>（爱情、深夜与月光、钢琴独语、歌剧舞台、思念与告别），按整场演出分成<strong><a href="#concerts">音乐会</a></strong>（约翰·威廉姆斯柏林电影之夜、维也纳爱乐现场）。在<strong>地图</strong>上点开标记可弹出作品并跳到详情；每一首都配有创作背景、作品含义、作曲家创作心得与试听链接。</p>
-        <p class="hero-sub" data-i18n-html="hero.sub">姊妹作品：<a href="https://moltpany.github.io/mozart-journey/">Mozart Journey</a> 与 <a href="https://moltpany.github.io/beethoven-journey/">Beethoven Journey</a> —— 分别专注莫扎特与贝多芬一个人的足迹地图。</p>
+        <p class="hero-sub" data-i18n-html="hero.sub">这里也是<a href="#journeys">作曲家足迹</a>的入口：莫扎特与贝多芬各有一张独立的足迹地图，肖邦等更多作曲家陆续加入。</p>
       </div>
     </header>
 
     <main>
+      <section class="journeys-section" id="journeys" aria-labelledby="journeys-title">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="journeys.kicker">作曲家足迹</p>
+          <h2 id="journeys-title" data-i18n="journeys.title">从这里走进每位作曲家的足迹地图</h2>
+        </div>
+        <p class="collections-intro" data-i18n="journeys.intro">Music Diary 汇集多位作曲家；其中一些拥有独立的「足迹地图」站点，按城市、年份与人生阶段展开。下面是目前可进入的作曲家，后续会陆续增加。</p>
+        <div class="journey-grid">
+          <a class="journey-card" href="https://moltpany.github.io/mozart-journey/">
+            <span class="journey-tag" data-i18n="journeys.live">在线</span>
+            <h3>Mozart Journey</h3>
+            <p class="journey-name" data-i18n="journeys.mozartName">沃尔夫冈·阿玛多伊斯·莫扎特</p>
+            <p class="journey-desc" data-i18n="journeys.mozartDesc">1756–1791 · 莫扎特一个人的足迹地图：伦敦、维也纳、萨尔茨堡、布拉格……</p>
+            <span class="journey-cta" data-i18n="journeys.enter">进入地图 →</span>
+          </a>
+          <a class="journey-card" href="https://moltpany.github.io/beethoven-journey/">
+            <span class="journey-tag" data-i18n="journeys.live">在线</span>
+            <h3>Beethoven Journey</h3>
+            <p class="journey-name" data-i18n="journeys.beethovenName">路德维希·凡·贝多芬</p>
+            <p class="journey-desc" data-i18n="journeys.beethovenDesc">1770–1827 · 从波恩到维也纳：失聪、遗嘱、监护侄子，直到第九交响曲。</p>
+            <span class="journey-cta" data-i18n="journeys.enter">进入地图 →</span>
+          </a>
+          <div class="journey-card journey-card--soon" aria-disabled="true">
+            <span class="journey-tag journey-tag--soon" data-i18n="journeys.soon">敬请期待</span>
+            <h3>Chopin Journey</h3>
+            <p class="journey-name" data-i18n="journeys.chopinName">弗里德里克·肖邦</p>
+            <p class="journey-desc" data-i18n="journeys.chopinDesc">1810–1849 · 华沙、维也纳、巴黎、马略卡…… 肖邦的足迹地图正在筹备中。</p>
+            <span class="journey-cta journey-cta--soon" data-i18n="journeys.comingSoon">即将上线</span>
+          </div>
+        </div>
+      </section>
+
       <section class="explore-section" id="explore" aria-labelledby="explore-title">
         <div class="explore-head">
           <div>
